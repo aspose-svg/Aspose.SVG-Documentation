@@ -13,3 +13,23 @@ jobs:
       - name: hugo build
         run: |
           cd aspose-svg-docs
+          git clone https://github.com/aspose-page/Aspose.SVG-Documentation.git || (cd Aspose.SVG-Documentation && git pull)
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
+          cd lutsk-aspose-prototype
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
+          sudo npm install -D --save autoprefixer
+          sudo npm install -D --save postcss-cli
+          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          rm -rf public
+          hugo --minify --baseURL https://docs.aspose.com/svg
+          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+      - name: hugo deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          port: ${{ secrets.SSHPORT }}
+          script: |
+            sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
+            sudo nginx -s reload
