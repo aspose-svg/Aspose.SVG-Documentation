@@ -35,7 +35,7 @@ Aspose.SVG for .NET API offers the capability to convert SVG images to JPEG form
 
 ### **Convert SVG to PNG**
 
-[PNG](https://docs.fileformat.com/image/png/) (Portable Network Formats) has been the image format of choice as a replacement of [GIF](hhttps://docs.fileformat.com/image/gif/) format with lossless compression. It doesn't support animations unlike GIF but has gained popularity due to its lossless compression among its users. It is supported by almost all operating systems such as Microsoft Windows and macOS.
+[PNG](https://docs.fileformat.com/image/png/) (Portable Network Formats) has been the image format of choice as a replacement of [GIF](https://docs.fileformat.com/image/gif/) format with lossless compression. It doesn't support animations unlike GIF but has gained popularity due to its lossless compression among its users. It is supported by almost all operating systems such as Microsoft Windows and macOS.
 
 Aspose.SVG for .NET API has the capability to read and convert SVG files to PNG file format using C# and other .NET programming languages. The following sample code can be used to achieve SVG to PNG conversion.
 
