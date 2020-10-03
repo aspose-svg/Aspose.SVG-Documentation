@@ -4,4 +4,147 @@ type: docs
 weight: 3
 url: /net/drawing-basics/svg-path-data
 ---
+<link href="./../../style.css" rel="stylesheet" type="text/css" />
+
+The `<path>` element allows you to draw the outlines of shapes by combining lines, curves, arcs, etc. It is a versatile and flexible SVG element for creating both simple and complex open and closed paths. 
+
+The  `<path>` element determines by one attribute - **d**. The following groups of commands inhere to **d** attribute: 
+
+***moveto (M, m)***  
+
+***lineto (L, l, H, h, V, v)***
+
+***closepath (Z, z)*** 
+
+The ***M*** command sets the origin point for path drawing. The commands group that draw straight line segments includes the ***lineto  (L, l, H, h, V and v)***  and the ***closepath (Z and z)*** commands .  
+The following three groups of commands draw curves: 
+
+***cubic Bézier curve (C, c, S, s)*** 
+
+***quadratic Bézier curve (Q, q, T, t)*** 
+
+***elliptical Arc (A, a)*** 
+
+All commands can be specified with uppercase and lowercase letters. The uppercase indicates that the subsequent coordinates are absolute, and lowercase indicates relative ones. 
+Coordinates are always written without units specifying and refer to the user's coordinate system. Usually, they are in pixels. 
+The path is described by the position of the current point - a "virtual pen". The "pen" moves along the path sections from the starting to the endpoint. These points are the key parameters for all drawing commands. 
+Each command has parameters; they are indicated in brackets.
+
+
+
+
+## **Lines and Paths** 
+
+Any path begins with the ***moveto M (x,y)*** command.  ***x*** and ***y*** coordinates indicate the current (starting) point where the path should start. 
+
+Three ***lineto*** commands draw straight lines from the current point to the new one: 
+
+***L (x, y)*** - the command takes two parameters -  ***x*** and ***y*** coordinates of a point,  and draws a line from the current position to this point (***x, y***). 
+
+***H (x)*** - draws a horizontal line from the current position to point with ***x*** coordinate. The y coordinate does not change the value.
+
+***V (y)*** - draws a vertical line from the current position to point with ***y*** coordinate. The x coordinate does not change the value.
+
+The ***H*** and ***V*** commands only use one argument since they only move in one direction. 
+
+After doing any command, the "virtual pen" point will be located at the endpoint of that drawing command. The next drawing command will start from this point. 
+
+***Closepath Z*** ends the current path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
+```html {linenos=inline,linenostart=1}
+<svg height="400" width="400" viewbox="0 0 200 200"> 
+    <path d="M 30 30 L 110 30 L 110 110 L 30 110 L 30 30" fill="transparent" stroke-width="2" stroke="black"/>  
+    <path d="M 50 50 H 130 V 130 H 50 Z" fill="transparent" stroke-width="2" stroke="blue"/> 
+    <path d="M 70 70 h 80 v 80 h -80 Z" fill="transparent" stroke-width="2" stroke="red"/> 
+</svg> 
+```
+![Three squares: black blue and red grey rectangles](Lineto2.png#center)
+
+A black square is created by sequentially using the ***L*** command, which draws a line to the specified point (***x, y***). This is the most common way of making a wide variety of straight-line paths. 
+
+However, in the rectangle case or the other shapes with 90 angles, you can use the ***H*** and ***V*** commands. For drawing the blue square, the code is much shorter.  ***Z*** command doesn't require the endpoint specifying for the shape closing that also reduces the path code writing. 
+
+For the red square constructing, the commands ***h*** and ***v*** were applied, using relative coordinates. 
+
+The figure on the left shows all the extra notes. The view of the **rendered  SVG graphics is on the right**.
+
+
+
+## **Draw an Arc** 
+
+Arcs are used for sections of circles and ellipses drawing. For arcs creating, it is not enough to specify only ellipse radii. You should take into account different possible paths along the arc between two points: the "pen's" moving in a "positive-angle" direction or the opposite; the "pen's" moving along the "large-arc" or the "small-arc".
+
+Thus, two ellipses can connect any two points, and the four different arcs can be drawn between these points. The **A** command's parameters indicate which one of the four arcs will be chosen. 
+
+The **A** command allows to make a path with arcs by hand: 
+
+**A (rx ry x-axis-rotation large-arc-flag sweep-flag x y)**. 
+
+**rx, ry** - ellipse radii (the center is calculated automatically) 
+
+**x, y** - coordinates of the endpoint of the arc 
+
+**x-axis-rotation** - the angle of the x-axis rotation relative to the coordinate system, specified in degrees. 
+
+**large-arc-flag** - can be 0 or 1. A value of "0" means that the "small-arc" will be drawn, a value of "1" -  the "large-arc" will be chosen. 
+
+**sweep-flag** - can be 0 or 1. If a value is "1", then the arc will be drawn in a "positive-angle" direction. A value of "0" indicates about the "pen's" moving in a "negative-angle" direction. 
+
+The **a** command is the same as **A** but interprets the coordinates relative to current "pen" point. 
+
+```html {linenos=inline,linenostart=1}
+<svg height="500" width="700" viewbox="0 0 100 100" > 
+    <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none"/> 
+    <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none"/> 
+    <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)" /> 
+</svg>  
+```
+![Three paths with arcs](arc1.png#center)
+
+Consider the path written in line 2 of code sample: `d="M10,20 A 30,30 0 0,0 40,70"`.
+***M*** command set a current (start)  point (10, 20). The endpoint of the arc is in ***A*** command (40,70). Between points 1 (10, 20) and 2 (40,70), you can draw two circles with a radius 30 (see figure above). The **x-axis-rotation** value is 0; ***large-arc-flag = 0*** - this means that the "small arc" will be drawn, ***sweep-flag = 0*** - which means that arc 1-2 will be selected, the "pen" movement in the direction of the "negative angle", i.e. counter clock-wise. This is a gold-color arc.
+
+
+## **Draw Bézier Curves** 
+
+Bezier curves are an important tool for computer graphics programs. There are two types of the Bezier curves are available in SVG `<path>` elements: a cubic one (***C***) and a quadratic one (***Q***).  The curve has a start point, an endpoint, and control points. A quadratic curve has one control point, and a cubic one has two. The position of the control points determines the form of the curve. 
+
+### **Quadratic Bézier Curves**
+
+Any Bezier curve as the current (starting) point takes the pen's location after the executing of the previous command. The ***Q*** command of the quadratic curve is specified by only two points: the control point (***x1, y1***) and the endpoint of the curve (***x, y***). The ***q*** command is also given by two points, the coordinates of which are relative to the current point. 
+
+Let's consider an example: 
+
+```html {linenos=inline,linenostart=1}
+<svg width="600" height="600" viewbox="0 0 200 200"> 
+    <path d="M 10 100 Q 25 10 180 100" stroke="black" stroke-width="1" fill="transparent"/> 
+</svg> 
+```
+![Curve](QCB1.png#center)
+
+If you connect the control point to the start and endpoints of the curve with segments, the line connecting the centers of the segments will be tangent to the curve vertex. 
+
+How does the position of the control point affect the curve view? Let us show this with examples. Let's change the value of ***y1*** at the control point for the previous curve: 
+
+```html {linenos=inline,linenostart=1}
+<svg width="600" height="600" viewbox="0 0 200 200">
+    <g stroke-width="1" fill="none">
+        <path d="M 10 100 Q 25 10 180 100" stroke="black"/> 
+        <path d="M 10 100 Q 25 -60 180 100" stroke="blue"/> 
+        <path d="M 10 100 Q 25 100 180 100" stroke="red"/> 
+        <path d="M 10 100 Q 25 190 180 100" stroke="green"/> 
+    </g>
+</svg> 
+```
+![Curve](QCB2.png#center)
+```html {linenos=inline,linenostart=1}
+<svg width="600" height="600" viewbox="0 0 200 200"> 
+    <g stroke-width="1" fill="none">
+        <path d="M 10 100 Q 25 10 180 100" stroke="black"/> 
+        <path d="M 10 100 Q -40 10 180 100" stroke="red"/> 
+        <path d="M 10 100 Q 165 10 180 100" stroke="green"/> 
+        <path d="M 10 100 Q 245 10 180 100" stroke="blue"/> 
+    </g>
+</svg> 
+```
+![Curve](QCB3.png#center)
 
