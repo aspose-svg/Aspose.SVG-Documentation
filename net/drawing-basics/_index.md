@@ -5,7 +5,7 @@ weight: 15
 url: /net/drawing-basics/
 ---
 
-- **[Coordinate Systems and Units](http://localhost:1313/svg/net/drawing-basics/coordinate-systems-and-units/)**  In this article, you find the description of the main attributes that control SVG coordinate systems: viewport and viewBox.
+- **[Coordinate Systems and Units](http://localhost:1313/svg/net/drawing-basics/coordinate-systems-and-units/)**  In this article, you find the description of the workspace of SVG that is defined by the values of the viewport and viewBox attributes.
 - **[Basic Shapes](http://localhost:1313/svg/net/drawing-basics/basic-shapes/)** In this section, you can learn how to create different simple shapes and apply some style properties to them.
 - **[SVG Path Data](http://localhost:1313/svg/net/drawing-basics/svg-path-data/)** This chapter shows how the paths can be used to drawing various outlines or shapes by combining lines, arcs and Bezier curves. The group of commands for the SVG paths making is described here.
 - **[Text](http://localhost:1313/svg/net/drawing-basics/text/)** This section introduces the text content elements and reviews some common attributes that help to display,  format and style the text into an SVG image.
