@@ -6,9 +6,9 @@ url: /net/drawing-basics/svg-path-data
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The `<path>` element allows you to draw the outlines of shapes by combining lines, curves, arcs, etc. It is a versatile and flexible SVG element for creating both simple and complex open and closed paths. 
+The `<path>` element allows you to draw the outlines of shapes by combining lines, curves, and arcs. It is a versatile and flexible SVG element for creating both simple and complex open and closed paths. The  `<path>` element determines by one attribute - **d**. 
 
-The  `<path>` element determines by one attribute - **d**. The following groups of commands inhere to **d** attribute: 
+The following groups of commands inhere to **d** attribute: 
 
 ***moveto (M, m)***  
 
@@ -35,7 +35,7 @@ Each command has parameters; they are indicated in brackets.
 
 ## **Lines and Paths** 
 
-Any path begins with the ***moveto M (x,y)*** command.  ***x*** and ***y*** coordinates indicate the current (starting) point where the path should start. 
+Any path begins with the ***moveto M (x,y)*** command.  ***x*** and ***y*** coordinates indicate the current  point where the path should start. 
 
 Three ***lineto*** commands draw straight lines from the current point to the new one: 
 
@@ -50,6 +50,9 @@ The ***H*** and ***V*** commands only use one argument since they only move in o
 After doing any command, the "virtual pen" point will be located at the endpoint of that drawing command. The next drawing command will start from this point. 
 
 ***Closepath Z*** ends the current path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
+
+Let's draw a square using the ***lineto*** commands:
+
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="400" viewbox="0 0 200 200"> 
     <path d="M 30 30 L 110 30 L 110 110 L 30 110 L 30 30" fill="transparent" stroke-width="2" stroke="black"/>  
@@ -61,11 +64,9 @@ After doing any command, the "virtual pen" point will be located at the endpoint
 
 A black square is created by sequentially using the ***L*** command, which draws a line to the specified point (***x, y***). This is the most common way of making a wide variety of straight-line paths. 
 
-However, in the rectangle case or the other shapes with 90 angles, you can use the ***H*** and ***V*** commands. For drawing the blue square, the code is much shorter.  ***Z*** command doesn't require the endpoint specifying for the shape closing that also reduces the path code writing. 
+However, in the rectangle case or the other shapes with 90 angles, you can use the ***H*** and ***V*** commands. For drawing the blue square, the code is shorter.  ***Z*** command doesn't require the endpoint specifying for the shape closing that also reduces the path code writing.  For the red square constructing, the commands ***h*** and ***v*** were applied, using relative coordinates. 
 
-For the red square constructing, the commands ***h*** and ***v*** were applied, using relative coordinates. 
-
-The figure on the left shows all the extra notes. The view of the **rendered  SVG graphics is on the right**.
+The figure on the left shows all the extra notes. The view of the **rendered  SVG graphics** is on the right.
 
 
 
@@ -75,13 +76,11 @@ Arcs are used for sections of circles and ellipses drawing. For arcs creating, i
 
 Thus, two ellipses can connect any two points, and the four different arcs can be drawn between these points. The **A** command's parameters indicate which one of the four arcs will be chosen. 
 
-The **A** command allows to make a path with arcs by hand: 
+The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rotation large-arc-flag sweep-flag x y)**. 
 
-**A (rx ry x-axis-rotation large-arc-flag sweep-flag x y)**. 
+**rx, ry** - ellipse radii (the center is calculated automatically). 
 
-**rx, ry** - ellipse radii (the center is calculated automatically) 
-
-**x, y** - coordinates of the endpoint of the arc 
+**x, y** - coordinates of the endpoint of the arc. 
 
 **x-axis-rotation** - the angle of the x-axis rotation relative to the coordinate system, specified in degrees. 
 
@@ -91,11 +90,11 @@ The **A** command allows to make a path with arcs by hand:
 
 The **a** command is the same as **A** but interprets the coordinates relative to current "pen" point. 
 
-```html {linenos=inline,linenostart=1}
+```html {linenos=inline,linenostart=1 hl_lines=["2"]}
 <svg height="500" width="700" viewbox="0 0 100 100" > 
     <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none"/> 
     <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none"/> 
-    <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)" /> 
+    <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)"/> 
 </svg>  
 ```
 ![Three paths with arcs](arc1.png#center)
@@ -135,7 +134,11 @@ How does the position of the control point affect the curve view? Let us show th
     </g>
 </svg> 
 ```
+
 ![Curve](QCB2.png#center)
+
+Let's take the black curve as a basis and change the control point x1 value:
+
 ```html {linenos=inline,linenostart=1}
 <svg width="600" height="600" viewbox="0 0 200 200"> 
     <g stroke-width="1" fill="none">
@@ -146,5 +149,92 @@ How does the position of the control point affect the curve view? Let us show th
     </g>
 </svg> 
 ```
+
 ![Curve](QCB3.png#center)
 
+```html {linenos=inline,linenostart=1}
+<svg width="700" height="600" >
+   <path d="M 10 100 Q 25 10 180 100 T 250 100 T 320 100 T 390 100" stroke="orange" stroke-width="3" fill="none"/>
+   <path d="M 10 200 Q 25 110 180 200 T 300 250 T 420 250 T 490 150" stroke="grey" stroke-width="3" fill="none"/>
+</svg>
+```
+Several  ***Q*** commands can be used sequentially for extended curves stringing, but the resulting curve may not be smooth.  You can combine multiple quadratic Béziers without losing smoothness with the help of ***T*** command.
+
+The ***T*** command draws the quadratic Bézier curve from the current point to endpoint (***x,y***).  The command's parameters are only the endpoint coordinates  (***x,y***).  The ***T*** command outputs the new control point using the coordinates of the previous one. This works if the last command was a ***Q*** or a ***T***. At the end of the ***T*** command, the final (***x,y***) coordinate pair becomes the new current point used in the polybézier.
+Below is an example of a curve created using the ***T*** command. Here, the ***x*** coordinates of the curve segments are equidistant,  ***y*** coordinate does not change.
+```html {linenos=inline,linenostart=1}
+<svg width="700" height="600" >
+    <path d="M 10 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100" stroke="black" stroke-width="3" fill="none"/>
+</svg>
+```
+![Curve](QCB4.png#center)
+If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you can obtain a wide variety of curves.
+
+
+```html {linenos=inline,linenostart=1}
+<svg height="700" width="750">
+    <path d="M 10 100 Q 25 10 180 100 T 250 100 T 320 100 T 390 100" stroke="#FFA500" stroke-width="3" fill="none"/>
+    <path d="M 10 200 Q 25 110 180 200 T 300 250 T 420 250 T 490 150" stroke="grey" stroke-width="3" fill="none"/>
+</svg>
+```
+
+![Curve](QCB5.png#center)
+
+## **Cubic Bezier curve**
+
+Cubic Bézier curve is more complex than a quadratic one. Two control points describe the appearance of the curve at its beginning and the end. To create a cubic Bezier curve, you need to specify three sets of coordinates in the **C** command: the coordinates of two control points (**x1 y1, x2 y2**) and the endpoint of the curve (**x y**): **C x1 y1, x2 y2, x y**.
+
+The control points position determines the slope of the tangent line at the start and endpoint. The Bézier function creates a smooth curve that paths from the slope set at the beginning of the line to the slope at the curve end. You can specify several **C** commands in the one `<path>` element; they will be realized sequentially. The endpoint of the first **C** command becomes the starting point for the new **C** command. 
+
+The following code example makes a shape using two paths:
+
+```html {linenos=inline,linenostart=1}
+<svg height="700" width="750">
+    <!--shape two paths-->
+    <path d="M 100 250 C 150 60  355 140  328 260 " stroke="black" stroke-width="3" fill="none"/>
+    <path d="M 100 250 C 40 500 240 510 328 260" stroke="red" stroke-width="3" fill="none"/>
+</svg>
+```
+On the figure, different paths are shown in black and red.
+
+![Curve](CCB1.png#center)
+
+The following code example makes the same shape using one path:
+
+```html {linenos=inline,linenostart=1}
+<svg height="700" width="750">
+   <!--shape 1 path-->
+   <path d="M 100 250 C 150 60  355 140  328 260 C 240 510 40 500 100 250" stroke="black" stroke-width="3" fill="none"/>
+</svg>
+```
+In the sample above we have connected in the one path two curves with the help of C commands. The curves binding in this way may result in a loss of smoothness at the connection points. 
+
+For smooth long curves creating you may use a shortcut version of the cubic Bézier, designated by the **S x2 y2, x y** command. What does **S** command do? It allows to string together multiple cubic Béziers similar to the **T** command for the quadratic Béziers.
+For the **S** command, the first control point is considered a reflection of the previous one, that is necessary for a constant slope and smooth connection of the curves. The second control point  (**x2 y2**) and the endpoint  ( **x y**) coordinates must be specified.
+
+Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso:
+
+```html {linenos=inline,linenostart=1}
+<svg height="700" width="750">
+    <g stroke="black" stroke-width="3" fill="none">
+        <!--body 1 path-->
+        <path d="M 100 250 C 150 60  355 140  328 260 C 240 510 40 500 100 250"/>
+        <!--wing-->
+        <path d="M 110 260 C 220 200, 250 280, 120 410"/>
+        <!--1 eyebrow-->
+        <path d="M 110 240 C 130 220, 220 130, 231 230"/>
+        <!--2 eyebrow-->
+        <path d="M 231 231 C 230 220, 280 130, 329 258"/>
+        <!--line-->
+        <path d="M 30 380 l 63 0"/>
+        <path d="M 266 380 c 33 8 63 -8 90 5"/>
+        <!--eyes-->
+        <circle cx=204 cy=209 r=3 />
+        <circle cx=205 cy=210 r=9 />
+        <circle cx=265 cy=209 r=3 />
+        <circle cx=265 cy=210 r=8 />
+    </g>
+</svg>
+```
+
+![Two owl](two_owl.png#center)
