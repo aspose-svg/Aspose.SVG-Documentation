@@ -180,7 +180,7 @@ If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you 
 
 ![Curve](QCB5.png#center)
 
-## **Cubic Bezier curve**
+### **Cubic Bezier curve**
 
 Cubic Bézier curve is more complex than a quadratic one. Two control points describe the appearance of the curve at its beginning and the end. To create a cubic Bezier curve, you need to specify three sets of coordinates in the **C** command: the coordinates of two control points (**x1 y1, x2 y2**) and the endpoint of the curve (**x y**): **C x1 y1, x2 y2, x y**.
 
