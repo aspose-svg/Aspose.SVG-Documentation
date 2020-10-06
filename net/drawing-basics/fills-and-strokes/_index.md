@@ -6,9 +6,7 @@ url: /net/drawing-basics/fills-and-strokes
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Filling and stroking are both painting operations. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and stroke is painting along its outline. The stroke and fill are ones of the main SVG CSS properties that can be set for any lines, text and shapes.
-
-In the SVG text file, these properties can be specified both in the **style** attribute and using **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**. For each property, there exists a corresponding presentation attribute, which is described in the Styling chapter of W3 SVG 2.0 specification.
+Filling and stroking are both painting operations. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and stroke is painting along its outline. The stroke and fill are ones of the main SVG CSS properties that can be set for any lines, text and shapes. In the SVG text file, they can be specified both in the **style** attribute and using **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**. For each property, there exists a corresponding presentation attribute, which is described in the Styling chapter of W3 SVG 2.0 specification.
 
  
 
@@ -34,9 +32,9 @@ For the color specifying, you can take **[color names](https://en.wikipedia.org/
 
 The **fill** attribute colors the interior of a graphic element. When you fill a shape or curve, the **fill** colourizes open paths too as if the last its point was connected to the first, even though the **stroke** color in that part of the path will not appear. If the **fill** attribute property is not specified, the default is black.
 
-So that no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`.
+So that there is no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`.
 
-The sample below illustrates the presents and lacking `fill= "none"` property.
+The sample below illustrates the presents and lacking `fill= "none"` property:
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="800">
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 300 100 T 390 130" stroke="red" stroke-width="3" fill="none"/>

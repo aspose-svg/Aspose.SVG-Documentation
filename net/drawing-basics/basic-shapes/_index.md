@@ -6,11 +6,11 @@ url: /net/drawing-basics/basic-shapes
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's properties. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**Edit SVG Files**](http://localhost:1313/svg/net/edit-svg-file/). 
+The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**Edit SVG Files**](http://localhost:1313/svg/net/edit-svg-file/). 
 
 ## **Rectangle** 
 
-The `<rect>` element is applied to create a rectangle and variations of rectangle figures. There are 6 attributes determine the rectangle’s shape and position on the screen: 
+The `<rect>` element is applied to create a rectangle and variations of rectangle figures. There are six attributes determine the rectangle’s shape and position on the screen: 
 
 **x**,  **y** – the x, y coordinates of the rectangle's top-left corner 
 
@@ -27,14 +27,17 @@ The SVG code to generate the rectangle looks like:
     <rect x="60" y="100" width="70" height="40" rx=10 ry=10 style="fill:#778899; stroke:#FF4500; stroke-width:5; fill-opacity:0.7; stroke-opacity:0.6"/> 
 </svg>
 ```
-The code example shows that you create a rectangle with the top-left point at coordinates (60,100), the width 70, and the height 40. It has rounded edges and a stroke with a width 5. All units are in pixels. 
-Below is one more sample code for creating a rectangle without rounded borders. 
-```html {linenos=inline,linenostart=1, hl_lines=[""]}
+The code example shows that you create a rectangle with the top-left point at coordinates (60,100), the `width="70"`, and the `height="40"`. It has rounded edges and the `stroke-width:5`. All units are in pixels. 
+Below is one more sample code for creating a rectangle without rounded borders: 
+
+```html {linenos=inline,linenostart=1}
 <svg width="400" height="300">
     <rect x="120" y="140" width="90" height="90" style="fill:grey; stroke-width:3; stroke:rgb(0,0,0)"/>
 </svg>
 ```
+
 ![Two grey rectangles](rect.png#center)
+
 
 The following properties of the **style** attribute are used: 
 
@@ -58,7 +61,7 @@ In the CSS ***fill*** and ***stroke*** properties the color can be set in severa
 
 3. `fill: #0000ff` - color is written in RGB color model (hex rgb values). 
 
-RGB (red, green, blue) is an additive color model that describes how any color is encoded using three basic colors. The values r, g and b are the intensity (in the range from 0 to 255), respectively, of the red, green and blue components of the determined color. That is, a bright blue color can be defined as (0,0,255), red as (255,0,0), bright green - (0,255,0), black - (0,0,0), and white - (255,255,255). 
+RGB (red, green, blue) is an additive color model that describes how any color is encoded using three basic ones. The values r, g and b are the intensity (in the range from 0 to 255), respectively, of the red, green and blue components of the determined color. That is, a bright blue color can be defined as (0,0,255), red as (255,0,0), bright green - (0,255,0), black - (0,0,0), and white - (255,255,255). 
 
 
 
@@ -84,7 +87,7 @@ An ellipse is a more general figure than a circle. In the context of an `<ellips
 **cx** , **cy** – the x  and y coordinates of the center of the ellipse 
 
  ![Two ellipces](ellipce.png#center)
-```html {linenos=inline,linenostart=1, hl_lines=[""]}
+```html {linenos=inline,linenostart=1}
 <svg height="450" width="500">
     <ellipse cx="140" cy="310" rx="90" ry="20" style="fill:OrangeRed"/> 
     <ellipse cx="120" cy="280" rx="110" ry="20" style="fill:grey; fill-opacity:0.5"/> 
@@ -106,7 +109,7 @@ The second ellipse in the code has transparency 50% and will be displayed over t
 
 **stroke** –  line color 
 
-```html {linenos=inline,linenostart=1, hl_lines=[""]}
+```html {linenos=inline,linenostart=1}
 <svg height="210" width="500">
     <line x1="30" y1="30" x2="350" y2="290" style="stroke:rgb(255,0,0); stroke-width:3"/> 
     <line x1="30" y1="50" x2="300" y2="350" style="stroke:grey; stroke-width:5"/> 
@@ -135,7 +138,7 @@ The first group of two numbers in the **points** defines the coordinates of the 
 ```
 ![Red and grey polylines](polyline.png#center)
 
-In the first polyline example, there are 3 points that define a triangle. The space between the points will be filled with the ***fill*** property. In the example, the ***fill*** color is grey: `style="fill:grey"`. The default ***fill*** color is black. In the second example, seven points are connected by the polyline with the width=6 px and the ***fill*** property "none". 
+In the first polyline example, there are 3 points that define a triangle. The space between the points will be filled with the ***fill*** property. In the example, the ***fill*** color is grey: `style="fill:grey"`. The default ***fill*** color is black. In the second example, seven points are connected by the polyline with the `stroke-width:6` and the ***fill*** property "none". 
 
 More detailed **style** attributes properties are covered in [**Fills and Strokes**](http://localhost:1313/svg/net/drawing-basics/fills-and-strokes/) section. Full information is on the **[W3C page](https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperties)**. 
 
@@ -148,7 +151,7 @@ A polygon is a plane geometric shape formed by a closed polyline. If the polylin
 The `<polygon>` element is used to create a shape that contains at least three sides. The attribute **points** defines the coordinates (x, y) for each corner of the polygon. 
 
 An example of a simple polygon building: 
-```html {linenos=inline,linenostart=1, hl_lines=[""]}
+```html {linenos=inline,linenostart=1}
 <svg height="550" width="500"> 
     <polygon points="160,10 350,140 210,350 50,199" style="fill:orange;stroke:purple;stroke-width:1"/>
 </svg>

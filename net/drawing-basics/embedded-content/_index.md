@@ -13,7 +13,7 @@ Embedded content is content that imports into the document from another resource
 
 ## **Loading and displaying bitmaps**
 
-The SVG `<image>` element allows to include and render bitmaps within an SVG object. It can display image formats JPEG, PNG and the SVG pictures too. Attributes of  `<image>` element indicate that the contents of a file (a bitmap) should be displayed into a given rectangle ("window") within the current user coordinate system. 
+The SVG `<image>` element allows to include and render bitmaps within an SVG object. It can display image formats JPEG, PNG and the SVG pictures too. Attributes of the `<image>` element indicate that the contents of a file (a bitmap) should be displayed into a given rectangle ("window") within the current user coordinate system. 
 The  main attributes are:
 
 **x** and **y** - the coordinates of the top-left image corner.
@@ -26,7 +26,7 @@ The  main attributes are:
 
 How to use the SVG `<image>` element?  The following code snippet shows as a .png and .svg images can embed inside the SVG document:
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="400" xlink="http://www.w3.org/2000/svg" >
+<svg width="500" height="400" xlink="http://www.w3.org/2000/svg">
     <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="200" width="200"/>
     <image href="http://svg-art.ru/wp-content/uploads/2014/01/Pazly81.svg" x="250" y="20" height="220" width="220"/>
     <text x="40" y="250">Embedded PNG image</text>
@@ -44,7 +44,7 @@ SVG is designed to be consistent with other XML languages for describing and ren
 
 As attributes, you must to set the **x**, **y** coordinates, **width** and **height** of the `<foreignObject>` container. Otherwise, the child elements will not display at all.
 
-Let's see the example:
+Let's see an example:
 ```html {linenos=inline,linenostart=1 hl_lines=["12"]}
 <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
     <style>

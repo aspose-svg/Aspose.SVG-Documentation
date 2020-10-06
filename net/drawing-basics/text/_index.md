@@ -40,7 +40,7 @@ A text content element is an SVG element that causes  text to be rendered on the
 
 ### `<text>` element
 
-The `<text>` element is used to define a text. **x** and **y**  are the main attributes responsible for the text position. The baseline for the text begins from the bottom-left corner of the first text symbol. It is essential to set **y** value larger than the font size. Otherwise, the text does not get into the viewport and become invisible. 
+The `<text>` element is used to define a text. **x** and **y**  are the main attributes responsible for the text position. The baseline for the text begins from the bottom-left corner of the first text symbol. It is essential to set **y** value larger than the font size. Otherwise, the text does not get into the viewport. 
 
 The following example illustrates how to specify a start of baseline correctly. The  **x** and **y** set the coordinates of the baseline beginning.
 

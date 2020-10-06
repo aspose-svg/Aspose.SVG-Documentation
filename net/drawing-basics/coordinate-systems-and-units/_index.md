@@ -25,7 +25,7 @@ The above code shows how to set the **width** and **height** of the viewport. Th
 
 Let's examine how SVG represents the positions and sizes of objects for drawing. 
 
-The default coordinate system in SVG is much the same as in HTML. It works like a two-dimensional *x-y* plane. The initial coordinate system sets in the initial viewport with the point of origin (0,0) in the top left corner. The positive *x*-direction being to the right, and the positive *y*-direction being to the bottom. For the specifying of coordinate "*x*" and "*y*" etc. you can use *cm, mm, in, em, ex, pt , pc*, and *px*. The default units are pixels. 
+The default coordinate system in SVG is much the same as in HTML. It works like a two-dimensional *x-y* plane. The initial coordinate system sets in the initial viewport with the point of origin (0,0) in the top left corner. The positive *x*-direction being to the right, and the positive *y*-direction being to the bottom. For the specifying of (*x*, *y*) coordinates, width and height values, you can use *cm, mm, in, em, ex, pt , pc*, and *px*. The default units are pixels. 
 
 We have to differentiate the **initial coordinate system** and the **user coordinate system** of the viewport. The main outermost `<svg>` element has a **viewBox** attribute. If this attribute is not given, then the user coordinate system is the same as the initial coordinate system. 
 
