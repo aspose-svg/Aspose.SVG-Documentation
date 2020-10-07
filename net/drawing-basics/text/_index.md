@@ -125,8 +125,8 @@ Both the **path** attribute and the **href** attribute specify a path along whic
 
 ```html {linenos=inline,linenostart=1}
 <svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
-    <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent"/>
-    <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent"/>
+    <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent" />
+    <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent" />
     <text> 
         <textPath xlink:href ="#my_path1">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
         </textPath> 

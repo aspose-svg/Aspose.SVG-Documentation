@@ -27,8 +27,8 @@ The  main attributes are:
 How to use the SVG `<image>` element?  The following code snippet shows as a .png and .svg images can embed inside the SVG document:
 ```html {linenos=inline,linenostart=1}
 <svg width="500" height="400" xlink="http://www.w3.org/2000/svg">
-    <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="200" width="200"/>
-    <image href="http://svg-art.ru/wp-content/uploads/2014/01/Pazly81.svg" x="250" y="20" height="220" width="220"/>
+    <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="200" width="200" />
+    <image href="http://svg-art.ru/wp-content/uploads/2014/01/Pazly81.svg" x="250" y="20" height="220" width="220" />
     <text x="40" y="250">Embedded PNG image</text>
     <text x="300" y="250">Embedded SVG image</text>
 </svg>

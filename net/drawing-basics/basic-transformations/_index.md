@@ -24,13 +24,13 @@ Here is a simple example:
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g fill="none">
         <!-- no translation -->
-        <circle cx="15" cy="15" r="10" stroke="blue"/>
+        <circle cx="15" cy="15" r="10" stroke="blue" />
         <!-- horizontal translation -->
-        <circle cx="15" cy="15" r="10" stroke="black" transform="translate(22)"/>
-        <circle cx="15" cy="15" r="10" stroke="red" transform="translate(44)"/>
+        <circle cx="15" cy="15" r="10" stroke="black" transform="translate(22)" />
+        <circle cx="15" cy="15" r="10" stroke="red" transform="translate(44)" />
         <!-- Both horizontal and vertical translation -->
-        <circle cx="15" cy="15" r="10" stroke="green" transform="translate(33,13)"/>
-        <circle cx="15" cy="15" r="10" stroke="yellow" transform="translate(11,13)"/>
+        <circle cx="15" cy="15" r="10" stroke="green" transform="translate(33,13)" />
+        <circle cx="15" cy="15" r="10" stroke="yellow" transform="translate(11,13)" />
 	</g>
 </svg>
 ```
@@ -46,20 +46,20 @@ The ***scale (sx [sy])*** transform function allows scaling image along the x- a
 ```html {linenos=inline,linenostart=1 hl_lines=["12","14"]}
 <svg viewBox="-50 -50 200 200" xmlns="http://www.w3.org/2000/svg">
     <!-- uniform scale -->
-    <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)"/>
-    <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(3)"/>
-    <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(2)"/>
+    <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
+    <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(3)" />
+    <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(2)" />
     <!-- no scale -->
-    <circle cx="0" cy="0" r="10" fill="#5F9EA0"/>
+    <circle cx="0" cy="0" r="10" fill="#5F9EA0" />
     <g transform="translate(100)">
         <!-- uniform scale -->
-        <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)"/>
+        <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
         <!-- vertical scale -->
-        <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(1,4)"/>
+        <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(1,4)" />
         <!-- horizontal scale -->
-        <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(4,1)"/>
+        <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(4,1)" />
         <!-- no scale -->
-        <circle cx="0" cy="0" r="10" fill="#5F9EA0"/>
+        <circle cx="0" cy="0" r="10" fill="#5F9EA0" />
     </g>
 </svg>
 ```
@@ -77,11 +77,11 @@ Like ***translation***, ***rotation*** does not distort the element and saves pa
 
 ```html {linenos=inline,linenostart=1 hl_lines=["4","6"]}
 <svg width="450" height="450" xmlns="http://www.w3.org/2000/svg">
-    <rect x=100 y=250 width="200" height="30" fill="CadetBlue"/>
-    <rect x=100 y=250 width="200" height="30" fill="#DDA0DD" transform ="rotate (-45 200 265)"/>
-    <rect x=100 y=250 width="200" height="30" fill="Pink" transform ="rotate (-90 200 265)"/>
-    <rect x=100 y=250 width="200" height="30" fill="#5F9EA0" transform ="rotate (45 200 265)"/>
-    <rect x=100 y=250 width="200" height="30" fill="CadetBlue" transform ="rotate (-35)"/>
+    <rect x=100 y=250 width="200" height="30" fill="CadetBlue" />
+    <rect x=100 y=250 width="200" height="30" fill="#DDA0DD" transform ="rotate (-45 200 265)" />
+    <rect x=100 y=250 width="200" height="30" fill="Pink" transform ="rotate (-90 200 265)" />
+    <rect x=100 y=250 width="200" height="30" fill="#5F9EA0" transform ="rotate (45 200 265)" />
+    <rect x=100 y=250 width="200" height="30" fill="CadetBlue" transform ="rotate (-35)" />
 </svg>
 ```
 The function  `transform="rotate (-90 200 265)"` used in line 4 means that the pink rectangle should be rotated 90 degrees counterclockwise with the center of rotation at (200,265).  For rectangle in line 6, coordinates (***cx, cy***) are not specified, and the rotation on -35 degrees is performed around the point (0, 0) of the initial coordinate system.
@@ -97,15 +97,15 @@ Here is shown an example of the circle with skewX(55) value:
 
 ```html {linenos=inline,linenostart=1}
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="20" cy="20" r="15" stroke="blue" fill="none"/>
-    <circle cx="20" cy="20" r="15" stroke="grey" stroke-opacity="0.7" fill="none" transform="skewX(55)"/>
+    <circle cx="20" cy="20" r="15" stroke="blue" fill="none" />
+    <circle cx="20" cy="20" r="15" stroke="grey" stroke-opacity="0.7" fill="none" transform="skewX(55)" />
 </svg>
 ```
 A simple example of the rectangle skewed by skewY(35) function:
 
 ```html {linenos=inline,linenostart=1}
 <svg  width="800" height="800" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-   <rect x="20" y="20" width="30" height="30" stroke="blue" stroke-opacity="1" fill="none"/>
+   <rect x="20" y="20" width="30" height="30" stroke="blue" stroke-opacity="1" fill="none" />
    <rect x="20" y="20" width="30" height="30" stroke="grey" stroke-opacity="0.5" fill="none" transform="skewY(35)" />
  </svg>
 ```
