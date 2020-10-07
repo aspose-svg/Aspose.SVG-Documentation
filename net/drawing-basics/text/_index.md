@@ -140,5 +140,5 @@ Both the **path** attribute and the **href** attribute specify a path along whic
 
 If the length of the path is shorter than the text size, then only text part that is within the extent of the path is drawn. In the figure, the second curve is shorter than the text length, so text breaks off at the path end.
 
-The text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**Filters and Gradients**](http://localhost:1313/svg/net/drawing-basics/filters-and-gradients/). 
+The text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**Filters and Gradients**](/svg/net/drawing-basics/filters-and-gradients/). 
 
