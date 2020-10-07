@@ -101,13 +101,13 @@ The second ellipse in the code has transparency 50% and will be displayed over t
 
  In order to the line draw, the `<line>` tag is used, which can have the following attributes: 
 
-**x1**, **y1** –  x, y coordinates of the origin point 
+**x1**, **y1** – the x, y coordinates of the origin point 
 
-**x2**, **y2**  –  x, y coordinates of the end point 
+**x2**, **y2**  – the x, y coordinates of the end point 
 
-**stroke-width** – line width 
+**stroke-width** – the line width 
 
-**stroke** –  line color 
+**stroke** – the line color 
 
 ```html {linenos=inline,linenostart=1}
 <svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">

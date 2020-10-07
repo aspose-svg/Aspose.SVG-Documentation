@@ -31,9 +31,9 @@ We have to differentiate the **initial coordinate system** and the **user coordi
 
 The **viewBox** attribute sets a user coordinate system, which may not be the same as the initial one. The **viewBox** takes four parameters: 
 
-**min-x, min-y** – are define the top left corner of the **viewBox**, 
+**min-x, min-y** – the x and y coordinates of top left corner of the **viewBox**, 
 
-**width, height** – are define the width and height of the **viewBox**. 
+**width, height** – the width and height of the **viewBox**. 
 
 Attribute values must be placed inside quotes: **viewbox= "min-x min-y width height"**. 
 
@@ -42,7 +42,7 @@ Consider an example:
     <svg width="900" height="500" viewbox="220 125 450 250" xmlns="http://www.w3.org/2000/svg">
     </svg> 
 ```
-According to a code snippet, **viewBox** defines a specific area of the canvas, covering a rectangular with origin point (220,125), width 450 and height 250. Then the SVG image is cropped to that area and scaled up to fill the entire viewport. 
+According to a code snippet, **viewBox** defines a specific area of the canvas, covering a rectangular with the origin point (220,125), the width=450 and the height=250. Then the SVG image is cropped to that area and scaled up to fill the entire viewport. 
 
 ![initial viewport and user viewbox](viewport2_1.png#center) 
 
