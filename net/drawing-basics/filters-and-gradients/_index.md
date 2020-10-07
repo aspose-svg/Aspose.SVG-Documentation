@@ -30,7 +30,7 @@ The `<feGaussianBlur>` filter creates a soft blur effect. It is a frequently use
 
 Here is an example illustrates the various values of **stdDeviation** attribute:
 ```html {linenos=inline,linenostart=1 hl_lines=["3", "6", "9"]}
-<svg height="400" width="600">
+<svg height="400" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="f1" x="-20" y="-20" height="100" width="100">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
@@ -63,7 +63,7 @@ The `<feBlend>` filter blends two objects; its **mode** attribute defines the bl
 Let's see how to create a drop shadow effect:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="200">
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="shadow" x="-20" y="-20" height="150" width="150">
             <feOffset result="offset" in="SourceAlpha" dx="10" dy="10"/>
@@ -99,7 +99,7 @@ The `<fePointLight>` filter defines a light source which sets a point light effe
 Consider an example of a light effect:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="300">
+<svg height="300" width="300" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id = "F1">
             <feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur"/>
@@ -129,7 +129,7 @@ In this example, four filters are applied to create the effect:
 
 The following is shown one more example of filter effects combining:
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="200">
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="myF" x="-5" y="-5" height="100" width="150">
             <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
@@ -164,7 +164,7 @@ The `<feColorMatrix>` filter applies a matrix transformation to the RGBA channel
 
 Let's see examples of the ***saturate*** operation use:
 ```html {linenos=inline,linenostart=1}
-<svg width="640" height="480" viewbox="0 0 640 480">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="myFilter">
             <feColorMatrix in="SourceGraphic" type="saturate" values="0"></feColorMatrix>
@@ -179,7 +179,7 @@ The following figure is a series of images with the various ***saturate*** value
 
 The specific case of color matrices is image rotation along the **[color wheel](https://en.wikipedia.org/wiki/Color_wheel)**. The following example illustrates using the ***hueRotate*** operation.
 ```html {linenos=inline,linenostart=1}
-<svg width="640" height="480" viewbox="0 0 640 480">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="hueR">
             <feColorMatrix in="SourceGraphic" type="hueRotate" values="40"></feColorMatrix>
@@ -198,7 +198,7 @@ The `<feComponentTransfer>` filter allows you to perform linear, tabular, discre
 
 Let's  look at an example:
 ```html {linenos=inline,linenostart=1}
-<svg width="640" height="480" viewbox="0 0 640 480">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="RGBA">
             <fecomponenttransfer>
@@ -232,7 +232,7 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
 
 
 ```html {linenos=inline,linenostart=1}
-<svg height="250" width="700">
+<svg height="250" width="700" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="10%" style="stop-color:LIGHTSALMON"/>
@@ -258,7 +258,7 @@ In the example above, the linear gradient `id="grad1"` is referenced by the `<te
 
 In this example, the centers of the innermost and outermost border of the gradient are the same.
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600">
+<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <radialGradient id="myRG" cx="0.5" cy="0.5" r="0.9" fx="0.5" fy="0.5" spreadMethod="pad">
             <stop offset="0%"   stop-color="BISQUE"/>
@@ -274,7 +274,7 @@ In this example, the centers of the innermost and outermost border of the gradie
 
 Let's see an example of the radial gradient, where the focal point (**fx**, **fy**) moved from the center of the object to position **fx**=25% and **fy**=25%:
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600">
+<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <radialGradient id="myRG" cx="0.5" cy="0.5" r="0.8" fx="25%" fy="25%" spreadMethod="pad">
             <stop offset="0%" stop-color="BISQUE"/>

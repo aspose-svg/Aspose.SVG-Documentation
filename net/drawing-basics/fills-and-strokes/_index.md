@@ -36,7 +36,7 @@ So that there is no filling, you need to specify the attribute value `fill= "non
 
 The sample below illustrates the presents and lacking `fill= "none"` property:
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="800">
+<svg height="400" width="800" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 300 100 T 390 130" stroke="red" stroke-width="3" fill="none"/>
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 300 100 T 390 130" stroke="red" stroke-width="3" transform="translate(0 125)"/>
 </svg>
@@ -49,7 +49,7 @@ The more often used stroke properties are the following: **stroke, stroke-width,
 
 For any line, it is possible to set the shape of its ends. This makes sense if the line has the **stroke-width** property. The sample below shows as the **stroke-width** and **stroke-linecap** properties define the stroke's width and form of its ends.
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="800">
+<svg height="200" width="800" xmlns="http://www.w3.org/2000/svg">
   <g stroke="grey">
     <path stroke-width="3" d="M 5 20 l 215 0"/>
     <path stroke-width="15" d="M 5 60 l 215 0"/>
@@ -79,7 +79,7 @@ As a result of *butt* using, the stroke cap is cut off with a straight edge that
 
 One more sample illustrates a **stroke-linejoin** property:
 ```html {linenos=inline,linenostart=1}
-<svg width="300" height="300">
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="20" fill="none">
         <polyline points="40 60 80 20 120 60 160 20 200 60 240 20" stroke="grey" stroke-linecap="butt"  stroke-linejoin="miter"/>
         <polyline points="40 140 80 100 120 140 160 100 200 140 240 100" stroke="#CD5C5C" stroke-linecap="round" stroke-linejoin="round"/>
@@ -104,7 +104,7 @@ The **stroke-dasharray** attribute converts paths into dashes and makes the stro
 
 Here is a **stroke-dasharray** example:
 ```html {linenos=inline,linenostart=1}
-<svg width="400" height="300">
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
     <line x1="20" y1="30" x2="400" y2="30" style="stroke:RGB(112, 128, 144); fill:none; stroke-width:10; stroke-dasharray:10 5;"/>
     <line x1="20" y1="80" x2="400" y2="80" style="stroke:olive; fill:none; stroke-width: 20; stroke-dasharray: 20 10 5;"/>
     <path d="M 10 200 Q 50 100 150 200 T 230 200 T 300 200 T 390 200" stroke="#FF8C00" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="15 10 2 8"/>
@@ -121,7 +121,7 @@ Moreover, you can separately specify the opacity of the fill or stroke that cont
 Amazing things can be achieved with strokes and simple shapes:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="600" width="600">
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
     <g fill="none">
         <circle cx="100" cy="100" r="40" stroke="red" stroke-width="55" stroke-dasharray="4,2"/>
         <circle cx="120" cy="100" r="30" stroke="grey" stroke-width="45" stroke-dasharray="5,2" transform="translate(100,40)"/>
