@@ -164,13 +164,13 @@ The `<feColorMatrix>` filter applies a matrix transformation to the RGBA channel
 
 Let's see examples of the ***saturate*** operation use:
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480">
     <defs>
         <filter id="myFilter">
             <feColorMatrix in="SourceGraphic" type="saturate" values="0"></feColorMatrix>
         </filter>
     </defs>
-    <image filter="url(#myFilter)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#myFilter)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%"/>
 </svg>
 ```
 The following figure is a series of images with the various ***saturate*** values:
@@ -179,13 +179,13 @@ The following figure is a series of images with the various ***saturate*** value
 
 The specific case of color matrices is image rotation along the **[color wheel](https://en.wikipedia.org/wiki/Color_wheel)**. The following example illustrates using the ***hueRotate*** operation.
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480">
     <defs>
         <filter id="hueR">
             <feColorMatrix in="SourceGraphic" type="hueRotate" values="40"></feColorMatrix>
         </filter>
     </defs>
-    <image filter="url(#hueR)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#hueR)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%"/>
 </svg>
 ```
 The following figure is a series of images with the various ***hueRotate*** values:
@@ -198,18 +198,18 @@ The `<feComponentTransfer>` filter allows you to perform linear, tabular, discre
 
 Let's  look at an example:
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480">
     <defs>
-        <filter id="hueR">
+        <filter id="RGBA">
             <fecomponenttransfer>
-                <feFuncR type="linear" slope="2"/>
-                <feFuncG type="linear" slope="0.2" />
-                <feFuncB type="linear" slope="0.2" />
-                <feFuncA type="identity" />
+                <feFuncR type="linear" slope="2.0"/>
+                <feFuncG type="linear" slope="1.7"/>
+                <feFuncB type="linear" slope="0.1"/>
+                <feFuncA type="identity"/>
             </fecomponenttransfer>
         </filter>
     </defs>
-    <image filter="url(#hueR)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#RGBA)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%"/>
 </svg>
 ```
 ![A photo that treated by filter id="hueR"](rgba.png#center)
@@ -236,7 +236,7 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="10%" style="stop-color:LIGHTSALMON"/>
-     <stop offset="50%" style="stop-color:TEAL" 
+     <stop offset="50%" style="stop-color:TEAL"/>
      <stop offset="90%" style="stop-color:LIGHTPINK"/>
     </linearGradient>
  </defs>
