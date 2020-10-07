@@ -46,9 +46,9 @@ The following example illustrates how to specify a start of baseline correctly. 
 
 ```html {linenos=inline,linenostart=1}
 <svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
-    <text x="10" y="6" fill="red">The text is not fully visible </text> 
-    <text x="10" y="30" fill="green">The text is fully visible </text> 
-</svg> 
+    <text x="10" y="6" fill="red">The text is not fully visible </text>
+    <text x="10" y="30" fill="green">The text is fully visible </text>
+</svg>
 ```
 ![Text position](text1_1.png#center)
 
@@ -79,7 +79,7 @@ Let's see how you can arrange the text:
     <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text>
     <text x="180" y="120" fill="green" style="text-anchor: middle" >Aspose.SVG</text>
     <text x="260" y="90" style="writing-mode: tb">Aspose.SVG</text>
-</svg> 
+</svg>
 ```
 
 ![Text Aspose](text3.png#center)
@@ -127,9 +127,9 @@ Both the **path** attribute and the **href** attribute specify a path along whic
 <svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
     <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent" />
     <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent" />
-    <text> 
+    <text>
         <textPath xlink:href ="#my_path1">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
-        </textPath> 
+        </textPath>
         <textPath xlink:href ="#my_path2">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
         </textPath>
     </text>

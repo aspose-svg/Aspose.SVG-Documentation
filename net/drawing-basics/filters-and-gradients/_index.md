@@ -42,7 +42,7 @@ Here is an example illustrates the various values of **stdDeviation** attribute:
             <feGaussianBlur in="SourceGraphic" stdDeviation="0,10" />
         </filter>
     </defs>
-    <g stroke="none" fill="#20B2AA"> 
+    <g stroke="none" fill="#20B2AA">
         <ellipse cx="60" cy="80" rx="55" ry="35" />
         <ellipse cx="200" cy="80" rx="55" ry="35" filter="url(#f1)" />
         <ellipse cx="340" cy="80" rx="55" ry="35" filter="url(#f2)" />
