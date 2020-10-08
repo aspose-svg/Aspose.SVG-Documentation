@@ -45,10 +45,10 @@ The `<text>` element is used to define a text. **x** and **y**  are the main att
 The following example illustrates how to specify a start of baseline correctly. The  **x** and **y** set the coordinates of the baseline beginning.
 
 ```html {linenos=inline,linenostart=1}
-<svg height="100" width="200"> 
-    <text x="10" y="6" fill="red">The text is not fully visible </text> 
-    <text x="10" y="30" fill="green">The text is fully visible </text> 
-</svg> 
+<svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="6" fill="red">The text is not fully visible </text>
+    <text x="10" y="30" fill="green">The text is fully visible </text>
+</svg>
 ```
 ![Text position](text1_1.png#center)
 
@@ -73,13 +73,13 @@ Using the **textLength** attribute you can set the length of the text. Herewith 
 
 Let's see how you can arrange the text: 
 ```html {linenos=inline,linenostart=1}
- <svg height="200" width="800" > 
-    <text x="180" y="30" fill="red">Aspose.SVG</text> 
-    <text x="180" y="60" fill="blue" textLength="140" >Aspose.SVG</text> 
-    <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text> 
-    <text x="180" y="120" fill="green" style="text-anchor: middle" >Aspose.SVG</text> 
-    <text x="260" y="90" style="writing-mode: tb">Aspose.SVG</text> 
-</svg> 
+ <svg height="200" width="800" xmlns="http://www.w3.org/2000/svg">
+    <text x="180" y="30" fill="red">Aspose.SVG</text>
+    <text x="180" y="60" fill="blue" textLength="140" >Aspose.SVG</text>
+    <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text>
+    <text x="180" y="120" fill="green" style="text-anchor: middle" >Aspose.SVG</text>
+    <text x="260" y="90" style="writing-mode: tb">Aspose.SVG</text>
+</svg>
 ```
 
 ![Text Aspose](text3.png#center)
@@ -99,12 +99,12 @@ The `<tspan>` element is within the `<text>` element or other `<tspan>` element.
 Consider a simple `<tspan>`> example: 
 
 ```html {linenos=inline,linenostart=1}
- <svg height="300" width="600"> 
-    <text x="20" y="60" style="font-family:arial"> 
-        <tspan style="font-weight:bold; font-size:55px">ASPOSE</tspan>  
-        <tspan x="50" y="90" style="font-size:20px; fill:grey">Your File Format APIs </tspan>  
-    </text>  
-</svg> 
+ <svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="60" style="font-family:arial">
+        <tspan style="font-weight:bold; font-size:55px">ASPOSE</tspan>
+        <tspan x="50" y="90" style="font-size:20px; fill:grey">Your File Format APIs </tspan>
+    </text>
+</svg>
 ```
 ![Text Aspose Your File Format APIs](text2.png#center)
 The  `<text>` element with one or more `<tspan>` child elements set new  positions for characters which start new lines. For text formatting, we use **x** and **y** attributes, that specified the text beginning point. The dashed lines in the above figure indicate the starting position of the text in the viewport. For text styling, **style** attribute's properties are required, such as ***font-family***, ***font-size***, ***font-weight*** end other. 
@@ -124,16 +124,16 @@ SVG can place text along a path defined by a `<path>` element. This is making by
 Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. For the text displaying along the curve, mostly take attribute **xlink:href** with reference to the `<path>`element.  Here an example: 
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="800" > 
-    <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent"/> 
-    <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent"/> 
-    <text> 
+<svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
+    <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent" />
+    <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent" />
+    <text>
         <textPath xlink:href ="#my_path1">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
-        </textPath> 
+        </textPath>
         <textPath xlink:href ="#my_path2">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
-        </textPath> 
-    </text> 
-</svg> 
+        </textPath>
+    </text>
+</svg>
 ```
 ![Text in path](text_path.png#center)
 

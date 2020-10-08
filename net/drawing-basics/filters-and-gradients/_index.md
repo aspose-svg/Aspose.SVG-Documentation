@@ -30,23 +30,23 @@ The `<feGaussianBlur>` filter creates a soft blur effect. It is a frequently use
 
 Here is an example illustrates the various values of **stdDeviation** attribute:
 ```html {linenos=inline,linenostart=1 hl_lines=["3", "6", "9"]}
-<svg height="400" width="600">
+<svg height="400" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="f1" x="-20" y="-20" height="100" width="100">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
         </filter>
         <filter id="f2" x="-20" y="-20" height="100" width="100">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10, 0"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10, 0" />
         </filter>
         <filter id="f3" x="-20" y="-20" height="100" width="100">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="0,10"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0,10" />
         </filter>
     </defs>
-    <g stroke="none" fill="#20B2AA"> 
-        <ellipse cx="60" cy="80" rx="55" ry="35"/>
-        <ellipse cx="200" cy="80" rx="55" ry="35" filter="url(#f1)"/>
-        <ellipse cx="340" cy="80" rx="55" ry="35" filter="url(#f2)"/>
-        <ellipse cx="500" cy="80" rx="55" ry="35" filter="url(#f3)"/>
+    <g stroke="none" fill="#20B2AA">
+        <ellipse cx="60" cy="80" rx="55" ry="35" />
+        <ellipse cx="200" cy="80" rx="55" ry="35" filter="url(#f1)" />
+        <ellipse cx="340" cy="80" rx="55" ry="35" filter="url(#f2)" />
+        <ellipse cx="500" cy="80" rx="55" ry="35" filter="url(#f3)" />
     </g>
 </svg>
 ```
@@ -63,15 +63,15 @@ The `<feBlend>` filter blends two objects; its **mode** attribute defines the bl
 Let's see how to create a drop shadow effect:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="200">
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="shadow" x="-20" y="-20" height="150" width="150">
-            <feOffset result="offset" in="SourceAlpha" dx="10" dy="10"/>
-            <feGaussianBlur result="blur" in="offset" stdDeviation="10"/>
-            <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+            <feOffset result="offset" in="SourceAlpha" dx="10" dy="10" />
+            <feGaussianBlur result="blur" in="offset" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blur" mode="normal" />
         </filter>
     </defs>
-    <ellipse cx="95" cy="90" rx="75" ry="55" fill="#20B2AA" filter="url(#shadow)"/>
+    <ellipse cx="95" cy="90" rx="75" ry="55" fill="#20B2AA" filter="url(#shadow)" />
 </svg>
 ```
 ![Drop Shadow Effect of the ellipse](Drop_Shadow_Effect.png#center)
@@ -99,21 +99,21 @@ The `<fePointLight>` filter defines a light source which sets a point light effe
 Consider an example of a light effect:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="300">
+<svg height="300" width="300" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id = "F1">
-            <feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur"/>
+            <feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur" />
             <feSpecularLighting result = "light" in = "blur" specularExponent = "25" lighting-color = "#bbbbbb">
-                <fePointLight x = "80" y = "60" z = "200"/>
+                <fePointLight x = "80" y = "60" z = "200" />
             </feSpecularLighting>
-            <feComposite in = "SourceGraphic" in2 = "light" operator = "arithmetic" k1 ="0" k2 ="1" k3 ="1" k4 ="0"/>
+            <feComposite in = "SourceGraphic" in2 = "light" operator = "arithmetic" k1 ="0" k2 ="1" k3 ="1" k4 ="0" />
         </filter>
     </defs>
     <g  fill = "INDIANRED" filter = "url(#F1)">
-        <circle cx="100" cy="100" r="60"/>
-        <circle cx="100" cy="230" r="60"/>
-        <circle cx="230" cy="100" r="60"/>
-        <circle cx="230" cy="230" r="60"/>
+        <circle cx="100" cy="100" r="60" />
+        <circle cx="100" cy="230" r="60" />
+        <circle cx="230" cy="100" r="60" />
+        <circle cx="230" cy="230" r="60" />
     </g>
 </svg>
 ```
@@ -129,23 +129,23 @@ In this example, four filters are applied to create the effect:
 
 The following is shown one more example of filter effects combining:
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="200">
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="myF" x="-5" y="-5" height="100" width="150">
-            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
-            <feOffset in="blur" dx="5" dy="5" result="offsetBlur"/>
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur" />
+            <feOffset in="blur" dx="5" dy="5" result="offsetBlur" />
             <feSpecularLighting in="offsetBlur" surfaceScale="8" specularConstant="0.7" specularExponent="2" lighting-color="#bbbbbb" result="specOut">
-                <fePointLight x="-100" y="-100" z="100"/>
+                <fePointLight x="-100" y="-100" z="100" />
             </feSpecularLighting>
-            <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
-            <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="1.5" k2="0.5" k3="1" k4="0" result="litPaint"/>
+            <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+            <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="1.5" k2="0.5" k3="1" k4="0" result="litPaint" />
             <feMerge>
-                <feMergeNode in="offsetBlur"/>
-                <feMergeNode in="litPaint"/>
+                <feMergeNode in="offsetBlur" />
+                <feMergeNode in="litPaint" />
             </feMerge>
         </ filter>
     </defs>
-    <ellipse cx="85" cy="70" rx="65" ry="45" fill="#20B2AA" filter="url(#myF)"/>
+    <ellipse cx="85" cy="70" rx="65" ry="45" fill="#20B2AA" filter="url(#myF)" />
     <g fill="#696969" font-size="25" font-family="arial">
         <text x="55" y="80">PUSH</text>
     </g>
@@ -164,13 +164,13 @@ The `<feColorMatrix>` filter applies a matrix transformation to the RGBA channel
 
 Let's see examples of the ***saturate*** operation use:
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="myFilter">
             <feColorMatrix in="SourceGraphic" type="saturate" values="0"></feColorMatrix>
         </filter>
     </defs>
-    <image filter="url(#myFilter)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#myFilter)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%" />
 </svg>
 ```
 The following figure is a series of images with the various ***saturate*** values:
@@ -179,13 +179,13 @@ The following figure is a series of images with the various ***saturate*** value
 
 The specific case of color matrices is image rotation along the **[color wheel](https://en.wikipedia.org/wiki/Color_wheel)**. The following example illustrates using the ***hueRotate*** operation.
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="hueR">
             <feColorMatrix in="SourceGraphic" type="hueRotate" values="40"></feColorMatrix>
         </filter>
     </defs>
-    <image filter="url(#hueR)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#hueR)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%" />
 </svg>
 ```
 The following figure is a series of images with the various ***hueRotate*** values:
@@ -198,18 +198,18 @@ The `<feComponentTransfer>` filter allows you to perform linear, tabular, discre
 
 Let's  look at an example:
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 600 600">
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <filter id="hueR">
+        <filter id="RGBA">
             <fecomponenttransfer>
-                <feFuncR type="linear" slope="2"/>
-                <feFuncG type="linear" slope="0.2" />
-                <feFuncB type="linear" slope="0.2" />
+                <feFuncR type="linear" slope="2.0" />
+                <feFuncG type="linear" slope="1.7" />
+                <feFuncB type="linear" slope="0.1" />
                 <feFuncA type="identity" />
             </fecomponenttransfer>
         </filter>
     </defs>
-    <image filter="url(#hueR)" xlink:href="https://picjumbo.com/wp-content/uploads/IMG-3712-1080x810.jpg" width="100%" height="100%" />
+    <image filter="url(#RGBA)" xlink:href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%" />
 </svg>
 ```
 ![A photo that treated by filter id="hueR"](rgba.png#center)
@@ -232,15 +232,15 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
 
 
 ```html {linenos=inline,linenostart=1}
-<svg height="250" width="700">
+<svg height="250" width="700" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="10%" style="stop-color:LIGHTSALMON"/>
-     <stop offset="50%" style="stop-color:TEAL" 
-     <stop offset="90%" style="stop-color:LIGHTPINK"/>
+      <stop offset="10%" style="stop-color:LIGHTSALMON" />
+     <stop offset="50%" style="stop-color:TEAL" />
+     <stop offset="90%" style="stop-color:LIGHTPINK" />
     </linearGradient>
  </defs>
-  <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#grad1)"/>
+  <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#grad1)" />
    <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="90" fill="url(#grad1)" >Linear Gradient</text>
   </svg>
 ```
@@ -258,14 +258,14 @@ In the example above, the linear gradient `id="grad1"` is referenced by the `<te
 
 In this example, the centers of the innermost and outermost border of the gradient are the same.
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600">
+<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <radialGradient id="myRG" cx="0.5" cy="0.5" r="0.9" fx="0.5" fy="0.5" spreadMethod="pad">
-            <stop offset="0%"   stop-color="BISQUE"/>
-            <stop offset="60%" stop-color="CADETBLUE"/>
+            <stop offset="0%"   stop-color="BISQUE" />
+            <stop offset="60%" stop-color="CADETBLUE" />
         </radialGradient>
     </defs>
-    <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#myRG)"/>
+    <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#myRG)" />
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="85" fill="url(#myRG)" >Radial Gradient</text>
 </svg>
 ```
@@ -274,16 +274,16 @@ In this example, the centers of the innermost and outermost border of the gradie
 
 Let's see an example of the radial gradient, where the focal point (**fx**, **fy**) moved from the center of the object to position **fx**=25% and **fy**=25%:
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600">
+<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <radialGradient id="myRG" cx="0.5" cy="0.5" r="0.8" fx="25%" fy="25%" spreadMethod="pad">
-            <stop offset="0%" stop-color="BISQUE"/>
-            <stop offset="30%" stop-color="SILVER"/>
-            <stop offset="60%" stop-color="BISQUE"/>
-            <stop offset="90%" stop-color="GREY"/>
+            <stop offset="0%" stop-color="BISQUE" />
+            <stop offset="30%" stop-color="SILVER" />
+            <stop offset="60%" stop-color="BISQUE" />
+            <stop offset="90%" stop-color="GREY" />
         </radialGradient>
     </defs>
-    <ellipse cx="300" cy="170" rx="185" ry="65" fill="url(#myRG)" fill-opacity="1"/>
+    <ellipse cx="300" cy="170" rx="185" ry="65" fill="url(#myRG)" fill-opacity="1" />
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="85" fill="url(#myRG)">Radial Gradient</text>
 </svg>
 ```
