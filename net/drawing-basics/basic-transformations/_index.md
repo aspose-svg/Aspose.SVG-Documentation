@@ -77,11 +77,11 @@ Like ***translation***, ***rotation*** does not distort the element and saves pa
 
 ```html {linenos=inline,linenostart=1 hl_lines=["4","6"]}
 <svg width="450" height="450" xmlns="http://www.w3.org/2000/svg">
-    <rect x=100 y=250 width="200" height="30" fill="CadetBlue" />
-    <rect x=100 y=250 width="200" height="30" fill="#DDA0DD" transform ="rotate (-45 200 265)" />
-    <rect x=100 y=250 width="200" height="30" fill="Pink" transform ="rotate (-90 200 265)" />
-    <rect x=100 y=250 width="200" height="30" fill="#5F9EA0" transform ="rotate (45 200 265)" />
-    <rect x=100 y=250 width="200" height="30" fill="CadetBlue" transform ="rotate (-35)" />
+    <rect x="100" y="250" width="200" height="30" fill="CadetBlue" />
+    <rect x="100" y="250" width="200" height="30" fill="#DDA0DD" transform ="rotate (-45 200 265)" />
+    <rect x="100" y="250" width="200" height="30" fill="Pink" transform ="rotate (-90 200 265)" />
+    <rect x="100" y="250" width="200" height="30" fill="#5F9EA0" transform ="rotate (45 200 265)" />
+    <rect x="100" y="250" width="200" height="30" fill="CadetBlue" transform ="rotate (-35)" />
 </svg>
 ```
 The function  `transform="rotate (-90 200 265)"` used in line 4 means that the pink rectangle should be rotated 90 degrees counterclockwise with the center of rotation at (200,265).  For rectangle in line 6, coordinates (***cx, cy***) are not specified, and the rotation on -35 degrees is performed around the point (0, 0) of the initial coordinate system.
@@ -104,13 +104,13 @@ Here is shown an example of the circle with skewX(55) value:
 A simple example of the rectangle skewed by skewY(35) function:
 
 ```html {linenos=inline,linenostart=1}
-<svg  width="800" height="800" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg  width="800" height="800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
    <rect x="20" y="20" width="30" height="30" stroke="blue" stroke-opacity="1" fill="none" />
    <rect x="20" y="20" width="30" height="30" stroke="grey" stroke-opacity="0.5" fill="none" transform="skewY(35)" />
  </svg>
 ```
  The rendered examples look like:
- 
+
  ![Circle and skewed circle](skew_xy1.png#center)
 
 

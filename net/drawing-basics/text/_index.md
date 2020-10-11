@@ -121,16 +121,16 @@ SVG can place text along a path defined by a `<path>` element. This is making by
  - Attribute  **href** (**xlink:href**) references to an URL pointing to the `<path>` element. 
  - Attribute **path** specifies the path data directly. 
 
-Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. For the text displaying along the curve, mostly take attribute **xlink:href** with reference to the `<path>`element.  Here an example: 
+Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. For the text displaying along the curve, mostly take attribute **href** with reference to the `<path>`element.  Here an example: 
 
 ```html {linenos=inline,linenostart=1}
 <svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
     <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent" />
     <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent" />
     <text>
-        <textPath xlink:href ="#my_path1">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
+        <textPath href ="#my_path1">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
         </textPath>
-        <textPath xlink:href ="#my_path2">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
+        <textPath href ="#my_path2">  Aspose.SVG for .NET is flexible library for SVG files processing and fully compatible with its specifications. 
         </textPath>
     </text>
 </svg>

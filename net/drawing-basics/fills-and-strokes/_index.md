@@ -110,7 +110,7 @@ Here is a **stroke-dasharray** example:
     <path d="M 10 200 Q 50 100 150 200 T 230 200 T 300 200 T 390 200" stroke="#FF8C00" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="15 10 2 8" />
 </svg>
 ```
-For the grey and orange lines, even number of values are set: each of number couples means "filled-unfilled" areas (the default is in pixels).
+For the grey and orange lines, we specify even number of values: each of number couples means “filled-unfilled” areas. The default values are in pixels.
 
 ![Three paths with different stroke-dasharray properties](dasharray.png#center)
 

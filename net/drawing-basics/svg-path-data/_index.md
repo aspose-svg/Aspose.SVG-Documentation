@@ -54,7 +54,7 @@ After doing any command, the "virtual pen" point will be located at the endpoint
 Let's draw a square using the ***lineto*** commands:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="400" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg height="400" width="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path d="M 30 30 L 110 30 L 110 110 L 30 110 L 30 30" fill="transparent" stroke-width="2" stroke="black" />  
     <path d="M 50 50 H 130 V 130 H 50 Z" fill="transparent" stroke-width="2" stroke="blue" />
     <path d="M 70 70 h 80 v 80 h -80 Z" fill="transparent" stroke-width="2" stroke="red" />
@@ -91,7 +91,7 @@ The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rot
 The **a** command is the same as **A** but interprets the coordinates relative to current "pen" point. 
 
 ```html {linenos=inline,linenostart=1 hl_lines=["2"]}
-<svg height="500" width="700" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg height="500" width="700" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none" />
     <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none" />
     <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)" />
@@ -114,7 +114,7 @@ Any Bezier curve as the current (starting) point takes the pen's location after 
 Let's consider an example: 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100" stroke="black" stroke-width="1" fill="transparent" />
 </svg>
 ```
@@ -125,7 +125,7 @@ If you connect the control point to the start and endpoints of the curve with se
 How does the position of the control point affect the curve view? Let us show this with examples. Let's change the value of ***y1*** at the control point for the previous curve: 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="1" fill="none">
         <path d="M 10 100 Q 25 10 180 100" stroke="black" />
         <path d="M 10 100 Q 25 -60 180 100" stroke="blue" />
@@ -137,10 +137,10 @@ How does the position of the control point affect the curve view? Let us show th
 
 ![Curve](QCB2.png#center)
 
-Let's take the black curve as a basis and change the control point x1 value:
+Let's take the black curve as a basis and change the control point **x1** value:
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="1" fill="none">
         <path d="M 10 100 Q 25 10 180 100" stroke="black" />
         <path d="M 10 100 Q -40 10 180 100" stroke="red" />
@@ -229,10 +229,10 @@ Using Bezier curves, you can make a simple drawing in the primitivism style. We 
         <path d="M 30 380 l 63 0" />
         <path d="M 266 380 c 33 8 63 -8 90 5" />
         <!--eyes-->
-        <circle cx=204 cy=209 r=3 />
-        <circle cx=205 cy=210 r=9 />
-        <circle cx=265 cy=209 r=3 />
-        <circle cx=265 cy=210 r=8 />
+        <circle cx="204" cy="209" r="3" />
+        <circle cx="205" cy="210" r="9" />
+        <circle cx="265" cy="209" r="3" />
+        <circle cx="265" cy="210" r="8" />
     </g>
 </svg>
 ```
