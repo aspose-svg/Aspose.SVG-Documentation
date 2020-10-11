@@ -1,0 +1,8 @@
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g stroke-width="1" fill="none">
+        <path d="M 10 100 Q 25 10 180 100" stroke="black" />
+        <path d="M 10 100 Q -40 10 180 100" stroke="red" />
+        <path d="M 10 100 Q 165 10 180 100" stroke="green" />
+        <path d="M 10 100 Q 245 10 180 100" stroke="blue" />
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg  height="500" width="700" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+    <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none" />
+
+    <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none" />
+    <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)" />
+</svg>  
