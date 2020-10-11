@@ -1,0 +1,12 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none">
+        <!-- no translation -->
+        <circle cx="15" cy="15" r="10" stroke="blue" />
+        <!-- horizontal translation -->
+        <circle cx="15" cy="15" r="10" stroke="black" transform="translate(22)" />
+        <circle cx="15" cy="15" r="10" stroke="red" transform="translate(44)" />
+        <!-- Both horizontal and vertical translation -->
+        <circle cx="15" cy="15" r="10" stroke="green" transform="translate(33,13)" />
+        <circle cx="15" cy="15" r="10" stroke="yellow" transform="translate(11,13)" />
+	</g>
+</svg>

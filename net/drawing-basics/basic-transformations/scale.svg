@@ -1,0 +1,22 @@
+<svg viewBox="-50 -50 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- uniform scale -->
+    <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
+    <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(3)" />
+    <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(2)" />
+    <!-- no scale -->
+    <circle cx="0" cy="0" r="10" fill="#5F9EA0" />
+    <g transform="translate(100)">
+        <!-- uniform scale -->
+        <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
+        <!-- vertical scale -->
+
+        <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(1,4)" />
+
+        <!-- horizontal scale -->
+
+        <circle cx="0" cy="0" r="10" fill="#FFB6C1" transform="scale(4,1)" />
+
+        <!-- no scale -->
+        <circle cx="0" cy="0" r="10" fill="#5F9EA0" />
+    </g>
+</svg>

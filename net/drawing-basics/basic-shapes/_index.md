@@ -24,7 +24,7 @@ The SVG code to generate the rectangle looks like:
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
  <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
-    <rect x="60" y="100" width="70" height="40" rx=10 ry=10 style="fill:#778899; stroke:#FF4500; stroke-width:5; fill-opacity:0.7; stroke-opacity:0.6" />
+    <rect x="60" y="100" width="70" height="40" rx="10" ry="10" style="fill:#778899; stroke:#FF4500; stroke-width:5; fill-opacity:0.7; stroke-opacity:0.6" />
 </svg>
 ```
 The code example shows that you create a rectangle with the top-left point at coordinates (60,100), the `width="70"`, and the `height="40"`. It has rounded edges and the `stroke-width:5`. All units are in pixels. 
@@ -166,10 +166,10 @@ A simple SVG document consists of nothing more than the `<svg>`  root element an
 <svg height="550" width="500" xmlns="http://www.w3.org/2000/svg">
     <line x1="30" y1="30" x2="350" y2="290" style="stroke:rgb(255,0,0); stroke-width:3" />
     <line x1="30" y1="50" x2="300" y2="350" style="stroke:grey; stroke-width:5" />
-    <rect x="60" y="100" width="70" height="40" rx=10 ry=10 style="fill:#778899; stroke:#FF4500; stroke- width:5; fill-opacity:0.7; stroke-opacity:0.6" />
+    <rect x="60" y="100" width="70" height="40" rx="10" ry="10" style="fill:#778899; stroke:#FF4500; stroke- width:5; fill-opacity:0.7; stroke-opacity:0.6" />
     <polygon points="160,10 350,140 210,350 50,199" style="fill:orange; stroke:purple; stroke-width:1; fill-opacity:1" />
     <rect x="120" y="150" width="90" height="90" style="fill:grey; stroke-width:3; stroke:rgb(0,0,0)" />
-    <circle cx="250" cy="100" r="60" stroke="black" stroke-width="3" fill="red"; fill-opacity="0.7" />
+    <circle cx="250" cy="100" r="60" stroke="black" stroke-width="3" fill="red" fill-opacity="0.7" />
     <ellipse cx="140" cy="310" rx="90" ry="20" style="fill:OrangeRed" />
     <ellipse cx="120" cy="280" rx="110" ry="20" style="fill:grey; fill-opacity:0.5" />
     <polyline points="220,200 240,180 260,200 280,180 300,200 320,180 340,200" style="fill:none; stroke:red; stroke-width:6" />
