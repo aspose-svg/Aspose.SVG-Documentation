@@ -7,7 +7,7 @@ url: /net/aspose-svg-for-net-20-10-release-notes/
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for Aspose.SVG for .NET 20.9
+This page contains release notes information for Aspose.SVG for .NET 20.10
 
 {{% /alert %}}
 
