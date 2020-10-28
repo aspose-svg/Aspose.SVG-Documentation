@@ -13,7 +13,7 @@ This page contains release notes information for Aspose.SVG for .NET 20.10
 
 ## **Major Features**
 
-As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the June release of Aspose.SVG for .NET.
+As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the October release of Aspose.SVG for .NET.
 In this release we have expanded the class PageSetup with a new option Sizing that allows to manage the page size considering content size and scaling content in accordnace with page size.
 
 ## **Public API changes:**

@@ -11,7 +11,7 @@ This page contains release notes information for Aspose.SVG for .NET 20.7
 
 {{% /alert %}} 
 ## **Major Features**
-As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the June release of Aspose.SVG for .NET.
+As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the July release of Aspose.SVG for .NET.
 In this release we have made the number of improvements:
 
 - added support for the comp-op property with the following list of values : clear, src, dst, src-over, dst-over, src-in, dst-in, src-out, dst-out, src-atop, dst-atop, xor, plus, overlay, color-dodge, color-burn, hard-light, soft-light, difference, exclusion;

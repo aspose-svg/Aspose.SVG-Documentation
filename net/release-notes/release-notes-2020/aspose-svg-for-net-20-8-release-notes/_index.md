@@ -13,7 +13,7 @@ This page contains release notes information for Aspose.SVG for .NET 20.8
 
 ## **Major Features**
 
-As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the June release of Aspose.SVG for .NET.
+As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the August release of Aspose.SVG for .NET.
 In this release we have made the number of improvements:
 
 - Added support for the comp-op property with the following list of values :  hue, saturation, color, luminosity;
