@@ -1,1 +1,20 @@
 .DS_Store
+
+# User-specific files
+SVGDocumentation-Tests/**/*.rsuser
+SVGDocumentation-Tests/**/*.suo
+SVGDocumentation-Tests/**/*.user
+SVGDocumentation-Tests/**/*.userosscache
+SVGDocumentation-Tests/**/*.sln.docstates
+
+SVGDocumentation-Tests/.vs/
+SVGDocumentation-Tests/packages/
+SVGDocumentation-Tests/**/bin/
+SVGDocumentation-Tests/**/obj/
+SVGDocumentation-Tests/UpgradeLog.htm
+
+
+
+SVGDocumentation-Tests/tests-out/
+SVGDocumentation-Tests/tests-data/**/*.lic
+
