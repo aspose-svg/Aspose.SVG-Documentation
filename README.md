@@ -14,7 +14,7 @@ Directory | Description
 [net](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/master/net)  | Contains Aspose.SVG for .NET [documentation](https://docs.aspose.com/svg/net/) 
 [tests-net](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/master/tests-net)  | Contains a collection of XUnit tests that help you learn the product features 
 
-Examples of using the API features are given as **XUnit tests**, that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the [API features](https://docs.aspose.com/svg/net/features-list/). 
+Examples of using the API features are given as **XUnit tests** that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the [API features](https://docs.aspose.com/svg/net/features-list/). 
 
 ## **How to Run the Examples?**
 
@@ -56,5 +56,5 @@ Any operating system that can install Mono (.NET 4.0 Framework support) or use .
 
 
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/svg/net) | [Docs](https://docs.aspose.com/svg/net/) | [API Reference](https://apireference.aspose.com/svg/net) | [Examples](https://github.com/aspose-svg/Aspose.SVG-for-.NET) | [Blog](https://blog.aspose.com/category/svg/) | [Free Support](https://forum.aspose.com/c/svg) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/svg/net) | [Docs](https://docs.aspose.com/svg/net/) | [API Reference](https://apireference.aspose.com/svg/net) | [Tests](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/master/tests-net) | [Blog](https://blog.aspose.com/category/svg/) | [Free Support](https://forum.aspose.com/c/svg) |  [Temporary License](https://purchase.aspose.com/temporary-license)
 
