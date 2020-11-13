@@ -6,7 +6,7 @@ url: /net/drawing-basics/basic-shapes
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**Edit SVG Files**](/svg/net/edit-svg-file/). 
+The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**Document Editing**](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/). 
 
 ## **Rectangle** 
 

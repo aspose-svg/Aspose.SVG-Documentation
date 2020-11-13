@@ -18,12 +18,12 @@ SVG files can be created & loaded:
 This section provides some examples of creation & loading SVG files using Aspose.SVG for .NET API. The **SVGDocument** has a wide set of overloaded constructors allowing you to create a blank document or load it from a file, URL, stream, etc.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **Create an Empty SVG Document**
 
-Aspose.SVG for .NET API provides the   [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following code snippet shows the usage of the default **SVGDocument()** constructor to create an SVG Document.
+Aspose.SVG for .NET API provides the   [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following code snippet shows the usage of the default **SVGDocument()** constructor to create an SVG document.
 
 {{< highlight java >}}
 using Aspose.Svg;
@@ -31,7 +31,7 @@ using Aspose.Svg;
     // Initialize an empty SVG document
     using (var document = new SVGDocument())
     {
-        // Work with SVG document here...
+        // Work with the SVG document here...
     }
 {{< /highlight >}}
 
@@ -97,7 +97,7 @@ using System.IO;
 
 ## **Load from a File**
 
-To load an SVG document from a file, use the default constructor of the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
+To load an SVG document from a file [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/creating-loading-documents/QBezier.svg), use the default constructor of the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
 
 {{< highlight java >}}
 using Aspose.Svg;
