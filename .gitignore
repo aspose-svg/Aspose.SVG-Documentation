@@ -1,1 +1,18 @@
 .DS_Store
+
+# User-specific files
+tests-net/**/*.rsuser
+tests-net/**/*.suo
+tests-net/**/*.user
+tests-net/**/*.userosscache
+tests-net/**/*.sln.docstates
+
+tests-net/.vs/
+tests-net/packages/
+tests-net/**/bin/
+tests-net/**/obj/
+tests-net/UpgradeLog.htm
+
+tests-net/tests-out/
+tests-net/tests-data/**/*.lic
+
