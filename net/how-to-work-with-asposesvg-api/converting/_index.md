@@ -1,5 +1,7 @@
 ---
 title: How to Convert SVG Files
+aliases:
+    - /net/how-to-convert-svg-files/
 type: docs
 weight: 25
 url: /net/how-to-work-with-asposesvg-api/converting/

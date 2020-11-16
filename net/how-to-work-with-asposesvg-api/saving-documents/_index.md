@@ -1,5 +1,7 @@
 ---
 title: Saving Documents
+aliases:
+    - /net/save-svg-files/
 type: docs
 weight: 15
 url: /net/how-to-work-with-asposesvg-api/saving-documents/
