@@ -41,7 +41,7 @@ using Aspose.Svg;
 
 ### **Saving to a Url**
 
-It is necessary to specify a complete Url path for the document saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
+It is necessary to specify a complete Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/Lineto.svg) saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
 {{< highlight java >}}
 using System.IO;
@@ -61,8 +61,7 @@ using Aspose.Svg;
 {{< /highlight >}}
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
-
 
 

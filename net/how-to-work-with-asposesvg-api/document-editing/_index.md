@@ -11,7 +11,7 @@ Aspose.SVG for .NET lets you edit an SVG document and make changes to its conten
 In this article, we show how you can edit SVG using Aspose.SVG for .NET library.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **Adding a new element to an SVG document**
@@ -40,7 +40,7 @@ For example, if you create a group of graphic elements and put them into the `<g
 {{< /highlight >}}
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation).
 {{% /alert %}} 
 
 ## **How to add Basic Shapes to an SVG Document**
@@ -142,9 +142,6 @@ Consider an example of editing an existing SVG file [basic-shapes.svg](https://d
 The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/basic-shapes.svg) and the file that was edited (modified).
 ![Original svg image and edited svg image](Basic_Shapes.png#center)
 
-{{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
-{{% /alert %}} 
 
 ### **Path**
 
@@ -238,7 +235,7 @@ The figure illustrates the original (black) and modified (red) paths "PathData.s
 Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [**SvgImageElement**](https://apireference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the **[AppendChild](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) (`Node node`)** method.  Using a `"filter"` attribute of `imageElement` referring to the url name of `filterElement` allows applying filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** section.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation).
 {{% /alert %}} 
 
 ### **Gaussian Blur**
@@ -290,10 +287,6 @@ using Aspose.Svg.Filters;
     filterElement.AppendChild(feGaussianBlurElement);
 
 {{< /highlight >}}
-
-{{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
-{{% /alert %}} 
 
 ### **Saturation Effect**
 
@@ -382,5 +375,5 @@ We painted the circle with a big value of **`stroke-width`**. The **`stroke-dash
 ![Image with added text and circle](seaside.png#center)
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 

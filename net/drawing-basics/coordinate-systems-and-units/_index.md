@@ -9,7 +9,7 @@ The canvas is the space or area where all SVG elements are drawn. This area can 
 
  
 
-## **The initial viewport**
+## **The Initial Viewport**
 
 All SVG content must be displayed inside the viewport that defines an area on the canvas, characterized by size and a point of origin. The default origin is (0,0). Scope of the viewport sets using the **width** and **height** attributes on the outermost  `<svg>` element. 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}

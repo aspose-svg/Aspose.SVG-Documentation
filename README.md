@@ -20,7 +20,7 @@ Examples of using the API features are given as **XUnit tests** that serve to ac
 
 **Download from GitHub**
 
-All tests of Aspose.SVG for .NET documentation are written in C# in .NET Core and hosted on [GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation). 
+All tests of Aspose.SVG for .NET documentation are written in C# and hosted on [GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation). 
 
  - You can either clone the repository using GitHub client or download the ZIP file from [here](https://github.com/aspose-svg/Aspose.SVG-Documentation/archive/master.zip).
 
@@ -31,7 +31,7 @@ All tests of Aspose.SVG for .NET documentation are written in C# in .NET Core an
  - Run XUnit tests and see their results in **Test Explorer**. To run the tests, choose *Test > Test Explorer* from the top menu bar. You can run all your tests by clicking *Run All* icon.
  - The **tests-data** folder at the root folder of **tests-net** contains input files that XUnit tests use. It is mandatory that you download the **tests-data** folder with the **Aspose.SVG.Tests** project.
 
-For more details, see [How to Run the Examples](https://docs.aspose.com/svg/net/how-to-run-the-examples/).
+For more details, see [How to Run the Examples](https://docs.aspose.com/svg/net/how-to-run-the-tests/).
 
 ## SVG File Processing
 

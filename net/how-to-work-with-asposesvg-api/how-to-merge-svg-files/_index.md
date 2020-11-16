@@ -51,7 +51,7 @@ You can try to merge SVG documents to a variety of other formats with our [Free 
 
 ## **Merging SVG documents**
 
-The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them.  Documents merging can be done with a few lines of code:
+The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/Lineto.svg)) can be done with a few lines of code:
 
 {{< highlight java >}}
 
@@ -82,6 +82,6 @@ using Aspose.Svg.Rendering.Pdf;
 You can merge SVG files to PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF formats.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 

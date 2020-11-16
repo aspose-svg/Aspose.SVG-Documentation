@@ -8,7 +8,7 @@ url: /net/how-to-work-with-asposesvg-api/converting/
 
 Converting SVG documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks.
 
-Aspose.SVG for .NET API can convert [SVG](https://docs.fileformat.com/page-description-language/svg/) Image files to [XPS](https://docs.fileformat.com/page-description-language/xps/), [PDF](https://docs.fileformat.com/pdf/), [PNG](https://docs.fileformat.com/image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/) file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details to underlying file formats. 
+Aspose.SVG for .NET API can convert [SVG](https://docs.aspose.com/svg/net/what-is-an-svg-document/) Image files to [XPS](https://docs.fileformat.com/page-description-language/xps/), [PDF](https://docs.fileformat.com/pdf/), [PNG](https://docs.fileformat.com/image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/) file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details to underlying file formats. 
 
 {{% alert color="primary" %}} 
 
@@ -29,13 +29,13 @@ The current section describes supported scenarios of SVG files conversions to ot
 Let's consider both scenarios of conversion SVG document to another file format, for example, to PNG:
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}}  
 
 ### **Using  ConverterSVG() method**
 Converting a file to other format using the **ConvertSVG()** method is a sequence of operations among which document loading and saving:
 
- - Load an SVG document using one of the **SVGDocument()** constructors.
+ - Load an SVG document using one of the **SVGDocument()** constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/light.svg)).
  - Create an instance of the [**ImageSaveOptions**](https://apireference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class.
  - Use one of the [**ConvertSVG()**](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods to save SVG as a PNG file.
 
@@ -62,7 +62,7 @@ In the example, the **ImageSaveOptions()** constructer initialize an instance of
 
 To convert SVG to PNG using the **RenderTo()** method take the following stages:
 
- - Initialize a document using one of the **SVGDocument()** constructors.
+ - Initialize a document using one of the **SVGDocument()** constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/light.svg)).
  - Produce an instance of the [**ImageRenderingOptions**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class.
  - Create a new instance of the [**ImageDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class, pass an instance of the **ImageRenderingOptions** class and output file path to the **ImageDevice()** method.
  - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
@@ -106,7 +106,7 @@ PDF is a file format supported by all operating systems,  used for presenting im
 
 Consider SVG to PDF conversion scenario using **RenderTo()** method:
 
- - Initialize a document using  **SVGDocument()** constructer.
+ - Initialize a document using  **SVGDocument()** constructer ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/light.svg)).
  - Initialize an instance of the [**PdfRenderingOptions**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class and  specify document's properties.
  - Create a new instance of the [**PdfDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice) class, pass the **PdfRenderingOptions** and output file path to **PdfDevice()** method.
  - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
@@ -142,7 +142,7 @@ using Aspose.Svg.Rendering.Pdf;
 
 In order to convert SVG to PDF format, Aspose.SVG for .NET API offers **PdfRenderingOptions** class which initializes a new object, with rendering options, that is passed as an argument to the **PdfDevice(`PdfRenderingOptions, string`)** constructor. The last initializes a new instance of **PdfDevice** class by rendering options and output file name.  The **RenderTo(`IDevice device`)**  method converts and sends the current document to the output rendering device.
 
-The **`JpegQuality`** specifies the quality of JPEG compression for images. The default is 95.  In the example above, the used **`JpegQuality`** value is 10.  The figure illustrates conversion SVG to PDF for two files "light.svg" and "[Lineto2.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/Lineto2.svg)": a) **`JpegQuality`** value is default; b) **`JpegQuality`** value is 10.
+The **`JpegQuality`** specifies the quality of JPEG compression for images. The default is 95.  In the example above, the used **`JpegQuality`** value is 10.  The figure illustrates conversion SVG to PDF for two files [light.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/light.svg) and [Lineto2.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/Lineto2.svg): a) **`JpegQuality`** value is default; b) **`JpegQuality`** value is 10.
 
 ![Images rendered to PDF with various JpegQuality values](JpegQualityPDF.png#center)
 
@@ -150,7 +150,7 @@ The **`JpegQuality`** specifies the quality of JPEG compression for images. The 
 ## **Convert SVG to XPS**
 The static methods of the **Converter** class can convert SVG to XPS  with a single line of code. It is the easiest way to conversion. Converting a file to other format using the **ConvertSVG()** method is a sequence of operations among which document loading and saving: 
 
- - Load an SVG document using one of the **SVGDocument()** constructors.
+ - Load an SVG document using one of the **SVGDocument()** constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/light.svg)).
  - Create an instance of the **[XpsSaveOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/xpssaveoptions)** class.
  - Use the [**ConvertSVG()**](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) method to save SVG as an XPS file. 
 
@@ -200,7 +200,7 @@ BMP image files save their image quality and store color data for each pixel wit
 
 Aspose.SVG API can convert a document from SVG to BMP save format using several stages:
 
- - Open the source SVG document.
+ - Open the source SVG document ([conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/conclusion.svg)).
  - Use the [**ImageRenderingOptions()**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify `Format` property of the document.
  - Create a new instance of the [**ImageDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class.
  - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
@@ -231,7 +231,7 @@ JPEG is one of the most commonly used image formats. Its uniqueness is the contr
 
 Consider how to convert a document from SVG to JPEG using **RenderTo()** method:
 
-- Open the source SVG document.
+- Open the source SVG document ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
 - Use the [**ImageRenderingOptions()**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify properties of the document.
 - Create a new instance of the [**ImageDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class - the output device.
 - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method.
@@ -276,7 +276,7 @@ The **`Format`** property sets image format. By default this property is `Png`. 
 
 ​                                                                      
 
-In the example above we convert the SVG file to JPEG with different **`SmoothingMode`** values. The figure illustrates zoomed (250%) JPEG images fragments: a) **`SmoothingMode`** property  is `AntiAlias` ; b) **`SmoothingMode`** property is  `Default`.
+In the example above we convert the SVG file [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) to JPEG with different **`SmoothingMode`** values. The figure illustrates zoomed (250%) JPEG images fragments: a) **`SmoothingMode`** property  is `AntiAlias` ; b) **`SmoothingMode`** property is  `Default`.
 
 
 ### **Convert SVG to PNG**
@@ -326,7 +326,7 @@ TIFF is a format for storing raster graphics images with a broad palette of colo
 
 Aspose.SVG API can convert a document from SVG to TIFF save format using several stages:
 
-- Open a source SVG document.
+- Open a source SVG document ([conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/conclusion.svg)).
 - Use the [**ImageRenderingOptions()**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify `Format`  and other properties of the document.
 - Create a new instance of the [**ImageDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class.
 - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method.
@@ -361,7 +361,7 @@ The **`Compression`** property allows set compression for TIFF file format. By d
 ### **Convert SVG to GIF**
 
 GIF is a popular image format that supports animated images and frequently used in web publishing. The following code snippet shows how to convert SVG to GIF using Aspose.SVG for .NET API:
- - Open a source SVG document.
+ - Open a source SVG document ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
  - Create an instance of the [**ImageSaveOptions**](https://apireference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class.
  - Use the [**ConvertSVG()**](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) method to save SVG as a GIF file.
 
@@ -387,7 +387,7 @@ using Aspose.Svg.Converters;
 {{< /highlight >}}
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 
