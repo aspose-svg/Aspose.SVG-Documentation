@@ -4,7 +4,7 @@ aliases:
     - /net/create-and-read-svg-documents/
 type: docs
 weight: 10
-url: /net/how-to-work-with-asposesvg-api/creating-loading-documents/
+url: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
 ---
 
 
@@ -56,7 +56,7 @@ using System.IO;
 	}
 {{< /highlight >}}
 
-More details about SVG files saving are in [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/) section.
+More details about SVG files saving are in [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/) section.
 
 ## **Create from a Memory String**
 
@@ -99,7 +99,7 @@ using System.IO;
 
 ## **Load from a File**
 
-To load an SVG document from a file [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/creating-loading-documents/QBezier.svg), use the default constructor of the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
+To load an SVG document from a file [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/QBezier.svg), use the default constructor of the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
 
 {{< highlight java >}}
 using Aspose.Svg;

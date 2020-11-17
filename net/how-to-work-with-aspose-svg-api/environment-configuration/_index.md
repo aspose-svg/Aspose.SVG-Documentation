@@ -2,7 +2,7 @@
 title: Environment Configuration
 type: docs
 weight: 20
-url: /net/how-to-work-with-asposesvg-api/environment-configuration/
+url: /net/how-to-work-with-aspose-svg-api/environment-configuration/
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 

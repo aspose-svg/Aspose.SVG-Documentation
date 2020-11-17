@@ -4,7 +4,7 @@ aliases:
     - /net/save-svg-files/
 type: docs
 weight: 15
-url: /net/how-to-work-with-asposesvg-api/saving-documents/
+url: /net/how-to-work-with-aspose-svg-api/saving-documents/
 ---
 
 
@@ -13,7 +13,7 @@ url: /net/how-to-work-with-asposesvg-api/saving-documents/
 
 Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch you are able to save your changes by using the one of [**SVGDocument.Save()**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index) methods. There are overloaded methods that allow saving a document to a file, stream, or Url. 
 
- In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the [**SVGDocument**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class. The scenarios of converting and rendering SVG to other formats are viewed in **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/)** section. 
+ In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the [**SVGDocument**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class. The scenarios of converting and rendering SVG to other formats are viewed in **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
 {{% alert color="primary" %}} 
 
@@ -43,7 +43,7 @@ using Aspose.Svg;
 
 ### **Saving to a Url**
 
-It is necessary to specify a complete Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/Lineto.svg) saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
+It is necessary to specify a complete Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg) saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
 {{< highlight java >}}
 using System.IO;
