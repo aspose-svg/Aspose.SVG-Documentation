@@ -1,5 +1,7 @@
 ---
 title: Document Editing
+aliases:
+    - /net/edit-svg-file/
 type: docs
 weight: 18
 url: /net/how-to-work-with-asposesvg-api/document-editing/

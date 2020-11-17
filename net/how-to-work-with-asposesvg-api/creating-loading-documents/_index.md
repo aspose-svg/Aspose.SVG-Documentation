@@ -1,5 +1,7 @@
 ---
 title: Creating and Loading Documents
+aliases:
+    - /net/create-and-read-svg-documents/
 type: docs
 weight: 10
 url: /net/how-to-work-with-asposesvg-api/creating-loading-documents/

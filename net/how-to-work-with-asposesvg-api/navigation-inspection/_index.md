@@ -1,5 +1,7 @@
 ---
 title: Navigation & Inspection
+aliases:
+    - /net/traverse-svg-dom/
 type: docs
 weight: 20
 url: /net/how-to-work-with-asposesvg-api/navigation-inspection/
@@ -18,15 +20,15 @@ In this section, you find out:
 
  - how to navigate over the document by using CSS Selector or  XPath Query.
 
-   
-
+ 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **View SVG Content**
 
-The easiest way to inspect the document content is to look at content as a string. The properties  **`InnerHTML`** and **`OuterHTML`** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class return a fragment of XML (or HTML) that represents the element and its contents. They are developed precisely for viewing SVG content as a string:
+The easiest way to inspect the document content is to look at content as a string. The properties  **`InnerHTML`** and **`OuterHTML`** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class return a fragment of XML (or HTML) that represents the element and its contents. They are developed precisely for viewing SVG content as a string.
+The following code example shows how to view the content of [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/creating-loading-documents/QBezier.svg) file in the console.
 {{< highlight java >}} 
 using Aspose.Svg;
 using System.IO;
@@ -39,8 +41,9 @@ using System.IO;
 	     var html = document.DocumentElement.OuterHTML;
 	                  
 	     Console.WriteLine(html);
-	}
+	}	
 	// View the document content 
+	
 
 {{< /highlight >}}
 
@@ -48,7 +51,7 @@ using System.IO;
 
 ### **Extract Information about Specific Element**
 
-The following example shows how to extract information about a particular element from an SVG file:
+The following example shows how to extract information about a particular element from a file [shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/navigation-inspection/shapes.svg):
 {{< highlight java >}} 
 using Aspose.Svg;
 using System.IO;
@@ -76,7 +79,7 @@ In the example, the [**`DocumentElement`**](https://apireference.aspose.com/svg/
 
 ###  **Inspection of the Document and its Elements**
 
-Aspose.SVG contains a list of methods that are based on the [Element Traversal Specifications](https://www.w3.org/TR/ElementTraversal/). You can perform a detailed inspection of the document and its elements using the API. The following code sample shows the generalized usage of Element Traversal features.
+Aspose.SVG contains a list of methods that are based on the [Element Traversal Specifications](https://www.w3.org/TR/ElementTraversal/). You can perform a detailed inspection of the document and its elements using the API ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/navigation-inspection/shapes.svg)). The following code sample shows the generalized usage of Element Traversal features.
 {{< highlight java >}} 
 using Aspose.Svg;
 using System.IO;
@@ -147,7 +150,7 @@ The **RectFilter** class inherits from the **[NodeFilter](https://apireference.a
 In the iterator, we use the **NextNode ()** method of the **[INodeIterator](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal/inodeiterator)** Interface to access all the nodes of the document. The first call to the **NextNode()** returns the first node and moves the position of the iterator in the set. The  **`OuterHTML`** property of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns the element's content that will be printed.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ### **Picture Editing Using CSS Selector**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#using-css-selector)
@@ -308,7 +311,7 @@ In the examples above, we take the source [owl.svg](https://docs.aspose.com/svg/
 
 ### **Using XPath Query**
 
-Aspose.SVG also has powerful XPath Specifications implementation along with Traversal Specifications. This empowers you to use **XPath Query** to navigate over the document as shown in the following code sample.
+Aspose.SVG also has powerful XPath Specifications implementation along with Traversal Specifications. This empowers you to use **XPath Query** to navigate over the document ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/navigation-inspection/shapes.svg)) as shown in the following code sample:
 {{< highlight java >}}
 using Aspose.Svg;
 using System.IO;
@@ -326,6 +329,6 @@ using Aspose.Svg.Collections;
 {{< /highlight >}}
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 

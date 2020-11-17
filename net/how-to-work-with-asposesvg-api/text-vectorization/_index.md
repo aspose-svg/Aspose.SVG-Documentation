@@ -1,5 +1,7 @@
 ---
-title: Text Vectorization & Text Security 
+title: Text Vectorization & Text Security
+aliases:
+    - /net/vectorize-text/
 type: docs
 weight: 30
 url: /net/how-to-work-with-asposesvg-api/text-vectorization/
@@ -16,10 +18,10 @@ The vectorized text, being a digital graphic, can be scaled with saving quality.
 Aspose.SVG for .NET API provides the feature of vectorizing text elements in SVG documents. To vectorize text, set the [**`VectorizeText`**](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the [**SVGSaveOptions**](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions) class to `true`.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**Нow to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-examples/) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
-The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization:
+The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization in [Text.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/text-vectorization/Text.svg) file:
 {{< highlight java >}}
 using System.IO;
 using Aspose.Svg;
