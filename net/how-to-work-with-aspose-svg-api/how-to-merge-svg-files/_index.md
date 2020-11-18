@@ -2,7 +2,7 @@
 title: How to Merge SVG Documents
 type: docs
 weight: 28
-url: /net/how-to-work-with-asposesvg-api/how-to-merge-svg-documents/
+url: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
 ---
 
 Aspose.SVG for .NET API provides the  [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
@@ -17,7 +17,7 @@ You can try to convert SVG documents to a variety of other formats with our [Fre
 
 Rendering of SVG files is the process of generating an images from a 2D model by means of the API. Converting from SVG to other formats can perform by using  **Render (`IDevice, TDocument`)** method of the [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
 
-In [**How to convert SVG files**](http://ldocs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/) section, we consider two conversion scenarios: using **ConverterSVG()** methods and **RenderTo()** method. In this chapter we consider the **Render ()** method applying for SVG conversion to other formats - PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF.
+In [**How to convert SVG files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using **ConverterSVG()** methods and **RenderTo()** method. In this chapter we consider the **Render ()** method applying for SVG conversion to other formats - PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF.
 
 To convert SVG to another format, for example, PNG, use the following code snippet:
 {{< highlight java >}}
@@ -51,7 +51,7 @@ You can try to merge SVG documents to a variety of other formats with our [Free 
 
 ## **Merging SVG documents**
 
-The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/Lineto.svg)) can be done with a few lines of code:
+The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg)) can be done with a few lines of code:
 
 {{< highlight java >}}
 

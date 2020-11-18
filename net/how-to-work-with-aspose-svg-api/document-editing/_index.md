@@ -4,7 +4,7 @@ aliases:
     - /net/edit-svg-file/
 type: docs
 weight: 18
-url: /net/how-to-work-with-asposesvg-api/document-editing/
+url: /net/how-to-work-with-aspose-svg-api/document-editing/
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -128,7 +128,7 @@ The **[AppendItem ](https://apireference.aspose.com/svg/net/aspose.svg.collectio
 
 The **[AppendChild ](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild)(`Node node`)** method adds the  new child to the end of the list of children of this node.  The code snippet shows that the `stroke`, `stroke-width` and `fill` attributes are specified, and the `polylineElement` is inserted in the `<svg>` element as the last child.
 
-Consider an example of editing an existing SVG file [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/basic-shapes.svg): we will add the circle and polyline, described above, and change the stroke properties for all circles and ellipses. The following code snippet shows how to find all circles and ellipses in an `<svg>` element and replace their stroke properties:
+Consider an example of editing an existing SVG file [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/basic-shapes.svg): we will add the circle and polyline, described above, and change the stroke properties for all circles and ellipses. The following code snippet shows how to find all circles and ellipses in an `<svg>` element and replace their stroke properties:
 
 {{< highlight java >}}
     // Set stroke attributes for all circle and ellipse elements
@@ -141,7 +141,7 @@ Consider an example of editing an existing SVG file [basic-shapes.svg](https://d
         }
     }
 {{< /highlight >}}
-The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/basic-shapes.svg) and the file that was edited (modified).
+The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/basic-shapes.svg) and the file that was edited (modified).
 ![Original svg image and edited svg image](Basic_Shapes.png#center)
 
 
@@ -258,7 +258,7 @@ using Aspose.Svg.Filters;
 ...
     // Create an image element and add it to the svgElement
     var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-    imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/Lighthouse.jpg";
+    imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/Lighthouse.jpg";
 	imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
     imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
 	imageElement.Height.BaseVal.Value = 640;
