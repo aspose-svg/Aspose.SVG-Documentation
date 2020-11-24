@@ -1,8 +1,11 @@
 ---
 title: How to Merge SVG Documents
+aliases:
+    - /net/how-to-work-with-asposesvg-api/how-to-merge-svg-documents/
 type: docs
 weight: 28
 url: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
+description: Rendering SVG documents, Render SVG, Merging SVG documents, Merge SVG
 ---
 
 Aspose.SVG for .NET API provides the  [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.

@@ -1,10 +1,12 @@
 ---
-title: Saving Documents
+title: Saving SVG Documents
 aliases:
     - /net/save-svg-files/
+    - /net/how-to-work-with-asposesvg-api/saving-documents/
 type: docs
 weight: 15
 url: /net/how-to-work-with-aspose-svg-api/saving-documents/
+description: Save SVG to a File, Save SVG to a Url
 ---
 
 
@@ -36,7 +38,7 @@ using Aspose.Svg;
     {
         // Work with the document
     
-        // Save the document to a file
+        // Save SVG to a file
         document.Save(documentPath);
     }
 {{< /highlight >}}
@@ -57,7 +59,7 @@ using Aspose.Svg;
     {
         // Work with the document
         
-        // Save the document to the Url
+        // Save SVG to the Url
         document.Save(url);
     }
 {{< /highlight >}}
