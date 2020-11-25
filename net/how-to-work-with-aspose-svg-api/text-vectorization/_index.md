@@ -2,9 +2,11 @@
 title: Text Vectorization & Text Security
 aliases:
     - /net/vectorize-text/
+    - /net/how-to-work-with-asposesvg-api/text-vectorization/
 type: docs
 weight: 30
 url: /net/how-to-work-with-aspose-svg-api/text-vectorization/
+description: SVG Text to Vector, Text Vectorization, Text Security, Vectorize Text 
 ---
 
 The text elements are closely related to the concept of font, glyph and symbol. When a computer renders characters, it maps those characters to glyphs in a font.

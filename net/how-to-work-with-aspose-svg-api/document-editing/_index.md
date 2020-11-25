@@ -1,10 +1,12 @@
 ---
-title: Document Editing
+title: How to Edit SVG
 aliases:
     - /net/edit-svg-file/
+    - /net/how-to-work-with-asposesvg-api/document-editing/
 type: docs
 weight: 18
 url: /net/how-to-work-with-aspose-svg-api/document-editing/
+description: How to Add Element to SVG, How to add Basic Shapes to SVG, Applying SVG Filters to Bitmaps, Drawing on Bitmaps
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -16,7 +18,7 @@ In this article, we show how you can edit SVG using Aspose.SVG for .NET library.
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
-## **Adding a new element to an SVG document**
+## **Adding a new Element to an SVG Document**
 
 Aspose.SVG API allows you to add various elements to a document.  First, you would create a new element or node; then you can add it to the document.
 
@@ -73,7 +75,7 @@ using Aspose.Svg.Paths;
         // Get root svg element of the document
         var svgElement = document.RootElement;
     
-        // Greate a circle element and set attributes values
+        // Create a circle element and set attributes values
         var circleElement = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
         circleElement.Cx.BaseVal.Value = 100F;
         circleElement.Cy.BaseVal.Value = 100F;
@@ -216,7 +218,7 @@ using Aspose.Svg.Paths;
 ​                pathSegMovetoAbs.Y = 100;
 ​            }
 ​        }		
-​        // Set "fill" and "stroke" attributers
+​        // Set fill and stroke attributes
 ​        pathElement.SetAttribute("stroke", "red");
 ​        pathElement.SetAttribute("fill", "none");
 ​        pathElement.SetAttribute("stroke-width", "4");
@@ -233,8 +235,8 @@ The figure illustrates the original (black) and modified (red) paths "PathData.s
 
 ![Original and edited paths](paths.png#center)
 
-##  **Applying Filters to Bitmaps**
-Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [**SvgImageElement**](https://apireference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the **[AppendChild](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) (`Node node`)** method.  Using a `"filter"` attribute of `imageElement` referring to the url name of `filterElement` allows applying filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** section.
+##  **Applying SVG Filters to Bitmaps**
+Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [**SvgImageElement**](https://apireference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the **[AppendChild](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) (`Node node`)** method.  Using a `"filter"` attribute of `imageElement` referring to the url name of `filterElement` allows applying SVG filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** section.
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation).
@@ -248,7 +250,7 @@ According to SVG syntax, the `<filter>` element should be located into a `<defs>
 
 One option for setting the values of the attribute is to use the **SetAttribute (`string name, string value`)** method.  Another way is to take SVG DOM dot-accessor methods using properties of the [**SVGAnimatedLength**](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength/properties/index) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`. To specify the units, you need to use the **ConvertToSpecifiedUnits (`ushort unitType`)** method of the [**SVGLength**](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svglength) class.
 
- After you make a filter and set a `filterElement.Id` , you can apply it to the image. Here is an example that illustrates GaussianBlur effect implementation:
+ After you make a filter and set a `filterElement.Id`, you can apply it to the image. Here is an example that illustrates GaussianBlur effect implementation:
 
 {{< highlight java >}}
 using Aspose.Svg;
@@ -369,7 +371,7 @@ The resulting image looks like this:
 
 ## **Drawing on Existing Bitmaps**
 
-The bitmap can be used as a background for drawing. You can apply a filter effect to the raster image, append the shapes, paths, or text. The figure below made with the help of adding circle and text to the bitmap acting as the background.
+The bitmap can be used as a background for drawing. You can apply an SVG filter effect to the raster image, append the shapes, paths, or text. The figure below made with the help of adding circle and text to the bitmap acting as the background.
 
 We painted the circle with a big value of **`stroke-width`**. The **`stroke-dasharray`** attribute applying converts the circle's stroke into a dashed line. By selecting values of the filled-unfilled areas, you can achieve the desired visual effect (see [**Fills and Strokes**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/)). 
 

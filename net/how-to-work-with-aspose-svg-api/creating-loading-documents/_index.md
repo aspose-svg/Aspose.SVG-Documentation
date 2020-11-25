@@ -1,10 +1,12 @@
 ---
-title: Creating and Loading Documents
+title: Creating and Loading SVG Documents
 aliases:
     - /net/create-and-read-svg-documents/
+    - /net/how-to-work-with-asposesvg-api/creating-loading-documents/
 type: docs
 weight: 10
 url: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
+description: Create an Empty SVG Document, Create SVG from a Memory String, Create SVG from a Stream, Load SVG from a File, Load SVG from the Web, Reading SVG with Resources Async
 ---
 
 
@@ -58,7 +60,7 @@ using System.IO;
 
 More details about SVG files saving are in [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/) section.
 
-## **Create from a Memory String**
+## **Create SVG from a Memory String**
 
 You can create a document from a string content using **SVGDocument (`string, string`)** constructor. If your case is to create a document from a user string directly in your code and you don’t need to save it to a file, the following example could help you: we produce an SVG document that contains a circle with a radius of 50 pixels.
 
@@ -75,7 +77,7 @@ using Aspose.Svg;
 	}
 {{< /highlight >}}
 
-## **Create from a Stream**
+## **Create SVG from a Stream**
 
 To create an SVG document from a stream, use one of SVGDocument() constructors:
 
@@ -97,7 +99,7 @@ using System.IO;
 	}
 {{< /highlight >}}
 
-## **Load from a File**
+## **Load SVG from a File**
 
 To load an SVG document from a file [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/QBezier.svg), use the default constructor of the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
 
@@ -115,7 +117,7 @@ using System.IO;
 	}
 {{< /highlight >}}
 
-## **Load from the Web**
+## **Load SVG from the Web**
 
 The following examples could help you to create a document from URL referring to the XML file:
 

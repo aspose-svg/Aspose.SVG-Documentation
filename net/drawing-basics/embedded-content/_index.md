@@ -3,6 +3,7 @@ title: Embedded Content
 type: docs
 weight: 7
 url: /net/drawing-basics/embedded-content
+description: Embedded Content, Loading and Displaying Bitmaps, HTML Elements in an SVG Document
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -10,8 +11,7 @@ url: /net/drawing-basics/embedded-content
 Embedded content is content that imports into the document from another resource. SVG `<image>` and `<foreignObject>` elements are used for embedded content support.
 
  
-
-## **Loading and displaying bitmaps**
+## **Loading and Displaying Bitmaps**
 
 The SVG `<image>` element allows to include and render bitmaps within an SVG object. It can display image formats JPEG, PNG and the SVG pictures too. Attributes of the `<image>` element indicate that the contents of a file (a bitmap) should be displayed into a given rectangle ("window") within the current user coordinate system. 
 The  main attributes are:
@@ -27,16 +27,16 @@ The  main attributes are:
 How to use the SVG `<image>` element?  The following code snippet shows as a .png and .svg images can embed inside the SVG document:
 ```html {linenos=inline,linenostart=1}
 <svg width="500" height="400" xlink="http://www.w3.org/2000/svg">
-    <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="200" width="200" />
-    <image href="http://svg-art.ru/wp-content/uploads/2014/01/Pazly81.svg" x="250" y="20" height="220" width="220" />
+    <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="180" width="180" />
+    <image href="http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg" x="250" y="10" height="350" width="350" />
     <text x="40" y="250">Embedded PNG image</text>
     <text x="300" y="250">Embedded SVG image</text>
 </svg>
 ```
 The above code snippet is displayed like this:
-![Two images](embedded_images.png#center)
+![Two images](embedded-images.png#center)
 
-## **HTML elements in an SVG Document** 
+## **HTML Elements in an SVG Document** 
 
  
 

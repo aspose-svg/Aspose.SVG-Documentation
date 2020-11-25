@@ -1,11 +1,14 @@
 ---
-title: Navigation & Inspection
+title: Navigation & Inspection SVG
 aliases:
     - /net/traverse-svg-dom/
+    - /net/how-to-work-with-asposesvg-api/navigation-inspection/
 type: docs
 weight: 20
 url: /net/how-to-work-with-aspose-svg-api/navigation-inspection/
+description: How to View SVG Content, Extract Information about Specific Element, Inspection of the Document and its Elements, Iterating Over Document Elements using Custom Filters, Using CSS Selector, Using XPath Query
 ---
+<link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 Sometimes you need to inspect the content of SVG files, for example,  get information about the file, the elements and the hierarchy.  Aspose.SVG for .NET API is fully compatible with official [SVG specifications](https://www.w3.org/TR/SVG/) and can be used to traverse the SVG Document Object Model (DOM). The API supports a wide range of navigation and inspection functionalities of the SVG contents.
 
@@ -49,7 +52,7 @@ using System.IO;
 
 ## **Navigation and Inspection**
 
-### **Extract Information about Specific Element**
+### **Extract Information about Specific SVG Element**
 
 The following example shows how to extract information about a particular element from a file [shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg):
 {{< highlight java >}} 
@@ -77,7 +80,7 @@ using System.Linq;
 
 In the example, the [**`DocumentElement`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/properties/documentelement) property usage allows direct access to the `<svg>` element of the document.  Method **[GetElementsByTagName](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getelementsbytagname)(`string name`)** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns a **NodeList** of all descendant elements with a given tag name; in this case the return element is the first `<g>` element.  The [**`FirstElementChild`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/properties/firstelementchild) property  returns the first child element   node of this element. In the example, the first child in `<g>` element is the `<rect>` element, for which the Width and Height values are printed.
 
-###  **Inspection of the Document and its Elements**
+###  **Inspection of the SVG Document and its Elements**
 
 Aspose.SVG contains a list of methods that are based on the [Element Traversal Specifications](https://www.w3.org/TR/ElementTraversal/). You can perform a detailed inspection of the document and its elements using the API ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg)). The following code sample shows the generalized usage of Element Traversal features.
 {{< highlight java >}} 
@@ -153,7 +156,7 @@ In the iterator, we use the **NextNode ()** method of the **[INodeIterator](http
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
-### **Picture Editing Using CSS Selector**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#using-css-selector)
+### **SVG Editing Using CSS Selector**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#using-css-selector)
 
 Aspose.SVG for .NET also implements CSS Selector specification that allows you to navigate over the document by using CSS like style. 
 
@@ -296,7 +299,7 @@ using Aspose.Svg.Collections;
             );
         }
     }
-    // Set d attribut - new path data formation
+    // Set d attribute - new path data formation
     wingPath.SetAttribute("d", d.Trim());
     wingPath.SetAttribute("stroke", "Teal");
     
@@ -309,7 +312,7 @@ On the figure: the source picture (a), an edited picture according to Example 1 
 
 In the examples above, we take the source [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) file and edit some elements. We tried to decorate the eyes and wing of the owl in a various way using  navigation and inspection Aspose.SVG API functions.
 
-### **Using XPath Query**
+### **Using XPath Query to Navigate SVG**
 
 Aspose.SVG also has powerful XPath Specifications implementation along with Traversal Specifications. This empowers you to use **XPath Query** to navigate over the document ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg)) as shown in the following code sample:
 {{< highlight java >}}

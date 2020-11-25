@@ -2,9 +2,11 @@
 title: How to Convert SVG Files
 aliases:
     - /net/how-to-convert-svg-files/
+    - /net/how-to-work-with-asposesvg-api/converting/
 type: docs
 weight: 25
 url: /net/how-to-work-with-aspose-svg-api/converting/
+description: SVG Converters, Convert SVG to PDF, SVG to XPS, SVG to PNG, SVG to BMP, SVG to JPG, SVG to TIFF, SVG to GIF, Convert SVG to Image
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -382,7 +384,6 @@ using Aspose.Svg.Converters;
         var saveOptions = new ImageSaveOptions(ImageFormat.Gif);
         saveOptions.PageSetup.AnyPage = new Page(new Size(400, 600), new Margin(20, 20, 20, 20));
         
-
         // Convert SVG to GIF
         Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "owl.gif"));             
     }
