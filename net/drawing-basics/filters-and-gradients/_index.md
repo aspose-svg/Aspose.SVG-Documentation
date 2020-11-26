@@ -1,12 +1,13 @@
 ---
-title: Filters and Gradients
+title: SVG Filters and Gradients
 type: docs
 weight: 10
 url: /net/drawing-basics/filters-and-gradients
+description: SVG Filter Primitives, SVG Filters, Gaussian Blur, Drop Shadow Effect, SVG Lighting Effects, Color Filters, SVG Gradients, Linear Gradient in SVG, Radial Gradient in SVG
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-## **What is an SVG filter?**
+## **What is an SVG Filter?**
 
 
 SVG filters are widely used to add special effects to bitmaps or vector graphics. Filter effects are a way of a visual element’s treatment before displaying in the document. In other words, it is a set of operations to apply on an image can produce a wide variety of color and lighting effects, blurring, warping, noise and texture generation, etc. SVG filters are capable of creating complex effects in the browser and have the potential to be using in a variety of projects. They are supported by almost all modern browsers, including mobile ones.
@@ -14,7 +15,7 @@ SVG filters are widely used to add special effects to bitmaps or vector graphics
 Filter defines by `<filter>` element which sets within a `<defs>` element. It is never rendered itself and is conceptually described as the element that includes its children - filter primitives. The `<filter>` element has a set of attributes, here are some of them: **x, y, width, height, filterUnits, primitiveUnits**, [**core attributes, presentation attributes**](https://drafts.fxtf.org/filter-effects/#FilterProperty).
 
 
-## **Filter primitives as building blocks of SVG filters**
+## **Filter Primitives as Building Blocks of SVG Filters**
 
 
 Each filter primitive makes a single graphical operation producing a visible result. The advantage of SVG filters is the ability to combine multiple types. The results obtained after applying one filter can be the source of the image for another filter.
@@ -90,7 +91,7 @@ Thee filters are used to create drop shadow effect:
 ![Drop shadow effect of the ellipse: step by step Illustration](steps_DSE.png#center)
 
 
-## **Lighting Effects**
+## **SVG Lighting Effects**
 
 The lighting effect is making in SVG using a set of filters. Consider some of them: `<feDiffuseLighting>`, `<feSpecularLighting>`, and `<fePointLight>`. You can combine several filters, create and control the details for a lighting effect.
 
@@ -119,7 +120,7 @@ Consider an example of a light effect:
 ```
 ![The result of the lighting effect applying to four red circles](light_effect.png#center)
 
-In this example, four filters are applied to create the effect:
+In this example, four SVG filters are applied to create the effect:
 1. `<feGaussianBlur>` takes input `SourceAlpha`, which is the alpha channel of the source image. The result is stored in a temporary buffer named `"blur"`.
 
 2. Lighting is done with the `<feSpecularLighting>` and `<fePointLighting>`  filter effects. 
@@ -127,7 +128,7 @@ In this example, four filters are applied to create the effect:
 
 3. The `<feComposite>` filter takes two inputs `in = "SourceGraphic" in2 = "light"` and performs they combination using the arithmetic compositing operation.   The output from the arithmetic operator for each result pixel is computed as:   result = k1*in1*in2 + k2*in1 + k3*in2 + k4
 
-The following is shown one more example of filter effects combining:
+The following is shown one more example of SVG filter effects combining:
 ```html {linenos=inline,linenostart=1}
 <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -218,13 +219,13 @@ The `<feComponentTransfer>` element allows modifying each of the R, G, B and A c
 In the **type** attribute, the type of function that allows modifying this component is determined. There are five function types: ***identity, table, discrete, linear***, and ***gamma***. More detailed information you find on the **[SVG Filter Effects](https://drafts.fxtf.org/filter-effects/)** page.
 
 
-## **Gradients**
+## **SVG Gradients**
 
  A gradient is a smooth color transition between points on a drawing surface. There are two types of gradients defined by the following elements: `<linearGradient>` and `<radialGradient>`.
 
 The `<linearGradient>` or `<radialGradient>` element must be embedded within a `<defs>` tag to promote reusability. The **id** attribute specifies a unique name for the gradient. Other elements inside the file can reference it. The gradient can be applied for the **fill** or **stroke** properties for shapes, text, etc.
 
-### **Linear Gradient**
+### **Linear Gradient in SVG**
 
 When talking about the gradient, we have to define what a gradient vector is? The linear gradient vector connects starting and ending points onto which the gradient stops are mapped. The attributes **x1**, **y1, x2** and **y2** set the linear gradient vector. Their values can be either numbers or percentages.
 
@@ -248,13 +249,13 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
 
 
 
-In the example above, the linear gradient `id="grad1"` is referenced by the `<text>` and `<ellipse>` elements in the **fill** attribute.  There are three `<stop>` nodes inside the linear gradient. In each of them, an **offset** attribute sets the position the gradient gets a ***stop-color*** value.
+In the example above, the linear gradient `id="grad1"` is referenced by the `<text>` and `<ellipse>` elements in the **fill** attribute.  There are three `<stop>` nodes inside the linear gradient. In each of them, an **offset** attribute sets the position the SVG gradient gets a ***stop-color*** value.
 
 
 
-### **Radial Gradient**
+### **Radial Gradient in SVG**
 
- A radial gradient is more difficult than a linear one. The colors change circularly rather than linearly in it. The attributes **cx, cy** and **r** define the outermost circle for the radial gradient: **cx** and **cy** mark the center of this circle. Their values specify as percentages of width and height of shape to fill. Both defaults to 50% if omitted. The **fx** and **fy** attributes define the innermost circle for the radial gradient. This is the point at which the gradient «radiates».
+ A radial gradient is more difficult than a linear one. The colors change circularly rather than linearly in it. The attributes **cx, cy** and **r** define the outermost circle for the radial gradient: **cx** and **cy** mark the center of this circle. Their values specify as percentages of width and height of shape to fill. Both defaults to 50% if omitted. The **fx** and **fy** attributes define the innermost circle for the radial gradient. This is the point at which the SVG gradient «radiates».
 
 In this example, the centers of the innermost and outermost border of the gradient are the same.
 ```html {linenos=inline,linenostart=1}
