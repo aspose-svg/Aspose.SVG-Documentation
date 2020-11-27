@@ -1,5 +1,5 @@
 ---
-title: Basic Shapes
+title: SVG Basic Shapes
 type: docs
 weight: 2
 url: /net/drawing-basics/basic-shapes
@@ -7,11 +7,11 @@ description: SVG shapes, Rectangle, Circle, Line, Ellipse, Polyline, Polygon
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**Document Editing**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/). 
+The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**How to edit SVG**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/). 
 
 ## **Rectangle** 
 
-The `<rect>` element is applied to create a rectangle and variations of rectangle figures. There are six attributes determine the rectangle’s shape and position on the screen: 
+The `<rect>` element is applied to create an SVG rectangle and variations of rectangle figures. There are six attributes determine the rectangle’s shape and position on the screen: 
 
 **x**,  **y** – the x, y coordinates of the rectangle's top-left corner 
 
@@ -19,9 +19,9 @@ The `<rect>` element is applied to create a rectangle and variations of rectangl
 
 **rx**, **ry**  – the *x*  and *y* radii of the rectangle's corners 
 
-If **x** and **y** attributes are not set, the top-left corner of the rectangle is placed at the point (0,0). If **rx** and **ry** radii are not specified, they default to 0. You can fill the rectangle with a color, make the filling transparent, and style the stroke using the **style** attribute properties (see [**Fills and Strokes**](/svg/net/drawing-basics/fills-and-strokes/)). 
+If **x** and **y** attributes are not set, the top-left corner of the rectangle is placed at the point (0,0). If **rx** and **ry** radii are not specified, they default to 0. You can fill the rectangle with a color, make the filling transparent, and style the stroke using the **style** attribute properties (see [**Fills and Strokes in SVG**](/svg/net/drawing-basics/fills-and-strokes/)). 
 
-The SVG code to generate the rectangle looks like: 
+The SVG code to generate the SVG rectangle looks like: 
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
  <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ Below is one more sample code for creating a rectangle without rounded borders:
 </svg>
 ```
 
-![Two grey rectangles](rect.png#center)
+![Two grey SVG rectangles](rect.png#center)
 
 
 The following properties of the **style** attribute are used: 
@@ -74,7 +74,7 @@ The SVG `<circle>` element is used to draw a circle on the screen. You need to s
     <circle cx="250" cy="100" r="60" stroke="black" stroke-width="3" fill="red"; fill-opacity="0.7" />
 </svg>
 ```
- ![Two red circles](circle.png#center)
+ ![Two red SVG circles](circle.png#center)
 
 In the example, the circle image does not entirely fit into the viewport. The viewport’s width is 300, i.e. on the x-axis, it is cropped by 300 pixels distance. And for the full image viewing, 310-pixel wide window is needed **(cx+r=250+60=310)**. To make the circle fully visible, you need to increase the width of the viewport until 310.
 
@@ -87,7 +87,7 @@ An ellipse is a more general figure than a circle. In the context of an `<ellips
 
 **cx** , **cy** – the x  and y coordinates of the center of the ellipse 
 
- ![Two ellipces](ellipce.png#center)
+ ![Two SVG ellipces](ellipce.png#center)
 ```html {linenos=inline,linenostart=1}
 <svg height="450" width="500" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="140" cy="310" rx="90" ry="20" style="fill:OrangeRed" />
@@ -100,7 +100,7 @@ The second ellipse in the code has transparency 50% and will be displayed over t
 ## **Line**
 
 
- In order to the line draw, the `<line>` tag is used, which can have the following attributes: 
+ In order to the SVG line draw, the `<line>` tag is used, which can have the following attributes: 
 
 **x1**, **y1** – the x, y coordinates of the origin point 
 
@@ -119,9 +119,9 @@ The second ellipse in the code has transparency 50% and will be displayed over t
 ```
 Here is the rendered SVG image: 
 
-  ![Three lines](lines.png#center)
+  ![Three SVG lines](lines.png#center)
 
-The code example describes three lines of different colors and different widths. The **style** attribute properties ***stroke*** and ***stroke-width*** set the color and thickness of the line. 
+The code example describes three lines of different colors and different widths. The **style** attribute properties ***stroke*** and ***stroke-width*** set the color and thickness of the SVG line. 
 
  
 
@@ -137,11 +137,11 @@ The first group of two numbers in the **points** defines the coordinates of the 
     <polyline points="220,200 240,180 260,200 280,180 300,200 320,180 340,200" style="fill:none; stroke:red; stroke-width:6" />
 </svg>
 ```
-![Red and grey polylines](polyline.png#center)
+![Red and grey SVG polylines](polyline.png#center)
 
 In the first polyline example, there are 3 points that define a triangle. The space between the points will be filled with the ***fill*** property. In the example, the ***fill*** color is grey: `style="fill:grey"`. The default ***fill*** color is black. In the second example, seven points are connected by the polyline with the `stroke-width:6` and the ***fill*** property "none". 
 
-More detailed **style** attributes properties are covered in [**Fills and Strokes**](/svg/net/drawing-basics/fills-and-strokes/) section. Full information is on the **[W3C page](https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperties)**. 
+More detailed **style** attributes properties are covered in [**Fills and Strokes in SVG**](/svg/net/drawing-basics/fills-and-strokes/) section. Full information is on the **[W3C page](https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperties)**. 
 
 
 ## **Polygon** 
@@ -149,7 +149,7 @@ More detailed **style** attributes properties are covered in [**Fills and Stroke
 
 A polygon is a plane geometric shape formed by a closed polyline. If the polyline does not have self-crossing points, the polygon is simple. For example, triangles and squares are simple polygons, but a five-pointed star is not. 
 
-The `<polygon>` element is used to create a shape that contains at least three sides. The attribute **points** defines the coordinates (x, y) for each corner of the polygon. 
+The `<polygon>` element is used to create a shape that contains at least three sides. The attribute **points** defines the coordinates (x, y) for each corner of the SVG polygon. 
 
 An example of a simple polygon building: 
 ```html {linenos=inline,linenostart=1}
@@ -157,7 +157,7 @@ An example of a simple polygon building:
     <polygon points="160,10 350,140 210,350 50,199" style="fill:orange;stroke:purple;stroke-width:1" />
 </svg>
 ```
-![Orange polygon](polygon.png#center)
+![Orange SVG polygon](polygon.png#center)
 
 
 ## **SVG Basic Shapes** 
@@ -178,7 +178,7 @@ A simple SVG document consists of nothing more than the `<svg>`  root element an
     <polyline points="280,290 300,220 320,290" style="fill:grey; stroke:grey; stroke-width:2; fill-opacity:0.5" />
 </svg>
 ```
-![All basic shspes](conclusion.png#center)
+![All basic SVG shspes](conclusion.png#center)
 
 This simple picture "SVG Basic Shapes" contains all the figures described above. Nearby is the famous painting "Pink Accent" by Wassily Kandinsky.
 The basic knowledge of SVG markup allows you to draw a simple image in a text editor, although more complex ideas are not done that way.

@@ -3,6 +3,7 @@ title: SVG Path Data
 type: docs
 weight: 3
 url: /net/drawing-basics/svg-path-data
+description: SVG Lines, SVG Paths, Draw an Arc in SVG, Draw Bézier Curves, Quadratic Bézier Curves, Cubic Bezier curve
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -29,8 +30,6 @@ All commands can be specified with uppercase and lowercase letters. The uppercas
 Coordinates are always written without units specifying and refer to the user's coordinate system. Usually, they are in pixels. 
 The path is described by the position of the current point - a "virtual pen". The "pen" moves along the path sections from the starting to the endpoint. These points are the key parameters for all drawing commands. 
 Each command has parameters; they are indicated in brackets.
-
-
 
 
 ## **Lines and Paths** 

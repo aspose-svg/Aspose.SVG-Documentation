@@ -1,12 +1,13 @@
 ---
-title: Text
+title: SVG Text
 type: docs
 weight: 4
 url: /net/drawing-basics/text
+description: SVG Text, Fonts and Glyphs, SVG Text Content Elements, Paths and Text,
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-SVG allows making for three types of graphic objects: vector graphic shapes, images and text. For the text elements, in the same way as for the shapes, can be applied coordinate system transformations, clipping and styling. In this chapter, we consider how to bring text into an SVG image. 
+SVG allows making for three types of graphic objects: vector graphic shapes, images and text. For the SVG text elements, in the same way as for the shapes, can be applied coordinate system transformations, clipping and styling. In this chapter, we consider how to bring text into an SVG image. 
 
  
 
@@ -32,9 +33,9 @@ In a string, text characters are aligned along an imaginary straight line. This 
 
 
 
-## **Text Content Elements** 
+## **SVG Text Content Elements** 
 
-A text content element is an SVG element that causes  text to be rendered on the canvas. The SVG text content elements are: `<text>`, `<tspan>`  and `<textPath>`. 
+A text content element is an SVG element that causes text to be rendered on the canvas. The SVG text content elements are: `<text>`, `<tspan>`  and `<textPath>`. 
 
  
 
@@ -107,7 +108,7 @@ Consider a simple `<tspan>`> example:
 </svg>
 ```
 ![Text Aspose Your File Format APIs](text2.png#center)
-The  `<text>` element with one or more `<tspan>` child elements set new  positions for characters which start new lines. For text formatting, we use **x** and **y** attributes, that specified the text beginning point. The dashed lines in the above figure indicate the starting position of the text in the viewport. For text styling, **style** attribute's properties are required, such as ***font-family***, ***font-size***, ***font-weight*** end other. 
+The  `<text>` element with one or more `<tspan>` child elements set new  positions for characters which start new lines. For SVG text formatting, we use **x** and **y** attributes, that specified the text beginning point. The dashed lines in the above figure indicate the starting position of the text in the viewport. For text styling, **style** attribute's properties are required, such as ***font-family***, ***font-size***, ***font-weight*** end other. 
 
 
 
@@ -119,7 +120,7 @@ In SVG text can be displayed not only horizontally or vertically but along any v
 
 SVG can place text along a path defined by a `<path>` element. This is making by a `<textPath>` element in a few ways:
  - Attribute  **href** (**xlink:href**) references to an URL pointing to the `<path>` element. 
- - Attribute **path** specifies the path data directly. 
+ - Attribute **path** specifies the SVG path data directly. 
 
 Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. For the text displaying along the curve, mostly take attribute **href** with reference to the `<path>`element.  Here an example: 
 
@@ -135,10 +136,10 @@ Both the **path** attribute and the **href** attribute specify a path along whic
     </text>
 </svg>
 ```
-![Text in path](text_path.png#center)
+![SVG text in path](text_path.png#center)
 
 
 If the length of the path is shorter than the text size, then only text part that is within the extent of the path is drawn. In the figure, the second curve is shorter than the text length, so text breaks off at the path end.
 
-The text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**Filters and Gradients**](/svg/net/drawing-basics/filters-and-gradients/). 
+The text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**SVG Filters and Gradients**](/svg/net/drawing-basics/filters-and-gradients/). 
 

@@ -1,8 +1,9 @@
 ---
-title: Basic Transformations
+title: Basic SVG Transformations
 type: docs
 weight: 5
 url: /net/drawing-basics/basic-transformations
+description: SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -90,7 +91,7 @@ The function  `transform="rotate (-90 200 265)"` used in line 4 means that the p
 
 ## **Skewing**
 
-Skewing is a transformation that rotates one of the axes of the element's coordinate system by a certain angle clockwise or counterclockwise. SVG elements can be skewed through the use of the ***skewX (angle)*** and ***skewY (angle)*** functions. The ***angle*** value included within these functions represents a skew transformation in degrees along the appropriate axis.
+Skewing is a transformation that rotates one of the axes of the element's coordinate system by a certain angle clockwise or counterclockwise. SVG elements can be skewed through the use of the ***skewX (angle)*** and ***skewY (angle)*** functions. The ***angle*** value included within these functions represents a skew SVG transformation in degrees along the appropriate axis.
 The using ***skewX (angle)***, only the x coordinate of the points of the shape changes, but the y coordinate remains unchanged. The ***skewX (angle)*** function makes the vertical lines look like they have been rotated by a given angle. The x coordinate of each point changes on a value proportional to the specified angle and distance to the origin.
 
 Here is shown an example of the circle with skewX(55) value:

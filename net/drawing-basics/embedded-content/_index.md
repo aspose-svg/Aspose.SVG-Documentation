@@ -1,14 +1,14 @@
 ---
-title: Embedded Content
+title: SVG Embedded Content
 type: docs
 weight: 7
 url: /net/drawing-basics/embedded-content
-description: Embedded Content, Loading and Displaying Bitmaps, HTML Elements in an SVG Document
+description: SVG Embedded Content, Loading and Displaying Bitmaps, HTML Elements in an SVG Document
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 
-Embedded content is content that imports into the document from another resource. SVG `<image>` and `<foreignObject>` elements are used for embedded content support.
+Embedded content is content that imports into the document from another resource. SVG `<image>` and `<foreignObject>` elements are used for SVG embedded content support.
 
  
 ## **Loading and Displaying Bitmaps**
@@ -34,9 +34,9 @@ How to use the SVG `<image>` element?  The following code snippet shows as a .pn
 </svg>
 ```
 The above code snippet is displayed like this:
-![Two images](embedded-images.png#center)
+![Two images](embedded_images.png#center)
 
-## **HTML Elements in an SVG Document** 
+## **HTML inside SVG** 
 
  
 

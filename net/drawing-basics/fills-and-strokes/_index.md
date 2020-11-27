@@ -1,8 +1,9 @@
 ---
-title: Fills and Strokes
+title: Fills and Strokes in SVG
 type: docs
 weight: 6
 url: /net/drawing-basics/fills-and-strokes
+description: SVG Fills and Strokes Properties, Fill attribute, Lines and Stroke Caps, Dots and Dashes
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -10,7 +11,7 @@ Filling and stroking are both painting operations. All graphical elements such a
 
  
 
-## **Fills and Strokes properties**
+## **Fills and Strokes Properties**
 
 Colorization or painting means the operation of adding color, gradients or patterns to graphics using **fill** and **stroke**. A set of attributes define their properties: **fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity**, and **stroke-width**. They are some of the **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**.
 
@@ -28,9 +29,9 @@ For the color specifying, you can take **[color names](https://en.wikipedia.org/
 
 
 
-## **Fill** **attribute**
+## **Fill attribute**
 
-The **fill** attribute colors the interior of a graphic element. When you fill a shape or curve, the **fill** colourizes open paths too as if the last its point was connected to the first, even though the **stroke** color in that part of the path will not appear. If the **fill** attribute property is not specified, the default is black.
+The **fill** attribute colors the interior of a graphic element. When you fill an SVG shape or curve, the **fill** colourizes open paths too as if the last its point was connected to the first, even though the **stroke** color in that part of the path will not appear. If the **fill** attribute property is not specified, the default is black.
 
 So that there is no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`.
 
@@ -41,7 +42,7 @@ The sample below illustrates the presents and lacking `fill= "none"` property:
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 300 100 T 390 130" stroke="red" stroke-width="3" transform="translate(0 125)" />
 </svg>
 ```
-![Two paths: unfilled and filled](two_paths.png#center)
+![Two SVG paths: unfilled and filled](two_paths.png#center)
 
 ## **Lines and Stroke Caps**
 
@@ -71,7 +72,7 @@ In the sample, we use a `<g>` element to set common properties on objects, such 
 
 ![Two sets of lines: with different width values and stroke-linecap properties](lines.png#center)
 
-In the example above, the paths (lines) are shown in orange, and the strokes in grey.
+In the example above, the SVG paths (lines) are shown in orange, and the strokes in grey.
 
 The **stroke-linecap** CSS attribute defines how the ends of a line are rendered, and has three possible values: *butt, square* and *round*.
 
@@ -118,7 +119,7 @@ If an odd number of values is specified, the list is then repeated to produce an
 
 Moreover, you can separately specify the opacity of the fill or stroke that controlled by the **fill-opacity** and **stroke-opacity** attributes.
 
-Amazing things can be achieved with strokes and simple shapes:
+Amazing things can be achieved with strokes and simple SVG shapes:
 
 ```html {linenos=inline,linenostart=1}
 <svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
