@@ -1,13 +1,13 @@
 ---
-title: Aspose.SVG for .NET 20.11 Release Notes
+title: Aspose.SVG for .NET 20.12 Release Notes
 type: docs
-weight: 21
-url: /net/aspose-svg-for-net-20-11-release-notes/
+weight: 20
+url: /net/aspose-svg-for-net-20-12-release-notes/
 ---
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for Aspose.SVG for .NET 20.11
+This page contains release notes information for Aspose.SVG for .NET 20.12
 
 {{% /alert %}}
 
