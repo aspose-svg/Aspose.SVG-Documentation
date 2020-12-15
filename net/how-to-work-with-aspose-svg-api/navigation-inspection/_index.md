@@ -1,8 +1,5 @@
 ---
 title: Navigation & Inspection SVG
-aliases:
-    - /net/traverse-svg-dom/
-    - /net/how-to-work-with-asposesvg-api/navigation-inspection/
 type: docs
 weight: 20
 url: /net/how-to-work-with-aspose-svg-api/navigation-inspection/

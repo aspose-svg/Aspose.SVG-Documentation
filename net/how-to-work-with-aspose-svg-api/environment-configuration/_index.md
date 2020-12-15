@@ -1,7 +1,5 @@
 ---
 title: Environment Configuration
-aliases:
-    - /net/how-to-work-with-asposesvg-api/environment-configuration/
 type: docs
 weight: 20
 url: /net/how-to-work-with-aspose-svg-api/environment-configuration/
