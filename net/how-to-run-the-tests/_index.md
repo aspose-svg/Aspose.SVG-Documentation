@@ -3,6 +3,7 @@ title: How to Run the Examples
 type: docs
 weight: 40
 url: /net/how-to-run-the-tests/
+lastmod: "2020-12-15"
 ---
 
 Examples of using the API features are given as **XUnit tests** that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the API features. 

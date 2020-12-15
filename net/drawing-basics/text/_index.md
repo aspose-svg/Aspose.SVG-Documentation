@@ -1,8 +1,9 @@
 ---
 title: SVG Text
 type: docs
-weight: 4
+weight: 40
 url: /net/drawing-basics/text
+lastmod: "2020-12-15"
 description: SVG Text, Fonts and Glyphs, SVG Text Content Elements, Paths and Text,
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />

@@ -3,6 +3,7 @@ title: How to Run the Examples
 type: docs
 weight: 80
 url: /net/how-to-run-the-examples/
+lastmod: "2020-12-15"
 ---
 
 ## **Software Requirements**

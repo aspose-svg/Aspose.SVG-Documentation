@@ -3,6 +3,7 @@ title: How to Merge SVG Documents
 type: docs
 weight: 28
 url: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
+lastmod: "2020-12-15"
 description: Rendering SVG documents, Render SVG, Merging SVG documents, Merge SVG
 ---
 

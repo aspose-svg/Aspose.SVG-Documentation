@@ -1,8 +1,9 @@
 ---
 title: SVG Coordinate Systems and Units
 type: docs
-weight: 1
+weight: 10
 url: /net/drawing-basics/coordinate-systems-and-units
+lastmod: "2020-12-15"
 description: SVG Coordinate Systems, the Initial Viewport, User Coordinate System and Units
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />

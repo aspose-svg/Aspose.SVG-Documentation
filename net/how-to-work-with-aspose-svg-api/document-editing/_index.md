@@ -3,6 +3,7 @@ title: How to Edit SVG
 type: docs
 weight: 18
 url: /net/how-to-work-with-aspose-svg-api/document-editing/
+lastmod: "2020-12-15"
 description: How to Add Element to SVG, How to add Basic Shapes to SVG, Applying SVG Filters to Bitmaps, Drawing on Bitmaps
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />

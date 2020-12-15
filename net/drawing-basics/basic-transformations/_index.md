@@ -1,8 +1,9 @@
 ---
 title: Basic SVG Transformations
 type: docs
-weight: 5
+weight: 50
 url: /net/drawing-basics/basic-transformations
+lastmod: "2020-12-15"
 description: SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
