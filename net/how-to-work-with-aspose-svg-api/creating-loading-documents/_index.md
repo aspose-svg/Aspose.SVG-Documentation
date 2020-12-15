@@ -1,8 +1,5 @@
 ---
 title: Creating and Loading SVG Documents
-aliases:
-    - /net/create-and-read-svg-documents/
-    - /net/how-to-work-with-asposesvg-api/creating-loading-documents/
 type: docs
 weight: 10
 url: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/

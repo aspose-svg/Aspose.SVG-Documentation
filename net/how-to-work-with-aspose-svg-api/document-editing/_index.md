@@ -1,8 +1,5 @@
 ---
 title: How to Edit SVG
-aliases:
-    - /net/edit-svg-file/
-    - /net/how-to-work-with-asposesvg-api/document-editing/
 type: docs
 weight: 18
 url: /net/how-to-work-with-aspose-svg-api/document-editing/

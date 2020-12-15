@@ -1,8 +1,5 @@
 ---
 title: Saving SVG Documents
-aliases:
-    - /net/save-svg-files/
-    - /net/how-to-work-with-asposesvg-api/saving-documents/
 type: docs
 weight: 15
 url: /net/how-to-work-with-aspose-svg-api/saving-documents/

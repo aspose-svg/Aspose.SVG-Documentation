@@ -1,7 +1,5 @@
 ---
 title: How to Merge SVG Documents
-aliases:
-    - /net/how-to-work-with-asposesvg-api/how-to-merge-svg-documents/
 type: docs
 weight: 28
 url: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
