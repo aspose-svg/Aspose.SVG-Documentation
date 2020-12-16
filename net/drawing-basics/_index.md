@@ -3,6 +3,7 @@ title: SVG Drawing Basics
 type: docs
 weight: 15
 url: /net/drawing-basics/
+lastmod: "2020-12-15"
 description: SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, Fills and Strokes in SVG, SVG Embedded Content, SVG Filters and Gradients  
 ---
 

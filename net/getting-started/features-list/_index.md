@@ -3,6 +3,7 @@ title: Features List
 type: docs
 weight: 20
 url: /net/features-list/
+lastmod: "2020-12-15"
 ---
 
 Aspose.SVG for .NET has been developed keeping in view .NET application developers who would love to write applications for editing SVG files. The API is fully compatible with the SVG official specifications and empowers you to work with SVG files without going into the underlying details of the [SVG](https://docs.fileformat.com/page-description-language/svg/) file format.

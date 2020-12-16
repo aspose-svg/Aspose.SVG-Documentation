@@ -3,6 +3,7 @@ title: Aspose.SVG Product Family
 type: docs
 weight: 10
 url: /
+lastmod: "2020-12-15"
 ---
 
 {{% alert color="primary" %}} 

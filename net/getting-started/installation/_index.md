@@ -3,6 +3,7 @@ title: Installation
 type: docs
 weight: 60
 url: /net/installation/
+lastmod: "2020-12-15"
 ---
 
 ## **Installing Aspose.SVG for .NET through NuGet**
