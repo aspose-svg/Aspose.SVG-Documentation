@@ -22,15 +22,15 @@ We have added support for saving SVGDocument with new IOutputStorage interface. 
 
 Next interface and classes were added to namespace [Aspose.Svg.IO Namespace](https://apireference.aspose.com/svg/net/aspose.svg.io):
 
-- A base interface that supports the creation and management of output streams OutputStream [IOutputStorage]().
-- A surrogate stream wraps the real output stream and controls access to it. OutputStream conatins URI data that describes location of the output stream [OutputStream]().
-- A context for initialization of the output stream [OutputStreamContext]().
-- A file system storage [LocalFileSystemStorage ]().
+- A base interface that supports the creation and management of output streams OutputStream [IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage).
+- A surrogate stream wraps the real output stream and controls access to it. OutputStream conatins URI data that describes location of the output stream [OutputStream](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstream).
+- A context for initialization of the output stream [OutputStreamContext](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstreamcontext).
+- A file system storage [LocalFileSystemStorage ](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage).
 
 Three new methods for saving the document content and resources to the output storage were added to SVGDocument:
-- [Save(IOutputStorage)] () 
-- [Save(IOutputStorage, SVGSaveFormat)]()
-- [Save(IOutputStorage, SVGSaveOptions)]()
+- [Save(IOutputStorage)] (https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save) 
+- [Save(IOutputStorage, SVGSaveFormat)](https://apireference.aspose.com/svg/net/aspose.svg.svgdocument/save/methods/1)
+- [Save(IOutputStorage, SVGSaveOptions)](https://apireference.aspose.com/svg/net/aspose.svg.svgdocument/save/methods/2)
 
 
 ### **Changed APIs:**
