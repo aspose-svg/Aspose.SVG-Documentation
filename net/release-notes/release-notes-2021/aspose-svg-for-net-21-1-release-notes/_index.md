@@ -28,7 +28,7 @@ Next interface and classes were added to namespace [Aspose.Svg.IO Namespace](htt
 - A file system storage [LocalFileSystemStorage ](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage).
 
 Three new methods for saving the document content and resources to the output storage were added to SVGDocument:
-- [Save&#x00028;IOutputStorage&#x00029;] (https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save) 
+- [Save(IOutputStorage)](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save) 
 - [Save(IOutputStorage, SVGSaveFormat)](https://apireference.aspose.com/svg/net/aspose.svg.svgdocument/save/methods/1)
 - [Save(IOutputStorage, SVGSaveOptions)](https://apireference.aspose.com/svg/net/aspose.svg.svgdocument/save/methods/2)
 
