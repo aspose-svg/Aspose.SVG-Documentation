@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+#  repo: tpavel-aspose/sample-html-docs-300
+  branch: develop_apiv4
+  squash_merges: true
+#  use_graphql: true
+
+#site_url: https://aspose-documentation-html.netlify.app
+#display_url: https://docs.aspose.com
+media_folder: static/images
+public_folder: /images
+publish_mode: editorial_workflow
+enableIdentityWidget: false
+show_preview_links: true
+
+collections:
+  - name: html
+    label: HTML
+    label_singular: "Page"
+    folder: content/html
+    create: true
+    media_folder: ''
+    public_folder: ''
+#    preview_path: "html/{{slug}}"
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Keywords", name: "keywords", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000 }
+      - {label: "Type", name: "type", widget: "select", default: "docs", options: ["docs"], allow_add: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: { path: { widget: string, label: "Path", index_file: "_index" } }
+    summary: "[{{weight}}] - {{title}}"
+#    summary: "{{commit_date}} {{commit_author}} [{{weight}}]  : {{title}} "

@@ -1,18 +1,22 @@
 .DS_Store
+.idea
+public
+resources
+node_modules
+package-lock.json
 
 # User-specific files
-tests-net/**/*.rsuser
-tests-net/**/*.suo
-tests-net/**/*.user
-tests-net/**/*.userosscache
-tests-net/**/*.sln.docstates
+content/tests-net/**/*.rsuser
+content/tests-net/**/*.suo
+content/tests-net/**/*.user
+content/tests-net/**/*.userosscache
+content/tests-net/**/*.sln.docstates
 
-tests-net/.vs/
-tests-net/packages/
-tests-net/**/bin/
-tests-net/**/obj/
-tests-net/UpgradeLog.htm
+content/tests-net/.vs/
+content/tests-net/packages/
+content/tests-net/**/bin/
+content/tests-net/**/obj/
+content/tests-net/UpgradeLog.htm
 
-tests-net/tests-out/
-tests-net/tests-data/**/*.lic
-
+content/tests-net/tests-out/
+content/tests-net/tests-data/**/*.lic

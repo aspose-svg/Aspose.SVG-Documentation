@@ -1,0 +1,21 @@
+{
+  "name": "lutsk-aspose-prototype",
+  "version": "1.0.0",
+  "description": "Hugo theme for Aspose documentation.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^5.0.1"
+  }
+}
