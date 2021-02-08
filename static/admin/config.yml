@@ -14,8 +14,8 @@ enableIdentityWidget: false
 show_preview_links: true
 
 collections:
-  - name: html
-    label: HTML
+  - name: net
+    label: NET
     label_singular: "Page"
     folder: content/html
     create: true
