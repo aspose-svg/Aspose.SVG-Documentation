@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 #  repo: tpavel-aspose/sample-html-docs-300
-  branch: develop_apiv4
+  branch: main
   squash_merges: true
 #  use_graphql: true
 
