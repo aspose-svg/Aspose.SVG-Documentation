@@ -16,7 +16,7 @@ show_preview_links: true
 collections:
   - name: net
     label: NET
-    label_singular: "Page"
+    label_singular: "Page for NET"
     folder: content/net
     create: true
     media_folder: ''
@@ -37,8 +37,8 @@ collections:
 #    summary: "{{commit_date}} {{commit_author}} [{{weight}}]  : {{title}} "
 
   - name: tests-net
-    label: NET
-    label_singular: "Page"
+    label: TESTS NET
+    label_singular: "Page for TESTS NET"
     folder: content/tests-net
     create: true
     media_folder: ''
