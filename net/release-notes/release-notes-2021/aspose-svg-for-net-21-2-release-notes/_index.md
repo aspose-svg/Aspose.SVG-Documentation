@@ -13,7 +13,7 @@ This page contains release notes information for Aspose.SVG for .NET 21.2
 
 ## **Major Features**
 
-As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the January release of Aspose.SVG for .NET:
+As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the February release of Aspose.SVG for .NET:
 
 - we have added escaping control characters ('<', '>', ''', '"', '&') into SVGDocument save methods;
 - the URL parsing algorithm was modified according to the latest documentation;
