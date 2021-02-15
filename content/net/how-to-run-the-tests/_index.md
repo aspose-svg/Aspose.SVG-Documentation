@@ -1,9 +1,15 @@
 ---
 title: How to Run the Examples
-type: docs
+keywords: ++++ SDK, REST API, REST API call, authentication, initialize API, API URL
+description: "++++ Aspose.HTML Cloud provides two main points:  the conversion
+  feature and the cloud storage access functionality. This article introduce
+  you  with Aspose.HTML Cloud v4.0 abilities to use its functionality both by
+  the REST API directly or by the set of wrappers implemented as SDKs on the
+  various programming languages."
 weight: 40
+type: docs
 url: /net/how-to-run-the-tests/
-lastmod: "2020-12-15"
+lastmod: 2020-12-15
 ---
 
 Examples of using the API features are given as **XUnit tests** that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the API features. 
