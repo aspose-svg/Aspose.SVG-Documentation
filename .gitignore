@@ -20,3 +20,5 @@ content/tests-net/UpgradeLog.htm
 
 content/tests-net/tests-out/
 content/tests-net/tests-data/**/*.lic
+# Local Netlify folder
+.netlify

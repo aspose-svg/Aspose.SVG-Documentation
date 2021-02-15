@@ -1,7 +1,24 @@
+##################################################
+# Configuration for edit in local file system
+# For launch editor need to run:
+#    npx netlify-cms-proxy-server
+#    hugo server
+# See: editor-local.sh, .env files
+#
+# Open url http://localhost:1313/editor-local
+#
+##################################################
+
 backend:
   name: git-gateway
   branch: main
   squash_merges: true
+
+
+local_backend:
+  # url of netlify-cms-proxy-server. port setting in .env file
+  url: http://localhost:8082/api/v1
+  allowed_hosts: [ '192.168.0.1' ]
 
 media_folder: static/images
 public_folder: /images
