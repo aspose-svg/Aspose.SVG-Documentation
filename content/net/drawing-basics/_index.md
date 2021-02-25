@@ -1,10 +1,12 @@
 ---
 title: SVG Drawing Basics
-type: docs
+description: SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data,
+  SVG text, Basic SVG Transformations, Fills and Strokes in SVG, SVG Embedded
+  Content, SVG Filters and Gradients
 weight: 15
+type: docs
 url: /net/drawing-basics/
-lastmod: "2020-12-15"
-description: SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, Fills and Strokes in SVG, SVG Embedded Content, SVG Filters and Gradients  
+lastmod: 2020-12-15
 ---
 
 - **[SVG Coordinate Systems and Units](/svg/net/drawing-basics/coordinate-systems-and-units/)**  In this article, you find the description of the workspace of SVG that is defined by the values of the viewport and viewBox attributes.
