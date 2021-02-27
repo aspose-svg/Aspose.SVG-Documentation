@@ -11,15 +11,15 @@
 
 backend:
   name: git-gateway
-  branch: main
   squash_merges: true
-
 
 local_backend:
   # url of netlify-cms-proxy-server. port setting in .env file
   url: http://localhost:8082/api/v1
-  allowed_hosts: [ '192.168.0.1' ]
+  allowed_hosts: ['192.168.0.1']
 
+site_url: http://localhost:1313/
+display_url: http://localhost:1313/
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
@@ -28,34 +28,12 @@ slug:
   clean_accents: false
 
 collections:
-  - name: net
-    label: NET
-    label_singular: "Page for NET"
-    folder: content/net
-    preview_path: "html/{{slug}}"
-    create: true
-    media_folder: ''
-    public_folder: ''
-
-    nested:
-      depth: 100
-      summary: "{{title}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "string", required: false}
-      - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
-      - {label: "Type", name: "type", widget: "hidden", default: "docs"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-    meta: { path: { widget: string, label: "Path", index_file: "_index" } }
-    summary: "{{weight}} - {{title}}"
-    sortable_fields: ["weight",'title', "commit_author", "commit_date"]
-
-  - name: tests-net
-    label: TESTS NET
-    label_singular: "Page for TESTS NET"
-    folder: content/tests-net
-    preview_path: "tests-net/{{slug}}"
+  - name: content
+    label: Editor of Local file system - Aspose.HTML Product Family
+    label_singular: "Page"
+    folder: content
+    slug: "{{slug}}"
+    preview_path: "{{dirname}}"
     create: true
     media_folder: ''
     public_folder: ''

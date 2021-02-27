@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+
+site_url: https://aspose-svg-documentation.netlify.app
+display_url: https://aspose-svg-documentation.netlify.app
+media_folder: static/images
+public_folder: /images
+publish_mode: editorial_workflow
+show_preview_links: true
+slug:
+  clean_accents: false
+
+collections:
+  - name: content
+    label: Сontent
+    label_singular: "Page"
+    folder: content
+    slug: "{{slug}}"
+    preview_path: "{{dirname}}"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Weight", name: "weight", widget: "number", value_type: "int", default: 10, step: 10, min: 1, max: 1000, required: false }
+      - {label: "Type", name: "type", widget: "hidden", default: "docs"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+    meta: { path: { widget: string, label: "Path", index_file: "_index" } }
+    summary: "{{weight}} - {{title}}"
+    sortable_fields: ["weight",'title', "commit_author", "commit_date"]
