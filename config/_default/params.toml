@@ -1,0 +1,114 @@
+copyright = "The Aspose Authors"
+privacy_policy = "https://policies.google.com/privacy"
+topbar_search_active = false
+logo_rel_link = ""
+
+# Title of 404 page
+title_404_page = "404 - Page Not Found | Aspose Documentation"
+
+# Open Grapgh settings
+title = "Aspose Documentation"
+images = ["images/Aspose-image-for-open-graph.jpg"]
+description = "Class Libraries & REST APIs for the developers to manipulate & process Files from Word, Excel, PowerPoint, Visio, PDF, CAD & several other categories in Web, Desktop or Mobile apps. Develop & deploy on Windows, Linux, MacOS & Android platforms."
+
+# Specify a value here if your content directory is not in your repo's root directory
+# github_subdir = ""
+
+# Google Custom Search Engine ID. Remove or comment out to disable search.
+# gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+# User interface configuration
+[ui]
+# Enable to show the side bar menu in its compact state.
+sidebar_menu_compact = true
+#  Set to true to disable breadcrumb navigation.
+breadcrumb_disable = false
+#  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
+sidebar_search_disable = true
+#  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
+navbar_logo = false
+# Set to true to disable the About link in the site footer
+footer_about_disable = false
+
+[links]
+# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[links.user]]
+name = "Like us on Facebook"
+url = "https://www.facebook.com/aspose/"
+icon = "fab fa-facebook-f"
+[[links.user]]
+name = "Follow us on Twitter"
+url = "https://twitter.com/aspose/"
+icon = "fab fa-twitter"
+[[links.user]]
+name = "Watch us on YouTube"
+url = "https://www.youtube.com/user/AsposeVideo"
+icon = "fab fa-youtube"
+[[links.user]]
+name = "Link us on LinkedIn"
+url = "https://www.linkedin.com/company/aspose"
+icon = "fab fa-linkedin-in"
+[[links.user]]
+name = "Find us on Stackoverflow"
+url = "https://stackoverflow.com/questions/tagged/aspose"
+icon = "fab fa-stack-overflow"
+[[links.user]]
+name = "Check us out on Quora"
+url = "https://asposecom.quora.com"
+icon = "fab fa-quora"
+[[links.user]]
+name = "Github Repositories"
+url = "https://aspose.github.io"
+icon = "fab fa-github-alt"
+[[links.user]]
+name = "Subscribe to the feeds"
+url = "https://blog.aspose.com/feed/"
+icon = "fa-rss fa"
+
+# Footer information links. These will show up in the middle of the footer after socail links.
+[[links.footer-info]]
+name = "Home"
+url = "https://www.aspose.com"
+[[links.footer-info]]
+name = "Products"
+url = "https://products.aspose.com"
+[[links.footer-info]]
+name = "New Releases"
+url = "https://releases.aspose.com/"
+[[links.footer-info]]
+name = "Pricing"
+url = "https://purchase.aspose.com/pricing"
+[[links.footer-info]]
+name = "Docs"
+url = "https://docs.aspose.com/dashboard.action"
+[[links.footer-info]]
+name = "Live Demos"
+url = "https://aspose.github.io/"
+[[links.footer-info]]
+name = "Free Support"
+url = "https://forum.aspose.com/"
+[[links.footer-info]]
+name = "Free Consulting"
+url = "https://aspose-free-consulting.github.io/"
+[[links.footer-info]]
+name = "Paid Support"
+url = "https://helpdesk.aspose.com/"
+[[links.footer-info]]
+name = "Paid Consulting"
+url = "https://consulting.aspose.com/"
+
+# Footer policy information links. These will show up in the bottom of the footer after the company name.
+[[links.footer-policy]]
+name = "Privacy Policy"
+url = "https://company.aspose.com/legal/privacy-policy"
+[[links.footer-policy]]
+name = "Terms of use"
+url = "https://company.aspose.com/legal/terms-of-use"
+[[links.footer-policy]]
+name = "Contact"
+url = "https://company.aspose.com/contact"
+
+# Google Tag Manager settings
+[gtm]
+aspose_id = "GTM-NJMHSH"
+cloud_id = "GTM-TSXP9CZ"
+conholdate_id = "GTM-N4D44QW"

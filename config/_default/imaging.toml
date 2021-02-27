@@ -1,0 +1,4 @@
+# Image processing configuration.
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"

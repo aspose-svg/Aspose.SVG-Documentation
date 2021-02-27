@@ -1,0 +1,3 @@
+#[hugoVersion]
+#min = "0.80.0"
+#max = "0.80.0"
