@@ -1,6 +1,8 @@
-#  Netlify redirects. See https://www.netlify.com/docs/redirects/
-{{  range $p := .Site.Pages -}}
-{{ range .Aliases }}
-{{  . | printf "%-80s" }}	{{ $p.RelPermalink  -}};
+#  Nginx redirects
+{{ range $p := .Site.Pages -}}
+{{   range  .Aliases -}}
+{{     if ne .  $p.RelPermalink -}}
+{{          . | printf "%-60s" }}	{{ $p.RelPermalink   -}};
+{{     end -}}
+{{   end -}}
 {{ end -}}
-{{- end -}}
