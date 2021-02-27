@@ -2,7 +2,7 @@
 title: SVG Embedded Content
 type: docs
 weight: 70
-url: /net/drawing-basics/embedded-content
+aliases: /net/drawing-basics/embedded-content
 lastmod: "2020-12-15"
 description: SVG Embedded Content, Loading and Displaying Bitmaps, HTML Elements in an SVG Document
 ---

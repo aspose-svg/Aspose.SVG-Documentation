@@ -2,7 +2,7 @@
 title: What is an SVG Document?
 type: docs
 weight: 10
-url: /net/what-is-an-svg-document/
+aliases: /net/what-is-an-svg-document/
 lastmod: "2020-12-15"
 ---
 

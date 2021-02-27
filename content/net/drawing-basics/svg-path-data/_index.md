@@ -2,7 +2,7 @@
 title: SVG Path Data
 type: docs
 weight: 30
-url: /net/drawing-basics/svg-path-data
+aliases: /net/drawing-basics/svg-path-data
 lastmod: "2020-12-15"
 description: SVG Lines, SVG Paths, Draw an Arc in SVG, Draw Bézier Curves, Quadratic Bézier Curves, Cubic Bezier curve
 ---

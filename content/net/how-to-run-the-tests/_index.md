@@ -2,7 +2,7 @@
 title: How to Run the Examples
 type: docs
 weight: 40
-url: /net/how-to-run-the-tests/
+aliases: /net/how-to-run-the-tests/
 lastmod: "2020-12-15"
 ---
 

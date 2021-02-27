@@ -2,7 +2,7 @@
 title: System Requirements
 type: docs
 weight: 50
-url: /net/system-requirements/
+aliases: /net/system-requirements/
 lastmod: "2020-12-15"
 ---
 

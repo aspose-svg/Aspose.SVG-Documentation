@@ -2,7 +2,7 @@
 title: Installation
 type: docs
 weight: 60
-url: /net/installation/
+aliases: /net/installation/
 lastmod: "2020-12-15"
 ---
 

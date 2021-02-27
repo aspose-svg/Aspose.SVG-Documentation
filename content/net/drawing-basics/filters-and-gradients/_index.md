@@ -2,7 +2,7 @@
 title: SVG Filters and Gradients
 type: docs
 weight: 80
-url: /net/drawing-basics/filters-and-gradients
+aliases: /net/drawing-basics/filters-and-gradients
 lastmod: "2020-12-15"
 description: SVG Filter Primitives, SVG Filters, Gaussian Blur, Drop Shadow Effect, SVG Lighting Effects, Color Filters, SVG Gradients, Linear Gradient in SVG, Radial Gradient in SVG
 ---

@@ -2,7 +2,7 @@
 title: Features List
 type: docs
 weight: 20
-url: /net/features-list/
+aliases: /net/features-list/
 lastmod: "2020-12-15"
 ---
 

@@ -2,7 +2,7 @@
 title: How to Convert SVG Files
 type: docs
 weight: 25
-url: /net/how-to-work-with-aspose-svg-api/converting/
+aliases: /net/how-to-work-with-aspose-svg-api/converting/
 lastmod: "2020-12-15"
 description: SVG Converters, Convert SVG to PDF, SVG to XPS, SVG to PNG, SVG to BMP, SVG to JPG, SVG to TIFF, SVG to GIF, Convert SVG to Image
 ---

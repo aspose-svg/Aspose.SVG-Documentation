@@ -2,7 +2,7 @@
 title: Supported File Formats
 type: docs
 weight: 40
-url: /net/supported-file-formats/
+aliases: /net/supported-file-formats/
 lastmod: "2020-12-15"
 ---
 

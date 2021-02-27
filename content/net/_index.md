@@ -2,7 +2,7 @@
 title: Aspose.SVG for .NET 
 type: docs
 weight: 10
-url: /net/
+aliases: /net/
 is_root: true
 lastmod: "2020-12-15"
 ---

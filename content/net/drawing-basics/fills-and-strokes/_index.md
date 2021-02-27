@@ -2,7 +2,7 @@
 title: Fills and Strokes in SVG
 type: docs
 weight: 60
-url: /net/drawing-basics/fills-and-strokes
+aliases: /net/drawing-basics/fills-and-strokes
 lastmod: "2020-12-15"
 description: SVG Fills and Strokes Properties, Fill attribute, Lines and Stroke Caps, Dots and Dashes
 ---

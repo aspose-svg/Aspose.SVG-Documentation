@@ -2,7 +2,7 @@
 title: Creating and Loading SVG Documents
 type: docs
 weight: 10
-url: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
+aliases: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
 lastmod: "2020-12-15"
 description: Create an Empty SVG Document, Create SVG from a Memory String, Create SVG from a Stream, Load SVG from a File, Load SVG from the Web, Reading SVG with Resources Async
 ---

@@ -2,7 +2,7 @@
 title: Rendering Quality Comparisons
 type: docs
 weight: 30
-url: /net/rendering-quality-comparisons/
+aliases: /net/rendering-quality-comparisons/
 lastmod: "2020-12-15"
 ---
 
