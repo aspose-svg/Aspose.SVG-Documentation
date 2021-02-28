@@ -46,28 +46,33 @@ Converting a file to other format using the **ConvertSVG()** method is a sequenc
 {{< highlight java >}}
 using Aspose.Svg;
 using System.IO;
-using Aspose.Svg.Saving;
-using Aspose.Svg.Converters;
+using Aspose.Svg.Drawing;
+using Aspose.Svg.Rendering;
+using Aspose.Svg.Rendering.Pdf;
 ...
-    // Initialize an SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
-    {
-        // Create an instance of ImageSaveOptions class
-    	var pngSaveOptions = new ImageSaveOptions();    
-
-```
-    // Convert SVG to PNG
-	Converter.ConvertSVG(document, pngSaveOptions, Path.Combine(OutputDir, "light.png"));
-}
-```
-
-{{< /highlight >}}
+	
+	// Initialize an SVG document from a file
+	using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
+	{
+	     // Initialize an instance of PdfRenderingOptions class and set a custom PageSetup and JpegQuality properties
+		 var pdfRenderingOptions = new PdfRenderingOptions();
+	     pdfRenderingOptions.PageSetup.AnyPage = new Page(new Size(500, 500), new Margin(10, 10, 10, 10));
+	     pdfRenderingOptions.JpegQuality = 10;
+	     
+		 // Initialize an instance of PdfDevice class
+	     using (IDevice device = new PdfDevice(pdfRenderingOptions, Path.Combine(OutputDir, "light_out.pdf")))
+	     {
+	         // Render SVG to PDF, send the document to the rendering device
+			 document.RenderTo(device);
+	     }
+	 }
+ {{< /highlight >}}	
 
 In the example, the **ImageSaveOptions()** constructer initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG(`SVGDocument source, ImageSaveOptions options, string outputPath`)** method takes the required attributes and performs the conversion operation.
 
 ### **Using  RenderTo() method**
 
-To convert SVG to PNG using the **RenderTo()** method take the following stages:
+To convert SVG to PNG using the **RenderTo()** method takes the following stages:
 
 * Initialize a document using one of the **SVGDocument()** constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
 * Produce an instance of the **[ImageRenderingOptions](https://apireference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions)** class.
@@ -83,10 +88,9 @@ using Aspose.Svg.Rendering.Image;
 	using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
 	{
 	    // Initialize an instance of ImageRenderingOptions class 
-		var pngOptions = new ImageRenderingOptions();
-	    	    
+		var pngOptions = new ImageRenderingOptions();	    
 
-```
+
 	// Initialize an instance of ImageDevice class and specify the output file to render
     using (var device = new ImageDevice(pngOptions, Path.Combine(OutputDir, "light_out.png")))
     {
@@ -94,7 +98,6 @@ using Aspose.Svg.Rendering.Image;
 		document.RenderTo(device);
 	}
 }
-```
 
 {{< /highlight >}}
 
