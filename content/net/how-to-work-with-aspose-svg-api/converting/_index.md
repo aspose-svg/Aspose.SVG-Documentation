@@ -46,27 +46,19 @@ Converting a file to other format using the **ConvertSVG()** method is a sequenc
 {{< highlight java >}}
 using Aspose.Svg;
 using System.IO;
-using Aspose.Svg.Drawing;
-using Aspose.Svg.Rendering;
-using Aspose.Svg.Rendering.Pdf;
+using Aspose.Svg.Saving;
+using Aspose.Svg.Converters;
 ...
-	
-	// Initialize an SVG document from a file
-	using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
-	{
-	     // Initialize an instance of PdfRenderingOptions class and set a custom PageSetup and JpegQuality properties
-		 var pdfRenderingOptions = new PdfRenderingOptions();
-	     pdfRenderingOptions.PageSetup.AnyPage = new Page(new Size(500, 500), new Margin(10, 10, 10, 10));
-	     pdfRenderingOptions.JpegQuality = 10;
-	     
-		 // Initialize an instance of PdfDevice class
-	     using (IDevice device = new PdfDevice(pdfRenderingOptions, Path.Combine(OutputDir, "light_out.pdf")))
-	     {
-	         // Render SVG to PDF, send the document to the rendering device
-			 document.RenderTo(device);
-	     }
-	 }
- {{< /highlight >}}	
+    // Initialize an SVG document from a file
+    using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
+    {
+        // Create an instance of ImageSaveOptions class
+    	var pngSaveOptions = new ImageSaveOptions();    
+
+        // Convert SVG to PNG
+    	Converter.ConvertSVG(document, pngSaveOptions, Path.Combine(OutputDir, "light.png"));
+    }
+{{< /highlight >}}
 
 In the example, the **ImageSaveOptions()** constructer initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG(`SVGDocument source, ImageSaveOptions options, string outputPath`)** method takes the required attributes and performs the conversion operation.
 
@@ -88,17 +80,16 @@ using Aspose.Svg.Rendering.Image;
 	using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
 	{
 	    // Initialize an instance of ImageRenderingOptions class 
-		var pngOptions = new ImageRenderingOptions();	    
+		var pngOptions = new ImageRenderingOptions();
+	    	    
 
-
-	// Initialize an instance of ImageDevice class and specify the output file to render
-    using (var device = new ImageDevice(pngOptions, Path.Combine(OutputDir, "light_out.png")))
-    {
-        // Render SVG to PNG
-		document.RenderTo(device);
+		// Initialize an instance of ImageDevice class and specify the output file to render
+	    using (var device = new ImageDevice(pngOptions, Path.Combine(OutputDir, "light_out.png")))
+	    {
+	        // Render SVG to PNG
+			document.RenderTo(device);
+		}
 	}
-}
-
 {{< /highlight >}}
 
 In order to convert SVG to PNG format, the **RenderTo(`IDevice device`)** method converts and sends the current document to the output rendering device. The **ImageDevice(`PdfRenderingOptions, string`)** constructor takes as arguments an instance of **ImagrRenderingOptions** class and output file name and initializes a new instance  (device) of the **ImageDevice** class. 
@@ -141,7 +132,7 @@ using Aspose.Svg.Rendering.Pdf;
 		 var pdfRenderingOptions = new PdfRenderingOptions();
 	     pdfRenderingOptions.PageSetup.AnyPage = new Page(new Size(500, 500), new Margin(10, 10, 10, 10));
 	     pdfRenderingOptions.JpegQuality = 10;
-	\
+	     
 		 // Initialize an instance of PdfDevice class
 	     using (IDevice device = new PdfDevice(pdfRenderingOptions, Path.Combine(OutputDir, "light_out.pdf")))
 	     {
@@ -151,7 +142,7 @@ using Aspose.Svg.Rendering.Pdf;
 	 }
  {{< /highlight >}}	
 
-In order to convert SVG to PDF format, Aspose.SVG for .NET API offers **PdfRenderingOptions** class which initializes a new object, with rendering options, that is passed as an argument to the **PdfDevice(`PdfRenderingOptions, string`)** constructor. The last initializes a new instance of **PdfDevice** class by rendering options and output file name.  The **RenderTo(`IDevice device`)**  method converts and sends the current document to the output rendering device.
+In order to convert SVG to PDF format, Aspose.SVG for .NET API offers **PdfRenderingOptions** class which initializes a new object, with rendering options, that is passed as an argument to the **PdfDevice(`PdfRenderingOptions, string`)** constructor. The last initializes a new instance of the **PdfDevice** class by rendering options and output file name.  The **RenderTo(`IDevice device`)**  method converts and sends the current document to the output rendering device.
 
 The **`JpegQuality`** specifies the quality of JPEG compression for images. The default is 95.  In the example above, the used **`JpegQuality`** value is 10.  The figure illustrates conversion SVG to PDF for two files [light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg) and [Lineto2.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/Lineto2.svg): a) **`JpegQuality`** value is the default; b) **`JpegQuality`** value is 10.
 
@@ -175,19 +166,16 @@ using System.Drawing;
 using Aspose.Svg.Saving;
 ...
 
-```
-// Initialize an SVG document from a file
-using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
-{
-    // Initialize an instance of XpsSaveOptions class
-    var saveOptions = new XpsSaveOptions();
-    saveOptions.BackgroundColor = Color.Gray;
-
-    // Convert SVG to XPS
-    Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "light.xps"));
-}
-```
-
+    // Initialize an SVG document from a file
+    using (var document = new SVGDocument(Path.Combine(DataDir, "light.svg")))
+    {
+        // Initialize an instance of XpsSaveOptions class
+        var saveOptions = new XpsSaveOptions();
+        saveOptions.BackgroundColor = Color.Gray;
+    
+        // Convert SVG to XPS
+        Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "light.xps"));
+    }
 {{< /highlight >}}
 
 The **XpsSaveOptions()** constructer initialize an instance of the **XpsSaveOptions** class that is passed to **ConvertSVG()** method.
@@ -224,26 +212,23 @@ using System.IO;
 using Aspose.Svg.Rendering.Image;
 ...
 
-```
-// Open a source SVG document
- using (var document = new SVGDocument(Path.Combine(DataDir, "conclusion.svg")))
-{
-   // Create the ImageDevice, set image Format and specify output file to render
-   using (IDevice device = new ImageDevice(new ImageRenderingOptions(ImageFormat.Bmp), Path.Combine(OutputDir, "conclusion_out.bmp")))
-   {
-       // Render SVG to BMP
-	   document.RenderTo(device);
-   }
-}
-```
-
+    // Open a source SVG document
+     using (var document = new SVGDocument(Path.Combine(DataDir, "conclusion.svg")))
+    {
+       // Create the ImageDevice, set image Format and specify an output file to render
+       using (IDevice device = new ImageDevice(new ImageRenderingOptions(ImageFormat.Bmp), Path.Combine(OutputDir, "conclusion_out.bmp")))
+       {
+           // Render SVG to BMP
+    	   document.RenderTo(device);
+       }
+    }
 {{< /highlight >}}
 
 To convert an SVG file to BMP format, Aspose.PDF for .NET offers the **RenderTo()** method that takes the instance of **ImageDevice** class which is created by **ImageDevice**() constructor that takes as an argument the **ImageRenderingOptions** class object.
 
 ### **Convert SVG to JPEG**
 
-JPEG is one of the most commonly used image formats. Its uniqueness is the controlled quality loss during compression. So it is widely used to storing and sending over the web graphic digital content (photos, scanned copies, digitized pictures).
+JPEG is one of the most commonly used image formats. Its uniqueness is the controlled quality loss during compression. So it is widely used to storing and sending over web graphic digital content (photos, scanned copies, digitized pictures).
 
 Consider how to convert a document from SVG to JPEG using **RenderTo()** method:
 
@@ -267,29 +252,26 @@ using System.Drawing.Drawing2D;
         var jpegOptions1 = new ImageRenderingOptions(ImageFormat.Jpeg);
         jpegOptions1.SmoothingMode = SmoothingMode.AntiAlias;
 
-```
-    // Set Format and SmoothingMode for jpgOptions2
-    var jpegOptions2 = new ImageRenderingOptions(ImageFormat.Jpeg);
-    jpegOptions2.SmoothingMode = SmoothingMode.Default;
-
-    // Initialize an instance of ImageDevice class and specify the output file to render
-    using (IDevice device = new ImageDevice(jpegOptions1, Path.Combine(OutputDir, "owl_out1.jpg")))
-    {
-        // Render SVG to JPEG
-        document.RenderTo(device);
+        // Set Format and SmoothingMode for jpgOptions2
+        var jpegOptions2 = new ImageRenderingOptions(ImageFormat.Jpeg);
+        jpegOptions2.SmoothingMode = SmoothingMode.Default;
+    
+        // Initialize an instance of ImageDevice class and specify the output file to render
+        using (IDevice device = new ImageDevice(jpegOptions1, Path.Combine(OutputDir, "owl_out1.jpg")))
+        {
+            // Render SVG to JPEG
+            document.RenderTo(device);
+        }
+        using (IDevice device = new ImageDevice(jpegOptions2, Path.Combine(OutputDir, "owl_out2.jpg")))
+        {
+            document.RenderTo(device);
+        }
     }
-    using (IDevice device = new ImageDevice(jpegOptions2, Path.Combine(OutputDir, "owl_out2.jpg")))
-    {
-        document.RenderTo(device);
-    }
-}
-```
-
 {{< /highlight >}}
 
 The **RenderTo()** method takes the instance of **ImageDevice** class which is created by the **ImageDevice()** constructor that accepts as an argument the **ImageRenderingOptions** class object.
 
-The **`Format`** property sets image format. By default this property is `Png`. To convert SVG to JPEG you have to use `ImageFormat.Jpeg`.
+The **`Format`** property sets image format. By default, this property is `Png`. To convert SVG to JPEG you have to use `ImageFormat.Jpeg`.
 
 ![the resulting images fragments](SmoothingMode.png#center)
 
@@ -315,26 +297,23 @@ using Aspose.Svg.Saving;
 using Aspose.Svg.Converters;
 ...
 
-```
-// Prepare an SVG code and save it to a file
-var code = "<svg xmlns='http://www.w3.org/2000/svg'>" +
-           "<circle cx='100' cy='150' r='50' stroke='#2F4F4F' stroke-width='4' fill='#FF7F50' />" +
-           "<circle cx='180' cy='200' r='60' stroke='#2F4F4F' stroke-width='4' fill='#008B8B' />" +
-           "</svg>";
-File.WriteAllText("example.svg", code);
-
-// Initialize an SVG document from the file
-using (var document = new SVGDocument("example.svg"))
-{
-    // Initialize an instance of ImageSaveOptions class and set BackgroundColor property
-    var saveOptions = new ImageSaveOptions();
-    saveOptions.BackgroundColor = Color.Gainsboro;
-
-    // Convert SVG to PNG
-    Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "output.png"));
-}
-```
-
+    // Prepare an SVG code and save it to a file
+    var code = "<svg xmlns='http://www.w3.org/2000/svg'>" +
+               "<circle cx='100' cy='150' r='50' stroke='#2F4F4F' stroke-width='4' fill='#FF7F50' />" +
+               "<circle cx='180' cy='200' r='60' stroke='#2F4F4F' stroke-width='4' fill='#008B8B' />" +
+               "</svg>";
+    File.WriteAllText("example.svg", code);
+    
+    // Initialize an SVG document from the file
+    using (var document = new SVGDocument("example.svg"))
+    {
+        // Initialize an instance of ImageSaveOptions class and set BackgroundColor property
+        var saveOptions = new ImageSaveOptions();
+        saveOptions.BackgroundColor = Color.Gainsboro;
+    
+        // Convert SVG to PNG
+        Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "output.png"));
+    }
 {{< /highlight >}}
 
 In the example,  the **ImageSaveOptions()** constructer initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG()** method takes the `document`, `saveOptions`, and output file path and performs the conversion operation.
@@ -365,21 +344,18 @@ using Aspose.Svg.Rendering.Image;
         var tiffOptions = new ImageRenderingOptions(ImageFormat.Tiff);
         tiffOptions.Compression = Compression.None;
 
-```
-    // Initialize an instance of ImageDevice class and specify the output file to render
-    using (IDevice device = new ImageDevice(tiffOptions, Path.Combine(OutputDir, "conclusion.tiff")))
-    {
-        // Render SVG to TIFF
-        document.RenderTo(device);                    
+        // Initialize an instance of ImageDevice class and specify the output file to render
+        using (IDevice device = new ImageDevice(tiffOptions, Path.Combine(OutputDir, "conclusion.tiff")))
+        {
+            // Render SVG to TIFF
+            document.RenderTo(device);                    
+        }
     }
-}
-```
-
 {{< /highlight >}}
 
 The **RenderTo()** method takes the instance of the **ImageDevice** class which is created by **ImageDevice()** constructor that takes as an argument the **ImageRenderingOptions** class object.
 
-The **`Compression`** property allows set compression for TIFF file format. By default this property is `LZW`. In the example above, we put `Compression.None`.
+The **`Compression`** property allows set compression for TIFF file format. By default, this property is `LZW`. In the example above, we put `Compression.None`.
 
 ### **Convert SVG to GIF**
 
@@ -403,13 +379,10 @@ using Aspose.Svg.Converters;
         // Initialize an instance of ImageSaveOptions class and set PageSetup property
         var saveOptions = new ImageSaveOptions(ImageFormat.Gif);
         saveOptions.PageSetup.AnyPage = new Page(new Size(400, 600), new Margin(20, 20, 20, 20));
-
-```
-    // Convert SVG to GIF
-    Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "owl.gif"));             
-}
-```
-
+        
+        // Convert SVG to GIF
+        Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "owl.gif"));             
+    }
 {{< /highlight >}}
 
 {{% alert color="primary" %}} 
