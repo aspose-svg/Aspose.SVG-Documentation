@@ -13,7 +13,7 @@ The setting of environment configuration is used for various purposes. For examp
 The [**Aspose.Svg.Services**](https://apireference.aspose.com/svg/net/aspose.svg.services) namespace contains a set of interfaces for separated services implementations. In this article, we consider different types of environment configurations services such as **User Agent Service**, **Runtime Service**, and **Network Service**. Aspose.SVG for .NET provides the [**Configuration**](https://apireference.aspose.com/svg/net/aspose.svg/configuration) class that  can be used for the setting of environment where the application is running.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **User Agent Service**
@@ -217,6 +217,6 @@ After the example run:
 
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 

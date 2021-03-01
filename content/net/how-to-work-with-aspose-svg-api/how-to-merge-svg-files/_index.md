@@ -7,7 +7,7 @@ lastmod: "2020-12-15"
 description: Rendering SVG documents, Render SVG, Merging SVG documents, Merge SVG
 ---
 
-Aspose.SVG for .NET API provides the  [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
+Aspose.SVG for .NET API provides the [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
 
 {{% alert color="primary" %}} 
 
@@ -19,7 +19,7 @@ You can try to convert SVG documents to a variety of other formats with our [Fre
 
 Rendering of SVG files is the process of generating an images from a 2D model by means of the API. Converting from SVG to other formats can perform by using  **Render (`IDevice, TDocument`)** method of the [**Renderer**](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
 
-In [**How to convert SVG files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using **ConverterSVG()** methods and **RenderTo()** method. In this chapter we consider the **Render ()** method applying for SVG conversion to other formats - PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF.
+In the [**How to convert SVG files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using **ConverterSVG()** methods and **RenderTo()** method. In this chapter we consider the **Render ()** method applying for SVG conversion to other formats - PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF.
 
 To convert SVG to another format, for example, PNG, use the following code snippet:
 ```c#

@@ -4,28 +4,29 @@ type: docs
 weight: 10
 aliases: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
 lastmod: "2020-12-15"
-description: Create an Empty SVG Document, Create SVG from a Memory String, Create SVG from a Stream, Load SVG from a File, Load SVG from the Web, Reading SVG with Resources Async
+keywords: SVG, create SVG, SVG file, load SVG, SVG document
+description: In this article, you find out how to create an Empty SVG Document, create SVG from a memory string, create SVG from a stream, load SVG from a file, load SVG from the Web, and reading SVG with Resources Async
 ---
 
 
-To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides  [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class that has several constructors allowing you to produce new class instances. The **SVGDocument** is the root of the SVG DOM hierarchy, holds the entire content and entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/)  and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
+To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class that has several constructors allowing you to produce new class instances. The **SVGDocument** is the root of the SVG DOM hierarchy, holds the entire content and entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/)  and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
 
 SVG files can be created & loaded:
 
  - from scratch as an empty document with SVG structure,
  - from user-provided string,
- - from a memory stream or file,
+ - from a memory stream or a file,
  - from the web.
 
 This section provides some examples of creation & loading SVG files using Aspose.SVG for .NET API. The **SVGDocument** has a wide set of overloaded constructors allowing you to create a blank document or load it from a file, URL, stream, etc.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **Create an Empty SVG Document**
 
-Aspose.SVG for .NET API provides the   [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following code snippet shows the usage of the default **SVGDocument()** constructor to create an SVG document.
+Aspose.SVG for .NET API provides the [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following code snippet shows the usage of the default **SVGDocument()** constructor to create an SVG document.
 
 ```c#
 using Aspose.Svg;
@@ -58,7 +59,7 @@ using System.IO;
 	}
 ```
 
-More details about SVG files saving are in [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/) section.
+More details about SVG files saving are in the [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/) section.
 
 ## **Create SVG from a Memory String**
 

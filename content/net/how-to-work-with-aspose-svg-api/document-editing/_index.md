@@ -150,7 +150,7 @@ The figure shows the visualization of the original SVG file  [basic-shapes.svg](
 
 To create a path using the Aspose.SVG API, you need to create an instance of the **[SVGPathElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpathelement)** class using the **CreateElementNS(`string namespaceURI, string qualifiedName`)** method.
 
-The methods **CreateSVGPathSegMovetoAbs ( `x,  y`)**, **CreateSVGPathSegCurvetoQuadraticAbs (`x,  y,  x1,  y1`)** and **CreateSVGPathSegCurvetoQuadraticSmoothAbs (`x,  y`)** take parameters of path data commands **M, C**, and **T** as their own parameters. The [**`PathSegList`**](https://apireference.aspose.com/svg/net/aspose.svg.paths/isvganimatedpathdata/properties/pathseglist) property of  the **SVGPathSegList** type provides access to the content of **d** attribute, in the form of path segments list, that matches the SVG syntax  (details are in the [**SVG Path Data**](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/)).
+The methods **CreateSVGPathSegMovetoAbs ( `x,  y`)**, **CreateSVGPathSegCurvetoQuadraticAbs (`x,  y,  x1,  y1`)** and **CreateSVGPathSegCurvetoQuadraticSmoothAbs (`x,  y`)** take parameters of path data commands **M, C**, and **T** as their own parameters. The [**`PathSegList`**](https://apireference.aspose.com/svg/net/aspose.svg.paths/isvganimatedpathdata/properties/pathseglist) property of the **SVGPathSegList** type provides access to the content of **d** attribute, in the form of path segments list, that matches the SVG syntax (details are in [**SVG Path Data**](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/)).
 
 The following code snippet shows how to create the path and add into `<svg>` element:
 
@@ -306,10 +306,10 @@ The saturation effect is a special case of using the color matrix.  The `<feColo
     filterElement.Id = "CM";
 ```
 
-Suppose you add created `feColorMatrixElement` to the `filterElement` and set for the image `"filter"` attribute referring to the `filterElement.Id = "CM";` you get a result illustrated on figure (c).
+Suppose you add created `feColorMatrixElement` to the `filterElement` and set for the image `"filter"` attribute referring to the `filterElement.Id = "CM";` you get a result illustrated on the figure (c).
 
 The figure demonstrates the source image (a), the image processed by the feGaussianBlur filter (b) and the resulting image after the saturate operation applying (c).
-![The result of the feGaussianBlur  and  feColorMatrix filters applying](Filter_Effects.png#center)
+![The result of the feGaussianBlur and feColorMatrix filters applying](Filter_Effects.png#center)
 
 
 
@@ -381,5 +381,5 @@ We painted the circle with a big value of **`stroke-width`**. The **`stroke-dash
 ![Image with added text and circle](seaside.png#center)
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 

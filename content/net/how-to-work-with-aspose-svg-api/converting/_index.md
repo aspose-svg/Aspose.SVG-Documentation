@@ -59,7 +59,7 @@ using Aspose.Svg.Converters;
     }
 ```
 
-In the example, the **ImageSaveOptions()** constructer initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG(`SVGDocument source, ImageSaveOptions options, string outputPath`)** method takes the required attributes and performs the conversion operation.
+In the example, the **ImageSaveOptions()** constructor initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG(`SVGDocument source, ImageSaveOptions options, string outputPath`)** method takes the required attributes and performs the conversion operation.
 
 ### **Using  RenderTo() method**
 
@@ -110,7 +110,7 @@ PDF is a file format supported by all operating systems, used for presenting ima
 
 Consider SVG to PDF conversion scenario using **RenderTo()** method:
 
- - Initialize a document using  **SVGDocument()** constructer ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
+ - Initialize a document using  **SVGDocument()** constructor ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
  - Initialize an instance of the [**PdfRenderingOptions**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class and specify the document's properties.
  - Create a new instance of the [**PdfDevice**](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice) class, pass the **PdfRenderingOptions** and output file path to **PdfDevice()** method.
  - Convert the document by [**RenderTo()**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
@@ -181,7 +181,7 @@ using Aspose.Svg.Saving;
     }
 ```
 
-The **XpsSaveOptions()** constructer initialize an instance of the **XpsSaveOptions** class that is passed to **ConvertSVG()** method.
+The **XpsSaveOptions()** constructor initialize an instance of the **XpsSaveOptions** class that is passed to **ConvertSVG()** method.
 The **ConvertSVG()** method  takes the `SVGDocument`, `XpsSaveOptions`, and output file path and performs the conversion operation. 
 
 In the example above, we add the **`BackgroundColor`** property that sets `Color` which will fill the background of every page. The default value is `Transparent`.
@@ -322,7 +322,7 @@ using Aspose.Svg.Converters;
     }
 ```
 
-In the example,  the **ImageSaveOptions()** constructer initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG()** method takes the `document`, `saveOptions`, and output file path and performs the conversion operation.
+In the example,  the **ImageSaveOptions()** constructor initialize an instance of **ImageSaveOptions** class that is passed to **ConvertSVG()** method. The **ConvertSVG()** method takes the `document`, `saveOptions`, and output file path and performs the conversion operation.
 
 Note, we do not specify the **`Format`** property for the conversion to PNG. The **ImageSaveOptions()** constructor takes `Png` as the default image format.
 
@@ -394,7 +394,7 @@ using Aspose.Svg.Converters;
 ```
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 

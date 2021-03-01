@@ -23,7 +23,7 @@ In this section, you find out:
 
  
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ## **View SVG Content**
@@ -104,17 +104,18 @@ using System.IO;
     }
 ```
 
- The `<svg>` element is a container and used as the outermost element of SVG documents. To point  the `<svg>` element, you can apply a few ways:
+ The `<svg>` element is a container and used as the outermost element of SVG documents. To point the `<svg>` element, you can apply a few ways:
 
- - The **`DocumentElement`** property of the [**Document**](https://apireference.aspose.com/svg/net/aspose.svg.dom/document) class gives direct access to the  `<svg>` element of the document. In the code snippet above, we use this way.
+ - The **`DocumentElement`** property of the [**Document**](https://apireference.aspose.com/svg/net/aspose.svg.dom/document) class gives direct access to the `<svg>` element of the document. In the code snippet above, we use this way.
 
- - The **`RootElement`** property of the [**SVGDocument**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class returns the root `<svg>` element in the document hierarchy. To indicate the `<svg>` element, you can apply  the following code:
+ - The **`RootElement`** property of the [**SVGDocument**](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class returns the root `<svg>` element in the document hierarchy. To indicate the `<svg>` element, you can apply the following code:
 
-The **`LastElementChild`** property of the **Document** class returns the last child element of the `<svg>` element.   It is  the `<g>` element. According to the code snippet above, the variable element is overloaded again, and **`FirstElementChild`** property returns the first child of the `<g>`  element.  It is  the `<rect>` element.
+The **`LastElementChild`** property of the **Document** class returns the last child element of the `<svg>` element.  It is  the `<g>` element. According to the code snippet above, the variable element is overloaded again, and **`FirstElementChild`** property returns the first child of the `<g>` element. It is the `<rect>` element.
 
 ### **Iterating Over Document Elements using Custom Filters**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#iterating-over-document-elements-using-custom-filters)
 
 Aspose.SVG API gives you to define custom filters and use them for iterating over the document elements as shown in the following code sample:
+
 ```c# 
 using Aspose.Svg;
 using System.IO;
@@ -147,7 +148,6 @@ where the **RectFilter** class is defined as follow:
 ```
 
 
-
 The **[CreateNodeIterator](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.idocumenttraversal/createnodeiterator/methods/2)(`Node, Int64, INodeFilter`)** method of the [**IDocumentTraversal**](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal/idocumenttraversal) interface creates a new iterator rooted at the specified `Node` (in our example it is the `document`).  As parameters, the method takes `Node`, `Int64` flag that specifies node types for the iterator, and `INodeFilter` to be used (in our example it is the `RectFilter()`).
 
 The **RectFilter** class inherits from the **[NodeFilter](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.filters/nodefilter)** class the **AcceptNode (`Node n`)** method. The method takes a `Node` and tests if it passes the filter or not; the method returns a short indicating whether the node is found or not.
@@ -155,14 +155,14 @@ The **RectFilter** class inherits from the **[NodeFilter](https://apireference.a
 In the iterator, we use the **NextNode ()** method of the **[INodeIterator](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal/inodeiterator)** Interface to access all the nodes of the document. The first call to the **NextNode()** returns the first node and moves the position of the iterator in the set. The  **`OuterHTML`** property of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns the element's content that will be printed.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 ### **SVG Editing Using CSS Selector**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#using-css-selector)
 
 Aspose.SVG for .NET also implements CSS Selector specification that allows you to navigate over the document by using CSS like style. 
 
-The **QuerySelector(`string selector`)** method of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class allows you to get the first element within the document that matches the specified selector.  the **QuerySelectorAll(`string selector`)** method takes as a parameter the query selector and  returns a **NodeList** of all the elements, which match the selector.  With the resulting elements, you can make various manipulations: change its text, attributes, CSS styles, and so on.
+The **QuerySelector(`selector`)** method of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class allows you to get the first element within the document that matches the specified selector.  the **QuerySelectorAll(`string selector`)** method takes as a parameter the query selector and  returns a **NodeList** of all the elements, which match the selector.  With the resulting elements, you can make various manipulations: change its text, attributes, CSS styles, and so on.
 
 In the following examples, we use the **QuerySelector()**  and **QuerySelectorAll()** methods for navigation through an SVG document and search the needed elements. 
 
@@ -339,7 +339,7 @@ using Aspose.Svg.Collections;
 ```
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 
