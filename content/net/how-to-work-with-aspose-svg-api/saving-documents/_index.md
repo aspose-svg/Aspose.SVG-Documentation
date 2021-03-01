@@ -29,17 +29,17 @@ using System.IO;
 using Aspose.Svg;
 ...
     
-// Prepare a path for an SVG document saving
-	string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
+    // Prepare a path for an SVG document saving
+    string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
 
-//  Load the SVG document from a file
-using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
-{
-    // Work with the document
+    //  Load the SVG document from a file
+    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    {
+        // Work with the document
 
-    // Save SVG to a file
-    document.Save(documentPath);
-}
+        // Save SVG to a file
+        document.Save(documentPath);
+    }
 
 {{< /highlight >}}
 
@@ -52,17 +52,17 @@ using System.IO;
 using Aspose.Svg;
 ...
    
- // Set a full (complete) path for an SVG document saving
-	var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
+     // Set a full (complete) path for an SVG document saving
+    var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
 
-//  Load the SVG document from a file
-using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
-{
-    // Work with the document
+    //  Load the SVG document from a file
+    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    {
+        // Work with the document
     
-    // Save SVG to the Url
-    document.Save(url);
-}
+        // Save SVG to the Url
+        document.Save(url);
+    }
 
 {{< /highlight >}}
 
