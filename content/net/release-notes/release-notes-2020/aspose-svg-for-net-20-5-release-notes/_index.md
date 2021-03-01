@@ -92,8 +92,10 @@ namespace Aspose.Svg
         public SVGDocument(Stream content, Url baseUri, Configuration configuration);
     }
 }
+```
 Added new service IRuntimeService, which provides JavaScriptTimeout property, that allows you to specify JavaScript processing timeout. It can be used to speed up the rendering process or to stop the execution of infinite JavaScripts.
 
+```c#
 namespace Aspose.Svg.Services
 {
     /// <summary>
