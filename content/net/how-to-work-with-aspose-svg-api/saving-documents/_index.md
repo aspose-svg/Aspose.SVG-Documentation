@@ -13,7 +13,7 @@ lastmod: 2020-12-15
 
 Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch you are able to save your changes by using the one of **[SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index)** methods. There are overloaded methods that allow saving a document to a file, stream, or Url. 
 
- In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. Moreover, Aspose.SVG for .NET provides the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface that allows save SVG document content and resources to streams and manage them.
+ In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. Moreover, Aspose.SVG for .NET provides the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface that allows save SVG documents with resources to streams and manage them.
 
 The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
@@ -71,7 +71,7 @@ using Aspose.Svg;
 
 The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files. 
 
-Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the linked [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. The **LocalFileSystemStorage**(`customOutDir`) method creates an object that is a file system storage. The **Save**(`IOutputStorage`) method takes this object and saves the document content and resources to the output storage.
+Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the linked [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. The **LocalFileSystemStorage**(`customOutDir`) method creates an object that is a file system storage. The **Save**(`IOutputStorage`) method takes this object and saves the SVG document with resources to the output storage.
 
 ```c#
 using System.IO;
@@ -94,7 +94,9 @@ using Aspose.Svg.IO;
 
 ### **Saving SVG to a Zip Archive**
 
-The **ZipStorage** class is designed to save an SVG document to a ZIP archive.  Examine the example of saving SVG with resources (two files from the previous case) to a ZIP archive. 
+The  **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is a base interface that supports the creation and management of output streams **[OutputStream](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstream)**.  It contains two methods to manage streams: **CreateStream()** and **ReleaseStream()**. 
+
+The **ZipStorage** class is designed to save SVG documents to a ZIP archive.  Examine the example of saving SVG with resources (two files from the previous case) to a ZIP archive. 
 
 ```c#
 using System.IO;
@@ -122,7 +124,7 @@ using System.IO.Compression;
     }
 ```
 
-The  **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is a base interface that supports the creation and management of output streams **[OutputStream](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstream)**.
+
 
 ### **Saving SVG to Memory Streams**
 
