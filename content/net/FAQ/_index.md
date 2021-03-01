@@ -2,7 +2,7 @@
 title: FAQ
 type: docs
 weight: 45
-url: /net/faq/
+aliases: /net/faq/
 lastmod: "2020-12-15"
 description: SVG, vector graphics, SVG format, SVG icons, SVG logo, SVG sprites, text vectorization, How to vectorize text, How to convert SVG to PNG
 ---

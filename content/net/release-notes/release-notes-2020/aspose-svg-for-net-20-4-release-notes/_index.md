@@ -2,7 +2,7 @@
 title: Aspose.SVG for .NET 20.4 Release Notes
 type: docs
 weight: 28
-url: /net/aspose-svg-for-net-20-4-release-notes/
+aliases: /net/aspose-svg-for-net-20-4-release-notes/
 ---
 
 {{% alert color="primary" %}} 

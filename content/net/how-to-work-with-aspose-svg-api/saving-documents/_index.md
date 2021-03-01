@@ -2,7 +2,7 @@
 title: Saving SVG Documents
 type: docs
 weight: 15
-url: /net/how-to-work-with-aspose-svg-api/saving-documents/
+aliases: /net/how-to-work-with-aspose-svg-api/saving-documents/
 lastmod: "2020-12-15"
 description: Save SVG to a File, Save SVG to a Url
 ---

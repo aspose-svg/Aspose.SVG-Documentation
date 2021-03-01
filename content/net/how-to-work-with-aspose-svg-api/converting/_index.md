@@ -2,7 +2,7 @@
 title: How to Convert SVG Files
 type: docs
 weight: 25
-url: /net/how-to-work-with-aspose-svg-api/converting/
+aliases: /net/how-to-work-with-aspose-svg-api/converting/
 lastmod: "2020-12-15"
 description: SVG Converters, Convert SVG to PDF, SVG to XPS, SVG to PNG, SVG to BMP, SVG to JPG, SVG to TIFF, SVG to GIF, Convert SVG to Image
 ---
@@ -10,11 +10,11 @@ description: SVG Converters, Convert SVG to PDF, SVG to XPS, SVG to PNG, SVG to 
 
 Converting SVG documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks.
 
-Aspose.SVG for .NET API can convert [SVG](https://docs.aspose.com/svg/net/what-is-an-svg-document/) Image files to [XPS](https://docs.fileformat.com/page-description-language/xps/), [PDF](https://docs.fileformat.com/pdf/), [PNG](https://docs.fileformat.com/image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/) file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details to underlying file formats. 
+Aspose.SVG for .NET API can convert [SVG](https://docs.aspose.com/svg/net/what-is-an-svg-document/) Image files to [XPS](https://docs.fileformat.com/page-description-language/xps/), [PDF](https://docs.fileformat.com/pdf/), [PNG](https://docs.fileformat.com/image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [GIF](https://docs.fileformat.com/image/gif/), and [TIFF](https://docs.fileformat.com/image/tiff/) file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details of underlying file formats. 
 
 {{% alert color="primary" %}} 
 
-You can try to convert SVG documents to variety of other formats with our [Free online converter](https://products.aspose.app/svg/conversion).
+You can try to convert SVG documents to a variety of other formats with our [Free online converter](https://products.aspose.app/svg/conversion).
 
 {{% /alert %}} 
 
@@ -24,14 +24,14 @@ Converting from SVG  to other formats can perform by using **ConvertSVG()** meth
 
 The current section describes supported scenarios of SVG files conversions to other popular formats by using **Converter** and **SVGDocument** classes:
 
-1. The static **Converter** class is a shared facade provides SVG files conversions to the popular formats and allows to make these operations convenient and easy. 
-   There is a wide range of the**ConvertSVG()**  methods that take as an argument the source document, save options, output file path and convert SVG to PDF, XPS or image files.
-2. The **RenderTo()** method of the**SVGDocument** class is used to render SVG to other format and send a document to the output device. Aspose.SVG API provides the following output devices implementation:  the **PdfDevice**, **XpsDevice** and **ImageDevice** classes, which perform rendering to PDF, XPS and Image file formats respectively. 
+1. The static **Converter** class is a shared facade that provides SVG files conversions to the popular formats and allows to make these operations convenient and easy. 
+   There is a wide range of the **ConvertSVG()**  methods that take as an argument the source document, save options, output file path and convert SVG to PDF, XPS or image files.
+2. The **RenderTo()** method of the **SVGDocument** class is used to render SVG to other format and send a document to the output device. Aspose.SVG API provides the following output devices implementation:  the **PdfDevice**, **XpsDevice** and **ImageDevice** classes, which perform rendering to PDF, XPS and Image file formats respectively. 
 
 Let's consider both scenarios of conversion SVG document to another file format, for example, to PNG:
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the[ **How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}}  
 
 ### **Using  ConverterSVG() method**
@@ -152,6 +152,7 @@ The **`JpegQuality`** specifies the quality of JPEG compression for images. The 
 
 
 ## **Convert SVG to XPS**
+
 The static methods of the **Converter** class can convert SVG to XPS  with a single line of code. It is the easiest way to conversion. Converting a file to other format using the **ConvertSVG()** method is a sequence of operations among which document loading and saving: 
 
  - Load an SVG document using one of the **SVGDocument()** constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).

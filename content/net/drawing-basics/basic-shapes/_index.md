@@ -2,7 +2,7 @@
 title: SVG Basic Shapes
 type: docs
 weight: 20
-url: /net/drawing-basics/basic-shapes
+aliases: /net/drawing-basics/basic-shapes
 lastmod: "2020-12-15"
 description: SVG shapes, Rectangle, Circle, Line, Ellipse, Polyline, Polygon 
 ---

@@ -2,7 +2,7 @@
 title: Environment Configuration
 type: docs
 weight: 20
-url: /net/how-to-work-with-aspose-svg-api/environment-configuration/
+aliases: /net/how-to-work-with-aspose-svg-api/environment-configuration/
 lastmod: "2020-12-15"
 description: Environment Configuration, User Agent Service, Runtime Service, Network Service
 ---

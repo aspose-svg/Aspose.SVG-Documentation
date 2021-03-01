@@ -2,7 +2,7 @@
 title: Text Vectorization & Text Security
 type: docs
 weight: 30
-url: /net/how-to-work-with-aspose-svg-api/text-vectorization/
+aliases: /net/how-to-work-with-aspose-svg-api/text-vectorization/
 lastmod: "2020-12-15"
 description: SVG Text to Vector, Text Vectorization, Text Security, Vectorize Text 
 ---

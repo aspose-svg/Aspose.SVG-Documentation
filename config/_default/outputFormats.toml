@@ -1,0 +1,11 @@
+# output redirects rules
+[REDIR]
+mediatype = "text/nginx.redir"
+baseName = "_redirects.txt"
+isPlainText = true
+notAlternative = true
+#[HEADERS]
+#mediatype = "text/netlify"
+#baseName = "_headers"
+#isPlainText = true
+#notAlternative = true
