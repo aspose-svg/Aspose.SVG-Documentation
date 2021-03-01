@@ -22,12 +22,13 @@ Rendering of SVG files is the process of generating an images from a 2D model by
 In [**How to convert SVG files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using **ConverterSVG()** methods and **RenderTo()** method. In this chapter we consider the **Render ()** method applying for SVG conversion to other formats - PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF.
 
 To convert SVG to another format, for example, PNG, use the following code snippet:
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Rendering;
 using Aspose.Svg.Rendering.Image;
 ...   
+	
 	// Initialize an SVG document from a file
     using (var document = new SVGDocument(Path.Combine(DataDir, "owl.svg")))
     {
@@ -43,7 +44,7 @@ using Aspose.Svg.Rendering.Image;
         }
     }
 
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}} 
 
@@ -55,13 +56,12 @@ You can try to merge SVG documents to a variety of other formats with our [Free 
 
 The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg)) can be done with a few lines of code:
 
-{{< highlight java >}}
-
-using Aspose.Svg;
+```c#using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Rendering;
 using Aspose.Svg.Rendering.Pdf;
 ...   
+	
 	// Initialize SVG documents from files to merge later
     using (var document1 = new SVGDocument(Path.Combine(DataDir, "owl.svg")))
     using (var document2 = new SVGDocument(Path.Combine(DataDir, "conclusion.svg")))
@@ -79,7 +79,7 @@ using Aspose.Svg.Rendering.Pdf;
         }
     }
 
-{{< /highlight >}}
+```
 
 You can merge SVG files to PDF, XPS, JPEG, JPG, BMP, PNG, TIFF and GIF formats.
 

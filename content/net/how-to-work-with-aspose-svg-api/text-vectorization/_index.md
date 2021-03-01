@@ -22,11 +22,12 @@ You can download the complete examples and data files from [**GitHub**](https://
 {{% /alert %}} 
 
 The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization in [Text.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/Text.svg) file:
-{{< highlight java >}}
+```c#
 using System.IO;
 using Aspose.Svg;
 using Aspose.Svg.Saving;
 ...
+    
     // Load an SVG document from a file
     var document = new SVGDocument(Path.Combine(DataDir, "Text.svg"));
 
@@ -38,7 +39,7 @@ using Aspose.Svg.Saving;
     
     // Save the SVG document with specified saveOptions
     document.Save(Path.Combine(OutputDir, "Text_vectorized.svg"), saveOptions);
-{{< /highlight >}}
+```
 
 The vectorized text, being a digital graphic, has some advantages:
  - can be scaled with saving quality;

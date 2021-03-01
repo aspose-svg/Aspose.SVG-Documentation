@@ -22,7 +22,7 @@ In this release we have added a new feature for "vectorization" of text elements
 
 A new option VectorizeText was added to the class SVGSaveOptions:
 
-{{< highlight csharp >}}
+```c#
 
 namespace Aspose.Svg.Saving
 {
@@ -38,7 +38,7 @@ namespace Aspose.Svg.Saving
     }
 }
 
-{{< /highlight >}}
+```
 
 ### **Changed APIs:**
 

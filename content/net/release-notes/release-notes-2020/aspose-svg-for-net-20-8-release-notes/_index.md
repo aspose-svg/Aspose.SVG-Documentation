@@ -27,7 +27,7 @@ In this release we have made the number of improvements:
 
 Several new modes were added to SVGFEBlendElement class:
 
-{{< highlight csharp >}}
+```c#
 
 namespace Aspose.Svg.Filters
 {
@@ -56,13 +56,13 @@ namespace Aspose.Svg.Filters
     }
 }
 
-{{< /highlight >}}
+```
 
 ### **Changed APIs:**
 
 We have changed vales of the modes in SVGFEBlendElement class according to specification [W3C](https://www.w3.org/TR/filter-effects-1/#InterfaceSVGFEBlendElement):
 
-{{< highlight csharp >}}
+```c#
 
 namespace Aspose.Svg.Filters
 {
@@ -102,13 +102,13 @@ namespace Aspose.Svg.Filters
     }
 }
 
-{{< /highlight >}}
+```
 
 ### **Removed APIs:**
 
 The next modes were remove from SVGFEBlendElement class according to specification [W3C](https://www.w3.org/TR/filter-effects-1/#InterfaceSVGFEBlendElement):
 
-{{< highlight csharp >}}
+```c#
 
 namespace Aspose.Svg.Filters
 {
@@ -167,4 +167,4 @@ namespace Aspose.Svg.Filters
     }
 }
 
-{{< /highlight >}}
+```

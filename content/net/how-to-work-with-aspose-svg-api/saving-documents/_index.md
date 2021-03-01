@@ -24,10 +24,11 @@ You can try to convert SVG documents to a variety of other formats with our [Fre
 ### **Saving to a File**
 
 The following code snippet demonstrates the use of the [**SVGDocument.Save()**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index) method to save an SVG document to a file:
-{{< highlight java >}}
+```c#
 using System.IO;
 using Aspose.Svg;
 ...
+    
     // Prepare a path for an SVG document saving
 	string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
 
@@ -39,16 +40,17 @@ using Aspose.Svg;
         // Save SVG to a file
         document.Save(documentPath);
     }
-{{< /highlight >}}
+```
 
 ### **Saving to a Url**
 
 It is necessary to specify a complete Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg) saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
-{{< highlight java >}}
+```c#
 using System.IO;
 using Aspose.Svg;
 ...
+    
     // Set a full (complete) path for an SVG document saving
 	var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
 
@@ -60,7 +62,7 @@ using Aspose.Svg;
         // Save SVG to the Url
         document.Save(url);
     }
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.

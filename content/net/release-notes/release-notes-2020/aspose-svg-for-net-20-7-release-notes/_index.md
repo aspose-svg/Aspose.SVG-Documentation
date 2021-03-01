@@ -22,7 +22,7 @@ In this release we have made the number of improvements:
 ## **Added APIs:**
 We have added new signatures to the SVGFEBlendElement class.
 
-{{< highlight java >}}
+```c#
 namespace Aspose.Svg.Filters
 {
     /// <summary>
@@ -112,10 +112,10 @@ namespace Aspose.Svg.Filters
         public const ushort SVG_FEBLEND_MODE_XOR = 17;
     }
 }
-{{< /highlight >}}
+```
 
 A new signature was added to Metered class.
-{{< highlight java >}}
+```c#
 namespace Aspose.Svg
 {
     /// <summary>
@@ -129,7 +129,7 @@ namespace Aspose.Svg
         public static decimal GetConsumptionCredit();
     }
 }
-{{< /highlight >}}
+```
  
  
 ## **Removed APIs:**

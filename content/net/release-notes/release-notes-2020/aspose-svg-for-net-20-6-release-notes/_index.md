@@ -14,7 +14,7 @@ This page contains release notes information for Aspose.SVG for .NET 20.6
 As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the June release of Aspose.SVG for .NET.
 In this release we have made the following improvement:
 - Support for rendering (X)HTML content inside of the <foreignObject> SVG elements was added. This new feature enables correct rendering of the HTML and XHTML elements embedded into SVG document (during conversion to supported formats). See an example of such SVG document below.
-{{< highlight java >}}
+```c#
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <style>
     div {
@@ -42,7 +42,7 @@ In this release we have made the following improvement:
     </div>
   </foreignObject>
 </svg>
-{{< /highlight >}}
+```
 # **Public API changes:**
 ## **Added APIs:**
 No change

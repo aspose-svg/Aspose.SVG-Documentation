@@ -21,7 +21,7 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 No Changes
 
 ### **Added APIs:**
-{{< highlight csharp >}}
+```c#
 namespace Aspose.Svg.Dom.Css
 {
     public abstract class CSSPrimitiveValue : CSSValue
@@ -44,7 +44,7 @@ namespace Aspose.Svg.Dom.Css
         public const ushort CSS_VMAX = 34;
     }
 }
-{{< /highlight >}}
+```
 
 ### **Changed APIs:**
 No Changes

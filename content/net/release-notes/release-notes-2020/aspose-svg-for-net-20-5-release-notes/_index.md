@@ -22,7 +22,7 @@ In this release we have made the following improvements:
 ## **Added APIs:**
 We have added new signatures to the Document creation methods. Now you can specify a base URL using the Aspose.Svg.Url class.
 
-{{< highlight java >}}
+```c#
 namespace Aspose.SVG.Dom
 {
     public class Document : Node, IDocumentTraversal, IXPathEvaluator, IDocumentEvent, IParentNode, INonElementParentNode, IDocumentStyle, IGlobalEventHandlers
@@ -107,10 +107,10 @@ namespace Aspose.Svg.Services
         TimeSpan JavaScriptTimeout { get; set; }
     }
 }
-{{< /highlight >}}
+```
 We have also added the empty constructor to the ImageSaveOptions class.
 
-{{< highlight java >}}
+```c#
 namespace Aspose.Svg.Saving
 {
     public class ImageSaveOptions : ImageRenderingOptions
@@ -121,7 +121,7 @@ namespace Aspose.Svg.Saving
         public ImageSaveOptions();
     }
 }
-{{< /highlight >}}
+```
  
 ## **Removed APIs:**
 No change

@@ -26,20 +26,20 @@ Aspose.SVG API allows you to add various elements to a document.  First, you wou
 
 The  **`RootElement`**  property of the  [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument)  class points to the root `<svg>` element of the document.  The following code snippet illustrates how you can create and add  `<g>` element as the first child in the SVG document.
 
-{{< highlight java >}}
+```c#
     var svgElement = document.RootElement;
     var gElement = (SVGGElement)document.CreateElementNS("http://www.w3.org/2000/svg", "g");
     svgElement.InsertBefore(gElement, svgElement.FirstChild);
-{{< /highlight >}}
+```
 
 We can specify element attributes and their values using the **SetAttribute `(string name, string value)`**, **GetAttribute `(string name)`, HasAttribute `(string name)`**, **RemoveAttribute `(string name)`** methods of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class.
 
 For example, if you create a group of graphic elements and put them into the `<g>` element, you can set common parameters:
-{{< highlight java >}}
+```c#
     gElement.SetAttribute("fill", "#8A8D8F");
     gElement.SetAttribute("stroke", "magenta");
     gElement.SetAttribute("stroke-width", "4");
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation).
@@ -57,12 +57,13 @@ Each graphic element has its own specific attributes (properties), through which
 **Cx, Cy, R**  are circle properties of the [**SVGAnimatedLength**](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`.
 
 The following code snippet shows how to create a circle and add it into the `<svg>` element of existing SVG file:
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Paths;
 ...
+    
     // Set SVG Namespace Url
     string SvgNamespace = "http://www.w3.org/2000/svg";
 
@@ -88,7 +89,7 @@ using Aspose.Svg.Paths;
     }
     // Save the document
     document.Save(Path.Combine(OutputDir, "basic-shapes_out.svg"));
-{{< /highlight >}}
+```
 
 The ellipse (**Cx, Cy, Rx, Ry**), the rectangle (**X, Y, Width, Height, Rx, Ry**) and the line (**X1, Y1, X2, Y2**) have own attributes that may be set similarly. 
 
@@ -96,7 +97,7 @@ The ellipse (**Cx, Cy, Rx, Ry**), the rectangle (**X, Y, Width, Height, Rx, Ry**
 The **[SVGPolygonElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpolygonelement)** and **[SVGPolylineElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpolylineelement)** have the **`Points`** property of the  [**SVGPointList**](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svgpointlist) type, which provides access to the basic content of **points** attribute,  which uniquely matches the SVG syntax.
 
 A simple example of polyline creating is illustrated in the following code snippet:
-{{< highlight java >}} 
+```c# 
     // Set SVG Namespace Url
     string SvgNamespace = "http://www.w3.org/2000/svg";
 
@@ -120,7 +121,7 @@ A simple example of polyline creating is illustrated in the following code snipp
 ​	
 ​	// Add the polyline element to children of the svg element
 ​	svgElement.AppendChild(polylineElement);
-{{< /highlight >}}
+```
 
 The **[CreateSVGPoint ](https://apireference.aspose.com/svg/net/aspose.svg/svgsvgelement/methods/createsvgpoint)()** method produces an instance of the [**SVGPoint**](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svgpoint) class, in which you can set the `X` and` Y` values through the same name properties. The default object is initialized to point (0,0) in the custom coordinate system.
 
@@ -130,7 +131,7 @@ The **[AppendChild ](https://apireference.aspose.com/svg/net/aspose.svg.dom/node
 
 Consider an example of editing an existing SVG file [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/basic-shapes.svg): we will add the circle and polyline, described above, and change the stroke properties for all circles and ellipses. The following code snippet shows how to find all circles and ellipses in an `<svg>` element and replace their stroke properties:
 
-{{< highlight java >}}
+```c#
     // Set stroke attributes for all circle and ellipse elements
     foreach (Element element in svgElement.Children)
     {
@@ -140,7 +141,7 @@ Consider an example of editing an existing SVG file [basic-shapes.svg](https://d
             element.SetAttribute("stroke", "#C8102E");
         }
     }
-{{< /highlight >}}
+```
 The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/basic-shapes.svg) and the file that was edited (modified).
 ![Original svg image and edited svg image](Basic_Shapes.png#center)
 
@@ -153,7 +154,7 @@ The methods **CreateSVGPathSegMovetoAbs ( `x,  y`)**, **CreateSVGPathSegCurvetoQ
 
 The following code snippet shows how to create the path and add into `<svg>` element:
 
-{{< highlight java >}}
+```c#
     // Create a path element      
     var pathElement = (SVGPathElement)document.CreateElementNS(SvgNamespace, "path");    
 
@@ -176,17 +177,18 @@ The following code snippet shows how to create the path and add into `<svg>` ele
 	
 	// Add the path as the first child in the svg element
 	svgElement.InsertBefore(pathElement, svgElement.FirstChild);
-{{< /highlight >}}
+```
 
 In terms of the DOM, programming, working with the document, and navigating the file,  you can use such itemized and thorough code. Using the **SetAttribute()** method, you can write the code, for SVG path data **"d"** setting, on a single line.
 
 In the following example,  we use  the one-line code to create the same path (original path). Moreover, we will edit the parameters of the moveto(x,y) **M** and **T**(x,y)  commands in the original path to receiving a new one.
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Paths;
 ...
+    
     // Set SVG Namespace Url
     string SvgNamespace = "http://www.w3.org/2000/svg";    
 
@@ -227,7 +229,7 @@ using Aspose.Svg.Paths;
 ​    	// Save the document
 ​        document.Save(Path.Combine(OutputDir, "PathData.svg"));
 ​    }
-{{< /highlight >}}
+```
 
 The figure illustrates the original (black) and modified (red) paths "PathData.svg".
 
@@ -250,12 +252,13 @@ One option for setting the values of the attribute is to use the **SetAttribute 
 
  After you make a filter and set a `filterElement.Id`, you can apply it to the image. Here is an example that illustrates GaussianBlur effect implementation:
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.DataTypes;
 using Aspose.Svg.Filters;
 ...
+    
     // Create an image element and add it to the svgElement
     var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
     imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/Lighthouse.jpg";
@@ -288,20 +291,20 @@ using Aspose.Svg.Filters;
     filterElement.Id = "F1";
     filterElement.AppendChild(feGaussianBlurElement);
 
-{{< /highlight >}}
+```
 
 ### **Saturation Effect**
 
 The saturation effect is a special case of using the color matrix.  The `<feColorMatrix>` is one of the main color filters. The following code snippet shows how to use the saturation operation of the `<feColorMatrix>` filter primitive.
 
-{{< highlight java >}}
+```c#
     // Create a feColorMatrix element
 	var feColorMatrixElement = (SVGFEColorMatrixElement)document.CreateElementNS(SvgNamespace, "feColorMatrix");
     feColorMatrixElement.In1.BaseVal = "SourceGraphic";
     feColorMatrixElement.SetAttribute("type", "saturate");
     feColorMatrixElement.SetAttribute("values", "2");
     filterElement.Id = "CM";
-{{< /highlight >}}
+```
 
 Suppose you add created `feColorMatrixElement` to the `filterElement` and set for the image `"filter"` attribute referring to the `filterElement.Id = "CM";` you get a result illustrated on figure (c).
 
@@ -314,10 +317,11 @@ The figure demonstrates the source image (a), the image processed by the feGauss
 
 The following code snippet shows how to create a drop shadow effect using the Aspose.SVG API:
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using Aspose.Svg.Filters;
 ...
+    
     // Create a filter element and add to the defsElement
     var filterElement = (SVGFilterElement)document.CreateElementNS(SvgNamespace, "filter");
     filterElement.Id = "shadow";
@@ -359,7 +363,7 @@ using Aspose.Svg.Filters;
     textElement.TextContent = "Aspose.SVG API";
     textElement.SetAttribute("filter", "url(#shadow)");
     svgElement.InsertBefore(textElement, svgElement.FirstChild);
-{{< /highlight >}}
+```
 
 The resulting image looks like this:
 

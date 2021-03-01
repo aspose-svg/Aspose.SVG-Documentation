@@ -22,7 +22,7 @@ In this release we have expanded the class PageSetup with a new option Sizing th
 
 A new option Sizing was added to the class PageSetup:
 
-{{< highlight csharp >}}
+```c#
 namespace Aspose.Svg.Rendering
 {
     /// <summary>
@@ -36,11 +36,11 @@ namespace Aspose.Svg.Rendering
         public SizingType Sizing{ get; set; }
     }
 }
-{{< /highlight >}}
+```
 
 A new enum SizingType was added accordingly:
 
-{{< highlight csharp >}}
+```c#
 namespace Aspose.Svg.Rendering
 {
   /// <summary>Represents the enumeration of page sizing types.</summary>
@@ -63,7 +63,7 @@ namespace Aspose.Svg.Rendering
     /// </summary>
     Crop,
   }
-{{< /highlight >}}
+```
 
 ### **Changed APIs:**
 

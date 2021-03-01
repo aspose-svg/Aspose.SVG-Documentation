@@ -30,10 +30,11 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 The easiest way to inspect the document content is to look at content as a string. The properties  **`InnerHTML`** and **`OuterHTML`** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class return a fragment of XML (or HTML) that represents the element and its contents. They are developed precisely for viewing SVG content as a string.
 The following code example shows how to view the content of [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/QBezier.svg) file in the console.
-{{< highlight java >}} 
+```c# 
 using Aspose.Svg;
 using System.IO;
 ...   
+    
     string documentPath = Path.Combine(DataDir, "QBezier.svg");    
 
 	// Load an SVG document
@@ -46,18 +47,19 @@ using System.IO;
 	// View the document content 
 	
 
-{{< /highlight >}}
+```
 
 ## **Navigation and Inspection**
 
 ### **Extract Information about Specific SVG Element**
 
 The following example shows how to extract information about a particular element from a file [shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg):
-{{< highlight java >}} 
+```c# 
 using Aspose.Svg;
 using System.IO;
 using System.Linq;
 ...
+    
     //Load a document from a file
     string documentPath = Path.Combine(DataDir, "shapes.svg");
     
@@ -74,17 +76,18 @@ using System.Linq;
         Console.WriteLine("Height: {0}", rect.Height);// 90
         Console.WriteLine("Width: {0}", rect.Width); // 100
     }
-{{< /highlight >}}
+```
 
 In the example, the [**`DocumentElement`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/properties/documentelement) property usage allows direct access to the `<svg>` element of the document.  Method **[GetElementsByTagName](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getelementsbytagname)(`string name`)** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns a **NodeList** of all descendant elements with a given tag name; in this case the return element is the first `<g>` element.  The [**`FirstElementChild`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/properties/firstelementchild) property  returns the first child element   node of this element. In the example, the first child in `<g>` element is the `<rect>` element, for which the Width and Height values are printed.
 
 ###  **Inspection of the SVG Document and its Elements**
 
 Aspose.SVG contains a list of methods that are based on the [Element Traversal Specifications](https://www.w3.org/TR/ElementTraversal/). You can perform a detailed inspection of the document and its elements using the API ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg)). The following code sample shows the generalized usage of Element Traversal features.
-{{< highlight java >}} 
+```c# 
 using Aspose.Svg;
 using System.IO;
 ...    
+    
     // Load a document
 	string documentPath = Path.Combine(DataDir, "shapes.svg");
     
@@ -99,7 +102,7 @@ using System.IO;
         element = element.FirstElementChild;
         Console.WriteLine(element.TagName); // rect
     }
-{{< /highlight >}}
+```
 
  The `<svg>` element is a container and used as the outermost element of SVG documents. To point  the `<svg>` element, you can apply a few ways:
 
@@ -112,12 +115,13 @@ The **`LastElementChild`** property of the **Document** class returns the last c
 ### **Iterating Over Document Elements using Custom Filters**[ ](https://docs.aspose.com/svg/net/traverse-svg-dom/#iterating-over-document-elements-using-custom-filters)
 
 Aspose.SVG API gives you to define custom filters and use them for iterating over the document elements as shown in the following code sample:
-{{< highlight java >}} 
+```c# 
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Dom.Traversal.Filters;
 ...    
+    
     using (var document = new SVGDocument(Path.Combine(DataDir, "shapes.svg")))
     {
         // Create a node iterator
@@ -130,9 +134,9 @@ using Aspose.Svg.Dom.Traversal.Filters;
             }
         }
     }
-{{< /highlight >}}
+```
 where the **RectFilter** class is defined as follow:
-{{< highlight java >}} 
+```c# 
     public class RectFilter : NodeFilter
     {
         public override short AcceptNode(Node n)
@@ -140,7 +144,7 @@ where the **RectFilter** class is defined as follow:
             return string.Equals("rect", n.NodeName) ? FILTER_ACCEPT : FILTER_REJECT;
         }
     }
-{{< /highlight >}}
+```
 
 
 
@@ -170,12 +174,13 @@ Using the CSS Selector:
  - we find all circle elements in the SVG document and change their properties - make big blue eyes for the owl;
  - we find the path element for a wing of the owl and decorate it.
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Collections;
 ...    
+    
     using (var document = new SVGDocument(new Url("https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg")))
     {
         // Get root svg element of the document
@@ -205,7 +210,7 @@ using Aspose.Svg.Collections;
     
         document.Save(OutputDir + "owl_out1.svg");
     }
-    {{< /highlight >}}	
+    ```	
 
 #### **Example 2**
 
@@ -217,12 +222,13 @@ We create a new `<g>` element, add into it the common attributes for children (t
 
 The following code snippet demonstrates how to realize this task:
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Collections;
 ...    
+    
     // Create a new g element with style attributes and append it as the last child in svg element
     var gElement = (SVGGElement)document.CreateElementNS(SvgNamespace, "g");
     gElement.SetAttribute("fill", "none");
@@ -257,16 +263,17 @@ using Aspose.Svg.Collections;
     // Recolor last rectangle in the last (new) g element
     Element lastRect = gElement.LastElementChild;
     lastRect.SetAttribute("stroke", "red");
-{{< /highlight >}}
+```
 
 - in the second part of Example 2, the owl wing’s path will be changed from the curve to polyline and recolored.
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Collections;
 ...     
+    
     // Get path for owl body from the first g element
     Element bodyPath = (svgElement.QuerySelector("g:first-child") as SVGGElement).FirstElementChild;
     bodyPath.SetAttribute("stroke", "Teal");
@@ -302,7 +309,7 @@ using Aspose.Svg.Collections;
     wingPath.SetAttribute("stroke", "Teal");
     
     document.Save(OutputDir + "owl_out2.svg");
-{{< /highlight >}}
+```
 
 On the figure: the source picture (a), an edited picture according to Example 1 (b),  an edited picture according to Example  2 (c).
 
@@ -313,12 +320,13 @@ In the examples above, we take the source [owl.svg](https://docs.aspose.com/svg/
 ### **Using XPath Query to Navigate SVG**
 
 Aspose.SVG also has powerful XPath Specifications implementation along with Traversal Specifications. This empowers you to use **XPath Query** to navigate over the document ([shapes.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg)) as shown in the following code sample:
-{{< highlight java >}}
+```c#
 using Aspose.Svg;
 using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Collections;
 ...     
+    
     using (var document = new SVGDocument(Path.Combine(DataDir, "shapes.svg")))
     {
         //  Evaluate XPath expression
@@ -327,7 +335,7 @@ using Aspose.Svg.Collections;
         //  Get the next evaluated node
         Console.WriteLine((xpathResult.IterateNext() as Element)?.OuterHTML);		  
     }
-{{< /highlight >}}
+```
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.

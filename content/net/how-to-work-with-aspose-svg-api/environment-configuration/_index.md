@@ -36,13 +36,14 @@ The [**IUserAgentService**](https://apireference.aspose.com/svg/net/aspose.svg.s
 
 Consider an example that illustrates **`UserStyleSheet`**, **`CharSet`** and **`FontsSettings`** properties applying: 
 
- {{< highlight java >}}
+ ```c#
 using System.IO;
 using Aspose.Svg;
 using Aspose.Svg.Services;
 using Aspose.Svg.Converters;
 using Aspose.Svg.Saving;
 ...
+    
     // Prepare an SVG code and save it to a file
     var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
                "    <circle cx=\"40\" cy=\"80\" r=\"30\" />\r\n" +
@@ -75,7 +76,7 @@ using Aspose.Svg.Saving;
         }
     }
 
-{{< /highlight >}}
+```
 
 The figure illustrates the result of  **User Agent Service** applying (b) to the source "user-agent.svg" file (a).
 
@@ -86,13 +87,14 @@ The figure illustrates the result of  **User Agent Service** applying (b) to the
 ## **Runtime Service**
 
 When planning to run your application, you might require a runtime service configuration. This service gives you control over the lifetime of the internal processes. For instance, using [**IRuntimeService**](https://apireference.aspose.com/net/html/aspose.html.services/iruntimeservice)  you can specify timeouts for JavaScripts. It is important to have such a timeout in case if a script contains an endless loop. The next code snippet demonstrates how to use timeouts.
-{{< highlight java >}}
+```c#
 using System.IO;
 using Aspose.Svg;
 using Aspose.Svg.Services;
 using Aspose.Svg.Converters;
 using Aspose.Svg.Saving;
 ...
+    
     // Prepare an SVG code and save it to a file
     var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
                "    <script> while(true) {} </script>\r\n" +
@@ -115,7 +117,7 @@ using Aspose.Svg.Saving;
             Converter.ConvertSVG(document, new ImageSaveOptions(), Path.Combine(OutputDir, "runtime.png"));
         }
     }
-{{< /highlight >}}
+```
 
 The **`JavaScriptTimeout`** property sets ` TimeSpan` which limits JavaScript execution time. If the script is executed longer than provided `TimeSpan`, it will be cancelled.  The default value is 1 minute.
 
@@ -129,11 +131,12 @@ The following example demonstrates how to use message handlers to log informatio
 
  We construct a **LogMessageHandler** class:  
 
-{{< highlight java >}}
+```c#
 using Aspose.Svg.Net;
 using System.Collections.Generic;
 using System.Net;
 ...
+    
     public class LogMessageHandler : MessageHandler
     {
         private List<string> errors = new List<string>();
@@ -156,11 +159,11 @@ using System.Net;
             Next(context);
         }
     }
-{{< /highlight >}}
+```
 
 The next code snippet demonstrates how to use the **LogMessageHandler** class for logging information about unreachable resources.
 
-{{< highlight java >}}
+```c#
 using System.IO;
 using Aspose.Svg;
 using Aspose.Svg.Services;
@@ -168,6 +171,7 @@ using Aspose.Svg.Converters;
 using Aspose.Svg.Saving;
 using Aspose.Svg.Net;
 ...
+    
     // Prepare an SVG code and save it to a file
     var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
                "    <image href=\"https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg\" width=\"640px\" height=\"480px\" />\r\n" +
@@ -199,7 +203,7 @@ using Aspose.Svg.Net;
             }
         }
     }
-{{< /highlight >}}
+```
 
 After the example run:
 
