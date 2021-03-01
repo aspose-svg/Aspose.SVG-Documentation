@@ -1,14 +1,16 @@
 ---
 title: Creating and Loading SVG Documents
-type: docs
+description: Create an Empty SVG Document, Create SVG from a Memory String,
+  Create SVG from a Stream, Load SVG from a File, Load SVG from the Web, Reading
+  SVG with Resources Async
 weight: 10
+type: docs
 aliases: /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
-lastmod: "2020-12-15"
-description: Create an Empty SVG Document, Create SVG from a Memory String, Create SVG from a Stream, Load SVG from a File, Load SVG from the Web, Reading SVG with Resources Async
+lastmod: 2020-12-15
 ---
 
 
-To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides  [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class that has several constructors allowing you to produce new class instances. The **SVGDocument** is the root of the SVG DOM hierarchy, holds the entire content and entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/)  and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
+To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides [**SVGDocument**](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class that has several constructors allowing you to produce new class instances. The **SVGDocument** is the root of the SVG DOM hierarchy, holds the entire content and entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/) and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
 
 SVG files can be created & loaded:
 
@@ -60,7 +62,7 @@ More details about SVG files saving are in [**Saving Documents**](https://docs.a
 
 ## **Create SVG from a Memory String**
 
-You can create a document from a string content using **SVGDocument (`string, string`)** constructor. If your case is to create a document from a user string directly in your code and you don’t need to save it to a file, the following example could help you: we produce an SVG document that contains a circle with a radius of 50 pixels.
+You can create a document from a string content using **SVGDocument ()** constructor. If your case is to create a document from a user string directly in your code and you don’t need to save it to a file, the following example could help you: we produce an SVG document that contains a circle with a radius of 50 pixels.
 
 {{< highlight java >}}
 using Aspose.Svg;
@@ -140,7 +142,7 @@ using Aspose.Svg;
 
 {{% alert color="primary" %}} 
 
-If you set a wrong URL that can’t be reached right at this moment, the library throws the DOMException with specialized code ‘NetworkError’ to inform that selected resource can not be found.
+If you set a wrong URL that can’t be reached right at this moment, the library throws the DOMException with specialized code ‘NetworkError’ to inform that the selected resource can not be found.
 
 {{% /alert %}} 
 
