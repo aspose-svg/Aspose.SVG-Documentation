@@ -13,7 +13,9 @@ keywords: SVG, save SVG, SVG file, SVG to URL, zip, zip archive, SVG to zip, SVG
 
 Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch, you can save your changes using one of the **[SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index)** methods. There are overloaded methods that allow saving a document to a file, a stream, or a Url. 
 
- In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using the **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
+ In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using the **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. Moreover, Aspose.SVG for .NET provides the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface that allows save SVG document content and resources to streams and manage them.
+
+The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
 {{% alert color="primary" %}} 
 
@@ -28,18 +30,20 @@ The following code snippet demonstrates the use of the **[SVGDocument.Save()](ht
 using System.IO;
 using Aspose.Svg;
 ...
-    
-    // Prepare a path for an SVG document saving
-    string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
 
-    //  Load the SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
-    {
-        // Work with the document
+```
+// Prepare a path for an SVG document saving
+string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
 
-        // Save SVG to a file
-        document.Save(documentPath);
-    }
+//  Load the SVG document from a file
+using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+{
+    // Work with the document
+
+    // Save SVG to a file
+    document.Save(documentPath);
+}
+```
 
 {{< /highlight >}}
 
@@ -51,18 +55,20 @@ It is necessary to specify a complete Url path for the document [Lineto.svg](htt
 using System.IO;
 using Aspose.Svg;
 ...
-   
-     // Set a full (complete) path for an SVG document saving
-    var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
 
-    //  Load the SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
-    {
-        // Work with the document
-    
-        // Save SVG to the Url
-        document.Save(url);
-    }
+```
+ // Set a full path for an SVG document saving
+var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
+
+//  Load the SVG document from a file
+using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+{
+    // Work with the document
+
+    // Save SVG to the Url
+    document.Save(url);
+}
+```
 
 {{< /highlight >}}
 
