@@ -180,12 +180,12 @@ using System.IO;
 using Aspose.Svg.Dom;
 using Aspose.Svg.Collections;
 ...    
-    
+        
     using (var document = new SVGDocument(new Url("https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg")))
     {
         // Get root svg element of the document
         var svgElement = document.RootElement;
-
+    
         // Find the first element that matches the specified in selector - g element
         SVGGElement gElement = svgElement.QuerySelector("g") as SVGGElement;
     
@@ -210,7 +210,8 @@ using Aspose.Svg.Collections;
     
         document.Save(OutputDir + "owl_out1.svg");
     }
-    ```	
+
+```
 
 #### **Example 2**
 
