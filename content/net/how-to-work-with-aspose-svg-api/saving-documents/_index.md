@@ -11,15 +11,15 @@ lastmod: 2020-12-15
 ---
 ## **Save an SVG document**
 
-Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch you are able to save your changes by using the one of **[SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index)** methods. There are overloaded methods that allow saving a document to a file, stream, or Url. 
+Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch, you can save your changes using one of **[SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index)** methods. There are overloaded methods that allow saving SVG to a file, a stream, or a Url. 
 
- In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. Moreover, Aspose.SVG for .NET provides the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface that allows save SVG documents with resources to streams and manage them.
+In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using **Save()** methods of the **[SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument)** class. Moreover, Aspose.SVG for .NET provides the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface that allows save SVG documents with resources to streams and manage them.
 
 The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
 {{% alert color="primary" %}} 
 
-You can try to convert SVG documents to a variety of other formats with our [Free online SVG converter](https://products.aspose.app/svg/conversion).
+You can try to convert SVG documents to various other formats with our [Free online SVG converter](https://products.aspose.app/svg/conversion).
 
 {{% /alert %}} 
 
@@ -47,7 +47,7 @@ using Aspose.Svg;
 
 ### **Saving SVG to a Url**
 
-It is necessary to specify a complete Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg) saving and pass `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
+It is necessary to specify a full Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg) saving and pass the `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
 ```c#
 using System.IO;
@@ -69,11 +69,9 @@ using Aspose.Svg;
 
 ### **Saving SVG to a Local File System Storage**
 
-The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files - the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is developed for saving SVG content and resources to streams.
+The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files - the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is developed for saving SVG content and resources to streams. 
 
-Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the joined [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. 
-
-The **[LocalFileSystemStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/constructors/1)**(`customOutDir`) constructor creates an object that is a file system storage. The **[Save](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save)**(`IOutputStorage`) method takes this object and saves SVG to the output storage.
+Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the joined [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. The **[LocalFileSystemStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/constructors/1)**(`customOutDir`) constructor creates an object that is a file system storage. The **[Save](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save)**(`IOutputStorage`) method takes this object and saves SVG to the output storage.
 
 ```c#
 using System.IO;
