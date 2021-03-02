@@ -69,20 +69,20 @@ using Aspose.Svg;
 
 ### **Saving SVG to a Local File System Storage**
 
-The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files. 
+The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files - the **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is developed for saving SVG content and resources to streams.
 
-Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the linked [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. The **LocalFileSystemStorage**(`customOutDir`) method creates an object that is a file system storage. The **Save**(`IOutputStorage`) method takes this object and saves the SVG document with resources to the output storage.
+Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg]((http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/WithExternalHTML.svg)) document with the linked [simpleHTML.html](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/simpleHTML.html) file are in the same directory. The **LocalFileSystemStorage**(`customOutDir`) method creates an object that is a file system storage. The **Save**(`IOutputStorage`) method takes this object and saves SVG to the output storage.
 
 ```c#
 using System.IO;
 using Aspose.Svg.IO;
 ...
     
-	// Prepare a path to a source SVG file loading  
+	// Prepare a path to a source SVG file  
     string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
 
     // Prepare a full path to an output directory 
-    string customOutDir = Path.Combine(Directory.GetCurrentDirectory(), "./../../../../tests-out/custom-dir");
+    string customOutDir = Path.Combine(Directory.GetCurrentDirectory(), "./../../../../tests-out/saving");
 
     // Load the SVG document from a file
     using (var doc = new SVGDocument(inputPath))
@@ -94,9 +94,9 @@ using Aspose.Svg.IO;
 
 ### **Saving SVG to a Zip Archive**
 
-The  **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is a base interface that supports the creation and management of output streams **[OutputStream](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstream)**.  It contains two methods to manage streams: **CreateStream()** and **ReleaseStream()**. 
+The  **[IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage)** interface is a base interface that supports the creation and management of output streams **[OutputStream](https://apireference.aspose.com/svg/net/aspose.svg.io/outputstream)**.  It contains two methods to manage streams: **CreateStream()** and **ReleaseStream()**.  OutputStream Class is a surrogate stream that wraps the real output stream and controls access to it. OutputStream contains URI data that describes the location of the output stream.
 
-The **ZipStorage** class is designed to save SVG documents to a ZIP archive.  Examine the example of saving SVG with resources (two files from the previous case) to a ZIP archive. 
+You can implement the IOutputStorage interface by creating **ZipStorage** class. Examine the example of saving SVG with resources (two files from the previous example) to a ZIP archive using ZipStorage class.
 
 ```c#
 using System.IO;
@@ -104,13 +104,13 @@ using Aspose.Svg.IO;
 using System.IO.Compression;
 ...
     
-	// Prepare a path to a source SVG file loading 
+	// Prepare a path to a source SVG file 
     string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
     
     var dir = Directory.GetCurrentDirectory();
 
-    // Prepare a full path to an output ZipStorage
-    string customArchivePath = Path.Combine(dir, "./../../../../tests-out/custom-dir/archive.zip");
+    // Prepare a full path to an output zip storage
+    string customArchivePath = Path.Combine(dir, "./../../../../tests-out/saving/archive.zip");
 
     // Load the SVG document 
     using (var doc = new SVGDocument(inputPath))
@@ -118,15 +118,131 @@ using System.IO.Compression;
         // Initialize an instance of the ZipStorage class
         using (var zipSrorage = new ZipStorage(customArchivePath))
         {
-            // Save SVG with resources to a ZIP archive
+            // Save SVG with resources to a Zip archive
             doc.Save(zipSrorage);                    
         }                
     }
 ```
 
+The IOutputStorage interface is intended for customers implementation. The following code snippet shows the realization of the IOutputStorage in the **ZipStorage** class to demonstrate saving an SVG document to a Zip archive.
 
+```c#
+internal class ZipStorage : IOutputStorage, IDisposable
+{
+    private FileStream zipStream;
+    private ZipArchive archive;
+    private int streamsCounter;
+    private bool initialized;
+
+    public ZipStorage(string name)
+    {
+        DisposeArchive();
+        zipStream = new FileStream(name, FileMode.Create);
+        archive = new ZipArchive(zipStream, ZipArchiveMode.Update);
+        initialized = false;
+    }
+	
+    public OutputStream CreateStream(OutputStreamContext context)
+    {
+        var zipUri = (streamsCounter++ == 0 ? Path.GetFileName(context.Uri) :
+            Path.Combine(Path.GetFileName(Path.GetDirectoryName(context.Uri)), Path.GetFileName(context.Uri)));
+        var samplePrefix = String.Empty;
+        if (initialized)
+            samplePrefix = "my_";
+        else
+            initialized = true;
+
+        var newStream = archive.CreateEntry(samplePrefix + zipUri).Open();
+        var outputStream = new OutputStream(newStream, "file:///" + samplePrefix + zipUri);
+        return outputStream;
+    }
+	
+    public void ReleaseStream(OutputStream stream)
+    {
+        stream.Flush();
+        stream.Close();
+    }
+
+    private void DisposeArchive()
+    {
+        if (archive != null)
+        {
+            archive.Dispose();
+            archive = null;
+        }
+        if (zipStream != null)
+        {
+            zipStream.Dispose();
+            zipStream = null;
+        }
+        streamsCounter = 0;
+    }
+
+    public void Dispose()
+    {
+        DisposeArchive();
+    }
+}
+```
 
 ### **Saving SVG to Memory Streams**
+
+The **IOutputStorage** interface implementation allows saving SVG to memory streams:
+
+```c#
+using System.IO;
+using Aspose.Svg.IO;
+using System.Collections.Generic;
+...
+    // Prepare a path to a source SVG file
+    string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+
+    using (var doc = new SVGDocument(inputPath))
+    {
+        // Create an instance of the MemoryOutputStorage class and save SVG to memory
+        var memoryStorage = new MemoryOutputStorage();
+        doc.Save(memoryStorage);
+	    memoryStorage.PrintInfo();       
+    } 
+```
+
+After the example run, the message about memory storage will be printed:
+`uri:memory:///WithExternalHTML.svg, length:570`
+`uri:memory:///simpleHTML.htm, length:369`
+
+The following code snippet shows the realization of the IOutputStorage in the **MemoryOutputStorage** class to demonstrate saving an SVG document to memory streams.
+
+```c#
+internal class MemoryOutputStorage : IOutputStorage
+{
+    public List<Tuple<OutputStream, string>> Streams;
+
+    public MemoryOutputStorage()
+    {
+        Streams = new List<Tuple<OutputStream, string>>();
+    }
+
+    public OutputStream CreateStream(OutputStreamContext context)
+    {
+        var normalizedPath = new Url(context.Uri).Pathname;
+        var uri = new Url(Path.GetFileName(normalizedPath), "memory:///").Href;
+        var outputStream = new OutputStream(new MemoryStream(), uri);
+        Streams.Add(Tuple.Create(outputStream, uri));
+        return outputStream;
+    }
+
+    public void ReleaseStream(OutputStream stream)
+    {
+        stream.Flush();
+    }
+
+    public void PrintInfo()
+    {
+        foreach (var stream in Streams)
+            Console.WriteLine($"uri:{stream.Item2}, length:{stream.Item1.Length}");
+    }   
+}
+```
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the **[How to Run the Examples](http://docs.aspose.com/svg/net/how-to-run-the-tests)** section.
