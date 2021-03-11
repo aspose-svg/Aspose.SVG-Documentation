@@ -1,3 +1,8 @@
-#[hugoVersion]
-#min = "0.80.0"
-#max = "0.80.0"
+[[imports]]
+path = "github.com/tpavel-aspose/hugo-module-nginx-redirects"
+#[[imports]]
+#path = "github.com/theNewDynamic/hugo-module-tnd-redirects"
+#[[imports]]
+#path = "github.com/tpavel-aspose/lutsk-aspose-theme"
+#[[imports]]
+#path = "github.com/tpavel-aspose/fileformat-shortcodes"

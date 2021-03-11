@@ -9,7 +9,11 @@ disableAliases = true
 disablekinds = ['taxonomy', 'taxonomyTerm']
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["lutsk-aspose-theme"]
+#theme = ["lutsk-aspose-theme"]
+theme = [
+    "github.com/tpavel-aspose/hugo-module-fileformat-shortcodes",
+    "github.com/tpavel-aspose/lutsk-aspose-theme"
+]
 
 log = false
 logFile = "log.txt"

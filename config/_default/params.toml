@@ -3,7 +3,6 @@ privacy_policy = "https://policies.google.com/privacy"
 topbar_search_active = false
 logo_rel_link = ""
 basePath = "/svg"
-
 # Title of 404 page
 title_404_page = "404 - Page Not Found | Aspose Documentation"
 
