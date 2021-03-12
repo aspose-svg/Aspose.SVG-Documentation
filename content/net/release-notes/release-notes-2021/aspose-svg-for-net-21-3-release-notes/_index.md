@@ -2,7 +2,9 @@
 title: Aspose.SVG for .NET 21.3 Release Notes
 type: docs
 weight: 48
-url: /net/aspose-svg-for-net-21-3-release-notes/
+aliases: 
+    - /net/aspose-svg-for-net-21-3-release-notes/
+    - /net/aspose-svg-for-net-21-3-release-notes
 ---
 
 {{% alert color="primary" %}}
