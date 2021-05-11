@@ -24,8 +24,6 @@ jobs:
           ls -lA
           ls -lA layouts
           ls -lA themes
-          sudo npm install -D --save autoprefixer
-          sudo npm install -D --save postcss-cli
       - name: preparing workspace clean public folder
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
