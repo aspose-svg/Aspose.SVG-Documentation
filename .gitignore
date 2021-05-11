@@ -5,7 +5,7 @@ resources
 node_modules
 package-lock.json
 go.sum
-
+log.txt
 # User-specific files
 content/tests-net/**/*.rsuser
 content/tests-net/**/*.suo
