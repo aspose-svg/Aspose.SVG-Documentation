@@ -18,7 +18,6 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 - fixed issue in the method GetBBox for SVG tspan elements;
 - improved the gradients serialization algorithm.
 
-
 ## **Public API changes:**
 
 ### **Added APIs:**
