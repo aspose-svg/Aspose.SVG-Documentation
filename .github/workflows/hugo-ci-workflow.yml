@@ -17,13 +17,6 @@ jobs:
           ls -lA
           git fetch
           git reset --hard origin/main
-      - name: preparing workspace npm install dependencies
-        run: |
-          cd ${{secrets.HUGO_SITE_LOCATION}}
-          pwd
-          ls -lA
-          ls -lA layouts
-          ls -lA themes
       - name: preparing workspace clean public folder
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
