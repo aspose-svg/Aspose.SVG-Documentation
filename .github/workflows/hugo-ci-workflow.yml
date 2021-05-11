@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
     paths-ignore:
-        '.github/**'
+      '.github/**'
 
 jobs:
   job-deploy:
@@ -37,10 +37,12 @@ jobs:
       - name: hugo build
         run: |
           cd ${{secrets.HUGO_SITE_LOCATION}}
-          pwd
-          hugo mod get -u
-          hugo version
-          sudo hugo -c content --debug --log --print-mem --templateMetrics --minify -v --baseURL https://docs.aspose.com/svg
+          ./bin/hugo mod tidy
+          ./bin/hugo mod graph
+          ./bin/hugo mod verify
+          ./bin/hugo version
+          # hugo --minify --baseURL https://docs.aspose.com/html
+          sudo ./bin/hugo -c content --debug --log --print-mem --templateMetrics --minify -v --baseURL https://docs.aspose.com/html
           rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master
