@@ -2,7 +2,9 @@
 title: How to Run the Examples
 type: docs
 weight: 40
-aliases: /net/how-to-run-the-tests/
+aliases: 
+    - /net/how-to-run-the-tests/
+    - /display/svgnet/How+to+Run+the+Examples
 lastmod: "2020-12-15"
 ---
 

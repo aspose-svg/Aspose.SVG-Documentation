@@ -2,7 +2,9 @@
 title: Aspose.SVG for .NET 
 type: docs
 weight: 10
-aliases: /net/
+aliases: 
+    - /net/
+    - /display/svgnet/Home
 is_root: true
 lastmod: "2020-12-15"
 ---

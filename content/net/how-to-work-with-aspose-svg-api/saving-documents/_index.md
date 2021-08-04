@@ -6,7 +6,9 @@ description: In this article, you find out how to save your SVG document to a
   file, a memory stream, or a Url using Aspose.SVG for .NET library.
 weight: 15
 type: docs
-aliases: /net/how-to-work-with-aspose-svg-api/saving-documents/
+aliases: 
+  - /net/how-to-work-with-aspose-svg-api/saving-documents/
+  - /net/save-svg-files/
 lastmod: 2020-12-15
 ---
 ## **Save an SVG document**

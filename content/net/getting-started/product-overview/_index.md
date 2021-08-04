@@ -2,7 +2,9 @@
 title: Product Overview
 type: docs
 weight: 10
-aliases: /net/product-overview/
+aliases: 
+    - /net/product-overview/
+    - /display/svgnet/Product+Overview
 lastmod: "2020-12-15"
 ---
 

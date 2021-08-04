@@ -2,7 +2,9 @@
 title: Navigation & Inspection SVG
 type: docs
 weight: 20
-aliases: /net/how-to-work-with-aspose-svg-api/navigation-inspection/
+aliases: 
+    - /net/how-to-work-with-aspose-svg-api/navigation-inspection/
+    - /net/traverse-svg-dom/
 lastmod: "2020-12-15"
 description: How to View SVG Content, Extract Information about Specific Element, Inspection of the Document and its Elements, Iterating Over Document Elements using Custom Filters, Using CSS Selector, Using XPath Query
 ---
