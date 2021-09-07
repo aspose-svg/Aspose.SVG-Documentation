@@ -14,7 +14,7 @@ This page contains release notes information for Aspose.SVG for .NET 21.9
 
 As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the September release of Aspose.SVG for .NET:
 
-* Enhanced the accuracy of glyph vectorization algorithm.
+* Enhanced the accuracy of the glyph vectorization algorithm.
 * Updated the user agent style sheets according to the latest documentation.
 
 ## **Public API changes:**
