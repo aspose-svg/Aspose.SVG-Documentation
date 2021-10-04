@@ -1,0 +1,17 @@
+<svg height="200" width="800" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="grey">
+    <path stroke-width="3" d="M 5 20 l 215 0" />
+    <path stroke-width="15" d="M 5 60 l 215 0" />
+    <path stroke-width="30" d="M 5 100 l 215 0" />
+  </g>
+ <g stroke="grey" stroke-width="30">
+    <path stroke-linecap="butt" d="M 300 20 l 215 0" />
+    <path stroke-linecap="round" d="M 300 60 l 215 0" />
+    <path stroke-linecap="square" d="M 300 100 l 215 0" />
+  </g>
+  <g stroke="orange" stroke-width="2">
+    <line x1="300" y1="20" x2="515" y2="20" />
+    <path d="M 300 60 l 215 0" />
+    <path d="M 300 100 l 215 0" />
+  </g>
+</svg>

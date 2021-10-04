@@ -3,12 +3,13 @@ title: SVG Path Data
 type: docs
 weight: 30
 aliases: /net/drawing-basics/svg-path-data
-lastmod: "2020-12-15"
-description: SVG Lines, SVG Paths, Draw an Arc in SVG, Draw Bézier Curves, Quadratic Bézier Curves, Cubic Bezier curve
+lastmod: 2021-10-05
+description: This article shows how the paths can be used to drawing various outlines or shapes by combining SVG lines, SVG arcs and Bezier curves. The group of commands for the SVG path making is described here.
+description: svg path data, svg lines, svg paths, svg arc, draw Bézier curves, Bézier curves, cubic Bezier curve, quadratic Bézier curve
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The `<path>` element allows you to draw the outlines of shapes by combining lines, curves, and arcs. It is a versatile and flexible SVG element for creating both simple and complex open and closed paths. The  `<path>` element determines by one attribute - **d**. 
+The `<path>` element allows you to draw the outlines of shapes by combining lines, curves, and arcs. It is a versatile and flexible SVG element for creating both simple and complex open and closed SVG paths. The  `<path>` element determines by one attribute - **d**. Thus, a path definition includes a `<path>` element which contains a `d="(SVG path data)"` attribute.
 
 The following groups of commands inhere to **d** attribute: 
 
@@ -18,7 +19,7 @@ The following groups of commands inhere to **d** attribute:
 
 ***closepath (Z, z)*** 
 
-The ***M*** command sets the origin point for path drawing. The commands group that draw straight line segments includes the ***lineto  (L, l, H, h, V and v)***  and the ***closepath (Z and z)*** commands .  
+The ***M*** command sets the origin point for SVG path drawing. The commands group that draw straight line segments includes the ***lineto  (L, l, H, h, V and v)***  and the ***closepath (Z and z)*** commands.  
 The following three groups of commands draw curves: 
 
 ***cubic Bézier curve (C, c, S, s)*** 
@@ -27,7 +28,7 @@ The following three groups of commands draw curves:
 
 ***elliptical Arc (A, a)*** 
 
-All commands can be specified with uppercase and lowercase letters. The uppercase indicates that the subsequent coordinates are absolute, and lowercase indicates relative ones. 
+All commands can be specified with uppercase and lowercase letters. The uppercase indicates that the subsequent coordinates are absolute, and the lowercase indicates relative ones. 
 Coordinates are always written without units specifying and refer to the user's coordinate system. Usually, they are in pixels. 
 The path is described by the position of the current point - a "virtual pen". The "pen" moves along the path sections from the starting to the endpoint. These points are the key parameters for all drawing commands. 
 Each command has parameters; they are indicated in brackets.
@@ -35,7 +36,7 @@ Each command has parameters; they are indicated in brackets.
 
 ## **Lines and Paths** 
 
-Any path begins with the ***moveto M (x,y)*** command.  ***x*** and ***y*** coordinates indicate the current  point where the path should start. 
+Any SVG path begins with the ***moveto M (x,y)*** command.  ***x*** and ***y*** coordinates indicate the current  point where the path should start. 
 
 Three ***lineto*** commands draw straight lines from the current point to the new one: 
 
@@ -49,9 +50,9 @@ The ***H*** and ***V*** commands only use one argument since they only move in o
 
 After doing any command, the "virtual pen" point will be located at the endpoint of that drawing command. The next drawing command will start from this point. 
 
-***Closepath Z*** ends the current path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
+***Closepath Z*** ends the current SVG path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
 
-Let's draw a square using the ***lineto*** commands:
+Let's draw a square using the ***lineto*** commands ([Lineto2.svg](/svg/net/drawing-basics/svg-path-data/Lineto2.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -70,9 +71,9 @@ The figure on the left shows all the extra notes. The view of the **rendered  SV
 
 
 
-## **Draw an Arc** 
+## **Draw an SVG Arc** 
 
-Arcs are used for sections of circles and ellipses drawing. For arcs creating, it is not enough to specify only ellipse radii. You should take into account different possible paths along the arc between two points: the "pen's" moving in a "positive-angle" direction or the opposite; the "pen's" moving along the "large-arc" or the "small-arc".
+Arcs are used for sections of circles and ellipses drawing. For SVG arcs creating, it is not enough to specify only ellipse radii. You should take into account different possible paths along the arc between two points: the "pen's" moving in a "positive-angle" direction or the opposite; the "pen's" moving along the "large-arc" or the "small-arc".
 
 Thus, two ellipses can connect any two points, and the four different arcs can be drawn between these points. The **A** command's parameters indicate which one of the four arcs will be chosen. 
 
@@ -80,7 +81,7 @@ The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rot
 
 **rx, ry** - ellipse radii (the center is calculated automatically). 
 
-**x, y** - coordinates of the endpoint of the arc. 
+**x, y** - coordinates of the endpoint of the SVG arc. 
 
 **x-axis-rotation** - the angle of the x-axis rotation relative to the coordinate system, specified in degrees. 
 
@@ -100,7 +101,7 @@ The **a** command is the same as **A** but interprets the coordinates relative t
 ![Three paths with arcs](arc1.png#center)
 
 Consider the path written in line 2 of code sample: `d="M10,20 A 30,30 0 0,0 40,70"`.
-***M*** command set a current (start)  point (10, 20). The endpoint of the arc is in ***A*** command (40,70). Between points 1 (10, 20) and 2 (40,70), you can draw two circles with a radius 30 (see figure above). The **x-axis-rotation** value is 0; ***large-arc-flag = 0*** - this means that the "small arc" will be drawn, ***sweep-flag = 0*** - which means that arc 1-2 will be selected, the "pen" movement in the direction of the "negative angle", i.e. counter clock-wise. This is a gold-color arc.
+The ***M*** command set a current (start)  point (10, 20). The endpoint of the arc is in ***A*** command (40,70). Between points 1 (10, 20) and 2 (40,70), you can draw two circles with a radius 30 (see figure above). The **x-axis-rotation** value is 0; ***large-arc-flag = 0*** - this means that the "small arc" will be drawn, ***sweep-flag = 0*** - which means that arc 1-2 will be selected, the "pen" movement in the direction of the "negative angle", i.e. counter clock-wise. This is a gold-color SVG arc ([svg-arc.svg](/svg/net/drawing-basics/svg-path-data/svg-arc.svg)).
 
 
 ## **Draw Bézier Curves** 
@@ -118,11 +119,11 @@ Let's consider an example:
     <path d="M 10 100 Q 25 10 180 100" stroke="black" stroke-width="1" fill="transparent" />
 </svg>
 ```
-![Curve](QCB1.png#center)
+![Quadratic Bézier Curve](QCB1.png#center)
 
 If you connect the control point to the start and endpoints of the curve with segments, the line connecting the centers of the segments will be tangent to the curve vertex. 
 
-How does the position of the control point affect the curve view? Let us show this with examples. Let's change the value of ***y1*** at the control point for the previous curve: 
+How does the position of the control point affect the curve view? Let us show this with examples. Let's change the value of ***y1*** at the control point for the previous curve ([bezier-curve2.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve2.svg)): 
 
 ```html {linenos=inline,linenostart=1}
 <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -135,9 +136,9 @@ How does the position of the control point affect the curve view? Let us show th
 </svg>
 ```
 
-![Curve](QCB2.png#center)
+![Four Quadratic Bézier Curves with different y1 values for the control point](QCB2.png#center)
 
-Let's take the black curve as a basis and change the control point **x1** value:
+Let's take the black curve as a basis and change the control point **x1** value ([bezier-curve3.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve3.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +151,7 @@ Let's take the black curve as a basis and change the control point **x1** value:
 </svg>
 ```
 
-![Curve](QCB3.png#center)
+![Four Quadratic Bézier Curves with different x1 values for the control point](QCB3.png#center)
 
 ```html {linenos=inline,linenostart=1}
 <svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
@@ -162,13 +163,14 @@ Several  ***Q*** commands can be used sequentially for extended curves stringing
 
 The ***T*** command draws the quadratic Bézier curve from the current point to endpoint (***x,y***).  The command's parameters are only the endpoint coordinates  (***x,y***).  The ***T*** command outputs the new control point using the coordinates of the previous one. This works if the last command was a ***Q*** or a ***T***. At the end of the ***T*** command, the final (***x,y***) coordinate pair becomes the new current point used in the polybézier.
 Below is an example of a curve created using the ***T*** command. Here, the ***x*** coordinates of the curve segments are equidistant,  ***y*** coordinate does not change.
+
 ```html {linenos=inline,linenostart=1}
 <svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100" stroke="black" stroke-width="3" fill="none" />
 </svg>
 ```
-![Curve](QCB4.png#center)
-If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you can obtain a wide variety of curves.
+![Quadratic Bézier Curve created using the T command](QCB4.png#center)
+If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you can obtain a wide variety of curves ([bezier-curve5.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve5.svg)).
 
 
 ```html {linenos=inline,linenostart=1}
@@ -178,15 +180,15 @@ If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you 
 </svg>
 ```
 
-![Curve](QCB5.png#center)
+![Two Quadratic Bézier Curves created using the T command](QCB5.png#center)
 
-### **Cubic Bezier curve**
+### **Cubic Bezier Curve**
 
 Cubic Bézier curve is more complex than a quadratic one. Two control points describe the appearance of the curve at its beginning and the end. To create a cubic Bezier curve, you need to specify three sets of coordinates in the **C** command: the coordinates of two control points (**x1 y1, x2 y2**) and the endpoint of the curve (**x y**): **C x1 y1, x2 y2, x y**.
 
 The control points position determines the slope of the tangent line at the start and endpoint. The Bézier function creates a smooth curve that paths from the slope set at the beginning of the line to the slope at the curve end. You can specify several **C** commands in the one `<path>` element; they will be realized sequentially. The endpoint of the first **C** command becomes the starting point for the new **C** command. 
 
-The following code example makes a shape using two paths:
+The following code example makes a shape using two paths ([cubic-bezier-curves.svg](/svg/net/drawing-basics/svg-path-data/cubic-bezier-curves.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +199,7 @@ The following code example makes a shape using two paths:
 ```
 On the figure, different paths are shown in black and red.
 
-![Curve](CCB1.png#center)
+![Cubic Bezier Curve](CCB1.png#center)
 
 The following code example makes the same shape using one path:
 
@@ -212,7 +214,7 @@ In the sample above we have connected in the one path two curves with the help o
 For smooth long curves creating you may use a shortcut version of the cubic Bézier, designated by the **S x2 y2, x y** command. What does **S** command do? It allows to string together multiple cubic Béziers similar to the **T** command for the quadratic Béziers.
 For the **S** command, the first control point is considered a reflection of the previous one, that is necessary for a constant slope and smooth connection of the curves. The second control point  (**x2 y2**) and the endpoint  ( **x y**) coordinates must be specified.
 
-Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso:
+Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso ([owl.svg]()):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">

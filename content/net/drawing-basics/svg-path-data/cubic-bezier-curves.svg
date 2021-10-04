@@ -1,0 +1,5 @@
+<svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
+    <!--shape two paths-->
+    <path d="M 100 250 C 150 60  355 140  328 260 " stroke="black" stroke-width="3" fill="none" />
+    <path d="M 100 250 C 40 500 240 510 328 260" stroke="red" stroke-width="3" fill="none" />
+</svg>

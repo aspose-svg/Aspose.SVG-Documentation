@@ -1,0 +1,5 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <line x1="20" y1="30" x2="400" y2="30" style="stroke:RGB(112, 128, 144); fill:none; stroke-width:10; stroke-dasharray:10 5;" />
+    <line x1="20" y1="80" x2="400" y2="80" style="stroke:olive; fill:none; stroke-width: 20; stroke-dasharray: 20 10 5;" />
+    <path d="M 10 200 Q 50 100 150 200 T 230 200 T 300 200 T 390 200" stroke="#FF8C00" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="15 10 2 8" />
+</svg>

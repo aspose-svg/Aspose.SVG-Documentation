@@ -4,19 +4,18 @@ type: docs
 weight: 60
 aliases: /net/drawing-basics/fills-and-strokes
 lastmod: "2020-12-15"
-description: SVG Fills and Strokes Properties, Fill attribute, Lines and Stroke Caps, Dots and Dashes
+description: This article describes several properties that allow you to set different aspects of SVG fill and stroke, including color, opacity, thickness, use of dashing, etc.
+description: svg fill, svg stroke, fill attribute, svg lines, svg stroke caps, dots and dashes, stroke-dasharray
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Filling and stroking are both painting operations. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and stroke is painting along its outline. The stroke and fill are ones of the main SVG CSS properties that can be set for any lines, text and shapes. In the SVG text file, they can be specified both in the **style** attribute and using **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**. For each property, there exists a corresponding presentation attribute, which is described in the Styling chapter of W3 SVG 2.0 specification.
+Filling and stroking are both painting operations. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and the stroke is painting along its outline. The SVG stroke and SVG fill are some of the main CSS properties that can be set for any lines, text and shapes. In the SVG text file, they can be specified both in the **style** attribute and using **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**. There is a corresponding presentation attribute for each property, which is described in the Styling chapter of the W3 SVG 2.0 specification. 
 
- 
+## **SVG Fill and SVG Stroke Properties**
 
-## **Fills and Strokes Properties**
+Colorization or painting means the operation of adding color, gradients or patterns to graphics using **fill** and **stroke**. A set of attributes define their properties: **fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity**, and **stroke-width**. These are some of the **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**.
 
-Colorization or painting means the operation of adding color, gradients or patterns to graphics using **fill** and **stroke**. A set of attributes define their properties: **fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity**, and **stroke-width**. They are some of the **[presentation attributes](https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute)**.
-
-Fills and strokes styling features can be set in the **style** attribute. The syntax for properties specifying is: 
+SVG fills and SVG strokes features can be set in the **style** attribute. The syntax for properties specifying is: 
 
 `style="stroke:#00ff00; stroke-width:2; fill:#ff0000"`
 
@@ -24,11 +23,7 @@ But the same **style** properties can be given in the presentation attributes wi
 
 `stroke="green" stroke-width="2" fill="#ff0000"`
 
-For the color specifying, you can take **[color names](https://en.wikipedia.org/wiki/List_of_colors:_A–F)**, rgb values, hex values, etc. In the following examples will be using different ways of writing fills and strokes characteristics. 
-
-
-
-
+For the SVG color specifying, you can take **[color names](https://en.wikipedia.org/wiki/List_of_colors:_A–F)**, rgb values, hex values, etc. In the following examples will be using different ways of writing fills and strokes characteristics.
 
 ## **Fill attribute**
 
@@ -36,7 +31,7 @@ The **fill** attribute colors the interior of a graphic element. When you fill a
 
 So that there is no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`.
 
-The sample below illustrates the presents and lacking `fill= "none"` property:
+The sample below illustrates the presents and lacking `fill= "none"` property ([two-paths.svg](/svg/net/drawing-basics/fills-and-strokes/two-paths.svg)):
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="800" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 300 100 T 390 130" stroke="red" stroke-width="3" fill="none" />
@@ -45,11 +40,11 @@ The sample below illustrates the presents and lacking `fill= "none"` property:
 ```
 ![Two SVG paths: unfilled and filled](two_paths.png#center)
 
-## **Lines and Stroke Caps**
+## **SVG Lines and Stroke Caps**
 
 The more often used stroke properties are the following: **stroke, stroke-width, stroke-linecap**, and **stroke-linejoin**. They define the color, thickness, types of line endings to an open path, and kind of join of the two meet lines.
 
-For any line, it is possible to set the shape of its ends. This makes sense if the line has the **stroke-width** property. The sample below shows as the **stroke-width** and **stroke-linecap** properties define the stroke's width and form of its ends.
+For any line, it is possible to set the shape of its ends. This makes sense if the line has the **stroke-width** property. The sample below shows as the **stroke-width** and **stroke-linecap** properties define the SVG stroke's width and form of its ends  ([lines.svg](/svg/net/drawing-basics/fills-and-strokes/lines.svg)).
 ```html {linenos=inline,linenostart=1}
 <svg height="200" width="800" xmlns="http://www.w3.org/2000/svg">
   <g stroke="grey">
@@ -71,15 +66,15 @@ For any line, it is possible to set the shape of its ends. This makes sense if t
 ```
 In the sample, we use a `<g>` element to set common properties on objects, such as **stroke** and **stroke-width**. 
 
-![Two sets of lines: with different width values and stroke-linecap properties](lines.png#center)
+![Two sets of SVG lines: with different width values and stroke-linecap properties](lines.png#center)
 
-In the example above, the SVG paths (lines) are shown in orange, and the strokes in grey.
+In the example above, the SVG paths (SVG lines) are shown in orange, and the SVG strokes in grey.
 
-The **stroke-linecap** CSS attribute defines how the ends of a line are rendered, and has three possible values: *butt, square* and *round*.
+The **stroke-linecap** CSS attribute defines how the ends of an SVG line are rendered, and has three possible values: *butt, square* and *round*.
 
 As a result of *butt* using, the stroke cap is cut off with a straight edge that is normal exactly where the line ends. The value *square* results in a stroke cap that looks like a cut off, but it extends slightly beyond where the line ends. The distance that the stroke goes beyond the path is half of the **stroke-width** value. The value *round* means the stroke cap has the round ends, which radius depends by the **stroke-width**.
 
-One more sample illustrates a **stroke-linejoin** property:
+One more sample illustrates a **stroke-linejoin** property ([linejoin.svg](/svg/net/drawing-basics/fills-and-strokes/linejoin.svg)):
 ```html {linenos=inline,linenostart=1}
 <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="20" fill="none">
@@ -96,15 +91,15 @@ One more sample illustrates a **stroke-linejoin** property:
 ```
 ![Three polylines with different stroke-linejoin properties](linejoin.png#center)
 
-Note, the orange line inside is the object (polyline), around is the stroke.
+Note, the orange line inside is the object (polyline), around is the SVG stroke.
 
 The **stroke-linejoin** attribute can take a three value: *miter, round*, and *bevel*. The *miter* extends the stroke to create a square corner in the lines join point; *round* builds a rounded stroke in the joining end; *bevel* makes a new angle to aid in the transition between the two lines.
 
-## **Dots and Dashes**
+## **Dots and Dashes. Stroke-dasharray**
 
-The **stroke-dasharray** attribute converts paths into dashes and makes the stroke of an SVG shape rendered with dashed lines. The values, that **stroke-dasharray** attribute takes, are an array of commas or whitespace-separated numbers. These values define the length of dashes and spaces.
+All the SVG stroke properties can be applied to any kind of lines, text and outlines of elements like a circle, rectangle, etc. The **stroke-dasharray** property in CSS is for creating dashes in the stroke of SVG shapes. The **stroke-dasharray** attribute converts paths into dashes and makes the stroke of an SVG shape rendered with dashed lines. The values that **stroke-dasharray** attribute takes are an array of commas or whitespace-separated numbers. These values define the length of dashes and spaces.
 
-Here is a **stroke-dasharray** example:
+Here is a **stroke-dasharray** example ([dasharray.svg](/svg/net/drawing-basics/fills-and-strokes/dasharray.svg)):
 ```html {linenos=inline,linenostart=1}
 <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
     <line x1="20" y1="30" x2="400" y2="30" style="stroke:RGB(112, 128, 144); fill:none; stroke-width:10; stroke-dasharray:10 5;" />
@@ -112,15 +107,15 @@ Here is a **stroke-dasharray** example:
     <path d="M 10 200 Q 50 100 150 200 T 230 200 T 300 200 T 390 200" stroke="#FF8C00" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="15 10 2 8" />
 </svg>
 ```
-For the grey and orange lines, we specify even number of values: each of number couples means “filled-unfilled” areas. The default values are in pixels.
+For the grey and orange SVG lines, we specify even number of values: each of number couples means “filled-unfilled” areas. The default values are in pixels.
 
 ![Three paths with different stroke-dasharray properties](dasharray.png#center)
 
 If an odd number of values is specified, the list is then repeated to produce an even number of values. For example, 20  10  5 becomes 20  10  5  20  10  5, as for olive-color line.
 
-Moreover, you can separately specify the opacity of the fill or stroke that controlled by the **fill-opacity** and **stroke-opacity** attributes.
+Moreover, you can separately specify the opacity of the SVG fill or stroke that controlled by the **fill-opacity** and **stroke-opacity** attributes.
 
-Amazing things can be achieved with strokes and simple SVG shapes:
+You can experiment with stroke-dasharray attribute. Amazing things can be achieved with SVG strokes and simple SVG shapes ([dasharray-example.svg](/svg/net/drawing-basics/fills-and-strokes/dasharray-examples.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
@@ -135,4 +130,5 @@ Amazing things can be achieved with strokes and simple SVG shapes:
 </svg>
 ```
 
-![Circle, rectangle and text with different stroke-dasharray properties](dasharray_examles.png#center)
+![Circle, rectangle and text with different stroke-dasharray properties](dasharray_example.png#center)
+

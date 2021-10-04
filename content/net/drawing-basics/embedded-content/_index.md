@@ -3,15 +3,16 @@ title: SVG Embedded Content
 type: docs
 weight: 70
 aliases: /net/drawing-basics/embedded-content
-lastmod: "2020-12-15"
-description: SVG Embedded Content, Loading and Displaying Bitmaps, HTML Elements in an SVG Document
+lastmod: 2021-10-05
+description: In this article, you will learn how to include and render bitmap and HTML elements within an SVG object.
+keywords: SVG Embedded Content, Loading Bitmaps, Displaying Bitmaps, HTML inside SVG
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 
 Embedded content is content that imports into the document from another resource. SVG `<image>` and `<foreignObject>` elements are used for SVG embedded content support.
 
- 
+
 ## **Loading and Displaying Bitmaps**
 
 The SVG `<image>` element allows to include and render bitmaps within an SVG object. It can display image formats JPEG, PNG and the SVG pictures too. Attributes of the `<image>` element indicate that the contents of a file (a bitmap) should be displayed into a given rectangle ("window") within the current user coordinate system. 
