@@ -1,0 +1,21 @@
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="myF" x="-5" y="-5" height="100" width="150">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur" />
+            <feOffset in="blur" dx="5" dy="5" result="offsetBlur" />
+            <feSpecularLighting in="offsetBlur" surfaceScale="8" specularConstant="0.7" specularExponent="2" lighting-color="#bbbbbb" result="specOut">
+                <fePointLight x="-100" y="-100" z="100" />
+            </feSpecularLighting>
+            <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+            <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="1.5" k2="0.5" k3="1" k4="0" result="litPaint" />
+            <feMerge>
+                <feMergeNode in="offsetBlur" />
+                <feMergeNode in="litPaint" />
+            </feMerge>
+        </filter>
+    </defs>
+    <ellipse cx="85" cy="70" rx="65" ry="45" fill="#20B2AA" filter="url(#myF)" />
+    <g fill="#696969" font-size="25" font-family="arial">
+        <text x="55" y="80">PUSH</text>
+    </g>
+</svg>

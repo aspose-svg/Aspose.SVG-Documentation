@@ -3,7 +3,7 @@ title: SVG Coordinate Systems and Units
 type: docs
 weight: 10
 aliases: /net/drawing-basics/coordinate-systems-and-units
-lastmod: "2021-10-03"
+lastmod: 2021-10-05
 description: SVG Coordinate System, SVG Viewport, User Coordinate System, SVG Units
 keywords: SVG Coordinate System, SVG Viewport, User Coordinate System, SVG Units
 ---

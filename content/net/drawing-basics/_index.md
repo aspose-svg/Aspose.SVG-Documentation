@@ -4,7 +4,7 @@ linktitle: SVG Drawing Basics
 type: docs
 weight: 15
 aliases: /net/drawing-basics/
-lastmod: 2021-10-03
+lastmod: 2021-10-05
 description: In this chapter, you will learn the basic concepts and drawing elements used in SVG images. The chapter includes the articles about SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, Fills and Strokes in SVG, SVG Embedded Content, and SVG Filters and Gradients.
 keywords: svg drawing, svg coordinate system, svg path, svg text, svg transformation, svg fill, svg stroke, svg filter, svg gradient
 ---

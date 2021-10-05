@@ -1,0 +1,7 @@
+<svg height="300" width="400" xmlns="http://www.w3.org/2000/svg">
+    <text x="180" y="30" fill="red">Aspose.SVG</text>
+    <text x="180" y="60" fill="blue" textLength="140" >Aspose.SVG</text>
+    <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text>
+    <text x="180" y="120" fill="green" style="text-anchor: middle" >Aspose.SVG</text>
+    <text x="260" y="90" style="writing-mode: tb">Aspose.SVG</text>
+</svg>

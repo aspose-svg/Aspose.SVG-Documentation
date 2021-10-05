@@ -1,0 +1,19 @@
+<svg height="400" width="600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="f1" x="-20" y="-20" height="100" width="100">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+        </filter>
+        <filter id="f2" x="-20" y="-20" height="100" width="100">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10, 0" />
+        </filter>
+        <filter id="f3" x="-20" y="-20" height="100" width="100">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0,10" />
+        </filter>
+    </defs>
+    <g stroke="none" fill="#20B2AA">
+        <ellipse cx="60" cy="80" rx="55" ry="35" />
+        <ellipse cx="200" cy="80" rx="55" ry="35" filter="url(#f1)" />
+        <ellipse cx="340" cy="80" rx="55" ry="35" filter="url(#f2)" />
+        <ellipse cx="500" cy="80" rx="55" ry="35" filter="url(#f3)" />
+    </g>
+</svg>

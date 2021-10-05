@@ -3,7 +3,7 @@ title: Fills and Strokes in SVG
 type: docs
 weight: 60
 aliases: /net/drawing-basics/fills-and-strokes
-lastmod: "2020-12-15"
+lastmod: 2021-10-05
 description: This article describes several properties that allow you to set different aspects of SVG fill and stroke, including color, opacity, thickness, use of dashing, etc.
 description: svg fill, svg stroke, fill attribute, svg lines, svg stroke caps, dots and dashes, stroke-dasharray
 ---

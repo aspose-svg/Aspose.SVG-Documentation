@@ -1,9 +1,10 @@
 ---
 title: SVG Transformations | Basics
-title: Basic SVG Transformations
+linktitle: Basic SVG Transformations
 type: docs
 weight: 50
-aliases: /net/drawing-basics/basic-transformations
+url: /net/drawing-basics/svg-transformations/
+aliases: /net/drawing-basics/basic-transformations/
 lastmod: 2021-10-05
 description: In this article, you will learn how to apply transform functions to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
 keywords: SVG Transformations, SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing

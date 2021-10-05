@@ -69,8 +69,6 @@ However, in the rectangle case or the other shapes with 90 angles, you can use t
 
 The figure on the left shows all the extra notes. The view of the **rendered  SVG graphics** is on the right.
 
-
-
 ## **Draw an SVG Arc** 
 
 Arcs are used for sections of circles and ellipses drawing. For SVG arcs creating, it is not enough to specify only ellipse radii. You should take into account different possible paths along the arc between two points: the "pen's" moving in a "positive-angle" direction or the opposite; the "pen's" moving along the "large-arc" or the "small-arc".
@@ -85,7 +83,7 @@ The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rot
 
 **x-axis-rotation** - the angle of the x-axis rotation relative to the coordinate system, specified in degrees. 
 
-**large-arc-flag** - can be 0 or 1. A value of "0" means that the "small-arc" will be drawn, a value of "1" -  the "large-arc" will be chosen. 
+**large-arc-flag** - can be 0 or 1. A value of "0" means that the "small-arc" will be drawn, a value of "1" - the "large-arc" will be chosen. 
 
 **sweep-flag** - can be 0 or 1. If a value is "1", then the arc will be drawn in a "positive-angle" direction. A value of "0" indicates about the "pen's" moving in a "negative-angle" direction. 
 

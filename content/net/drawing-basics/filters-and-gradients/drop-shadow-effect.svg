@@ -1,0 +1,10 @@
+<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="shadow" x="-20" y="-20" height="150" width="150">
+            <feOffset result="offset" in="SourceAlpha" dx="10" dy="10" />
+            <feGaussianBlur result="blur" in="offset" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blur" mode="normal" />
+        </filter>
+    </defs>
+    <ellipse cx="95" cy="90" rx="75" ry="55" fill="#20B2AA" filter="url(#shadow)" />
+</svg>

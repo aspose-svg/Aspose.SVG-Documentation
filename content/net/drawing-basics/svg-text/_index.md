@@ -2,7 +2,8 @@
 title: SVG Text
 type: docs
 weight: 40
-aliases: /net/drawing-basics/text
+url: /net/drawing-basics/svg-text/
+aliases: /net/drawing-basics/text/
 lastmod: 2021-10-05
 description: This article introduces the SVG text elements and reviews some common attributes that help to display, format and style the text into an SVG image. Also, here you will find basic information about glyphs, characters and fonts.
 keywords: svg text, fonts and glyphs, svg text element, paths and text
@@ -12,10 +13,10 @@ keywords: svg text, fonts and glyphs, svg text element, paths and text
 SVG allows making for three types of graphic objects: vector graphic shapes, images and text. In the same way, as for the shapes, the SVG text elements can be applied coordinate system transformations, clipping and styling. In this article, we consider how to bring text into an SVG image.  
 
 {{% alert color="primary" %}}
-
-Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! [**SVG Text Vectorization**](https://products.aspose.app/svg/en/text-vectorization) web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
-
+Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution!  <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
 {{% /alert %}} 
+
+<a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](svg-text-vectorization.png#center)</a>
 
 ## **Fonts and Glyphs** 
 
@@ -43,13 +44,11 @@ In a string, text characters are aligned along an imaginary straight line. This 
 
 A text content element is an SVG element that causes text to be rendered on the canvas. The SVG text content elements are: `<text>`, `<tspan>`  and `<textPath>`. 
 
- 
-
 ### SVG `text` element
 
 The `<text>` element is used to define a text. **x** and **y**  are the main attributes responsible for the text position. The baseline for the text begins from the bottom-left corner of the first text symbol. It is essential to set **y** value larger than the font size. Otherwise, the text does not get into the viewport. 
 
-The following example illustrates how to specify a start of baseline correctly. The  **x** and **y** set the coordinates of the baseline beginning.
+The following example illustrates how to specify a start of baseline correctly. The  **x** and **y** set the coordinates of the baseline beginning ([svg-text-position.svg](/svg/net/drawing-basics/svg-text/svg-text-position.svg)).
 
 ```html {linenos=inline,linenostart=1}
 <svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
@@ -57,14 +56,14 @@ The following example illustrates how to specify a start of baseline correctly. 
     <text x="10" y="30" fill="green">The text is fully visible </text>
 </svg>
 ```
-![Text position](text1_1.png#center)
+![SVG text position](svg-text-position.png#center)
 
 
 The attributes of the `<text>` and `<tspan>` elements indicate writing direction, alignment, font, and other specifying properties and features that precisely describe how to render characters. The main attributes are: 
 
-**x**, **y**  − the absolute x and y coordinates of characters 
+**x**, **y** − the absolute x and y coordinates of characters 
 
-**dx**,  **dy** − shift along the x-axis or y-axis (relative coordinates) 
+**dx**, **dy** − shift along the x-axis or y-axis (relative coordinates) 
 
 **rotate** − rotation applied to all characters 
 
@@ -78,9 +77,9 @@ The **x**, **y**, **dx**, **dy**, and **rotate** attributes in the `<text>` and 
 
 Using the **textLength** attribute, you can set the length of the text. Herewith the text length is then adjusted to match the specified length by adjusting the spacing and the size of the glyphs. With the **lengthAdjust** attribute, you can specify whether to adjust both the letter spacing and the glyph size. 
 
-Let's see how you can arrange the text: 
+Let's see how you can arrange the text ([svg-text-arranging.svg](/svg/net/drawing-basics/svg-text/svg-text-arranging.svg)): 
 ```html {linenos=inline,linenostart=1}
- <svg height="200" width="800" xmlns="http://www.w3.org/2000/svg">
+ <svg  height="300" width="400" xmlns="http://www.w3.org/2000/svg">
     <text x="180" y="30" fill="red">Aspose.SVG</text>
     <text x="180" y="60" fill="blue" textLength="140" >Aspose.SVG</text>
     <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text>
@@ -89,7 +88,7 @@ Let's see how you can arrange the text:
 </svg>
 ```
 
-![Text Aspose](text3.png#center)
+![SVG text arranging "Aspose"](svg-text-arranging.png#center)
 
 "Red" and "green" text differ only in the position of the **text-anchor** property that can take three values: ***start***, ***middle*** and ***end***. In the first case, the default **text-anchor** is the left edge of the text, the value is ***start***. In the second - `text-anchor: middle` - is the middle of the text. 
 
@@ -103,7 +102,7 @@ The `<tspan>` element is within the `<text>` element or other `<tspan>` element.
 
 2. For styles (or other attributes) setting and applying only to a specific part of the text, you need to use the `<tspan>` element. It allows you to switch the style or position of the displayed text within the `<tspan>` element relative to the parent element. 
 
-Consider a simple `<tspan>`> example: 
+Consider a simple `<tspan>`> example ([svg-text.svg](/svg/net/drawing-basics/svg-text/svg-text.svg)): 
 
 ```html {linenos=inline,linenostart=1}
  <svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
@@ -113,10 +112,8 @@ Consider a simple `<tspan>`> example:
     </text>
 </svg>
 ```
-![Text Aspose Your File Format APIs](text2.png#center)
+![Text Aspose Your File Format APIs](svg-text.png#center)
 The  `<text>` element with one or more `<tspan>` child elements set new  positions for characters which start new lines. For SVG text formatting, we use **x** and **y** attributes that specified the text beginning point. The dashed lines in the above figure indicate the starting position of the text in the viewport. For text styling, **style** attribute's properties are required, such as ***font-family***, ***font-size***, ***font-weight*** end other. 
-
-
 
 ## **Paths and Text** 
 
@@ -128,7 +125,7 @@ SVG can place text along a path defined by a `<path>` element. This is making by
  - Attribute  **href** (**xlink:href**) references to an URL pointing to the `<path>` element. 
  - Attribute **path** specifies the SVG path data directly. 
 
-Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. The text displaying along the curve mostly takes attribute **href** with reference to the `<path>`element. Here is an example: 
+Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. The text displaying along the curve mostly takes attribute **href** with reference to the `<path>`element. Here is an example ([svg-text-path.svg](/svg/net/drawing-basics/svg-text/svg-text-path.svg)): 
 
 ```html {linenos=inline,linenostart=1}
 <svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
@@ -150,8 +147,6 @@ If the length of the path is shorter than the text size, then only the text part
 The SVG text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**SVG Filters and Gradients**](/svg/net/drawing-basics/filters-and-gradients/). 
 
 {{% alert color="primary" %}}
-
 Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! [**SVG Text Vectorization**](https://products.aspose.app/svg/en/text-vectorization) web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
-
 {{% /alert %}} 
 

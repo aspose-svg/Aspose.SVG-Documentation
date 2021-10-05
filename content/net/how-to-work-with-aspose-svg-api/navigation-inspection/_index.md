@@ -23,7 +23,7 @@ In this section, you find out:
 
  - how to navigate over the document by using CSS Selector or  XPath Query.
 
- 
+
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
@@ -80,7 +80,7 @@ using System.Linq;
     }
 ```
 
-In the example, the [**`DocumentElement`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/properties/documentelement) property usage allows direct access to the `<svg>` element of the document.  Method **[GetElementsByTagName](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getelementsbytagname)(`string name`)** of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns a **NodeList** of all descendant elements with a given tag name; in this case the return element is the first `<g>` element.  The [**`FirstElementChild`**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/properties/firstelementchild) property  returns the first child element   node of this element. In the example, the first child in `<g>` element is the `<rect>` element, for which the Width and Height values are printed.
+In the example, the [`DocumentElement`](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/properties/documentelement) property usage allows direct access to the `<svg>` element of the document. Method [**GetElementsByTagName()**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getelementsbytagname) of the [**Element**](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class returns a **NodeList** of all descendant elements with a given tag name; in this case the return element is the first `<g>` element. The [`FirstElementChild`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/properties/firstelementchild) property  returns the first child element node of this element. In the example, the first child in `<g>` element is the `<rect>` element, for which the Width and Height values are printed.
 
 ###  **Inspection of the SVG Document and its Elements**
 
@@ -343,5 +343,4 @@ using Aspose.Svg.Collections;
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
-
 

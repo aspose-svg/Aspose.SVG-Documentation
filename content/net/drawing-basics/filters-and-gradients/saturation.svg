@@ -1,0 +1,8 @@
+<svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="myFilter">
+            <feColorMatrix in="SourceGraphic" type="saturate" values="0.5"></feColorMatrix>
+        </filter>
+    </defs>
+    <image filter="url(#myFilter)" href="https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg" width="100%" height="100%" />
+</svg>
