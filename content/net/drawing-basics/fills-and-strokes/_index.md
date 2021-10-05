@@ -115,7 +115,7 @@ If an odd number of values is specified, the list is then repeated to produce an
 
 Moreover, you can separately specify the opacity of the SVG fill or stroke that controlled by the **fill-opacity** and **stroke-opacity** attributes.
 
-You can experiment with stroke-dasharray attribute. Amazing things can be achieved with SVG strokes and simple SVG shapes ([dasharray-example.svg](/svg/net/drawing-basics/fills-and-strokes/dasharray-examples.svg)):
+You can experiment with stroke-dasharray attribute. Amazing things can be achieved with SVG strokes and simple SVG shapes ([dasharray-example.svg](/svg/net/drawing-basics/fills-and-strokes/dasharray-example.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">

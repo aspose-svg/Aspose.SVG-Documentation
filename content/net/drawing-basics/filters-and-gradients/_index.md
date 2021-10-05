@@ -203,7 +203,7 @@ The following figure is a series of images with the various ***hueRotate*** valu
 
 The `<feComponentTransfer>` filter allows you to perform linear, tabular, discrete operations with image channels, as well as change the gamma of each channel (RGBA). It lets operations like brightness adjustment, contrast adjustment, and color balance.
 
-Let's  look at an example ([rgba.svg](/svg/net/drawing-basics/filters-and-gradients/rgba.svg)):
+Let's  look at an example:
 ```html {linenos=inline,linenostart=1}
 <svg width="640" height="480" viewbox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
     <defs>

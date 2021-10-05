@@ -212,7 +212,7 @@ In the sample above we have connected in the one path two curves with the help o
 For smooth long curves creating you may use a shortcut version of the cubic Bézier, designated by the **S x2 y2, x y** command. What does **S** command do? It allows to string together multiple cubic Béziers similar to the **T** command for the quadratic Béziers.
 For the **S** command, the first control point is considered a reflection of the previous one, that is necessary for a constant slope and smooth connection of the curves. The second control point  (**x2 y2**) and the endpoint  ( **x y**) coordinates must be specified.
 
-Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso ([owl.svg]()):
+Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso ([owl.svg](/svg/net/drawing-basics/svg-path-data/owl.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">

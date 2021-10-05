@@ -76,7 +76,7 @@ RGB (red, green, blue) is an additive color model that describes how any color i
 
 The SVG `<circle>` element is used to draw a circle on the screen. You need to set the position of the SVG circle’s center and radius. These are **cx, cy,** and **r** attributes, respectively. 
 
-You can set the stroke and fill properties for an SVG circle. In the following example, the stroke color is black, and the fill color is red.  You can also set the stroke width using the `stroke-width` style property and fill transparency using the `fill-opacity` property. Here is an example ([circle.svg](/svg/net/how-to-work-with-aspose-svg-api/converting/circle.svg)):
+You can set the stroke and fill properties for an SVG circle. In the following example, the stroke color is black, and the fill color is red.  You can also set the stroke width using the `stroke-width` style property and fill transparency using the `fill-opacity` property. Here is an example ([circle.svg](/svg/net/drawing-basics/svg-shapes/circle.svg)):
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
 <svg width="300" height="550" xmlns="http://www.w3.org/2000/svg">
