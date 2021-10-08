@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<text style="font-size: 5em;" x="20px" fill="#C0C0C0" y="100px" filter="url(#shadow)">Aspose.SVG API</text>
+	<defs>
+		<filter id="shadow" x="-20px" y="-20px" height="150px" width="150px">
+			<feOffset in="SourceAlpha" result="offset" dx="3" dy="3"/>
+			<feGaussianBlur in="offset" stdDeviation="3 3" result="blur"/>
+			<feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+		</filter>
+	</defs>
+</svg>

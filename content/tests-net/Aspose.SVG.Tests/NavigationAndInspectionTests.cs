@@ -124,7 +124,7 @@ namespace Aspose.Svg.Tests
                 wingPath.SetAttribute("stroke-width", "16");
                 wingPath.SetAttribute("stroke-dasharray", "2 8");
 
-                document.Save(Path.Combine(OutputDir, "owl_out1.svg"));
+                document.Save(Path.Combine(OutputDir, "owl-edited.svg"));
 
                 Assert.True(document.QuerySelectorAll("circle").Length > 0);
             }
@@ -170,7 +170,7 @@ namespace Aspose.Svg.Tests
                 Element lastRect = gElement.LastElementChild;
                 lastRect.SetAttribute("stroke", "red");
 
-                document.Save(Path.Combine(OutputDir, "owl_eyes.svg"));
+                document.Save(Path.Combine(OutputDir, "owl-svg-eyes.svg"));
                
                 Assert.True(document.QuerySelectorAll("rect").Length >0);
             }
@@ -179,7 +179,7 @@ namespace Aspose.Svg.Tests
         [Fact(DisplayName = "Using QuerySelector")]
         public void UsingQuerySelectorTest()
         {
-            using (var document = new SVGDocument(Path.Combine(DataDir, "owl_eyes.svg")))
+            using (var document = new SVGDocument(Path.Combine(DataDir, "owl-svg-eyes.svg")))
             {
                 var svgElement = document.RootElement;
 
@@ -217,7 +217,7 @@ namespace Aspose.Svg.Tests
                 wingPath.SetAttribute("d", d.Trim());
                 wingPath.SetAttribute("stroke", "Teal");
 
-                document.Save(Path.Combine(OutputDir, "owl_wing.svg"));
+                document.Save(Path.Combine(OutputDir, "owl-svg-wing.svg"));
                 
                 Assert.False(document.QuerySelectorAll("circle").Length > 0);
             }

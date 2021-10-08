@@ -13,7 +13,7 @@ description: SVG shapes, SVG Basic Shapes, SVG Rectangle, SVG Circle, SVG Line, 
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**How to edit SVG**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/document-editing/). 
+The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**How to edit SVG documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/). 
 
 ## **SVG Rectangle** 
 
@@ -150,7 +150,7 @@ The first group of two numbers in the **points** defines the coordinates of the 
 
 In the first SVG polyline example, there are 3 points that define a triangle. The space between the points will be filled with the ***fill*** property. In the example, the ***fill*** color is grey: `style="fill:grey"`. The default ***fill*** color is black. In the second example, seven points are connected by the SVG polyline with the `stroke-width:6` and the ***fill*** property "none". 
 
-More detailed **style** attributes properties are covered in the  [**Fills and Strokes in SVG**](/svg/net/drawing-basics/fills-and-strokes/) section. Full information is on the **[W3C page](https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperties)**. 
+For more information on **style** attributes' properties, please see the article [**Fills and Strokes in SVG**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/). Full information is on the **[W3C page](https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperties)**. 
 
 
 ## **SVG Polygon** 

@@ -113,7 +113,7 @@ namespace Aspose.Svg.Tests
                 svgElement.InsertBefore(pathElement, svgElement.FirstChild);
 
                 // Save the document
-                document.Save(Path.Combine(OutputDir, "PathData.svg"));
+                document.Save(Path.Combine(OutputDir, "edit-svg-path-data.svg"));
                 
                 Assert.Equal("svg", document.DocumentElement.TagName);
             }
@@ -131,7 +131,7 @@ namespace Aspose.Svg.Tests
 
                 // Create an image element and add to the svgElement
                 var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/Lighthouse.jpg";
+                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg";
                 imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Height.BaseVal.Value = 640;
@@ -179,7 +179,7 @@ namespace Aspose.Svg.Tests
 
                 // Create an image element and add to the svgElement
                 var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/Lighthouse.jpg";
+                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg";
                 imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Height.BaseVal.Value = 640;
@@ -206,9 +206,9 @@ namespace Aspose.Svg.Tests
                 filterElement.AppendChild(feColorMatrixElement);                         
 
                 // Save the document
-                document.Save(Path.Combine(OutputDir, "Saturation.svg"));
+                document.Save(Path.Combine(OutputDir, "saturation-effect.svg"));
             }
-            Assert.True(File.Exists(Path.Combine(OutputDir, "Saturation.svg")));
+            Assert.True(File.Exists(Path.Combine(OutputDir, "saturation-effect.svg")));
         }
 
         [Fact(DisplayName = "Drop Shadow Effect")]
@@ -268,13 +268,13 @@ namespace Aspose.Svg.Tests
                 svgElement.InsertBefore(textElement, svgElement.FirstChild);
 
                 // Save the document
-                document.Save(Path.Combine(OutputDir, "Shadow.svg"));                
+                document.Save(Path.Combine(OutputDir, "drop-shadow-effect.svg"));                
                
                 Assert.True(document.QuerySelectorAll("filter").Length > 0);
             }
         }
 
-        [Fact(DisplayName = "Drawing on Existing Bitmaps")]
+        [Fact(DisplayName = "SVG Drawing on Existing Bitmap")]
         public void DrawingOnExistingBitmapsTest()
         {
             // Set SVG Namespace Url
@@ -286,7 +286,7 @@ namespace Aspose.Svg.Tests
 
                 // Create an image element and add it into svgElement
                 var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/document-editing/seaside.jpg";
+                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/seaside.jpg";
                 imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Height.BaseVal.Value = 480;
@@ -320,7 +320,7 @@ namespace Aspose.Svg.Tests
                 svgElement.AppendChild(circleElement);
 
                 // Save the document
-                document.Save(Path.Combine(OutputDir, "Drawing.svg"));
+                document.Save(Path.Combine(OutputDir, "svg-drawing-on-bitmap.svg"));
 
                 Assert.True(document.QuerySelectorAll("circle").Length > 0);
             }

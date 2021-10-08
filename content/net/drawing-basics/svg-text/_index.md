@@ -13,7 +13,7 @@ keywords: svg text, fonts and glyphs, svg text element, paths and text
 SVG allows making for three types of graphic objects: vector graphic shapes, images and text. In the same way, as for the shapes, the SVG text elements can be applied coordinate system transformations, clipping and styling. In this article, we consider how to bring text into an SVG image.  
 
 {{% alert color="primary" %}}
-Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution!  <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
+Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! Free Online <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited. Convert your SVG text to vector and get all the advantages of vectorized text!
 {{% /alert %}} 
 
 <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](svg-text-vectorization.png#center)</a>

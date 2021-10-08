@@ -35,7 +35,7 @@ For more details, see [How to Run the Examples](https://docs.aspose.com/svg/net/
 
 ## SVG File Processing
 
-- [Create, read](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/creating-loading-documents/) and [save SVG](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-documents/) files.
+- [Create, read](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/creating-loading-documents/) and [save SVG](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/saving-svg-documents/) files.
 - [Convert SVG](https://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/converting/) to other [supported file formats](https://docs.aspose.com/svg/net/supported-file-formats/).
 - DOM Tree manipulation as per official SVG specs.
 - Support for content [navigation](http://docs.aspose.com/svg/net/how-to-work-with-asposesvg-api/navigation-inspection/) via XPath Query, CSS Selectors, Element and Document Traversal features.

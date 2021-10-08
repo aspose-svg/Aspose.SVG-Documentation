@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<image href="http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg" height="640" width="480" x="20" y="20" filter="url(#CM)"/>
+	<defs>
+		<filter id="CM">
+			<feColorMatrix in="SourceGraphic" type="saturate" values="2"/>
+		</filter>
+	</defs>
+</svg>

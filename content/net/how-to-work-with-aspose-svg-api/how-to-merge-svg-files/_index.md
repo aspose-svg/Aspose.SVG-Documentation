@@ -1,7 +1,7 @@
 ---
 title: How to Merge SVG Documents
 type: docs
-weight: 28
+weight: 70
 aliases: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
 lastmod: "2020-12-15"
 description: Rendering SVG documents, Render SVG, Merging SVG documents, Merge SVG
@@ -54,7 +54,7 @@ You can try to merge SVG documents to a variety of other formats with our [Free 
 
 ## **Merging SVG documents**
 
-The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-documents/Lineto.svg)) can be done with a few lines of code:
+The **Renderer()** method gives you the ability to send multiple documents at ones to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/Lineto.svg)) can be done with a few lines of code:
 
 ```c#
 using Aspose.Svg;

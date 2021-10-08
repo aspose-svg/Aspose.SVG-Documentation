@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<image href="http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/seaside.jpg" height="480" width="640" x="20" y="20"/>
+	<text style="font-size: 1.4em;" x="420px" fill="gold" y="280px">The beach is beautiful...</text>
+	<circle cx="520" cy="120" r="60" stroke="gold" stroke-width="70" fill="none" stroke-dasharray="2,14"/>
+</svg>

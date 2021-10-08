@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<image href="http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg" height="640" width="480" x="20" y="20" filter="url(#F1)"/>
+	<defs>
+		<filter id="F1">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="3 3" x="-20px" y="-20px" height="720px" width="560px"/>
+		</filter>
+	</defs>
+</svg>
