@@ -52,7 +52,7 @@ After doing any command, the "virtual pen" point will be located at the endpoint
 
 ***Closepath Z*** ends the current SVG path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
 
-Let's draw a square using the ***lineto*** commands ([Lineto2.svg](/svg/net/drawing-basics/svg-path-data/Lineto2.svg)):
+Let's draw a square using the ***lineto*** commands ([Lineto.svg](/svg/net/drawing-basics/svg-path-data/Lineto.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ Let's draw a square using the ***lineto*** commands ([Lineto2.svg](/svg/net/draw
     <path d="M 70 70 h 80 v 80 h -80 Z" fill="transparent" stroke-width="2" stroke="red" />
 </svg>
 ```
-![Three squares: black blue and red grey rectangles](Lineto2.png#center)
+![Three squares: black blue and red grey rectangles](Lineto.png#center)
 
 A black square is created by sequentially using the ***L*** command, which draws a line to the specified point (***x, y***). This is the most common way of making a wide variety of straight-line paths. 
 
