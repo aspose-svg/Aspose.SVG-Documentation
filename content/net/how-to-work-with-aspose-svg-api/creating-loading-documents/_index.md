@@ -63,7 +63,7 @@ using System.IO;
 
 {{% alert color="primary" %}} 
 
-More details about SVG file saving are in the [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/) section. In the article **[How to Edit SVG Documents](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/)**, you learn how to edit SVG using Aspose.SVG for .NET library and find detailed examples of how to add new elements to SVG documents and apply SVG filters to bitmaps.
+More details about SVG file saving are in the [**Saving SVG Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/) section. In the article **[How to Edit SVG Documents](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/)**, you learn how to edit SVG using Aspose.SVG for .NET library and find detailed examples of how to add new elements to SVG documents and apply SVG filters to bitmaps.
 
 {{% /alert %}} 
 
