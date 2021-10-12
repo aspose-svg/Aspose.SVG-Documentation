@@ -4,8 +4,8 @@ linktitle: Convert SVG to PDF
 type: docs
 weight: 10
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-pdf/   
-lastmod: 2021-10-10
-description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF and find C# examples of SVG conversion. 
+lastmod: 2021-10-12
+description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF and find C# examples of SVG to PDF conversions. 
 keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save options
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
@@ -13,7 +13,7 @@ keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save optio
 Converting  {{%SVG%}} documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. {{%PDF%}} is a file format supported by all operating systems, used for presenting images, documents and books. Files in PDF can be easily viewed, printed, and shared online. 
 
 {{% alert color="primary" %}}
-You can try to convert SVG documents with our free online <a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
+You can convert SVG to PDF with our free online <a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
 {{% /alert %}}
 
 <a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">![Text "Banner SVG to PDF Converter"](svg-to-pdf.png#center)</a>

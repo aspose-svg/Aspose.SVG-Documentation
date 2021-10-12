@@ -5,7 +5,7 @@ weight: 10
 aliases: 
     - /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
     - /net/create-and-read-svg-documents/
-lastmod: 2021-10-10
+lastmod: 2021-10-12
 keywords: create SVG, SVG file, load SVG, SVG document, read SVG, svg example, c# code snippet
 description: In this article, you will learn how to create SVG from a memory string, stream, or file; how to load SVG from the Web and read SVG using Resources Async. The article provides some examples of creating & loading SVG files using Aspose.SVG for .NET API. 
 ---
@@ -63,7 +63,7 @@ using System.IO;
 
 {{% alert color="primary" %}} 
 
-More details about SVG file saving are in the [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/) section. In the article **[How to Edit SVG documents](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/)**, you learn how to edit SVG using Aspose.SVG for .NET library and find detailed examples of how to add new elements to SVG documents and apply SVG filters to bitmaps.
+More details about SVG file saving are in the [**Saving Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/) section. In the article **[How to Edit SVG Documents](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/)**, you learn how to edit SVG using Aspose.SVG for .NET library and find detailed examples of how to add new elements to SVG documents and apply SVG filters to bitmaps.
 
 {{% /alert %}} 
 

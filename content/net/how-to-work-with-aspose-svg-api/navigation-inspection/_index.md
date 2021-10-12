@@ -6,7 +6,7 @@ weight: 50
 aliases: 
     - /net/how-to-work-with-aspose-svg-api/navigation-inspection/
     - /net/traverse-svg-dom/
-lastmod: 2021-10-11
+lastmod: 2021-10-12
 description: This article teaches how to perform a detailed inspection of the SVG document and its elements using the Aspose.SVG API, custom filters usage for iterating over the document elements, and how to navigate the document using CSS Selector or XPath.
 keywords: svg file example, svg element, svg xpath, inspection svg, navigation svg, custom filter, CSS selector, XPath Query
 ---
@@ -109,7 +109,7 @@ using System.IO;
     }
 ```
 
- The `<svg>` element is a container and used as the outermost element of SVG documents. To point the `<svg>` element, you can apply a few ways:
+ The `<svg>` element is a container, and it is used as the outermost element of SVG documents. To point the `<svg>` element, you can apply a few ways:
 
  - The `DocumentElement` property of the [Document](https://apireference.aspose.com/svg/net/aspose.svg.dom/document) class gives direct access to the `<svg>` element of the document. In the code snippet above, we use this way.
 
@@ -153,7 +153,7 @@ where the **RectFilter** class is defined as follow:
 ```
 
 
-The [CreateNodeIterator(`Node, Int64, INodeFilter`) ](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.idocumenttraversal/createnodeiterator/methods/2)method of the [IDocumentTraversal](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal/idocumenttraversal) interface creates a new iterator rooted at the specified `Node` (in our example it is the `document`).  As parameters, the method takes `Node`, `Int64` flag that specifies node types for the iterator, and `INodeFilter` to be used (in our example it is the `RectFilter()`).
+The [CreateNodeIterator(`Node, Int64, INodeFilter`) ](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.idocumenttraversal/createnodeiterator/methods/2)method of the [IDocumentTraversal](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal/idocumenttraversal) interface creates a new iterator rooted at the specified `Node` (in our example, it is the `document`).  As parameters, the method takes `Node`, `Int64` flag that specifies node types for the iterator, and `INodeFilter` to be used (in our example, it is the `RectFilter()`).
 
 The **RectFilter** class inherits from the [NodeFilter](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.filters/nodefilter) class the [AcceptNode (`Node n`)](https://apireference.aspose.com/svg/net/aspose.svg.dom.traversal.filters/nodefilter/methods/acceptnode) method. The method takes a `Node` and tests if it passes the filter or not; the method returns a short indicating whether the node is found or not.
 
@@ -167,7 +167,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 Aspose.SVG for .NET also implements CSS Selector specification that allows you to navigate over the document by using CSS like style. 
 
-The [QuerySelector(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector) method of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class allows you to get the first element within the document that matches the specified selector.  the [QuerySelectorAll(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselectorall) method takes as a parameter the query selector and  returns a **NodeList** of all the elements, which match the selector.  With the resulting elements, you can make various manipulations: change its text, attributes, CSS styles, and so on.
+The [QuerySelector(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector) method of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class allows you to get the first element within the document that matches the specified selector.  The [QuerySelectorAll(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselectorall) method takes as a parameter the query selector and  returns a **NodeList** of all the elements, which match the selector.  With the resulting elements, you can make various manipulations: change its text, attributes, CSS styles, and so on.
 
 In the following examples, we use the QuerySelector()  and QuerySelectorAll() methods for navigation through an SVG document and search the needed elements. 
 
@@ -222,7 +222,7 @@ using Aspose.Svg.Collections;
 
 ### **Example 2**
 
-In this example, we show how to use the CSS Selector to navigate a document for editing purpose. We continue to edit the source [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) file:
+In this example, we show how to use the CSS Selector to navigate a document for editing purposes. We continue to edit the source [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) file:
 
  - in the first part of Example 2, the round eyes of the owl will be changed to square and recolored.
 
@@ -323,7 +323,7 @@ using Aspose.Svg.Collections;
 
 ![Original and two edited owl images](owl-edited-svg.png#center)
 
-In the examples above, we take the source [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) file and edit some elements. We tried to decorate the eyes and wing of the owl in a various way using  navigation and inspection Aspose.SVG API functions. You can view and save the edited SVG file by following the link - [owl-edited2.svg](/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/owl-edited2.svg).
+In the examples above, we take the source [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) file and edit some elements. We tried to decorate the eyes and wing of the owl in various ways using  navigation and inspection Aspose.SVG API functions. You can view and save the edited SVG file by following the link - [owl-edited2.svg](/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/owl-edited2.svg).
 
 ## **Navigating SVG with XPath Query**
 

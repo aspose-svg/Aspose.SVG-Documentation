@@ -4,7 +4,7 @@ linktitle: Environment Configuration
 type: docs
 weight: 40
 aliases: /net/how-to-work-with-aspose-svg-api/environment-configuration/
-lastmod: 2021-10-10
+lastmod: 2021-10-12
 description: In this guide, you will learn how to create various configurations and adapt them to the different environments where the application runs. This can be a custom theme, a runtime service or a web request network service.
 keywords: environment configuration, user agent service, runtime service, network service, message handler, custom message handler
 ---
@@ -12,7 +12,7 @@ keywords: environment configuration, user agent service, runtime service, networ
 
 The setting of environment configuration is used for various purposes. For example, when you develop an application, you will definitely demand some configuration that can range from runtime service or handle any web requests from the application to injecting custom themes.
 
-The [Aspose.Svg.Services](https://apireference.aspose.com/svg/net/aspose.svg.services) namespace contains a set of interfaces for separated services implementations. In this article, we consider different types of environment configurations services such as **User Agent Service**, **Runtime Service**, and **Network Service**. Aspose.SVG for .NET provides the [Configuration](https://apireference.aspose.com/svg/net/aspose.svg/configuration) class that  can be used for the setting of the environment where the application is running.
+The [Aspose.Svg.Services](https://apireference.aspose.com/svg/net/aspose.svg.services) namespace contains a set of interfaces for separated services implementations.This article considers different types of environment configuration services such as **User Agent Service**, **Runtime Service**, and **Network Service**.  Aspose.SVG for .NET provides the [Configuration](https://apireference.aspose.com/svg/net/aspose.svg/configuration) class that  can be used to set the environment where the application is running.
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
@@ -20,7 +20,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 ## **User Agent Service**
 
-The **User Agent Service** allows you to specify a custom user stylesheet, a primary character set for the document, language and fonts settings.  You can specify your custom style information for a particular document and provide as little or as much environment configuration changes as needed.
+The **User Agent Service** allows you to specify a custom user stylesheet, a primary character set for the document, language and fonts settings. You can select your custom style information for a particular document and provide as little or as many environment configuration changes as needed.
 
 The [IUserAgentService](https://apireference.aspose.com/svg/net/aspose.svg.services/iuseragentservice) interface describes a user agent environment. 
 
@@ -28,9 +28,9 @@ The [IUserAgentService](https://apireference.aspose.com/svg/net/aspose.svg.servi
 
  - The `CharSet` property sets the primary character-set for a document. 
 
-   To parse and display an SVG document correctly, the application must know what encoding is using. If the character encoding is not directly specified in the header of the document, Aspose.SVG uses UTF-8, which is defined as the default. However, if you are sure that your SVG document is written using different from UTF-8 encoding, you can specify it manually, as it is shown in the example above.
+   To parse and display an SVG document correctly, the application must know what encoding is using. If the character encoding is not directly specified in the header of the document, Aspose.SVG uses UTF-8, which is defined as the default. However, if you are sure that your SVG document is written using different from UTF-8 encoding, you can specify it manually, as shown in the example above.
 
- - The `FontsSettings` property is used for configuration of fonts handling. For a situation when you need to use the custom fonts instead of the fonts installed on OS, you can set the path to your custom folder, as it is shown in the following code snippet.
+ - The `FontsSettings` property is used for the configuration of fonts handling. When you need to use the custom fonts instead of the fonts installed on the OS, you can set the path to your custom folder, as shown in the following code snippet.
 
  - The `CSSEngineMode` property gets or sets the mode in which CSS engine works.
 
@@ -121,19 +121,19 @@ using Aspose.Svg.Saving;
     }
 ```
 
-The `JavaScriptTimeout` property sets ` TimeSpan` which limits JavaScript execution time. If the script is executed longer than provided `TimeSpan`, it will be cancelled.  The default value is 1 minute.
+The `JavaScriptTimeout` property sets ` TimeSpan`, which limits JavaScript execution time. If the script is executed longer than provided `TimeSpan`, it will be cancelled.  The default value is 1 minute.
 
 ## **Network Service**
 
-Modern network environments generate a significant amount of security event and log data via network routers and switches, servers, anti-malware systems, and so on.
+Modern network environments generate a significant amount of security events and log data via network routers and switches, servers, anti-malware systems, and so on.
 
-Aspose.SVG for .Net offers the [INetworkService](https://apireference.aspose.com/html/net/aspose.html.services/inetworkservice) that is envisioned as a solution to help manage and analyze all this information. Service allows you to control all incoming/outcoming traffic and implement your custom message handlers. It can be used for different purposes, such as: create custom caching mechanism, trace/logging request messages, etc.
+Aspose.SVG for .Net offers the [INetworkService](https://apireference.aspose.com/html/net/aspose.html.services/inetworkservice) that is envisioned as a solution to help manage and analyze all this information. Service allows you to control all incoming/outcoming traffic and implement your custom message handlers.  It can be used for different purposes, such as creating a custom caching mechanism, tracing/logging request messages, etc.
 
 ### **Create a Custom Message Handler**
 
 Aspose.SVG for .NET offers functionality for custom message handlers creating. Let’s develop a simple custom handler that logs information about unreachable resources. Take the following steps:
 
-1. Use the necessary Namespace, which is the [Aspose.Svg.Net](https://apireference.aspose.com/svg/net/aspose.svg.net). This Namespace is presented by classes and interfaces which are responsible for helping easy network processing.
+1. Use the necessary Namespace, which is the [Aspose.Svg.Net](https://apireference.aspose.com/svg/net/aspose.svg.net). This Namespace is presented by classes and interfaces, which are responsible for helping easy network processing.
 2. To create a custom message handler, you need to define your own class that will be derived from the [MessageHandler](https://apireference.aspose.com/svg/net/aspose.svg.net/messagehandler) class. We construct a **LogMessageHandler** class.
 3. Override the [Invoke()](https://apireference.aspose.com/svg/net/aspose.svg.net/messagehandler/methods/invoke) method of the MessageHandler class to implement the custom message handler behaviour.
 

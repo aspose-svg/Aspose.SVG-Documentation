@@ -69,7 +69,7 @@ namespace Aspose.Svg.Tests
                 saveOptions.BackgroundColor = Color.Gray;
 
                 // Convert SVG to PDF
-                Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "Lineto_out.pdf"));
+                Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "Lineto.pdf"));
             }
             
             Assert.True(File.Exists(Path.Combine(OutputDir, "Lineto_out.pdf")));
@@ -203,19 +203,19 @@ namespace Aspose.Svg.Tests
         public void ConvertSvgToPng_UsingRenderToMethod()
         {
             // Prepare a path to a source SVG file
-            string documentPath = Path.Combine(DataDir, "conclusion.svg");
+            string documentPath = Path.Combine(DataDir, "snowflake.svg");
 
             // Initialize an SVG document from the file
             using (var document = new SVGDocument(documentPath))
             {
                 // Create the ImageDevice, set image Format and specify output file to render
-                using (IDevice device = new ImageDevice(new ImageRenderingOptions(), Path.Combine(OutputDir, "conclusion_out.png")))
+                using (IDevice device = new ImageDevice(new ImageRenderingOptions(), Path.Combine(OutputDir, "snowflake_out.png")))
                 {
                     // Render SVG to PNG
                     document.RenderTo(device);
                 }
             }
-            Assert.True(File.Exists(Path.Combine(OutputDir, "conclusion_out_1.png")));
+            Assert.True(File.Exists(Path.Combine(OutputDir, "snowflake_out_1.png")));
         }
 
         [Fact(DisplayName = "Convert SVG to BMP")]

@@ -4,13 +4,13 @@ linktitle: Convert SVG to XPS
 type: docs
 weight: 20
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-xps/   
-lastmod: 2021-10-11
-description: The article provides information on a list of supported SVG to XPS conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to XPS and find C# examples of SVG conversion.
+lastmod: 2021-10-12
+description: The article provides information on a list of supported SVG to XPS conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to XPS and find C# examples of SVG conversions.
 keywords: svg converter, convert svg, convert SVG to XPS, SVG to XPS, save options
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Converting  {{%SVG%}} documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. In this article, you find information on how to convert SVG to {{%XPS%}} by using [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods of the Converter class, [RenderTo()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method  of the [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class and applying [XpsSaveOptions](https://apireference.aspose.com/net/html/aspose.html.saving/xpssaveoptions) or [XpsRenderingOptions](https://apireference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsrenderingoptions) .
+Converting  {{%SVG%}} documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. In this article, you find information on how to convert SVG to {{%XPS%}} by using [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods of the Converter class, [RenderTo()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method  of the [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class and applying [XpsSaveOptions](https://apireference.aspose.com/net/html/aspose.html.saving/xpssaveoptions) or [XpsRenderingOptions](https://apireference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsrenderingoptions).
 
 {{% alert color="primary" %}}
 You can try our free online <a href="https://products.aspose.app/svg/en/conversion/svg-to-xps" target="_blank">**SVG to XPS Converter**</a> that converts SVG to XPS file with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!

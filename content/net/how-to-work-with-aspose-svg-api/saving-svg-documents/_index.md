@@ -1,14 +1,14 @@
 ---
 title: Saving SVG Documents
 keywords: save SVG, SVG document, SVG file, SVG to URL, SVG to zip, SVG to stream, memory stream, svg example, c# code snippet
-description: In the article, you will learn how to save an SVG document to a file, memory stream, or Url using Aspose.SVG for .NET library.
+description: In the article, you will learn how to save an SVG document to a file, memory stream, ZIP archive or Url using Aspose.SVG for .NET library.
 weight: 20
 type: docs
 url: /net/how-to-work-with-aspose-svg-api/saving-svg-documents/
 aliases: 
-  - /net/how-to-work-with-aspose-svg-api/saving-svg-documents/
+  - /net/how-to-work-with-aspose-svg-api/saving-documents/
   - /net/save-svg-files/
-lastmod: 2021-10-11
+lastmod: 2021-10-12
 ---
 ## **Save an SVG document**
 
@@ -16,9 +16,9 @@ lastmod: 2021-10-11
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 
-Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch, you can save your changes using one of [SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index) methods. There are overloaded methods that allow saving SVG to a file, stream, or Url. 
+Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch, you can save your changes using one of [SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index) methods. There are overloaded methods that allow saving SVG to a file, stream, Zip archive or Url. 
 
-In this chapter, we review the SVG documents saving to the same format. You find out how to save your SVG file using Save() methods of the [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class. Moreover, Aspose.SVG for .NET provides the [IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage) interface that allows save SVG documents with resources to streams and manage them.
+In this article, we review the SVG documents saving to the same format. You find out how to save your SVG file using Save() methods of the [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) class. Moreover, Aspose.SVG for .NET provides the [IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage) interface that allows save SVG documents with resources to streams and manage them.
 
 The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
@@ -26,7 +26,7 @@ The scenarios of converting and rendering SVG to other formats are viewed in the
 You can try to convert SVG documents to various other formats with our [**Free Online SVG Converter**](https://products.aspose.app/svg/conversion).
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](svg-converter.png#center)</a>
+<a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](./../svg-converter.png#center)</a>
 
 
 ### **Save SVG to a File**
@@ -46,7 +46,7 @@ using Aspose.Svg;
     {
         // Work with the document
     
-        // Save SVG to file
+        // Save SVG to the file
         document.Save(documentPath);
     }
 ```
