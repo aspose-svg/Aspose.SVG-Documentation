@@ -3,7 +3,8 @@ title: Text Vectorization & Text Security | .NET
 linktitle: Text Vectorization & Text Security
 type: docs
 weight: 80
-aliases: /net/how-to-work-with-aspose-svg-api/text-vectorization/
+aliases: 
+ - /net/vectorize-text/ 
 lastmod: 2021-10-12
 description: This article explains how to convert SVG text to vector using the VectorizeText property of the SVGSaveOptions class.
 keywords: SVG Text, Text to Vector, Text Vectorization, Text Security, Vectorize Text 
