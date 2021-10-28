@@ -12,7 +12,7 @@ namespace Aspose.Svg.Tests
     {
         public TextVectorizationTests(ITestOutputHelper output) : base(output)
         {
-            SetOutputDir("vectorization");
+            SetOutputDir("text-vectorization");
         }
 
         [Fact(DisplayName = "Text Vectorization Test")]

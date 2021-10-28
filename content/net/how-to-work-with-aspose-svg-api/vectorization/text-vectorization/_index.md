@@ -17,7 +17,7 @@ keywords: SVG Text, Text to Vector, Text Vectorization, Text Security, Vectorize
  Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! In the vectorized SVG text, all font glyphs are replaced with a combination of graphics elements. Convert your SVG text to vector with our <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization** </a> app and get all the advantages of vectorized text!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](./svg-text-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](./../vectorization/svg-text-vectorizer.png#center)</a>
 
 The text elements are closely related to the concept of font, glyph and symbol. When a computer renders characters, it maps those characters to glyphs in a font.
 
@@ -60,7 +60,7 @@ The vectorized text, being a digital graphic, has some advantages:
  - serves the text security from unwanted using, borrowing,  and editing.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/main/content/tests-net). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/main/content/tests-net). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 

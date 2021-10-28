@@ -10,7 +10,7 @@ keywords: svg converter, convert svg, convert svg to jpg, convert svg to png, sv
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-In the article, you will find information on how to convert SVG to Image file formats such as  {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}}. Image file conversion is required for website developing, graphic designers acting, photography, and other purposes. The choice of the image format depends on whether you print it in polygraphy, send it by e-mail or put an image on a webpage.
+In the article, you will find information on how to convert SVG to Image file formats such as {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}}. Image file conversion is required for website developing, graphic designers acting, photography, and other purposes. The choice of the image format depends on whether you print it in polygraphy, send it by e-mail or put an image on a webpage.
 
 The article provides a general description of the conversion features of Aspose.SVG .NET and describes supported scenarios of SVG to Image conversions by using  [Converter](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter) and [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument) classes.
 

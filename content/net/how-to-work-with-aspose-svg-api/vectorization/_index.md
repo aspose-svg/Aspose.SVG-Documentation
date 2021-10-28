@@ -16,9 +16,9 @@ In this section, under vectorization, we mean the process of replacing bitmaps o
 
 [Image Vectorization Workflow](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-workflow/) - You will find image vectorization info, a description of the image vectorization process and vectorization options, learn how to vectorize raster images such as PNG, JPG, BMP, TIFF, GIF, ICO into an SVG document.
 
-[Image Vectorization Examples](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-examples/) - You will consider a few C# examples that demonstrate the [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on thevectorization result.
+[Image Vectorization Examples](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-examples/) - You will consider a few C# examples that demonstrate the [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on the vectorization result.
 
-[Text Vectorization](/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/) - This article explains how to convert SVG text to vector using the VectorizeText property of the SVGSaveOptions class.
+[Text Vectorization](/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/) - This article explains how to convert SVG text to vector using the [VectorizeText](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the SVGSaveOptions class.
 
  {{% /alert %}} 
 
@@ -37,10 +37,11 @@ using Aspose.Svg.Saving;
 	// Initialize an instance of the ImageVectorizer class
     var vectorizer = new ImageVectorizer
     {
-        Configuration =  {
-		TraceSmoother =   new ImageTraceSmoother(1),
-		TraceSimplifier = new ImageTraceSimplifier(0.5f),
-		ColorsLimit = 3
+        Configuration = 
+		{
+			TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(0.5f),
+			ColorsLimit = 3
 		}
     };
 

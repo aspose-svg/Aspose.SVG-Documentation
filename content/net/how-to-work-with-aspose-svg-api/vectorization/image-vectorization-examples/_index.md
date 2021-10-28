@@ -15,7 +15,7 @@ keywords: image vectorization, vectorize raster images,  c# example
 Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/en/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](image-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/en/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](./../vectorization/image-vectorizer.png#center)</a>
 
 ## **How to Convert Raster Image to Vector Graphic**
 
@@ -23,50 +23,67 @@ There are two types of images: vector and bitmap. Which type you use will depend
 
 This article considers a few C# examples that demonstrate the  [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on the vectorization result.
 
+**Note:** Aspose.Svg.ImageVectorization Namespace aims to implement image vectorization tasks, so the source image to the raster-to-vector conversion may accept bitmap formats such as {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}},  {{%GIF%}}, etc. The output image is a vector {{%SVG%}} file format. 
+
 ### **Example 1. Use of the TraceSimplifier property**
 
-The [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes a set of classes and interfaces that allows implementation of the image vectorization process. The provided classes and methods enable you to work with various options for preprocessing images before saving them to vector format. The processing assumes control of the following options.
+The [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes a set of classes and interfaces that allows implementation of the image vectorization process. The provided classes and methods enable you to work with various options for preprocessing images before saving them to vector format. The processing assumes control of the following vectorization options: TraceSimplifier, TraceSmoother, PathBuilder, ColorLimit and  ImageSizeLimit.
 
-Aspose.Svg.ImageVectorization Namespace aims to implement image vectorization tasks and 
+Let's look at how the TraceSimplifier property affects image vectorization. First of all, need to know that:
+ -  the [ImageTraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesimplifier) class is responsible for reducing the number of points in a curve that is approximated by a series of trace points;
+ - the [ImageTraceSimplifier(`tolerance`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesimplifier/constructors/1)  constructor takes as a parameter the `tolerance` and initializes an instance of the ImageTraceSimplifier class;
+ - the `tolerance` value determines the maximum error tolerance allowed for a point to be eliminated from the trace. It must be in the range of 0 to 4. The default value is 0.3.  
 
- Aspose.HTML API provides [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace that realizes various classes that allow implementation of the image vectorization process.
-
-The following code snippet demonstrates the use of the [TraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) property for image vectorization.
-
-The following code snippet demonstrates the use of different values of the TraceSimplifier property for image vectorization.
+The following code snippet demonstrates the use of different values of the [TraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) property for image vectorization.
 
 ```c#
 using System.IO;
 using Aspose.Svg.ImageVectorization;
 using Aspose.Svg.Saving;
 ...
-	var vectorizer1 = new ImageVectorizer
+	// Initialize an instance of the ImageVectorizer class and specify configuration properties
+    var vectorizer1 = new ImageVectorizer
     {
-        Configuration =  {
-        TraceSmoother =   new ImageTraceSmoother(2),
-        TraceSimplifier = new ImageTraceSimplifier(0.1f),
-        PathBuilder = new PathBuilder(0.1f),
-        ColorsLimit = 2
+        Configuration = 
+		{
+			TraceSimplifier = new ImageTraceSimplifier(0.1f),
+			TraceSmoother =   new ImageTraceSmoother(2),                
+			ColorsLimit = 2
         }
     };
 
     var vectorizer2 = new ImageVectorizer
     {
-        Configuration =  {
-        TraceSmoother =   new ImageTraceSmoother(2),
-        TraceSimplifier = new ImageTraceSimplifier(1),
-        PathBuilder = new PathBuilder(0.1f),
-        ColorsLimit = 2
+        Configuration =
+		{
+			TraceSimplifier = new ImageTraceSimplifier(1),
+			TraceSmoother =   new ImageTraceSmoother(2),                
+			ColorsLimit = 2
         }
     };
-    
-	
-	using var document1 = vectorizer1.Vectorize(Path.Combine(DataDir, "formats.png"));
-	using var document2 = vectorizer2.Vectorize(Path.Combine(DataDir, "formats.png"));
 
-    
-	document1.Save(Path.Combine(OutputDir, "formats1.svg"));
+    var vectorizer3 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSimplifier = new ImageTraceSimplifier(2),
+			TraceSmoother =   new ImageTraceSmoother(2),                
+			ColorsLimit = 2
+        }
+    };
+
+    // Prepare path for source image file
+    string sourcePath = Path.Combine(DataDir, "formats.png");
+
+    // Vectorize raster image from the specified file
+    using var document1 = vectorizer1.Vectorize(sourcePath);
+    using var document2 = vectorizer2.Vectorize(sourcePath);
+    using var document3 = vectorizer3.Vectorize(sourcePath);
+
+    // Save vectorized image as SVG file
+    document1.Save(Path.Combine(OutputDir, "formats1.svg"));
     document2.Save(Path.Combine(OutputDir, "formats2.svg"));
+    document3.Save(Path.Combine(OutputDir, "formats3.svg"));
 ```
 
 !["Vectorized images with different values of the TraceSimplifier property"](trace-simplifier.png#center)
@@ -77,16 +94,131 @@ You can download the complete C# examples and data files from [**GitHub**](https
 
 ### **Example 2. Use of the TraceSmoother property**
 
+Sometimes fragments of contours look like sawtooth waves. Let's look at how the TraceSmoother property affects contours' smoothing. Before you start, know that:
+
+- the [ImageTraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother) class is responsible for smoothing the number of points in a curve that is approximated by a series of trace points. This class implement the Nearest Neighbor approach;
+ - the [ImageTraceSmoother(`severity`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother/constructors/1)  constructor takes as a parameter the `severity` and initializes an instance of the ImageTraceSmoother class;
+ - the value of the `severity` determines the extent of the region considered by query point. It must be in the range of 0 to 20.   
+
+Let's look at how the [TraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesmoother) property affects image vectorization:
+
 ```c#
 using System.IO;
 using Aspose.Svg.ImageVectorization;
 using Aspose.Svg.Saving;
 ...
     
-    
+	// Initialize an instance of the ImageVectorizer class and specify configuration properties
+    var vectorizer1 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(0),
+			TraceSimplifier = new ImageTraceSimplifier(0.1f),                
+			ColorsLimit = 2
+        }
+    };
+
+    var vectorizer2 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(4),
+			TraceSimplifier = new ImageTraceSimplifier(0.1f),                
+			ColorsLimit = 2
+        }
+    };
+
+    var vectorizer3 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(8),
+			TraceSimplifier = new ImageTraceSimplifier(0.1f),
+			ColorsLimit = 2
+        }
+    };
+
+    // Prepare path for source image file
+    string sourcePath = Path.Combine(DataDir, "flower.png");
+
+    // Vectorize raster image from the specified file
+    using var document1 = vectorizer1.Vectorize(sourcePath);
+    using var document2 = vectorizer2.Vectorize(sourcePath);
+    using var document3 = vectorizer3.Vectorize(sourcePath);
+
+    // Save vectorized image as SVG file
+    document1.Save(Path.Combine(OutputDir, "flower1.svg"));
+    document2.Save(Path.Combine(OutputDir, "flower2.svg"));
+    document3.Save(Path.Combine(OutputDir, "flower3.svg"));    
 ```
 
-## **Example 3. Photo Vectorization**
+!["Vectorized images with different values of the TraceSmoother property"](trace-smoother.png#center)
+
+### **Example 3. Use of the PathBuilder property**
+
+The final step of image vectorization is to convert the tracing points to SVG path lines and Bezier curves and add them to the SVG document. To fit the curves going through each tracing point, in the PathBuilder class implementation, we use a Catmull-Roma spline, which is converted to Bezier curves. 
+
+- The [PathBuilder](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/pathbuilder) class is responsible for building path segments SVGPathSeg from the list of the trace points.
+ - The [PathBuilder(`tension`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/pathbuilder/constructors/1) constructor takes as a parameter the `tension` and initializes an instance of the PathBuilder class.
+ - The `tension` value determines how sharply the curve bends at the (interpolated) control points. It must be in the range of 0 to 1. Any higher or lower values will be aligned with the minimum and maximum values of this range accordingly.
+
+```c#
+using System.IO;
+using Aspose.Svg.ImageVectorization;
+using Aspose.Svg.Saving;
+...
+    
+	// Initialize an instance of the ImageVectorizer class
+    var vectorizer1 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(1),
+			PathBuilder = new PathBuilder(0),
+			ColorsLimit = 2
+        }
+    };
+    
+    var vectorizer2 = new ImageVectorizer
+    {
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(1),
+			PathBuilder = new PathBuilder(1),
+			ColorsLimit = 2
+        }
+    };
+
+    // Prepare path for source image file
+    string sourcePath = Path.Combine(DataDir, "cheese.png");
+
+    // Vectorize raster image from the specified file
+    using var document1 = vectorizer1.Vectorize(sourcePath);            
+    using var document2 = vectorizer2.Vectorize(sourcePath);
+
+    // Save vectorized image as SVG file
+    document1.Save(Path.Combine(OutputDir, "cheese1.svg"));            
+    document2.Save(Path.Combine(OutputDir, "cheese2.svg"));   
+```
+
+!["Vectorized images with different values of the PathBuilder property"](path-builder.png#center)
+
+
+
+{{% alert color="primary" %}} 
+You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/main/content/tests-net). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+{{% /alert %}}
+
+### **Example 4. Photo Vectorization**
+
+Is it possible to convert a photo in vector format to look identical to the photo?
+
+SVG is not well suited for drawing photorealistic images. Vector pictures do not allow for natural color transitions yet. Vector graphics are the best for creating logos, illustrations, technical drawings. It is not the most suitable format for continuous-tone images with blends of color or to edit photographs. However, vectorizing photos can result in impressive artistic effects that can be interesting and useful.
+
+In this section, we convert a photo to vector format and try to choose vectorization options so that the result looks identical to the photo:
 
 ```c#
 using System.IO;
@@ -97,11 +229,12 @@ using Aspose.Svg.Saving;
 	// Initialize an instance of the ImageVectorizer class
     var vectorizer = new ImageVectorizer
     {
-        Configuration =  {
-        TraceSmoother =   new ImageTraceSmoother(1),
-        TraceSimplifier = new ImageTraceSimplifier(0.3f),
-        PathBuilder = new PathBuilder(0.2f),
-        ColorsLimit = 25
+        Configuration =
+		{
+			TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(0.3f),
+			PathBuilder = new PathBuilder(0.2f),
+			ColorsLimit = 25
         }
     };
 
@@ -109,22 +242,34 @@ using Aspose.Svg.Saving;
     using var document = vectorizer.Vectorize(Path.Combine(DataDir, "horses.jpg"));
 
     // Prepare an output path for an SVG document saving
-    string savePath = Path.Combine(OutputDir, "horses2.svg");
+    string savePath = Path.Combine(OutputDir, "horses.svg");
 
     // Save vectorized image as SVG file 
 	document.Save(savePath);
 ```
 
+The figure demonstrates the source raster image (a) and the vectorized image (b).
+
 !["Source photo and Vectorized photo"](photo-horses.png#center)
 
-The source photo and resulting SVG file you may find and view in details by following the links - [horses.png](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/horses.png), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/horses.svg).
+The source photo and resulting SVG file you may find and view in details by following the links - [horses.png](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.png), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.svg).
 
-Number of colors can be easily increased or reduced to adjust printing budget
+## **License Limitations**
 
-Vector programs best for creating logos, drawings and illustrations, technical drawings. It is not the best format for continuous tone images with blends of color or to edit photographs
+A free evaluation version of Aspose.SVG for .NET  provides all the features for image vectorization except the following:
+
+- Only 4 dominant color will be used to quantize an image.
+- Only 50% of SVG Document's nodes will be saved during serialization.
+
+
+If you want to try Aspose.SVG without evaluation limitations request a 30-day temporary license. For more information, please refer to [**How to get a Temporary License?**](https://purchase.aspose.com/temporary-license) 
+
+!["Photo vectorization result without using a license" ](horses-license.png#center)
+
+The resulting SVG file you may find and view in details by following the links - [horses-license.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses-license.svg).
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}} 
 
 
