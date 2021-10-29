@@ -262,7 +262,7 @@ To fix this problem, you can manually edit the resulting SVG file. We suggest ch
 
 !["The fragment of SVG file"](svg-fragment.png#center)
 
-The source photo (a) and resulting SVG file (c) you may find and view in details by following the links - [horses.png](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.png), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.svg).
+The source photo (a) and resulting SVG file (c) you may find and view in details by following the links - [horses.jpg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/horses.jpg), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/horses.svg).
 
 ## **License Limitations**
 
@@ -278,7 +278,7 @@ The figure shows the result of the photo to vector conversion without applying a
 
 !["Photo vectorization result without using a license" ](horses-license.png#center)
 
-The resulting SVG file you may find and view in details by following the links - [horses-license.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses-license.svg).
+The resulting SVG file you may find and view in details by following the links - [horses-license.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/horses-license.svg).
 
 {{% alert color="primary" %}} 
 You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
