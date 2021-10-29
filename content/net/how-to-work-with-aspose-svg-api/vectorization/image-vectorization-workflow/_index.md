@@ -4,9 +4,11 @@ linktitle: Image Vectorization Workflow
 type: docs
 weight: 10
 url: /net/how-to-work-with-aspose-svg-api/image-vectorization-workflow/  
-lastmod: 2021-10-30
+lastmod: 2021-10-29
+changefreq: weekly
+priority: 0.7
 description: This article explains how to convert bitmaps to vector graphics using the Aspose.SVG API. You will find a description of the image vectorization process; usage of vectorization algorithms and options, learn how to vectorize raster images such as PNG, JPG, BMP, TIFF, GIF, ICO into an SVG document.
-keywords: image vectorization, bitmap to vector, image to vector, vectorize raster images, vector image, vectorization options 
+keywords: image vectorization, bitmap to vector, image to vector, raster image, vector image, vectorization options 
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 

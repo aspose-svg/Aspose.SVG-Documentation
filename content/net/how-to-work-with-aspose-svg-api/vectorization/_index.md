@@ -3,7 +3,9 @@ title: Vectorization - Basic Overview | .NET
 linktitle: Vectorization - Basic Overview 
 type: docs
 weight: 80
-lastmod: 2021-10-30
+lastmod: 2021-10-29
+changefreq: weekly
+priority: 0.7
 description: The articles in this section explain how to convert SVG text to vector and how to convert raster image to vector graphic using the Aspose.SVG API.
 keywords: text vectorization, image vectorization, svg text, bitmap to vector, image to vector, text to vector, vectorize raster images, vector image, text security, vectorize text, raster and vector, c# example 
 ---

@@ -4,9 +4,11 @@ linktitle: Image Vectorization Examples
 type: docs
 weight: 20
 url: /net/how-to-work-with-aspose-svg-api/image-vectorization-examples/  
-lastmod: 2021-10-30
-description: This article explains how to convert bitmap to vector graphic using the Aspose.SVG API. You will learn how to vectorize raster images such as PNG, JPG, BMP, TIFF, GIF, ICO into an SVG document.
-keywords: image vectorization, vectorize raster images,  c# example 
+lastmod: 2021-10-29
+changefreq: weekly
+priority: 0.7
+description: This article explains how to convert bitmap to vector graphic using the Aspose.SVG API. You will consider a few C# examples that demonstrate the Image Vectorization functionalities and the effect of configuration properties on the vectorization result.
+keywords: image vectorization, vector graphic, raster image, image to vector, photo to vector, vectorize raster image, c# example 
 ---
 
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
@@ -19,9 +21,11 @@ Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.a
 
 ## **How to Convert Raster Image to Vector Graphic**
 
-There are two types of images: vector and bitmap. Which type you use will depend on the situation. A bitmap is a two-dimensional array that maps colors to pixels at a particular location. A raster image is a much larger file than a vector one. Raster formats are suitable for photographs or pictures with color gradients. But one of their main disadvantages is the losing quality when scaling. Vector graphics allow you to scale images without losing quality and can sometimes significantly reduce their size. The best suited for the vector format are logos, icons, page layouts, maps, graphs, line arts, illustrations.
+There are two types of images: vector and bitmap. Which type you use will depend on the situation. A bitmap is a two-dimensional array that maps colors to pixels at a particular location. A raster image is a much larger file than a vector one. Raster formats are suitable for photographs or pictures with color gradients. But one of their main disadvantages is the losing quality when scaling. Vector graphics allow you to scale images without losing quality and can sometimes significantly reduce their size. The best suited for the vector format are logos, icons, page layouts, maps, graphs, line arts, illustrations. Image Vectorization is the process of converting a raster image to vector graphics - the Bezier curves, splines and lines. 
 
-This article considers a few C# examples that demonstrate the  [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on the vectorization result.
+This article considers a few C# examples that demonstrate the  [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties such as TraceSimplifier, TraceSmoother and PathBuilder, on the vectorization result.
+
+For the [ColorLimit](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/colorslimit) property,  25 colours are available. You can choose the required number of colors depending on the situation. The default value is 25. The [ImageSizeLimit](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/imagesizelimit) property sets the maximal dimension of an image determined by multiplication image width and height. The size of the image will be scaled based on this property. The default value is 1800000.  
 
 **Note:** Aspose.Svg.ImageVectorization Namespace aims to implement image vectorization tasks, so the source image to the raster-to-vector conversion may accept bitmap formats such as {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}},  {{%GIF%}}, etc. The output image is a vector {{%SVG%}} file format. 
 
@@ -34,7 +38,7 @@ Let's look at how the TraceSimplifier property affects image vectorization. Firs
  - the [ImageTraceSimplifier(`tolerance`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesimplifier/constructors/1)  constructor takes as a parameter the `tolerance` and initializes an instance of the ImageTraceSimplifier class;
  - the `tolerance` value determines the maximum error tolerance allowed for a point to be eliminated from the trace. It must be in the range of 0 to 4. The default value is 0.3.  
 
-The following code snippet demonstrates the use of different values of the [TraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) property for image vectorization.
+The following code snippet demonstrates the use of different values of the [TraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) property for image to vector conversion.
 
 ```c#
 using System.IO;
@@ -174,9 +178,9 @@ using Aspose.Svg.Saving;
     {
         Configuration =
 		{
-			TraceSmoother =   new ImageTraceSmoother(1),
-			TraceSimplifier = new ImageTraceSimplifier(1),
 			PathBuilder = new PathBuilder(0),
+            TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(1),			
 			ColorsLimit = 2
         }
     };
@@ -185,9 +189,9 @@ using Aspose.Svg.Saving;
     {
         Configuration =
 		{
-			TraceSmoother =   new ImageTraceSmoother(1),
-			TraceSimplifier = new ImageTraceSimplifier(1),
 			PathBuilder = new PathBuilder(1),
+            TraceSmoother =   new ImageTraceSmoother(1),
+			TraceSimplifier = new ImageTraceSimplifier(1),			
 			ColorsLimit = 2
         }
     };
@@ -248,11 +252,17 @@ using Aspose.Svg.Saving;
 	document.Save(savePath);
 ```
 
-The figure demonstrates the source raster image (a) and the vectorized image (b).
+The figure demonstrates the source photo (a), the vectorized image using the code snippet (b) and the manually improved vectorized image (c).
 
 !["Source photo and Vectorized photo"](photo-horses.png#center)
 
-The source photo and resulting SVG file you may find and view in details by following the links - [horses.png](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.png), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.svg).
+As mentioned above, SVG is not the most suitable format for continuous-tone images with blends of color, etc. The vectorization process uses color image quantization. All small same colored spots or pixels, we replace by geometric shapes or curves. As a result, the borders of such graphic elements do not fit snugly together; gaps appear between them. This is the reason for the form of white spots and dots in the vectorized image.
+
+To fix this problem, you can manually edit the resulting SVG file. We suggest changing the stroke-width="100" value to "150" or another, as you like. Try to get the best result!
+
+!["The fragment of SVG file"](svg-fragment.png#center)
+
+The source photo (a) and resulting SVG file (c) you may find and view in details by following the links - [horses.png](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.png), [horses.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/vectorization/image-vectorization-examples/horses.svg).
 
 ## **License Limitations**
 
@@ -263,6 +273,8 @@ A free evaluation version of Aspose.SVG for .NET  provides all the features for 
 
 
 If you want to try Aspose.SVG without evaluation limitations request a 30-day temporary license. For more information, please refer to [**How to get a Temporary License?**](https://purchase.aspose.com/temporary-license) 
+
+The figure shows the result of the photo to vector conversion without applying a license.
 
 !["Photo vectorization result without using a license" ](horses-license.png#center)
 
