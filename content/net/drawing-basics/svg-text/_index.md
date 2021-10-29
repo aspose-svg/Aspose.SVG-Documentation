@@ -3,7 +3,10 @@ title: SVG Text
 type: docs
 weight: 40
 url: /net/drawing-basics/svg-text/
-aliases: /net/drawing-basics/text/
+aliases: 
+    - /net/drawing-basics/text/
+    - /net/drawing-basics/text
+
 lastmod: 2021-10-05
 description: This article introduces the SVG text elements and reviews some common attributes that help to display, format and style the text into an SVG image. Also, here you will find basic information about glyphs, characters and fonts.
 keywords: svg text, fonts and glyphs, svg text element, paths and text
