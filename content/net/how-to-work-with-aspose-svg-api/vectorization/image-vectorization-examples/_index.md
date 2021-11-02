@@ -100,8 +100,8 @@ You can download the complete C# examples and data files from [**GitHub**](https
 
 Sometimes fragments of contours look like sawtooth waves. Let's look at how the TraceSmoother property affects contours' smoothing. Before you start, know that:
 
-- the [ImageTraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother) class is responsible for smoothing the number of points in a curve that is approximated by a series of trace points. This class implement the Nearest Neighbor approach;
- - the [ImageTraceSmoother(`severity`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother/constructors/1)  constructor takes as a parameter the `severity` and initializes an instance of the ImageTraceSmoother class;
+- the [ImageTraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother) class is responsible for smoothing the number of points in a curve that is approximated by a series of trace points. This class implements the Nearest Neighbor approach;
+ - the [ImageTraceSmoother(`severity`)](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother/constructors/1) constructor takes as a parameter the `severity` and initializes an instance of the ImageTraceSmoother class;
  - the value of the `severity` determines the extent of the region considered by query point. It must be in the range of 0 to 20.   
 
 Let's look at how the [TraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesmoother) property affects image vectorization:

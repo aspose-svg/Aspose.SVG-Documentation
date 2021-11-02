@@ -10,7 +10,7 @@ description:  The articles in this chapter provide the required information to s
 
 SVG files use an XML-based text format to describe how the image should appear. SVG is a resolution-independent format, and SVG files can be scaled to different sizes without losing quality. The SVG format has all the advantages of vector graphics and many other advantages over bitmap formats. SVG is available in all modern web browsers,  and as we look forward, it is easy to see that SVG files are the future of web design graphics.
 
-The articles in this chapter provide the required information to start working with Aspose.SVG class library. We look at how to use API for SVG files creating, editing and saving. Along with the powerful DOM API, one of the key features of Aspose.SVG is quality rendering and converting to many popular formats, such as PDF, XPS, JPEG, PNG, BMP, TIFF, and GIF. Moreover, this library offers additional saving and rendering options, SVG documents merging, SVG text vectorization, applying scripts, SVG filter effects, and more.
+The articles in this chapter provide the required information to start working with Aspose.SVG class library. We look at how to use API for SVG files creating, editing and saving. Along with the powerful DOM API, one of the key features of Aspose.SVG is quality rendering and converting to many popular formats, such as PDF, XPS, JPEG, PNG, BMP, TIFF, and GIF. Moreover, this library offers additional saving and rendering options, SVG documents merging, Image vectorization, SVG text vectorization, applying scripts, SVG filter effects, and more.
 
 The following articles are available:
 
@@ -21,7 +21,7 @@ The following articles are available:
 - [**Navigation & Inspection SVG**](/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/) - This article teaches how to perform a detailed inspection of the SVG document and its elements using the Aspose.SVG API, custom filters usage for iterating over the document elements, and how to navigate the SVG document using CSS Selector or XPath.
 - [**How to Convert SVG Files**](/svg/net/how-to-work-with-aspose-svg-api/converting/) - The articles in this section provide information on a list of supported SVG conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF, XPS or Image and find C# examples of SVG conversion.
 - [**How to Merge SVG Documents**](/svg/net/how-to-work-with-aspose-svg-api/how-to-merge-svg-files/) - You will learn about the Render() method used to convert SVG documents to another format and merge them into a single file.
-- [**Text Vectorization & Text Security**](/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/) - You will consider  how to convert SVG text to vector, using the VectorizeText property of the SVGSaveOptions class. 
+- [**Vectorization**](/svg/net/how-to-work-with-aspose-svg-api/vectorization/) - The articles in this section explain how to convert SVG text to vector and how to convert raster image to vector graphic using the Aspose.SVG API.
 
 
 
