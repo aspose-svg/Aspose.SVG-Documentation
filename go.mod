@@ -6,5 +6,5 @@ require (
 	github.com/tpavel-aspose/hugo-module-fileformat-shortcodes v1.1.1 // indirect
 	github.com/tpavel-aspose/hugo-module-local-editor v1.0.1 // indirect
 	github.com/tpavel-aspose/hugo-module-nginx-redirects v1.1.0 // indirect
-	github.com/tpavel-aspose/lutsk-aspose-theme v1.2.6 // indirect
+	github.com/tpavel-aspose/lutsk-aspose-theme v1.3.0 // indirect
 )
