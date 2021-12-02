@@ -5,7 +5,6 @@ logo_rel_link = ""
 basePath = "/svg"
 # Title of 404 page
 title_404_page = "404 - Page Not Found | Aspose Documentation"
-
 # Open Grapgh settings
 title = "Aspose Documentation"
 images = ["images/Aspose-image-for-open-graph.jpg"]
@@ -23,7 +22,7 @@ sidebar_menu_compact = true
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = true
+sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = false
 # Set to true to disable the About link in the site footer
@@ -112,3 +111,5 @@ url = "https://company.aspose.com/contact"
 aspose_id = "GTM-NJMHSH"
 cloud_id = "GTM-TSXP9CZ"
 conholdate_id = "GTM-N4D44QW"
+products_app_id = "UA-3109235-5"
+codeporting_id = "GTM-P7KM8KW"
