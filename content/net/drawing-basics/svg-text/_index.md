@@ -7,7 +7,7 @@ aliases:
     - /net/drawing-basics/text/
     - /net/drawing-basics/text
 
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: This article introduces the SVG text elements and reviews some common attributes that help to display, format and style the text into an SVG image. Also, here you will find basic information about glyphs, characters and fonts.
 keywords: svg text, fonts and glyphs, svg text element, paths and text
 ---
@@ -16,10 +16,10 @@ keywords: svg text, fonts and glyphs, svg text element, paths and text
 SVG allows making for three types of graphic objects: vector graphic shapes, images and text. In the same way, as for the shapes, the SVG text elements can be applied coordinate system transformations, clipping and styling. In this article, we consider how to bring text into an SVG image.  
 
 {{% alert color="primary" %}}
-Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! Free Online <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited. Convert your SVG text to vector and get all the advantages of vectorized text!
+Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! Free Online <a href="https://products.aspose.app/svg/text-to-vector" target="_blank">**Text to Vector**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited. Convert your SVG text to vector and get all the advantages of vectorized text!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](svg-text-vectorization.png#center)</a>
+<a href="https://products.aspose.app/svg/text-to-vector" target="_blank">![Text "Banner Text to Vector application"](svg-text-vectorization.png#center)</a>
 
 ## **Fonts and Glyphs** 
 
@@ -150,6 +150,6 @@ If the length of the path is shorter than the text size, then only the text part
 The SVG text can be styled using [**CSS properties**](https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationProperties) like ***font-weight***, ***font-style***, ***text-decoration***, ***text-transform***, etc. It can be decorated with an underline, overline, and strike-through. Like other SVG shapes, text can have both a stroke and fill set on it. You may read more about how to style the text in the section [**SVG Filters and Gradients**](/svg/net/drawing-basics/filters-and-gradients/). 
 
 {{% alert color="primary" %}}
-Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! [**SVG Text Vectorization**](https://products.aspose.app/svg/en/text-vectorization) web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
+Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! [**Text to Vector**](https://products.aspose.app/svg/text-to-vector) web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
 {{% /alert %}} 
 

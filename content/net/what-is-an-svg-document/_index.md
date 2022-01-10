@@ -3,7 +3,9 @@ title: What is an SVG Document?
 type: docs
 weight: 10
 aliases: /net/what-is-an-svg-document/
-lastmod: "2020-12-15"
+lastmod: "2022-01-10"
+description: SVG is a vector graphics format that is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more. SVG format has all the vector graphics advantages, as well as many other pros over bitmap image formats.
+keywords: svg, svg document, svg file, vector graphics, svg format, svg pros and cons
 ---
 
 ## **SVG is a vector-based graphics in a text format**

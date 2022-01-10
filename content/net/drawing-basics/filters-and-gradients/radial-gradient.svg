@@ -1,11 +1,10 @@
-<svg height="250" width="700" xmlns="http://www.w3.org/2000/svg">
+<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
-		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-			<stop offset="10%" style="stop-color:LIGHTSALMON" />
-			<stop offset="50%" style="stop-color:TEAL" />
-			<stop offset="90%" style="stop-color:LIGHTPINK" />
-		</linearGradient>
+        <radialGradient id="myRG" cx="0.5" cy="0.5" r="0.9" fx="0.5" fy="0.5" spreadMethod="pad">
+            <stop offset="0%"   stop-color="BISQUE" />
+            <stop offset="60%" stop-color="CADETBLUE" />
+        </radialGradient>
     </defs>
-    <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#grad1)" />
-    <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="90" fill="url(#grad1)" >Linear Gradient</text>
+    <ellipse cx="300" cy="170" rx="165" ry="55" fill="url(#myRG)" />
+    <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="85" fill="url(#myRG)" >Radial Gradient</text>
 </svg>

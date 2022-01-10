@@ -3,17 +3,15 @@ title: SVG Filters and Gradients
 type: docs
 weight: 80
 aliases: /net/drawing-basics/filters-and-gradients
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: This article discusses SVG filters that create blur, color and light effects. It is shown how linear or radial gradients can beautify any line, shape, or text in SVG graphics.
 description: svg filters, gaussian blur, drop shadow effect, svg drop shadow, svg light effects, color filters, svg gradients, svg linear gradient, svg radial gradient
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}}
-Aspose.SVG offers a Free Online tool for applying <a href="https://products.aspose.app/svg/en/photo-effects" target="_blank">**Photo Effects based on SVG Filters**</a>. The application lets you use a wide range of Photo Effects such as Gaussian Blur, Drop Shadow Effect, SVG Light Effects, Color Filters, etc. Customize your photo online to make it original!
+Aspose.SVG offers <a href="https://products.aspose.app/svg/applications" target="_blank">**Free Online Applications**</a> to convert SVG and bitmap files, merge SVGs to sprite, Image Vectorizing, and more. Use our collection of applications to perform your SVG-related tasks and make your workflow seamlessly!
 {{% /alert %}} 
-
-<a href="https://products.aspose.app/svg/en/photo-effects" target="_blank">![Text "Banner Photo Effects based on SVG Filters"](svg-filter-effects.png#center)</a>
 
 ## **What is an SVG Filter?**
 
@@ -58,7 +56,7 @@ Here is an example illustrates the various values of **stdDeviation** attribute 
     </g>
 </svg>
 ```
-![Four ellipses illustrate the Gaussian blur effect with the different stdDeviation values](GaussianBlur.png#center)
+![Four ellipses illustrate the Gaussian blur effect with the different stdDeviation values](gaussian-blur.png#center)
 
 The blur, added around a shape, often makes output picture larger than source one. Need to use negative numbers for **x** and **y** to avoid clipping the graphics added by the filter. In the example above, we made this in lines 3, 6 and 9.
 
@@ -83,7 +81,7 @@ Let's see how to create a drop shadow effect ([drop-shadow-effect.svg](/svg/net/
     <ellipse cx="95" cy="90" rx="75" ry="55" fill="#20B2AA" filter="url(#shadow)" />
 </svg>
 ```
-![Drop Shadow Effect of the ellipse](Drop_Shadow_Effect.png#center)
+![Drop Shadow Effect of the ellipse](drop_shadow_effect.png#center)
 
 Thee filters are used to create drop shadow effect:
 
@@ -94,7 +92,7 @@ Thee filters are used to create drop shadow effect:
 3. `<feBlend>` takes two inputs `in="SourceGraphic"` and `in2="blur"` then blends the `SourceGraphic` on top of the offset black blurred image.
 
 
-![Drop shadow effect of the ellipse: step by step Illustration](steps_DSE.png#center)
+![Drop shadow effect of the ellipse: step by step Illustration](steps-dse.png#center)
 
 ## **SVG Light Effects**
 
@@ -197,7 +195,7 @@ The specific case of color matrices is image rotation along the **[color wheel](
 ```
 The following figure is a series of images with the various ***hueRotate*** values:
 
-![A series of images with the various hueRotate values](hueRotate.png#center)
+![A series of images with the various hueRotate values](hue-rotate.png#center)
 
 ### **`<feComponentTransfer>` filter primitive**
 
@@ -250,7 +248,7 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="90" fill="url(#grad1)" >Linear Gradient</text>
 </svg>
 ```
-  ![Text and ellipse are filled by linear gradient](Linear_Gradient.png#center)
+  ![Text and ellipse are filled by linear gradient](linear_gradient.png#center)
 
 In the example above, the linear gradient `id="grad1"` is referenced by the `<text>` and `<ellipse>` elements in the **fill** attribute.  There are three `<stop>` nodes inside the linear gradient. In each of them, an **offset** attribute sets the position the SVG gradient gets a ***stop-color*** value.
 
@@ -272,7 +270,7 @@ In this example, the centers of the innermost and outermost border of the SVG gr
 </svg>
 ```
 
- ![Text and ellipse are filled by radial gradient](Radial_Gradient.png#center)
+ ![Text and ellipse are filled by radial gradient](radial_gradient.png#center)
 
 Let's see an example of the radial gradient, where the focal point (**fx**, **fy**) moved from the center of the object to position **fx**=25% and **fy**=25% ([radial-gradient1.svg](/svg/net/drawing-basics/filters-and-gradients/radial-gradient1.svg)):
 ```html {linenos=inline,linenostart=1}
@@ -289,12 +287,8 @@ Let's see an example of the radial gradient, where the focal point (**fx**, **fy
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="85" fill="url(#myRG)">Radial Gradient</text>
 </svg>
 ```
-![Text and ellipse are filled by radial gradient](Radial_Gradient1.png#center)
+![Text and ellipse are filled by radial gradient](radial_gradient1.png#center)
 
 Here we applied several color transitions and received an interesting effect that is well-expressed on the ellipse.
-
-{{% alert color="primary" %}}
-Aspose.SVG offers a Free Online tool for applying <a href="https://products.aspose.app/svg/en/photo-effects" target="_blank">**Photo Effects based on SVG Filters**</a>. The application lets you use a wide range of Photo Effects such as Gaussian Blur, Drop Shadow Effect, SVG Lighting Effects, Color Filters, etc. Customize your photo online to make it original!
-{{% /alert %}} 
 
  

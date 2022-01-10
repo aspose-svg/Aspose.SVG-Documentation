@@ -4,7 +4,7 @@ linktitle: Convert SVG to PDF
 type: docs
 weight: 10
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-pdf/   
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF and find C# examples of SVG to PDF conversions. 
 keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save options
 ---
@@ -13,7 +13,7 @@ keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save optio
 Converting  {{%SVG%}} documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. {{%PDF%}} is a file format supported by all operating systems, used for presenting images, documents and books. Files in PDF can be easily viewed, printed, and shared online. 
 
 {{% alert color="primary" %}}
-You can convert SVG to PDF with our free online <a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
+You can convert SVG to PDF with our free online <a href="https://products.aspose.app/svg/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
 {{% /alert %}}
 
 <a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">![Text "Banner SVG to PDF Converter"](svg-to-pdf.png#center)</a>
@@ -22,7 +22,7 @@ You can convert SVG to PDF with our free online <a href="https://products.aspose
 
 The static methods of the [Converter](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter) class can convert SVG to PDF  with a single line of code. It is the easiest way for conversion. Converting a file to another format using [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods is a sequence of operations among which document loading and saving: 
 
- - Load an SVG document using one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ( [Lineto.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/Lineto.svg)).
+ - Load an SVG document using one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ( [lineto.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/lineto.svg)).
  - Create an instance of the [PdfSaveOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions) class.
  - Use the [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/3) method to save SVG as a PDF file. 
 
@@ -37,14 +37,14 @@ using Aspose.Svg.Saving;
 ...
 
     // Initialize an SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
     {
         // Initialize an instance of the PdfSaveOptions class
         var saveOptions = new PdfSaveOptions();
         saveOptions.BackgroundColor = Color.Gray;
     
         // Convert SVG to PDF
-        Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "Lineto_out.pdf"));
+        Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "lineto_out.pdf"));
     }
 ```
 
@@ -105,9 +105,9 @@ using Aspose.Svg.Rendering.Pdf;
 
 The [PdfRenderingOptions()](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/constructors/main) constructor initializes a new object of the [PdfRenderingOptions](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class that is passed as an argument to the [PdfDevice(`options, file`)](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/constructors/3) constructor. The last initializes a new instance of the [PdfDevice](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice) class by rendering options and output file name.  The [RenderTo(` device`)](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method converts SVG to PDF and sends the current document to the output rendering device.
 
-The `JpegQuality` specifies the quality of JPEG compression for images. The default is 95. In the example above, the used `JpegQuality` value is 10. The figure illustrates conversion SVG to PDF for two files [light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg) and [Lineto.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/Lineto.svg): a) The `JpegQuality` value is default; b) The  `JpegQuality` value is 10.
+The `JpegQuality` specifies the quality of JPEG compression for images. The default is 95. In the example above, the used `JpegQuality` value is 10. The figure illustrates conversion SVG to PDF for two files [light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg) and [lineto.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/lineto.svg): a) The `JpegQuality` value is default; b) The  `JpegQuality` value is 10.
 
-![Images rendered to PDF with various JpegQuality values](JpegQualityPDF.png#center)
+![Images rendered to PDF with various JpegQuality values](jpeg-quality.png#center)
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the  [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.

@@ -5,11 +5,15 @@ type: docs
 weight: 50
 url: /net/drawing-basics/svg-transformations/
 aliases: /net/drawing-basics/basic-transformations/
-lastmod: 2021-10-05
-description: In this article, you will learn how to apply transform functions to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
+lastmod: 2022-01-10
+description: You will learn how to apply transform functions to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
 keywords: SVG Transformations, SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
+
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 
 
 SVG allows modifying graphic elements using translation, rotation, scaling, and skewing.  All these SVG transformations refer to the geometric kind. SVG objects can be altering using the **transform** attribute's properties: ***translate, scale, rotate, skewX, skewY***, and ***matrix***.   
 
@@ -104,7 +108,7 @@ You can view and then save the file that illustrates SVG rotation by clicking on
 Skewing is a transformation that rotates one of the axes of the element's coordinate system by a certain angle clockwise or counterclockwise. SVG elements can be skewed through the use of the ***skewX(angle)*** and ***skewY(angle)*** functions. The ***angle*** value included within these functions represents a skew SVG transformation in degrees along the appropriate axis.
 The using ***skewX(angle)***, only the x coordinate of the points of the shape changes, but the y coordinate remains unchanged. The ***skewX(angle)*** function makes the vertical lines look like they have been rotated by a given angle. The x coordinate of each point changes on a value proportional to the specified angle and distance to the origin.
 
-Here is shown an example of the circle with skewX(55) value ([sqewX.svg](/svg/net/drawing-basics/svg-transformations/sqewX.svg)):
+Here is shown an example of the circle with skewX(55) value ([sqew-x.svg](/svg/net/drawing-basics/svg-transformations/sqew-x.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +116,7 @@ Here is shown an example of the circle with skewX(55) value ([sqewX.svg](/svg/ne
     <circle cx="20" cy="20" r="15" stroke="grey" stroke-opacity="0.7" fill="none" transform="skewX(55)" />
 </svg>
 ```
-A simple example of the rectangle skewed by skewY(35) function ([sqewY.svg](/svg/net/drawing-basics/svg-transformations/sqewY.svg)):
+A simple example of the rectangle skewed by skewY(35) function ([sqew-y.svg](/svg/net/drawing-basics/svg-transformations/sqew-y.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg  width="800" height="800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

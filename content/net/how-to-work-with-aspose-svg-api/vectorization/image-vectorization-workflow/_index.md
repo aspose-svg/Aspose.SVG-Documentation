@@ -4,7 +4,7 @@ linktitle: Image Vectorization Workflow
 type: docs
 weight: 10
 url: /net/how-to-work-with-aspose-svg-api/image-vectorization-workflow/  
-lastmod: 2021-10-29
+lastmod: 2022-01-10
 changefreq: weekly
 priority: 0.7
 description: This article explains how to convert bitmaps to vector graphics using the Aspose.SVG API. You will find a description of the image vectorization process; usage of vectorization algorithms and options, learn how to vectorize raster images such as PNG, JPG, BMP, TIFF, GIF, ICO into an SVG document.
@@ -13,10 +13,10 @@ keywords: image vectorization, bitmap to vector, image to vector, raster image, 
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}} 
-Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/en/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
+Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](./../vectorization/image-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](./../vectorization/image-vectorizer.png#center)</a>
 
 ## **What is Image Vectorization?**
 The task in vectorization is to convert a 2D image to a 2D vector representation of the image. The two-dimensional vector graphics are computer graphics images represented as mathematical curves. Such vector images are defined as Cartesian points connected by lines and curves to form required shapes. A raster image is a set of pixels. If it is an RGB image, it can be represented as a table of color pixels. Each pixel is a triplet of 8-bit integer values, where each value represents an amount of red, green, and blue color.

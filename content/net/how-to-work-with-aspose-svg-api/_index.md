@@ -3,7 +3,7 @@ title: Нow to work with Aspose.SVG API
 type: docs
 weight: 40
 aliases: /net/how-to-work-with-aspose-svg-api/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 keywords: SVG file, SVG document, create SVG, load SVG, save SVG, convert svg, merge svg, svg filter, svg text
 description:  The articles in this chapter provide the required information to start working with Aspose.SVG class library. We look at how the DOM represents an SVG document in memory and how to use API for SVG files creating, editing, saving, converting, and merging. The articles provide various C# examples (code snippets) of creating, loading, saving, editing, converting and merging SVG files using Aspose.SVG for .NET API. 
 ---
@@ -26,6 +26,6 @@ The following articles are available:
 
 
 {{% alert color="primary" %}}
-Aspose.SVG offers Free Online [**SVG Apps**](https://products.aspose.app/svg/en/apps) for converting SVG, JPG or PNG files, merging SVG files, Image Vectorizing, applying Photo Effects based on SVG Filters, SVG sprite creating, SVG to Base64 data encoding and text vectorizing in SVG documents. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your tasks!
+Aspose.SVG offers  [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG, JPG or PNG files, merging SVG files, Image Vectorizing, SVG sprite creating, SVG to Base64 data encoding and text vectorizing in SVG documents. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
 {{% /alert %}} 
 

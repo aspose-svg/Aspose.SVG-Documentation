@@ -4,7 +4,7 @@ linktitle: SVG Drawing Basics
 type: docs
 weight: 15
 aliases: /net/drawing-basics/
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: In this chapter, you will learn the basic concepts and drawing elements used in SVG images. The chapter includes the articles about SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, Fills and Strokes in SVG, SVG Embedded Content, and SVG Filters and Gradients.
 keywords: svg drawing, svg coordinate system, svg path, svg text, svg transformation, svg fill, svg stroke, svg filter, svg gradient
 ---
@@ -38,5 +38,5 @@ The following is shown an example of SVG code for the Aspose logo ([aspose.svg](
 ```
 
 {{% alert color="primary" %}}
-Aspose.SVG offers Free Online [**SVG Apps**](https://products.aspose.app/svg/en/apps) for converting SVG, JPG or PNG files, merging SVG files, Image Vectorizing, applying Photo Effects based on SVG Filters, SVG sprite creating, SVG to Base64 data encoding and text vectorizing in SVG documents. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your tasks!
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, bitmaps and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your tasks!
 {{% /alert %}} 

@@ -3,7 +3,7 @@ title: Vectorization - Basic Overview | .NET
 linktitle: Vectorization - Basic Overview 
 type: docs
 weight: 80
-lastmod: 2021-10-29
+lastmod: 2022-01-10
 changefreq: weekly
 priority: 0.7
 description: The articles in this section explain how to convert SVG text to vector and how to convert raster image to vector graphic using the Aspose.SVG API.
@@ -59,9 +59,9 @@ using Aspose.Svg.Saving;
 Text Vectorization is the process of converting text into digital graphics. In the vectorized SVG text, all font glyphs are replaced with the combination of **path**, **use**, **mask**, **g** elements, etc. Thus, vectorization promotes text protection from simple copying, unwanted using, borrowing, and modification.
 
 
- Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! In the vectorized SVG text, all font glyphs are replaced with a combination of graphics elements. Convert your SVG text to vector with our <a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">**SVG Text Vectorization** </a> app and get all the advantages of vectorized text!
+ Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! In the vectorized SVG text, all font glyphs are replaced with a combination of graphics elements. Convert your SVG text with our <a href="https://products.aspose.app/svg/text-to-vector" target="_blank">**Text to Vector** </a> app and get all the advantages of vectorized text!
 
-<a href="https://products.aspose.app/svg/en/text-vectorization" target="_blank">![Text "Banner SVG Text Vectorization"](svg-text-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/text-to-vector" target="_blank">![Text "Banner Text to Vector application"](svg-text-vectorizer.png#center)</a>
 
 
 

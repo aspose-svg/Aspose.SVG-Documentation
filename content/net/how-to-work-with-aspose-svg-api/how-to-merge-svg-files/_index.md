@@ -3,7 +3,7 @@ title: How to Merge SVG Documents
 type: docs
 weight: 70
 aliases: /net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 description: Rendering SVG documents, Render SVG, Merging SVG documents, Merge SVG
 description: The article provides information about the Render() method used to convert SVG documents to another format and merge them into a single file. You will learn how to merge multiple SVG documents to PDF, XPS or Image formats and find C# examples of SVG merging.
 keywords: svg merger, merge svg, svg document, svg file example, C# example, svg to png 
@@ -14,10 +14,10 @@ keywords: svg merger, merge svg, svg document, svg file example, C# example, svg
 Aspose.SVG for .NET API provides the [Renderer](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
 
 {{% alert color="primary" %}} 
-Aspose.SVG offers Free Online **[SVG Sprite Creator](https://products.aspose.app/svg/en/sprite)**. Merge multiple SVG files to sprite and make your website faster and better!
+Aspose.SVG offers Free Online **[SVG Sprite Generator](https://products.aspose.app/svg/svg-sprite-generator)**. Merge multiple SVG files to sprite and make your website faster and better!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/sprite" target="_blank">![Text "Banner SVG Sprite Creator"](svg-sprite-creator.png#center)</a>
+<a href="https://products.aspose.app/svg/svg-sprite-generator" target="_blank">![Text "Banner SVG Sprite Generator"](svg-sprite-creator.png#center)</a>
 
 ## **Rendering SVG documents**
 
@@ -59,7 +59,7 @@ You can try to convert SVG documents to a variety of other formats with our [**F
 
 ## **Merging SVG documents**
 
-The **Renderer()** method gives you the ability to send multiple documents at once to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/Lineto.svg)) can be done with a few lines of code:
+The **Renderer()** method gives you the ability to send multiple documents at once to the output rendering device and merge them. Documents merging ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg), [conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg), [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg)) can be done with a few lines of code:
 
 ```c#
 using Aspose.Svg;
@@ -71,7 +71,7 @@ using Aspose.Svg.Rendering.Pdf;
 	// Initialize SVG documents from files to merge later
     using (var document1 = new SVGDocument(Path.Combine(DataDir, "owl.svg")))
     using (var document2 = new SVGDocument(Path.Combine(DataDir, "conclusion.svg")))
-    using (var document3 = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    using (var document3 = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
     {
         // Create an instance of SvgRenderer
         using (var renderer = new SvgRenderer())

@@ -4,7 +4,7 @@ linktitle: Image Vectorization Examples
 type: docs
 weight: 20
 url: /net/how-to-work-with-aspose-svg-api/image-vectorization-examples/  
-lastmod: 2021-10-29
+lastmod: 2022-01-10
 changefreq: weekly
 priority: 0.7
 description: This article explains how to convert bitmap to vector graphic using the Aspose.SVG API. You will consider a few C# examples that demonstrate the Image Vectorization functionalities and the effect of configuration properties on the vectorization result.
@@ -14,10 +14,10 @@ keywords: image vectorization, vector graphic, raster image, image to vector, ph
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}} 
-Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/en/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
+Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/en/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](./../vectorization/image-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](./../vectorization/image-vectorizer.png#center)</a>
 
 ## **How to Convert Raster Image to Vector Graphic**
 

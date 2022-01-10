@@ -3,7 +3,7 @@ title: SVG Path Data
 type: docs
 weight: 30
 aliases: /net/drawing-basics/svg-path-data
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: This article shows how the paths can be used to drawing various outlines or shapes by combining SVG lines, SVG arcs and Bezier curves. The group of commands for the SVG path making is described here.
 description: svg path data, svg lines, svg paths, svg arc, draw Bézier curves, Bézier curves, cubic Bezier curve, quadratic Bézier curve
 ---
@@ -52,7 +52,7 @@ After doing any command, the "virtual pen" point will be located at the endpoint
 
 ***Closepath Z*** ends the current SVG path, returning it to the starting point. The ***Z*** command draws a straight line from the current position back to the first point in the path. The command has no parameters.  
 
-Let's draw a square using the ***lineto*** commands ([Lineto.svg](/svg/net/drawing-basics/svg-path-data/Lineto.svg)):
+Let's draw a square using the ***lineto*** commands ([lineto.svg](/svg/net/drawing-basics/svg-path-data/lineto.svg)):
 
 ```html {linenos=inline,linenostart=1}
 <svg height="400" width="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ Let's draw a square using the ***lineto*** commands ([Lineto.svg](/svg/net/drawi
     <path d="M 70 70 h 80 v 80 h -80 Z" fill="transparent" stroke-width="2" stroke="red" />
 </svg>
 ```
-![Three squares: black blue and red grey rectangles](Lineto.png#center)
+![Three squares: black blue and red grey rectangles](lineto.png#center)
 
 A black square is created by sequentially using the ***L*** command, which draws a line to the specified point (***x, y***). This is the most common way of making a wide variety of straight-line paths. 
 
@@ -117,7 +117,7 @@ Let's consider an example:
     <path d="M 10 100 Q 25 10 180 100" stroke="black" stroke-width="1" fill="transparent" />
 </svg>
 ```
-![Quadratic Bézier Curve](QCB1.png#center)
+![Quadratic Bézier Curve](qbq1.png#center)
 
 If you connect the control point to the start and endpoints of the curve with segments, the line connecting the centers of the segments will be tangent to the curve vertex. 
 
@@ -134,7 +134,7 @@ How does the position of the control point affect the curve view? Let us show th
 </svg>
 ```
 
-![Four Quadratic Bézier Curves with different y1 values for the control point](QCB2.png#center)
+![Four Quadratic Bézier Curves with different y1 values for the control point](qbq2.png#center)
 
 Let's take the black curve as a basis and change the control point **x1** value ([bezier-curve3.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve3.svg)):
 
@@ -149,7 +149,7 @@ Let's take the black curve as a basis and change the control point **x1** value 
 </svg>
 ```
 
-![Four Quadratic Bézier Curves with different x1 values for the control point](QCB3.png#center)
+![Four Quadratic Bézier Curves with different x1 values for the control point](qbq3.png#center)
 
 ```html {linenos=inline,linenostart=1}
 <svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +167,7 @@ Below is an example of a curve created using the ***T*** command. Here, the ***x
     <path d="M 10 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100" stroke="black" stroke-width="3" fill="none" />
 </svg>
 ```
-![Quadratic Bézier Curve created using the T command](QCB4.png#center)
+![Quadratic Bézier Curve created using the T command](qbq4.png#center)
 If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you can obtain a wide variety of curves ([bezier-curve5.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve5.svg)).
 
 
@@ -178,7 +178,7 @@ If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you 
 </svg>
 ```
 
-![Two Quadratic Bézier Curves created using the T command](QCB5.png#center)
+![Two Quadratic Bézier Curves created using the T command](qbq5.png#center)
 
 ### **Cubic Bezier Curve**
 
@@ -197,7 +197,7 @@ The following code example makes a shape using two paths ([cubic-bezier-curves.s
 ```
 On the figure, different paths are shown in black and red.
 
-![Cubic Bezier Curve](CCB1.png#center)
+![Cubic Bezier Curve](cbc1.png#center)
 
 The following code example makes the same shape using one path:
 
@@ -238,3 +238,7 @@ Using Bezier curves, you can make a simple drawing in the primitivism style. We 
 ```
 
 ![Two owl](two_owl.png#center)
+
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 

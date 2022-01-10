@@ -7,7 +7,7 @@ url: /net/drawing-basics/svg-shapes/
 aliases: 
   - /net/drawing-basics/basic-shapes/
   - /net/drawing-basics/basic-shapes
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: In this article, you can learn how to create different simple SVG shapes, such as SVG Rectangle, SVG Circle, SVG Line, SVG Ellipse, SVG Polyline, SVG Polygon, and how to apply some style properties to them.
 description: SVG shapes, SVG Basic Shapes, SVG Rectangle, SVG Circle, SVG Line, SVG Ellipse, SVG Polyline, SVG Polygon
 ---

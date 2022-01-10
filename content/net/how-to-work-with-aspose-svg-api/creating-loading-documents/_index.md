@@ -5,7 +5,7 @@ weight: 10
 aliases: 
     - /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
     - /net/create-and-read-svg-documents/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 keywords: create SVG, SVG file, load SVG, SVG document, read SVG, svg example, c# code snippet
 description: In this article, you will learn how to create SVG from a memory string, stream, or file; how to load SVG from the Web and read SVG using Resources Async. The article provides some examples of creating & loading SVG files using Aspose.SVG for .NET API. 
 ---
@@ -95,7 +95,7 @@ using System.IO;
 ...
     
     //Prepare a path to a file required for a FileStream object creating
-    string documentPath = Path.Combine(DataDir, "QBezier.svg");
+    string documentPath = Path.Combine(DataDir, "bezier-curves.svg");
     
 	// Create a FileStream object
 	using (var stream = new FileStream(documentPath, FileMode.Open, FileAccess.Read))
@@ -110,7 +110,7 @@ using System.IO;
 
 ## **Load SVG from a File**
 
-To load SVG from a file [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/QBezier.svg), use the default constructor of the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
+To load SVG from a file [bezier-curves.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg), use the default constructor of the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
 
 ```c#
 using Aspose.Svg;
@@ -118,9 +118,9 @@ using System.IO;
 ...
     
     // Prepare a path to a file loading
-    string documentPath = Path.Combine(DataDir, "QBezier.svg"); 
+    string documentPath = Path.Combine(DataDir, "bezier-curves.svg"); 
 	
-	// Load an SVG document from a file
+	// Load an SVG document from the file
 	using (var document = new SVGDocument(documentPath))
 	{
 	    // Work with the document 
@@ -148,7 +148,7 @@ using Aspose.Svg;
 ...
     
     // Load SVG from the Web at its URL
-    using (var document = new SVGDocument(new Url("https://docs.aspose.com/svg/net/drawing-basics/basic-shapes/basic-shapes.svg")))
+    using (var document = new SVGDocument(new Url("https://docs.aspose.com/svg/net/drawing-basics/svg-shapes/basic-shapes.svg")))
     {
         // Work with the SVG document here...
     }

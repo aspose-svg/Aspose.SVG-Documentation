@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/
 aliases: /net/how-to-work-with-aspose-svg-api/document-editing/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 description: In the article, you learn how to edit SVG using Aspose.SVG for .NET library. Detailed C# examples & code snippets of adding and editing new elements in SVG and applying SVG filters to bitmaps are considered.
 keywords: svg document, edit svg, svg example, c# code snippet, add element, svg file example, svg filter, svg shapes, svg circle, svg path, svg polyline, Gaussian blur effect, drop shadow effect
 ---
@@ -146,7 +146,7 @@ Consider an example of editing an existing SVG file [basic-shapes.svg](https://d
     }
 ```
 The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/basic-shapes.svg) and the file that was edited (modified).
-![Original svg image and edited svg image](Basic_Shapes.png#center)
+![Original svg image and edited svg image](basic_shapes.png#center)
 
 
 ### **SVG Path**
@@ -242,7 +242,7 @@ The figure illustrates the original (black) and modified (red) paths. You can vi
 Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [SvgImageElement](https://apireference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the [AppendChild (`node`) ](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) method.  Using a `filter` attribute of `imageElement` referring to the url name of `filterElement` allows applying SVG filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[SVG Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** article.
 
 {{% alert color="primary" %}}
-Aspose.SVG offers a Free Online tool for applying <a href="https://products.aspose.app/svg/en/photo-effects" target="_blank">**Photo Effects based on SVG Filters**</a>. The application lets you use a wide range of Photo Effects such as Gaussian Blur, Drop Shadow Effect, SVG Light Effects, Color Filters, etc. Customize your photo online to make it original!
+Aspose.SVG offers a Free Online tool for applying <a href="https://products.aspose.app/svg/photo-effects" target="_blank">**Photo Effects based on SVG Filters**</a>. The application lets you use a wide range of Photo Effects such as Gaussian Blur, Drop Shadow Effect, SVG Light Effects, Color Filters, etc. Customize your photo online to make it original!
 {{% /alert %}} 
 
 
@@ -265,7 +265,7 @@ using Aspose.Svg.Filters;
     
     // Create an image element and add it to the svgElement
     var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-    imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg";
+    imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/lighthouse.jpg";
 	imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
     imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
 	imageElement.Height.BaseVal.Value = 640;
@@ -297,7 +297,7 @@ using Aspose.Svg.Filters;
 
 ```
 
-You can view and save the SVG file with Gaussian Blur effect applying by following the link - [GaussianBlur.svg](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/GaussianBlur.svg).
+You can view and save the SVG file with Gaussian Blur effect applying by following the link - [gaussian-blur.svg](/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/gaussian-blur.svg).
 
 ### **Saturation Effect**
 

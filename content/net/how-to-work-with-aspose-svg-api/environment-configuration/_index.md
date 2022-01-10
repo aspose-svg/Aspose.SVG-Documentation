@@ -4,7 +4,7 @@ linktitle: Environment Configuration
 type: docs
 weight: 40
 aliases: /net/how-to-work-with-aspose-svg-api/environment-configuration/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 description: In this guide, you will learn how to create various configurations and adapt them to the different environments where the application runs. This can be a custom theme, a runtime service or a web request network service.
 keywords: environment configuration, user agent service, runtime service, network service, message handler, custom message handler
 ---

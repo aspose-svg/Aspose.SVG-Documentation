@@ -3,11 +3,14 @@ title: FAQ
 type: docs
 weight: 45
 aliases: /net/faq/
-lastmod: "2020-12-15"
-description: SVG, vector graphics, SVG format, SVG icons, SVG logo, SVG sprites, text vectorization, How to vectorize text, How to convert SVG to PNG
+lastmod: "2022-01-10"
+description: SVG is a vector graphics format that is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more.
+keywords: svg, svg logo, svg document, svg file, vector graphics, svg icon, svg sprite, create svg, convert SVG to PNG, svg text, text vectorization
 ---
 
-![Three circles with F, A and Q letters](FAQ.png#center)
+<link href="./../style.css" rel="stylesheet" type="text/css" />
+
+![Three circles with F, A and Q letters](faq-icon.png#center)
 
 ## **What is SVG?**
 
@@ -16,6 +19,8 @@ SVG (Scalable Vector Graphics) is an XML-based image format for two-dimensional 
 ### **Why is vector graphics important?**
 
 Vector graphics using is one of the most popular Web design trends during the last years. SVG allows developers and designers to create vector-based images that are constructed using points, lines, paths and shapes. It is best used for logos, icons and simple graphics making. Benefits of SVG are scalability, file size, editing capabilities, performance, style control, advanced options and other vector graphics advantages.
+
+Aspose.SVG offers a Free Online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization)  that is browser-based and works on any platform. Using this App, you may apply a set of options for obtaining the perfect result. Save your time and check this free Image Vectorizer to get all the benefits of vector graphics!
 
 ### **How to open the SVG format?**
 
@@ -28,11 +33,11 @@ The SVG file format is multifunctional. Benefits of SVG such as scalability, fil
  - SVG images are scalable and perfect for a responsive design; they look fine on screens of any resolution.
  - SVG help you place on your websites some interactive piece like a map, a diagram, infographic or a lightweight game. It will keep the users attention on the things what you need.
  - SVG helps cardinally cut your site or app file weight.
- 
+
 ### **Can I use SVG as a background image?**
 
    Yes. SVG images can be used as a background image in CSS as well, just like PNG, JPG, or GIF. The unique characteristic that makes SVG ideal for page backgrounds is scalability. Moreover, SVG patterns propose a flexible approach to repeating a background image on a web page. They have a relatively simple syntax allows easy and clear their usage.
-   
+
 
 ## **SVG icons. Why should you use them?**
 
@@ -71,7 +76,7 @@ There are some ways to create SVG sprites:
 
 2. Creating SVG sprites by hand. This way could get time-consuming and tedious.
 
-3. Using online sprite creators. Aspose.SVG Online SVG Sprite Creator offers a convenient way to automate the process of SVG sprites making.
+3. Using online sprite creators. Aspose.SVG Online [**SVG Sprite Generator**](https://products.aspose.app/svg/svg-sprite-generator) offers a convenient way to automate the process of SVG sprites making.
 
 
 ## **What is text vectorization?**
@@ -80,7 +85,7 @@ Text Vectorization is the process of converting text into digital graphics. In t
 
 ### **How to vectorize text?**
 
-Aspose.SVG for .NET API provides the feature of text vectorization in SVG documents. More details see in **[Text Vectorization & Text Security](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/)** section.
+Aspose.SVG for .NET API provides the feature of text vectorization in SVG documents. More details see in **[Text Vectorization & Text Security](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/)** section. [**Text to Vector**](https://products.aspose.app/svg/text-to-vector) web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited.
 
 ## **Why convert SVG to PNG?**
 
@@ -89,6 +94,12 @@ All modern browsers support SVG, and it would seem that the Web should already s
 ### **How to convert SVG to PNG?**
 
 It is effortless and simple. You can try to convert SVG to PNG or a variety of other formats with our **[Free Online SVG Converter](https://products.aspose.app/svg/conversion)**. Converting SVG documents to other formats is one of the main features of Aspose.SVG for .NET API. 
+
+<a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](./../how-to-work-with-aspose-svg-api/svg-converter.png#center)</a>
+
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 
 
    
 

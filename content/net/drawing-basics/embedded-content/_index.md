@@ -3,7 +3,7 @@ title: SVG Embedded Content
 type: docs
 weight: 70
 aliases: /net/drawing-basics/embedded-content
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: In this article, you will learn how to include and render bitmap and HTML elements within an SVG object.
 keywords: SVG Embedded Content, Loading Bitmaps, Displaying Bitmaps, HTML inside SVG
 ---
@@ -36,15 +36,13 @@ How to use the SVG `<image>` element?  The following code snippet shows as a .pn
 </svg>
 ```
 The above code snippet is displayed like this:
-![Two images](embedded_images.png#center)
+![Two images embedded in svg](embedded_images.png#center)
 
-## **HTML inside SVG** 
-
- 
+## **HTML inside SVG**  
 
 SVG is designed to be consistent with other XML languages for describing and rendering of embedded content. The `<foreignObject>` element allows to include in SVG file the elements in a non-SVG namespace. In the context of a browser, it is most likely HTML. The foreign graphical content can be processed with transformations, filters, clipping, masking and compositing.
 
-As attributes, you must to set the **x**, **y** coordinates, **width** and **height** of the `<foreignObject>` container. Otherwise, the child elements will not display at all.
+As attributes, you must specify the **x**, **y** coordinates, **width** and **height** of the `<foreignObject>` container. Otherwise, the child elements will not display at all.
 
 Let's see an example:
 ```html {linenos=inline,linenostart=1 hl_lines=["12"]}
@@ -66,9 +64,13 @@ Let's see an example:
 </svg>
 ```
 
-![Text](embedded_HTML.png#center)
+![HTML element embedded in the SVG document](embedded-html.png#center)
 
 Using the `<foreignObject>` inside SVG, you need to specify the namespace from which the foreign object originates. In this example, it sets in line 12:
 
  `<div xmlns="http://www.w3.org/1999/xhtml">`
+
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 
 

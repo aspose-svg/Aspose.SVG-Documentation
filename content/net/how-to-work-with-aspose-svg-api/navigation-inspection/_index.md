@@ -6,7 +6,7 @@ weight: 50
 aliases: 
     - /net/how-to-work-with-aspose-svg-api/navigation-inspection/
     - /net/traverse-svg-dom/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 description: This article teaches how to perform a detailed inspection of the SVG document and its elements using the Aspose.SVG API, custom filters usage for iterating over the document elements, and how to navigate the document using CSS Selector or XPath.
 keywords: svg file example, svg element, svg xpath, inspection svg, navigation svg, custom filter, CSS selector, XPath Query
 ---
@@ -33,14 +33,14 @@ You can download the complete examples and data files from [**GitHub**](https://
 ## **View SVG Content**
 
 The easiest way to inspect the document content is to look at content as a string. The properties  `InnerHTML` and `OuterHTML` of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class return a fragment of XML (or HTML) that represents the element and its contents. They are developed precisely for viewing SVG content as a string.
-The following code example shows how to view the content of [QBezier.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/QBezier.svg) file in the console.
+The following code example shows how to view the content of [bezier-curves.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg) file in the console.
 
 ```c# 
 using Aspose.Svg;
 using System.IO;
 ...   
     
-    string documentPath = Path.Combine(DataDir, "QBezier.svg");    
+    string documentPath = Path.Combine(DataDir, "bezier-curves.svg");    
 
 	// Load an SVG document
 	using (var document = new SVGDocument(documentPath))

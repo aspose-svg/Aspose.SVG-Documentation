@@ -3,7 +3,7 @@ title: Fills and Strokes in SVG
 type: docs
 weight: 60
 aliases: /net/drawing-basics/fills-and-strokes
-lastmod: 2021-10-05
+lastmod: 2022-01-10
 description: This article describes several properties that allow you to set different aspects of SVG fill and stroke, including color, opacity, thickness, use of dashing, etc.
 description: svg fill, svg stroke, fill attribute, svg lines, svg stroke caps, dots and dashes, stroke-dasharray
 ---
@@ -132,3 +132,6 @@ You can experiment with stroke-dasharray attribute. Amazing things can be achiev
 
 ![Circle, rectangle and text with different stroke-dasharray properties](dasharray_example.png#center)
 
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 

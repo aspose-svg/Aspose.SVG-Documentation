@@ -8,13 +8,11 @@ url: /net/how-to-work-with-aspose-svg-api/saving-svg-documents/
 aliases: 
   - /net/how-to-work-with-aspose-svg-api/saving-documents/
   - /net/save-svg-files/
-lastmod: 2021-10-12
+lastmod: 2022-01-10
 ---
 ## **Save an SVG document**
 
-
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
-
 
 Most of the tasks, you need to perform,  require saving a document. Once you load the existing file or create an SVG document from scratch, you can save your changes using one of [SVGDocument.Save()](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument/methods/save/index) methods. There are overloaded methods that allow saving SVG to a file, stream, Zip archive or Url. 
 
@@ -39,10 +37,10 @@ using Aspose.Svg;
 ...
     
     // Prepare a path for an SVG document saving
-	string documentPath = Path.Combine(OutputDir, "Lineto_out.svg");
+	string documentPath = Path.Combine(OutputDir, "lineto_out.svg");
 
     //  Load the SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
     {
         // Work with the document
     
@@ -53,7 +51,7 @@ using Aspose.Svg;
 
 ### **Save SVG to a Url**
 
-It is necessary to specify a full Url path for the document [Lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/Lineto.svg) saving and pass the `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
+It is necessary to specify a full Url path for the document [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg) saving and pass the `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
 ```c#
 using System.IO;
@@ -61,10 +59,10 @@ using Aspose.Svg;
 ...
     
     // Set a full path for an SVG document saving
-	var url = new Url(Path.Combine(OutputDir, "Lineto_out.svg"), Directory.GetCurrentDirectory());
+	var url = new Url(Path.Combine(OutputDir, "lineto_out.svg"), Directory.GetCurrentDirectory());
 
     //  Load the SVG document from a file
-    using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+    using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
     {
         // Work with the document
         
@@ -77,7 +75,7 @@ using Aspose.Svg;
 
 The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files - the [IOutputStorage](https://apireference.aspose.com/svg/net/aspose.svg.io/ioutputstorage) interface is developed for saving SVG content and resources to streams. 
 
-Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [WithExternalHTML.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/WithExternalHTML.svg) document with the joined [simpleHTML.htm](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/simpleHTML.htm) file are in the same directory. The [LocalFileSystemStorage(`customOutDir`)](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/constructors/1) constructor creates an object that is a file system storage. The [Save(`IOutputStorage`)](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save) method takes this object and saves SVG to the output storage.
+Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [with-external-html.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/with-external-html.svg) document with the joined [simple-html.htm](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/simple-html.htm) file are in the same directory. The [LocalFileSystemStorage(`customOutDir`)](https://apireference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/constructors/1) constructor creates an object that is a file system storage. The [Save(`IOutputStorage`)](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/save) method takes this object and saves SVG to the output storage.
 
 ```c#
 using System.IO;
@@ -85,7 +83,7 @@ using Aspose.Svg.IO;
 ...
     
 	// Prepare a path to a source SVG file  
-    string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+    string inputPath = Path.Combine(DataDir, "with-external-html.svg");
 
     // Prepare a full path to an output directory 
     string customOutDir = Path.Combine(Directory.GetCurrentDirectory(), "./../../../../tests-out/saving");
@@ -111,7 +109,7 @@ using System.IO.Compression;
 ...
     
 	// Prepare a path to a source SVG file 
-    string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+    string inputPath = Path.Combine(DataDir, "with-external-html.svg");
     
     var dir = Directory.GetCurrentDirectory();
 
@@ -201,7 +199,7 @@ using Aspose.Svg.IO;
 using System.Collections.Generic;
 ...
     // Prepare a path to a source SVG file
-    string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+    string inputPath = Path.Combine(DataDir, "with-external-html.svg");
 
     using (var doc = new SVGDocument(inputPath))
     {
@@ -213,8 +211,8 @@ using System.Collections.Generic;
 ```
 
 After the example run, the message about memory storage will be printed:
-`uri:memory:///WithExternalHTML.svg, length:570`
-`uri:memory:///simpleHTML.htm, length:369`
+`uri:memory:///with-external-html.svg, length:570`
+`uri:memory:///simple-html.htm, length:369`
 
 The following code snippet shows the realization of the IOutputStorage in the **MemoryOutputStorage** class to demonstrate saving an SVG document to memory streams.
 
