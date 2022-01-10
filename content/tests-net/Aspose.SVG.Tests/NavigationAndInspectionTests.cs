@@ -31,7 +31,7 @@ namespace Aspose.Svg.Tests
         [Fact(DisplayName = "View SVG Content")]
         public void ViewSVGContent()
         {
-            string documentPath = Path.Combine(DataDir, "QBezier.svg");
+            string documentPath = Path.Combine(DataDir, "bezier-curves.svg");
 
             using (var document = new SVGDocument(documentPath))
             {               

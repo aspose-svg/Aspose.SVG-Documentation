@@ -20,10 +20,10 @@ namespace Aspose.Svg.Tests
         public void SaveSvgDocumentToUrl()
         {
             // Set a full path for an SVG document saving
-            var url = new Url(Path.Combine(OutputUrl, "Lineto_out1.svg"), Directory.GetCurrentDirectory());
+            var url = new Url(Path.Combine(OutputUrl, "lineto_out1.svg"), Directory.GetCurrentDirectory());
 
             //  Load the SVG document from a file
-            using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+            using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
             {
                 // Work with the document
 
@@ -31,7 +31,7 @@ namespace Aspose.Svg.Tests
                 document.Save(url);
             }
 
-            Assert.True(File.Exists(Path.Combine(OutputDir, "Lineto_out1.svg")));
+            Assert.True(File.Exists(Path.Combine(OutputDir, "lineto_out1.svg")));
         }
 
 
@@ -39,10 +39,10 @@ namespace Aspose.Svg.Tests
         public void SaveSvgDocumentToFile()
         {
             // Prepare a path for an SVG document saving
-            string documentPath = Path.Combine(OutputDir, "Lineto_out2.svg");
+            string documentPath = Path.Combine(OutputDir, "lineto_out2.svg");
 
             //  Load the SVG document from a file
-            using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+            using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
             {
                 // Work with the document
 
@@ -58,7 +58,7 @@ namespace Aspose.Svg.Tests
         public void SaveSvgDocumentToLoacalFileSystemStorage()
         {
             // Prepare a path to a source SVG file  
-            string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+            string inputPath = Path.Combine(DataDir, "with-external-html.svg");
 
             // Prepare a full path to an output directory 
             string customOutDir = Path.Combine(Directory.GetCurrentDirectory(), "./../../../../tests-out/saving");
@@ -70,7 +70,7 @@ namespace Aspose.Svg.Tests
                 doc.Save(new LocalFileSystemStorage(customOutDir));
             }
 
-            Assert.True(File.Exists(Path.Combine(customOutDir, "WithExternalHTML.svg")));
+            Assert.True(File.Exists(Path.Combine(customOutDir, "with-external-html.svg")));
         }
 
 
@@ -78,7 +78,7 @@ namespace Aspose.Svg.Tests
         public void SaveSvgDocumentToMemoryStreams()
         {
             // Prepare a path to a source SVG file
-            string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+            string inputPath = Path.Combine(DataDir, "with-external-html.svg");
 
             using (var doc = new SVGDocument(inputPath))
             {
@@ -142,7 +142,7 @@ namespace Aspose.Svg.Tests
         public void SaveSvgDocumentToZipArchive()
         {
             // Prepare a path to a source SVG file 
-            string inputPath = Path.Combine(DataDir, "WithExternalHTML.svg");
+            string inputPath = Path.Combine(DataDir, "with-external-html.svg");
 
             // Prepare a full path to an output zip storage
             var dir = Directory.GetCurrentDirectory();            

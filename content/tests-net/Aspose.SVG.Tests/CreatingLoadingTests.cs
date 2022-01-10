@@ -47,7 +47,7 @@ namespace Aspose.Svg.Tests
         [Fact(DisplayName = "Load an SVG document from a file")]
         public void LoadDocumentFromFileTest()
         {
-            string documentPath = Path.Combine(DataDir, "QBezier.svg");
+            string documentPath = Path.Combine(DataDir, "bezier-curves.svg");
 
             using (var document = new SVGDocument(documentPath))
             {
@@ -60,7 +60,7 @@ namespace Aspose.Svg.Tests
         [Fact(DisplayName = "Load an SVG document from a stream")]
         public void LoadDocumentFromStreamTest()
         {
-            string documentPath = Path.Combine(DataDir, "QBezier.svg");
+            string documentPath = Path.Combine(DataDir, "bezier-curves.svg");
 
             using (var stream = new FileStream(documentPath, FileMode.Open, FileAccess.Read))
             {

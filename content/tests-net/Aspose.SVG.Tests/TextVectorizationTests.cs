@@ -19,7 +19,7 @@ namespace Aspose.Svg.Tests
         public void TextVectorizationTest()
         {
             // Load an SVG document from file
-            var document = new SVGDocument(Path.Combine(DataDir, "Text.svg"));
+            var document = new SVGDocument(Path.Combine(DataDir, "text.svg"));
 
             // Set text elements vectorization 
             var saveOptions = new SVGSaveOptions
@@ -28,7 +28,7 @@ namespace Aspose.Svg.Tests
             };
 
             // Save the SVG document with specified saveOptions
-            document.Save(Path.Combine(OutputDir, "Text_vectorized.svg"), saveOptions);
+            document.Save(Path.Combine(OutputDir, "text_vectorized.svg"), saveOptions);
             
             Assert.False(document.QuerySelectorAll("text").Length > 1);
         }

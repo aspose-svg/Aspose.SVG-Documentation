@@ -38,7 +38,7 @@ namespace Aspose.Svg.Tests
         public void MergeSvgDocumentsToPdf()
         {
             using (var document1 = new SVGDocument(Path.Combine(DataDir, "owl.svg")))
-            using (var document2 = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+            using (var document2 = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
             using (var document3 = new SVGDocument(Path.Combine(DataDir, "conclusion.svg")))
             {
                 using (var renderer = new SvgRenderer())

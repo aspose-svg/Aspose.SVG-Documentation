@@ -61,7 +61,7 @@ namespace Aspose.Svg.Tests
         public void ConvertSvgToPdf_UsingConvertSvgMethod()
         {
             // Initialize an SVG document from a file
-            using (var document = new SVGDocument(Path.Combine(DataDir, "Lineto.svg")))
+            using (var document = new SVGDocument(Path.Combine(DataDir, "lineto.svg")))
 
             {
                 // Initialize an instance of the PdfSaveOptions class
@@ -69,10 +69,10 @@ namespace Aspose.Svg.Tests
                 saveOptions.BackgroundColor = Color.Gray;
 
                 // Convert SVG to PDF
-                Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "Lineto.pdf"));
+                Converter.ConvertSVG(document, saveOptions, Path.Combine(OutputDir, "lineto_out.pdf"));
             }
             
-            Assert.True(File.Exists(Path.Combine(OutputDir, "Lineto_out.pdf")));
+            Assert.True(File.Exists(Path.Combine(OutputDir, "lineto_out.pdf")));
         }
 
         [Fact(DisplayName = "Convert SVG to PDF Using RenderTo Method")]

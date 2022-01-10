@@ -17,7 +17,7 @@ Please make sure you meet the following requirements before downloading and runn
 
 ## **Download from GitHub**
 
-All examples of Aspose.SVG for .NET are hosted on [GitHub](https://github.com/aspose-svg/Aspose.SVG-for-.NET).
+All examples of Aspose.SVG for .NET are hosted on [GitHub](https://github.com/aspose-svg/Aspose.SVG-for-.NET).
 
 - You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-svg/Aspose.SVG-for-.NET/archive/master.zip).
 - Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.

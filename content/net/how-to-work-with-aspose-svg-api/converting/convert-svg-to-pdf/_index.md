@@ -22,7 +22,7 @@ You can convert SVG to PDF with our free online <a href="https://products.aspose
 
 The static methods of the [Converter](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter) class can convert SVG to PDF  with a single line of code. It is the easiest way for conversion. Converting a file to another format using [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods is a sequence of operations among which document loading and saving: 
 
- - Load an SVG document using one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ( [lineto.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/lineto.svg)).
+ - Load an SVG document using one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ( [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg)).
  - Create an instance of the [PdfSaveOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions) class.
  - Use the [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/3) method to save SVG as a PDF file. 
 

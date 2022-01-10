@@ -131,7 +131,7 @@ namespace Aspose.Svg.Tests
 
                 // Create an image element and add to the svgElement
                 var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg";
+                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/lighthouse.jpg";
                 imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Height.BaseVal.Value = 640;
@@ -162,9 +162,9 @@ namespace Aspose.Svg.Tests
                 filterElement.AppendChild(feGaussianBlurElement);
 
                 // Save the document
-                document.Save(Path.Combine(OutputDir, "GaussianBlur.svg"));
+                document.Save(Path.Combine(OutputDir, "gaussian-blur.svg"));
             }
-            Assert.True(File.Exists(Path.Combine(OutputDir, "GaussianBlur.svg")));
+            Assert.True(File.Exists(Path.Combine(OutputDir, "gaussian-blur.svg")));
         }
 
         [Fact(DisplayName = "Saturation Effect")]
@@ -179,7 +179,7 @@ namespace Aspose.Svg.Tests
 
                 // Create an image element and add to the svgElement
                 var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/Lighthouse.jpg";
+                imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/lighthouse.jpg";
                 imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
                 imageElement.Height.BaseVal.Value = 640;
