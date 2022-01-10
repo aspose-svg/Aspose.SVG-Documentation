@@ -85,3 +85,8 @@ Being a vector graphics format that corresponds to resent web development requir
 - polygraphy. 
 
 The goal of Aspose.SVG team is to help you find out enough about SVG technology, that allows you to produce what you need.
+
+{{% alert color="primary" %}}
+
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your tasks!
+{{% /alert %}}

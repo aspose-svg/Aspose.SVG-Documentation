@@ -146,7 +146,7 @@ Consider an example of editing an existing SVG file [basic-shapes.svg](https://d
     }
 ```
 The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/basic-shapes.svg) and the file that was edited (modified).
-![Original svg image and edited svg image](basic_shapes.png#center)
+![Original svg image and edited svg image](basic-shapes.png#center)
 
 
 ### **SVG Path**

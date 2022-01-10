@@ -13,7 +13,7 @@ description: SVG shapes, SVG Basic Shapes, SVG Rectangle, SVG Circle, SVG Line, 
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**How to edit SVG documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/). 
+The simple shapes are used continuously in vector drawings – in logos, diagrams, etc. To include the figure into the picture, you need to create an element in an SVG file. The element's attributes will indicate the position, size, and other figure's characteristics. A wide range of visual properties can be applied to the shapes: coloration, opacity, corner rounding, stroke and more. How to insert the figure in the SVG document and edit it using the Aspose.SVG API you can learn in the section [**How to Edit SVG Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/). 
 
 ## **SVG Rectangle** 
 

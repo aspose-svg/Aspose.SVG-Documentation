@@ -26,6 +26,6 @@ The following articles are available:
 
 
 {{% alert color="primary" %}}
-Aspose.SVG offers  [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG, JPG or PNG files, merging SVG files, Image Vectorizing, SVG sprite creating, SVG to Base64 data encoding and text vectorizing in SVG documents. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+Aspose.SVG offers  [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG, JPG or PNG files, merging SVG files, Image Vectorizing, SVG sprite creating, SVG to Base64 data encoding, and text vectorizing in SVG documents. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
 {{% /alert %}} 
 

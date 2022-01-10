@@ -10,7 +10,7 @@ description: svg filters, gaussian blur, drop shadow effect, svg drop shadow, sv
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}}
-Aspose.SVG offers <a href="https://products.aspose.app/svg/applications" target="_blank">**Free Online Applications**</a> to convert SVG and bitmap files, merge SVGs to sprite, Image Vectorizing, and more. Use our collection of applications to perform your SVG-related tasks and make your workflow seamlessly!
+Aspose.SVG offers <a href="https://products.aspose.app/svg/applications" target="_blank">**Free Online Applications**</a> to convert SVG and bitmap files, merge SVGs to sprite, image vectorizing, and more. Use our collection of applications to perform your SVG-related tasks and make your workflow seamlessly!
 {{% /alert %}} 
 
 ## **What is an SVG Filter?**
@@ -81,7 +81,7 @@ Let's see how to create a drop shadow effect ([drop-shadow-effect.svg](/svg/net/
     <ellipse cx="95" cy="90" rx="75" ry="55" fill="#20B2AA" filter="url(#shadow)" />
 </svg>
 ```
-![Drop Shadow Effect of the ellipse](drop_shadow_effect.png#center)
+![Drop Shadow Effect of the ellipse](drop-shadow-effect.png#center)
 
 Thee filters are used to create drop shadow effect:
 
@@ -248,7 +248,7 @@ The `<linearGradient>` has nested children `<stop>` elements that control the co
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="90" fill="url(#grad1)" >Linear Gradient</text>
 </svg>
 ```
-  ![Text and ellipse are filled by linear gradient](linear_gradient.png#center)
+  ![Text and ellipse are filled by linear gradient](linear-gradient.png#center)
 
 In the example above, the linear gradient `id="grad1"` is referenced by the `<text>` and `<ellipse>` elements in the **fill** attribute.  There are three `<stop>` nodes inside the linear gradient. In each of them, an **offset** attribute sets the position the SVG gradient gets a ***stop-color*** value.
 
@@ -270,7 +270,7 @@ In this example, the centers of the innermost and outermost border of the SVG gr
 </svg>
 ```
 
- ![Text and ellipse are filled by radial gradient](radial_gradient.png#center)
+ ![Text and ellipse are filled by radial gradient](radial-gradient.png#center)
 
 Let's see an example of the radial gradient, where the focal point (**fx**, **fy**) moved from the center of the object to position **fx**=25% and **fy**=25% ([radial-gradient1.svg](/svg/net/drawing-basics/filters-and-gradients/radial-gradient1.svg)):
 ```html {linenos=inline,linenostart=1}
@@ -287,7 +287,7 @@ Let's see an example of the radial gradient, where the focal point (**fx**, **fy
     <text x="10" y="85" font-family="Arial" stroke="grey" stroke-width="1" font-size="85" fill="url(#myRG)">Radial Gradient</text>
 </svg>
 ```
-![Text and ellipse are filled by radial gradient](radial_gradient1.png#center)
+![Text and ellipse are filled by radial gradient](radial-gradient1.png#center)
 
 Here we applied several color transitions and received an interesting effect that is well-expressed on the ellipse.
 
