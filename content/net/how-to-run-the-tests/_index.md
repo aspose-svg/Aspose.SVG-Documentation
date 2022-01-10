@@ -4,6 +4,7 @@ type: docs
 weight: 40
 aliases: 
     - /net/how-to-run-the-tests/
+    - /net/getting-started/how-to-run-the-examples/
     - /display/svgnet/How+to+Run+the+Examples
 lastmod: "2020-12-15"
 ---
