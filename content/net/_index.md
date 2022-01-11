@@ -4,7 +4,6 @@ type: docs
 weight: 10
 aliases: 
     - /net/
-    - /display/svgnet/Home
 is_root: true
 lastmod: "2022-01-10"
 description: Aspose.SVG for .NET documentation includes the articles on how to create SVG, convert SVG, merge SVG, draw SVG, vectorize bitmaps and more.
