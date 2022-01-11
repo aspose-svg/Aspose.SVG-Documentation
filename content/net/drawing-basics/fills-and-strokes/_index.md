@@ -133,5 +133,5 @@ You can experiment with stroke-dasharray attribute. Amazing things can be achiev
 ![Circle, rectangle and text with different stroke-dasharray properties](dasharray_example.png#center)
 
 {{% alert color="primary" %}}
-Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, image vectorizing, SVG sprite generating, SVG to base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
 {{% /alert %}} 

@@ -12,7 +12,7 @@ keywords: SVG Transformations, SVG Translation, SVG Scaling, SVG Rotation, SVG S
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}}
-Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, image vectorizing, SVG sprite generating, SVG to base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
 {{% /alert %}} 
 
 SVG allows modifying graphic elements using translation, rotation, scaling, and skewing.  All these SVG transformations refer to the geometric kind. SVG objects can be altering using the **transform** attribute's properties: ***translate, scale, rotate, skewX, skewY***, and ***matrix***.   

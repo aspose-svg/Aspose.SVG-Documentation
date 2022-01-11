@@ -1,7 +1,7 @@
 ---
 title: How to Run the Examples
 type: docs
-weight: 40
+weight: 50
 url: /net/how-to-run-the-tests/
 aliases: 
     - /net/how-to-run-the-tests/

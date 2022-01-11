@@ -1,7 +1,7 @@
 ---
 title: FAQ
 type: docs
-weight: 45
+weight: 60
 aliases: /net/faq/
 lastmod: "2022-01-10"
 description: SVG is a vector graphics format that is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more.
@@ -98,7 +98,7 @@ It is effortless and simple. You can try to convert SVG to PNG or a variety of o
 <a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](./../how-to-work-with-aspose-svg-api/svg-converter.png#center)</a>
 
 {{% alert color="primary" %}}
-Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/en/applications) for converting SVG or image files, merging SVG files, Image Vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It’s a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, image vectorizing, SVG sprite generating, SVG to base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It’s a fast and easy way to efficiently and effectively solve your SVG-related tasks!
 {{% /alert %}} 
 
    
