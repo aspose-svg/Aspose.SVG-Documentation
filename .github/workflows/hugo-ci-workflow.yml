@@ -33,7 +33,8 @@ jobs:
           ./bin/hugo mod verify
           ./bin/hugo version
           # hugo --minify --baseURL https://docs.aspose.com/html
-          sudo ./bin/hugo -c content --debug --log --print-mem --templateMetrics --minify -v --baseURL https://docs.aspose.com/svg
+          #  sudo ./bin/hugo -c content --debug --log --print-mem --templateMetrics --minify -v --baseURL https://docs.aspose.com/svg
+          sudo ./bin/hugo -c content --log --minify -v --baseURL https://docs.aspose.com/svg
           rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master
