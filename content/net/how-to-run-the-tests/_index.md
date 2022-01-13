@@ -6,6 +6,7 @@ url: /net/how-to-run-the-tests/
 aliases: 
     - /net/how-to-run-the-tests/
     - /net/getting-started/how-to-run-the-examples/
+    - /display/svgnet/How+to+Run+the+Examples
 lastmod: "2022-01-10"
 ---
 
