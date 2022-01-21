@@ -1,5 +1,6 @@
 ---
 title: Supported File Formats
+description: Aspose.SVG for .NET supports SVG, PDF, XPS, TIFF, BMP, PNG, JPEG and GIF file formats.
 type: docs
 weight: 40
 aliases: /net/supported-file-formats/
