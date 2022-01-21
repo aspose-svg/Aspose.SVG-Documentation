@@ -1,5 +1,6 @@
 ---
 title: Aspose.SVG Product Family
+description: Aspose.SVG APIs provides a wide range of features for processing and rendering of SVG documents. You can get all features (programmitically) which are required in an svg editor. 
 type: docs
 weight: 10
 url: /
