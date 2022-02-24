@@ -2,9 +2,9 @@
 title: How to create NFT?
 type: docs
 weight: 90
-lastmod: "2022-02-23"
-description: 
-keywords: nft, what is an nft, what does nft mean, nft image, how to create nft, nft token, smart contract, nft smart contract, nft app, nft metadata, create nft smart contract, svg nft, blockchain, Ethereum
+lastmod: "2022-02-24"
+description: NFT is a digital certificate of ownership representing the purchase of a digital asset, traceable on the blockchain. You learn about NFT pros and cons and how to create NFT smart contract.
+keywords: nft, what is an nft, what does nft mean, nft image, how to create nft, smart contract, nft smart contract, nft app, nft metadata, create nft smart contract, blockchain, Ethereum
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -34,11 +34,13 @@ A few more short definitions of NFT can be formulated, and they all capture the 
 
  - NFT is a special type of asset, a record in the blockchain, that confirms the unique and exclusive ownership of a digital asset.
 
-   And more... 
+   
 
-Blockchain is the key technology for making NFTs. The Ethereum blockchain is the basis for most NFTs currently offered. It supports the ERC-721 token standard, allowing NFT creators to collect data related to their digital artefacts and store it as tokens on the blockchain. The unique digital file is stored on the blockchain ledger, and any changes in ownership are checked by the worldwide network and logged openly. Therefore, it is virtually impossible to replace an NFT with a fake.
+And so on... You can give your own definition of NFTs, and it will undoubtedly represent the uniqueness, prospects and manufacturability of these digital assets that have caused a colossal hipe!
 
-NFTs function like cryptographic tokens, but, unlike cryptocurrencies, they are not fungible and thus may have a different value. For example, Bitcoin is a fungible token. It can be exchanged for another bitcoin, and it will be precisely the same. However, the one-of-a-kind collectable baseball card is also non-interchangeable. If you change it to another card, you will get something completely different. 
+Blockchain is the key technology for making NFTs. The Ethereum blockchain is the basis for most NFTs currently offered. It supports the ERC-721 token standard, allowing NFT creators to collect data related to their digital artefacts and store it as tokens on the blockchain. The unique digital file is stored on the blockchain ledger, and any changes in ownership are checked by the worldwide network and logged publicly. Therefore, it is virtually impossible to replace an NFT with a fake.
+
+NFTs function like cryptographic tokens, but, unlike cryptocurrencies, they are not fungible and thus may have a different value. For example, Bitcoin is a fungible token. It can be exchanged for another bitcoin, and it will be precisely the same. However, the one-of-a-kind collectable baseball card is also non-interchangeable. If you change it to another card, you will get something completely different.  
 
 ## **NFT Smart Contract** 
 
@@ -49,14 +51,12 @@ Once you have designed an art object, for example, you made an image, the next s
 
 The NFT use is based on smart contracts. First of all, a smart contract is a piece of program code that allows the network to store information in a transparent and immutable way. 
 
-Since the smart contract exists on the blockchain, this allows the network to store the information specified in the NFT transaction. The smart contract also ensures that the stored data is transparent and immutable.
+Most NFTs follow the ERC-721 token standard. ERC-721 is an open standard that describes how to build NFTs on the Ethereum blockchain and defines the work of a smart contract. 
 
 If you use the Ethereum blockchain, smart contracts can be written in Solidity or Vyper. The developers of Ethereum and smart contracts took into account that uploading large images results in a high transaction fee, so they designed a way to display an image without uploading the entire image.
-As a result, NFT smart contracts have a `tokenURI`. This is a globally unique identifier for all the image aspects of an NFT. This simplifies the NFT visualization. The URI can be an HTTPS API call, something over IPFS, or some other type of unique identifier???
+As a result, NFT smart contracts have a `tokenURI`. This is a globally unique identifier for all the image aspects of an NFT. This simplifies the NFT visualization. 
 
-NFT smart contracts have a `tokenURI` variable and a mapping of a `tokenId` to its owner, where each token has its own “owner.” Owners can add metadata or attributes pertaining to the asset in NFT. For example, artists can sign their digital work with their own signature in the metadata.
-
-Most NFTs follow the ERC-721 token standard. ERC-721 is an open standard that describes how to build NFTs on the Ethereum blockchain and defines the work of a smart contract. 
+NFT smart contracts have a `tokenURI` variable and a mapping of a `tokenId` to its owner. Owners can add metadata or attributes pertaining to the asset in NFT. For example, artists can sign their digital work with their own signature in the NFT metadata.
 
 
 
@@ -94,31 +94,29 @@ NFT is a fairly new concept, and it has both advantages of making money, art col
 
 
 ## **Create your own NFT**
-A smart contract is a program that runs on a blockchain and uses a blockchain's ability to track a state, transactions, and interact with addresses. Aspose.SVG offers an online NFT app that allows you generate an NFT smart contract to create your own NFT image. Also, it encodes SVG document's content to its equivalent string representation encoded with base-64 digits. NFT app makes a smart contract that can be used for the creation of NFT images. This smart contract is written in Solidity language and can be compiled via any Ethereum tools like Remix or Hardhat. Remix is one of the most well-known Ethereum tools for smart contract development on Solidity-based blockchains. It is easy to use, and you may use it for smart contract testing.
+Aspose.SVG offers an online NFT app that allows generating an NFT smart contract to create your own image NFT. Also, it encodes SVG document's content to its equivalent string representation encoded with base-64 digits. NFT has a URI that points to data containing the NFT metadata and the corresponding visuals.  We generate smart contact based on `ERC721URIStorage` interface, which allows keeping the image as Base64 encoded string inside `tokenURI` storage. The smart contract is written in Solidity language and can be compiled via any Ethereum tools like Remix or Hardhat.
+
 To create a smart contract you need to follow a few steps:
 
  - Open the [NFT app](https://products.aspose.app/svg/encoding/svg-to-nft)  or [NFT Smart Contract](https://products.aspose.app/svg/encoding/ico-to-nft) app by clicking on the link.
 
  - Add an SVG or ICO image for NFT making. 
 
- - Enter the NFT metadata. Make sure to add an NFT Name and NFT description to your NFT. 
+ - Enter the NFT metadata. Make sure to add an NFT Name and NFT description to your NFT.  Owners can add metadata or attributes pertaining to the asset in NFT. For example, artists can sign their digital work with their own signature in the NFT metadata.
 
-   Owners can add metadata or attributes pertaining to the asset in NFT. For example, artists can sign their digital work with their own signature in the NFT metadata.
+   The NFT metadata includes:
+
+   - "name" - name of the NFT;
+   - "description" - a human-readable NFT description;
+   - "image" - this is the URL to the NFT image.
+   - "imageURI" - a URI pointing to a resource with mime-type image/* representing the asset to which this NFT represents. 
+   - "attributes" - these are the custom attributes, which will give your NFT a little more unique and will appear for each of your assets.
 
  - Run the application by clicking the "Encode" button. When encoding is completed, the SVG or ICO  image will be encoded to Base64 format, and the smart contract will be generated. After that, you can copy them to the clipboard or download them as files.
 
- Note: We recommend you not upload large files to create an NFT smart contract as the file size affects the transaction fee. The larger the file size, the higher the fee! You will pay a fee when uploading the NFT to the server and performing any actions with NFT, such as validating the token, putting it up for auction for sale, etc.
+ - Finally, you need to deposit your smart contract onto a server where it can be accessed by potential buyers. Remix is one of the most well-known Ethereum tools for smart contract development on Solidity-based blockchains. It is easy to use, and you may use it for smart contract testing.
 
-The NFT metadata includes:
-
-- "name" - name of the NFT;
-- "description" - a human-readable NFT description;
-- "image" - this is the URL to the NFT image.
-- "imageURI" - a URI pointing to a resource with mime-type image/* representing the asset to which this NFT represents. 
-- "attributes" - these are the custom attributes, which will give your NFT a little more unique and will appear for each of your assets.
-
-Why is the NFT smart contract needed?
-NFT is a digital creative intellectual property that is used mostly for art, music, collectibles and more. NFT is generated using a smart contract that sits on a blockchain. NFT has a unique identification code and metadata that differs one NFT from another, making it work differently from a cryptocurrency coin. NFT smart contract is a piece of software code that allows the network to store the information transparent and immutable. Eventually, this code is what controls the digital asset known as NFT.
+**Note:** We recommend you not upload large files to create an NFT smart contract as the file size affects the transaction fee. The larger the file size, the higher the fee! You will pay a fee when uploading the NFT to the server and performing any actions with NFT, such as validating the token, putting it up for auction for sale, etc.
 
 {{% alert color="primary" %}}
 
