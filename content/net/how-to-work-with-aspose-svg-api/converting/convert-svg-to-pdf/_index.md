@@ -1,11 +1,11 @@
 ---
-title: Convert SVG to PDF | .NET
+title: Convert or Save SVG to PDF in C#
 linktitle: Convert SVG to PDF
 type: docs
 weight: 10
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-pdf/   
 lastmod: 2022-01-10
-description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF and find C# examples of SVG to PDF conversions. 
+description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the C# API. You will learn how to convert SVG to PDF and find C# examples of SVG to PDF conversions. 
 keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save options
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
