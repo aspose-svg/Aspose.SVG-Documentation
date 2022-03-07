@@ -78,6 +78,7 @@ namespace Aspose.Svg.Rendering
 }
 ```
 ### **Removed APIs:**
+
 ```c#
 namespace Aspose.Svg.Rendering
 {
