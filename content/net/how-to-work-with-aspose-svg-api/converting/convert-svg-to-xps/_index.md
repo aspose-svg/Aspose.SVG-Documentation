@@ -1,11 +1,11 @@
 ---
-title: Convert SVG to XPS | .NET
+title: Convert or Save SVG to XPS in C#
 linktitle: Convert SVG to XPS
 type: docs
 weight: 20
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-xps/   
 lastmod: 2022-01-10
-description: The article provides information on a list of supported SVG to XPS conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to XPS and find C# examples of SVG conversions.
+description: The article provides information on a list of supported SVG to XPS conversion scenarios and how to execute them using the API. You will learn how to convert SVG to XPS and find C# examples of SVG conversions.
 keywords: svg converter, convert svg, convert SVG to XPS, SVG to XPS, save options
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
