@@ -1,5 +1,6 @@
 ---
-title: Creating and Loading SVG Documents
+title: Create, Load and Read SVG in C#
+linktitle: Creating and Loading SVG Documents
 type: docs
 weight: 10
 aliases: 
@@ -28,7 +29,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 ## **Create an Empty SVG Document**
 
-Aspose.SVG for .NET API provides the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following code snippet shows the usage of the default [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/main) constructor to create an SVG document.
+Aspose.SVG for .NET API provides the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following C# code snippet shows the usage of the default [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/main) constructor to create an SVG document.
 
 ```c#
 using Aspose.Svg;
@@ -41,7 +42,7 @@ using Aspose.Svg;
     }
 ```
 
-If you want to save created empty SVG document to a file, use the following code snippet: 
+If you want to save created empty SVG document to a file, use the following C# code snippet: 
 
 ```c#
 using Aspose.Svg;
