@@ -4,6 +4,7 @@ type: docs
 weight: 50
 aliases: /net/system-requirements/
 lastmod: "2020-12-15"
+description: System Requirements for SVG manipulation C# library on Windows, Mac and Linux.
 ---
 
 ## **Overview**
