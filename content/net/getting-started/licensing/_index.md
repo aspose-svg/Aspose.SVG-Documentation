@@ -1,9 +1,11 @@
 ---
 title: Licensing
+second_title: Aspose.SVG for .NET
 type: docs
 weight: 70
 aliases: /net/licensing/
 lastmod: "2020-12-15"
+description: Licensing and Evaluation Version Requirements for SVG C# library and setting the license with file or stream and applying metered license.
 ---
 
 ## **Evaluation Version Limitations**
