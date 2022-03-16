@@ -4,6 +4,7 @@ type: docs
 weight: 20
 aliases: /net/features-list/
 lastmod: "2020-12-15"
+description: SVG C# Library has multiple key features that include DOM Tree manipulation, content navigation with the help of XPath Query, CSS Selectors, Quality rendering and converting to formats PDF, XPS, JPEG, PNG, BMP and creation of SVG documents from scratch.
 ---
 
 Aspose.SVG for .NET has been developed keeping in view .NET application developers who would love to write applications for editing SVG files. The API is fully compatible with the SVG official specifications and empowers you to work with SVG files without going into the underlying details of the [SVG](https://docs.fileformat.com/page-description-language/svg/) file format.
