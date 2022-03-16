@@ -4,6 +4,7 @@ type: docs
 weight: 60
 aliases: /net/installation/
 lastmod: "2020-12-15"
+description: Installation of SVG C# library through NuGet and Package Manager Console
 ---
 
 ## **Installing Aspose.SVG for .NET through NuGet**
