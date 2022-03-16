@@ -1,5 +1,6 @@
 ---
 title: Product Overview
+second_title: Aspose.SVG for .NET
 type: docs
 weight: 10
 description: SVG file format manipulation library enables you to load, save, convert SVG files in C# or .NET API which is not dependent on any other components.
