@@ -1,9 +1,9 @@
 ---
-title: How to Run the Examples
+title: How to Run C# Examples
 type: docs
 weight: 80
 aliases: /net/how-to-run-the-examples/
-lastmod: "2020-12-15"
+lastmod: "2022-03-20"
 ---
 
 ## **Software Requirements**

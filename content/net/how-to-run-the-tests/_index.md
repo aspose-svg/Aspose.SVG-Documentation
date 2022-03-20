@@ -4,10 +4,8 @@ type: docs
 weight: 50
 url: /net/how-to-run-the-tests/
 aliases: 
-    - /net/how-to-run-the-tests/
-    - /net/getting-started/how-to-run-the-examples/
     - /display/svgnet/How+to+Run+the+Examples
-lastmod: "2022-01-10"
+lastmod: "2022-03-20"
 ---
 
 Examples of using the API features are given as **XUnit tests** that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the API features. 
