@@ -1,5 +1,5 @@
 <svg width="500" height="500" viewBox="0 -50 400 400" xmlns="http://www.w3.org/2000/svg">  
-	<path class="snowflake" id="v1" stroke="#5fd1fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" stroke-dasharray="2 10" fill="none" d="  
+	<path class="snowflake" id="v1" stroke="#03b6fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" stroke-dasharray="2 10" fill="none" d="  
 	M 50,0 L 150, 100
 	M 50,30 L 80,30 L 80, 0
 	M 50,50 L 100,50 L 100, 0

@@ -5,17 +5,17 @@ type: docs
 weight: 35
 lastmod: 2022-03-22
 description: This article shows how to work with SVG color using Aspose.SVG for .NET library. You will consider detailed C# examples of how to change SVG elements' color or background color in SVG files.
-keywords: svg color, how to change svg color, background color, circle color, change background color, c# example, stroke color, fill color, change svg color, line color, color property, svg background color
+keywords: svg color, how to change svg color, background color, circle color, change background color, c# example, stroke color, fill color, change svg color, line color, color property, svg background color, svg file
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Aspose.SVG for .NET lets you edit an SVG document and make changes to its content.  Using color is an important part of creating SVG. You can colorize SVG shapes, lines, paths, text. In this article, using C# examples, we will look at ways to apply colors in SVG files.
+Aspose.SVG for .NET lets you edit an SVG document and make changes to its content.  Using color is an essential part of creating SVG. You can colorize SVG shapes, lines, paths, text. Using C# examples, we will look at ways to apply colors in SVG files.
 
-In this article, we show how to work with SVG color using Aspose.SVG for .NET library and consider detailed C# examples of **how to change color** of SVG elements or background color in SVG files.
+In this article, we show how to work with SVG color using Aspose.SVG for .NET library and consider of **how to change color** of SVG elements or background color in SVG files.
 
 {{% alert color="primary" %}} 
 
-How to add new SVG elements and set their color properties, we covered detailed C# examples in the article [**How to Edit SVG Files**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/).
+How to add new SVG elements and set their color properties, we covered in detail C# examples in the article [**How to Edit SVG Files**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/).
 
 {{% /alert %}} 
 
@@ -27,13 +27,21 @@ Aspose.SVG API allows you to change color of various SVG elements in an SVG docu
 
 1. Use one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors of the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument)  class to load an existing SVG document.  
 
-2. Use the [QuerySelector(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector)  to find the desired element in the SVG document to change its color. The QuerySelector(`selector`) method of the Element class allows you to get the first element within the document that matches the specified selector. With the resulting elements, you can make various manipulations: change its text, attributes, CSS styles, and so on.
+2. Use the [QuerySelector(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector)  to find the desired element in the SVG document. The QuerySelector(`selector`) method of the Element class allows you to get the first element within the document that matches the specified selector. With the resulting elements, you can make various manipulations: change its attributes, CSS styles, and so on.
 
 3. Use the  [SetAttribute `(name, value)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class to specify element attributes "fill" or "stroke".
 
 ### **Circle Color**
 
-The following code snippet illustrates how you can change color for the first SVG circle element in basic-shapes.svg file.
+To change circle color, you should follow a few steps:
+
+- Open a source SVG file.
+- Get root svg element of the document.
+- Get circle element to change color.
+- Set a new **fill** attribute value for the circle element.
+- Save the SVG document.
+
+The following code snippet illustrates how you can change circle color for the first SVG circle element in basic-shapes.svg file:
 
 ```c#
 using Aspose.Svg;
@@ -50,24 +58,50 @@ using Aspose.Svg.Dom;
     // Get root svg element of the document
     var svgElement = document.RootElement;    
 
-    // Get a circle element for color changing
+    // Get circle element to change color
     var circleElement = svgElement.QuerySelector("circle") as SVGCircleElement;
 
     // Set a new "fill" attribute value for the circle element
     circleElement.SetAttribute("fill", "blue"); 
 
 	// Save the SVG document
-    document.Save(Path.Combine(OutputDir, "blue-circle.svg"));
+    document.Save(Path.Combine(OutputDir, "circle-color.svg"));
 ```
-### **Line Color**
-We can specify element attributes and their values using the [SetAttribute `(name, value)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute), [GetAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getattribute), [HasAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/hasattribute), [RemoveAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/removeattribute) methods of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class.
+The **fill** attribute set the color of the SVG circle. In the resulting circle-color.svg file, the circle color changes from red (in the original) to blue. 
 
-For example, if you create a group of graphic elements and put them into the `<g>` element, you can set common parameters:
+### **Line Color**
+
+To change line color, you should follow similar steps. The C# example below shows how to change line color for the first SVG line element in basic-shapes.svg file:
+
 ```c#
-    gElement.SetAttribute("fill", "#8A8D8F");
-    gElement.SetAttribute("stroke", "magenta");
-    gElement.SetAttribute("stroke-width", "4");
+using Aspose.Svg;
+using System.IO;
+using Aspose.Svg.Dom;
+...
+
+    // Set SVG Namespace Url
+    string SvgNamespace = "http://www.w3.org/2000/svg";
+	
+	// Prepare a path to a file loading
+    string documentPath = Path.Combine(DataDir, "basic-shapes.svg");
+
+    // Load an SVG document from the file
+    var document = new SVGDocument(documentPath);
+
+    // Get root svg element of the document
+    var svgElement = document.RootElement;
+
+    // Get line element to change color
+    var lineElement = svgElement.QuerySelector("line") as SVGLineElement;
+
+    // Set a new "stroke" attribute value for the line element
+    lineElement.SetAttribute("stroke", "blue");
+
+    // Save the SVG document
+    document.Save(Path.Combine(OutputDir, "line-color.svg"));
 ```
+
+The **stroke** attribute set the color of the SVG line. In the resulting line-color.svg file, the line color changes from grey (in the original) to blue. Similarly, you can change color for **various SVG graphic elements** such as shapes, paths, and text using the **fill** or **stroke** attribute.
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation).
@@ -111,14 +145,14 @@ using Aspose.Svg.Dom;
 ```
 
 The figure shows the visualization of the original SVG file  [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/basic-shapes.svg) and the same file with the added background color.
-![Original svg image and svg image with new background color](background-color1.png#center)
+![Original svg image and svg image with new background color](background-color.png#center)
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the section [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests).
 {{% /alert %}} 
 
 ## **Recolor SVG**
-In the following C# example, we show how to recolor SVG image: change color of SVG path element and add color background:
+In the following C# example, we show how to recolor SVG image: change color of SVG path element and change background color:
 
 ```c# 
 using Aspose.Svg;
@@ -129,7 +163,7 @@ using Aspose.Svg.Dom;
     // Set SVG Namespace Url
     string SvgNamespace = "http://www.w3.org/2000/svg";
 
-    string documentPath = Path.Combine(DataDir, "snowflake.svg");
+    string documentPath = Path.Combine(DataDir, "snowflake-blue.svg");
 
     // Load an SVG document from the file
     var document = new SVGDocument(documentPath);
@@ -157,10 +191,8 @@ using Aspose.Svg.Dom;
     document.Save(Path.Combine(OutputDir, "recolor-svg.svg"));
 ```
 
-The figure shows the visualization of the original SVG file  [snowflake.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake.svg) and the recolored file.
+The figure shows the visualization of the original SVG file  [snowflake.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake-blue.svg) and the recolored file.
 ![Original svg image and recolored svg image](change-background-color.png#center)
-
-
 
 {{% alert color="primary" %}} 
 If you have an image that is not an SVG like a JPG or PNG file, you can convert the file into a vector and save it as an SVG using a free online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization). The App is browser-based and works on any platform. Check our Image Vectorizer to get all the benefits of vector graphics!
