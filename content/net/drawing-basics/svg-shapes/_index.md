@@ -62,7 +62,7 @@ The following properties of the **style** attribute are used:
 
 In the CSS ***fill*** and ***stroke*** properties the color can be set in several ways:  
 
-1. `fill: blue` - color is taken from "**[CSS color names](https://www.w3schools.com/colors/colors_names.asp)**". All modern browsers support the 140 color names. 
+1. `fill: blue` - color is taken from "**[CSS color names](https://www.w3schools.com/colors/colors_names.asp)**". All modern browsers support the 140+ color names. 
 
 2. `fill: rgb(0,0,255)` - color is written in RGB color model (rgb values). 
 
@@ -76,11 +76,11 @@ RGB (red, green, blue) is an additive color model that describes how any color i
 
 The SVG `<circle>` element is used to draw a circle on the screen. You need to set the position of the SVG circle’s center and radius. These are **cx, cy,** and **r** attributes, respectively. 
 
-You can set the stroke and fill properties for an SVG circle. In the following example, the stroke color is black, and the fill color is red.  You can also set the stroke width using the `stroke-width` style property and fill transparency using the `fill-opacity` property. Here is an example ([circle.svg](/svg/net/drawing-basics/svg-shapes/circle.svg)):
+You can set the stroke and fill properties for an SVG circle. In the following example, the stroke color is black, and the fill color is red.  You can also set the stroke width using the ***stroke-width*** style property and fill transparency using the ***fill-opacity*** property. Here is an example ([circle.svg](/svg/net/drawing-basics/svg-shapes/circle.svg)):
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
 <svg width="300" height="550" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="250" cy="100" r="60" stroke="black" stroke-width="3" fill="red" fill-opacity="0.7" />
+    <circle cx="250" cy="100" r="60" style="fill:red; stroke-width:3; stroke:rgb(0,0,0); fill-opacity:0.7"  />
 </svg>
 ```
  ![Two red SVG circles](circle.png#center)
