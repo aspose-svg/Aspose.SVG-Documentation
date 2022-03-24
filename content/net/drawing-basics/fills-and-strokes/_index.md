@@ -23,7 +23,7 @@ But the same **style** properties can be given in the presentation attributes wi
 
 `stroke="green" stroke-width="2" fill="#ff0000"`
 
-For the SVG color specifying, you can take **[color names](https://en.wikipedia.org/wiki/List_of_colors:_A–F)**, rgb values, hex values, etc. In the following examples will be using different ways of writing fills and strokes characteristics.
+For the SVG color specifying, you can take **[color names](https://www.w3.org/TR/SVG11/types.html#ColorKeywords)**, rgb values, hex values, etc. In the following examples will be using different ways of writing fills and strokes characteristics.
 
 ## **Fill attribute**
 
