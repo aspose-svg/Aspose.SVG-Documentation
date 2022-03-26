@@ -47,13 +47,13 @@ To specify an SVG color, you can take color names, RGB or RGBA values, HEX value
 
    You can set the green and red HEX colors like this: `stroke="#00FF00"` or `fill="#FF0000"`.
 
-3.  **RGB(Red, Blue, Green) Color Codes**. The values R, G and B are the intensity (in the range from 0 to 255), respectively, of the red, green and blue components of the determined color. You can set the green and red RGB colors like this: `stroke="rgb(0,255,0)"` or `fill="rgb(255,0,0)"`.
+3. **RGB(Red, Blue, Green) Color Codes**. The values R, G and B are the intensity (in the range from 0 to 255), respectively, of the red, green and blue components of the determined color. You can set the green and red RGB colors like this: `stroke="rgb(0,255,0)"` or `fill="rgb(255,0,0)"`.
 
 4. **RGBA(Red, Blue, Green, Alpha) Color Codes**. RGBA color values are an extension of RGB color values with an alpha channel that determines the opacity of the color. The alpha parameter is a number between 0.0 and 1.0 that specifies transparency. You may determine the green and red RGB colors like this: `stroke="rgba(0,255,0,1.0)"` or `fill="rgba(255,0,0,1.0)"`.
 
 5. **HSL Color Codes**. HSL stands for Hue, Saturation and Lightness. Each color has an angle on the RGB color wheel and a percentage value for the saturation and lightness values. HSL codes for green and red colors you can set like this: `stroke="hsl(120, 100%, 50%)"` and `fill="hsl(0, 100%, 50%)"` 
 
-6. **HSLA(Hue, Saturation, Lightness, Alpha) Color Codes**. HSLA color values are an extension of HSL color values with an alpha channel that determines the opacity of the color. HSL codes for green and red colors you can set like this: `stroke="hsl(120, 100%, 50%, 1.0)"` and `fill="hsl(0, 100%, 50%, 1.0)"` 
+6. **HSLA(Hue, Saturation, Lightness, Alpha) Color Codes**. HSLA color values are an extension of HSL color values with an alpha channel that determines the opacity of the color. HSL codes for green and red colors you can set like this: `stroke="hsla(120, 100%, 50%, 1.0)"` and `fill="hsla(0, 100%, 50%, 1.0)"` 
 
 ### **Color Specifying Rules**
 
@@ -187,7 +187,7 @@ You can specify the opacity of either the fill or stroke separately in SVG. Thes
 - **RGBA** color values have an alpha channel that determines the opacity of the color. The alpha parameter is a number between 0.0, meaning “fully transparent”, and 1.0, meaning “fully opaque”. For example, rgba(255, 0, 0, 0.5) is displayed as red with 50% opacity. 
 - **HSLA** color values are specified with hue, saturation, lightness, and alpha, where an alpha parameter specifies the opacity. As in RGBA color codes, the alpha parameter is between 0.0  and 1.0. For example, hsla(0, 100%, 50%, 1) is displayed as pure red, hsla(0, 100%, 50%, 0.5) is displayed as red with 50% opacity.
 
-Let's look at an example of how to set the opacity of the fill color of the shapes. In the following code snippet, we specify different opacity values to fill the rectangle with rgb(0,50,255) blue using **RGBA** color codes (Figure a); for red hsl(0,100%,50%)- using the **HSLA** color codes (Figure b) and for the color HEX #C1B900 - using the **fill-opacity** attribute (Figure c).
+Let's look at an example of how to set the opacity of the fill color of the shapes. In the following code snippet, we specify different opacity values to fill the rectangle with rgb(0,50,255) blue using **RGBA** color codes (Figure a); for red hsl(0,100%,50%) - using the **HSLA** color codes (Figure b) and for the color HEX #C1B900 - using the **fill-opacity** attribute (Figure c).
 
 ```html {linenos=inline,linenostart=1}
 <svg height="200" width="1250" xmlns="http://www.w3.org/2000/svg">

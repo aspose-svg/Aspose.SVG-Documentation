@@ -171,7 +171,7 @@ using Aspose.Svg.Dom;
     // Get root svg element of the document
     var svgElement = document.RootElement;
 
-    // Create a circle element and set set the "fill" attribute value to change background color
+    // Create a circle element and set the "fill" attribute value to change background color
     var circleElement = (SVGCircleElement)document.CreateElementNS(SvgNamespace, "circle");
     circleElement.Cx.BaseVal.Value = 150F;
     circleElement.Cy.BaseVal.Value = 100F;
@@ -191,7 +191,7 @@ using Aspose.Svg.Dom;
     document.Save(Path.Combine(OutputDir, "recolor-svg.svg"));
 ```
 
-The figure shows the visualization of the original SVG file  [snowflake.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake-blue.svg) and the recolored file.
+The figure shows the visualization of the original SVG file  [snowflake-blue.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake-blue.svg) and the recolored file.
 ![Original svg image and recolored svg image](change-background-color.png#center)
 
 {{% alert color="primary" %}} 
