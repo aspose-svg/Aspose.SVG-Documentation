@@ -15,6 +15,7 @@ jobs:
           cd ${{secrets.HUGO_SITE_LOCATION}}
           pwd
           ls -lA
+          git config --global --add safe.directory  ${{secrets.HUGO_SITE_LOCATION}}
           git fetch
           git reset --hard origin/main
       - name: preparing workspace clean public folder
