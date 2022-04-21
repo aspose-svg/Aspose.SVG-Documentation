@@ -1,1 +1,1 @@
-update hugo++
+git config --global --add safe.directory
