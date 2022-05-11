@@ -107,6 +107,18 @@ The [ImageDevice(`options, file`)](https://apireference.aspose.com/svg/net/aspos
 The figure illustrates the result of SVG to PNG conversion - light.png file.
 
 ![light.svg file rendered to PNG using RenderTo() method ](light.png#center)
+### **Free App**
+You can convert SVG to PNG with Aspose.SVG API in real time. First, load an SVG file from your local drive and then run the example. In this example, the save options are set by default. You will immediately receive the result as a separate PNG file.
+
+{{< svg-converter SVG PNG  >}}
+using Aspose.Html.Dom.Svg;
+using Aspose.Html.Converters;
+using Aspose.Html.Saving;
+
+   using var document = new SVGDocument("input.svg");
+   var options = new ImageSaveOptions();
+   Converter.ConvertSVG(document, options, "output.png");    
+{{< /svg-converter >}}
 
 ## **General Options**
 

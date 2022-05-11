@@ -1,0 +1,665 @@
+<style>
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    background: #f8f9fa;
+    color: #000;
+}
+
+.hljs-emphasis,
+.hljs-strong {
+    color: #a8a8a2
+}
+
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-quote,
+.hljs-regexp {
+    color: #6896ba
+}
+
+.hljs-code,
+.hljs-selector-class {
+    color: #a6e22e
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-attribute,
+.hljs-keyword,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-variable {
+    color: #cb7832
+}
+
+.hljs-params {
+    color: #b9b9b9
+}
+
+.hljs-string {
+    color: #6a8759
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-attr,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-subst,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type {
+    color: #e0c46c
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+    color: #7f7f7f
+}
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+}
+
+.panelContainer {
+    margin: auto;
+    width: 65%;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.panelContainer .row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y)*-1);
+	margin-right: calc(var(--bs-gutter-x)*-0.5);
+	margin-left: calc(var(--bs-gutter-x)*-0.5)
+}
+
+
+.parametersblock h3, .parametersblock .h3 {
+	background: silver;
+	font-size: 13px;
+	font-weight: 700;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+	margin: 0
+}
+
+.parametersBox {
+	color: #f8f8f2 !important;
+	background-color: #2b2b2b !important
+}
+
+.description {
+	text-align: left;
+	margin: auto;
+	padding: 10px 10px 10px 20px
+}
+
+.action {
+	text-align: left;
+	margin: auto;
+	padding: 10px 20px 10px 10px
+}
+
+.rowLine {
+	border-top: 1px solid silver
+}
+
+.codeblock h3, .codeblock .h3 {
+	background: silver;
+	font-size: 13px;
+	font-weight: 300;
+	padding: 10px 10px 10px 10px;
+	border-radius: 0 0 10px 10px;
+	margin: 0
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	opacity: .6
+}
+
+.codeBox {
+	color: #f8f8f2 !important;
+	background-color: #f8f9fa !important;
+	margin-bottom: 0 !important;
+	font-size: 16px;
+	line-height: initial
+}
+
+.clipboard {
+	float: right;
+	touch-action: manipulation;
+	cursor: pointer
+}
+
+	.clipboard:hover {
+		color: #468c02;
+		fill: #468c02
+	}
+
+	.clipboard .bi-clipboard {
+		width: 20px;
+		height: 20px
+	}
+
+	.clipboard a {
+		position: relative;
+		user-select: none;
+		text-decoration: none;
+		color: #0f0f0f;
+		touch-action: manipulation;
+		cursor: pointer;
+		font-weight: 700
+	}
+
+		.clipboard a:hover {
+			color: #468c02
+		}
+
+.actionButton {
+    height: 45px;
+    width: 200px;
+    background: #8fd14f;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: 0 !important;
+    border: 1px solid #5c5c5c !important;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    line-height: 1.42857143;
+    user-select: none;
+    text-decoration: none;
+    transition: opacity .2s ease-in
+}
+
+    .actionButton:hover {
+        opacity: .8;
+        text-decoration: none;
+        color: #fff
+    }
+
+.backgroundBlue {
+    background: #2d9bf0
+}
+
+.colorBlue {
+    color: #2d9bf0
+}
+
+
+.alert-danger {
+	background-color: #f30 !important
+}
+
+#alertMessage {
+	font-size: 20px;
+	font-weight: 200;
+	color: #fff;
+	margin-top: 10px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: none;
+}
+
+	#alertMessage a {
+		color: #fff;
+		text-decoration: underline !important;
+		font-weight: bold
+	}
+
+.alert {
+	position: relative;
+	padding: 1rem 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem
+}
+
+.fileInput {
+	opacity: 0;
+	position: absolute;
+	z-index: -1
+}
+
+.lds-roller {
+	display: none;
+	position: relative;
+	width: 150px;
+	height: 80px;
+  }
+  .lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #fff;
+	margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+	top: 63px;
+	left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+	top: 68px;
+	left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+	top: 71px;
+	left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+	top: 72px;
+	left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+	top: 71px;
+	left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+	top: 68px;
+	left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+	top: 63px;
+	left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+	top: 56px;
+	left: 12px;
+  }
+  @keyframes lds-roller {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .highlight {
+    border-radius: 0;
+    border: 1px solid #c2c2c2;
+  }
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<script src="/js/test.js"></script>
+
+<script>
+// const uploadUrl = 'https://localhost:5001/files';
+// const convertUrl = 'https://localhost:5001/conversion';
+
+const uploadUrl = 'https://api.products.aspose.app/svg/api/files';
+const convertUrl = 'https://api.products.aspose.app/svg/api/conversion';
+var pageSizeOptions = [
+    'Original',
+    'Letter',
+    'Tabloid',
+    'Legal',
+    'Statement',
+    'Executive',
+    'A3',
+    'A4',
+    'A5',
+    'B4(JIS)',
+    'B5(JIS)',
+  ];
+
+function run(){
+
+    showLoader();
+    const data = document.querySelector('[name=fileupload]').files[0];
+
+    const xrs = new XMLHttpRequest();
+    let e = document.getElementById("selectOutputFormat");
+    let outputFormat = e.options[e.selectedIndex].text;
+    let inputFormat = document.getElementById("inputFormat").value;
+
+    xrs.onload = () => {
+        if(xrs.status == 200){
+            let params = JSON.stringify({
+                'Files': JSON.parse(xrs.response),
+                'InputFormat': inputFormat,
+                'OutputFormat': outputFormat,
+                'PageSize': 'original',
+                'BackgroundColor': '#ffffff'
+            });
+            convert(params);
+        } else {
+            processError("Conversion faulted");
+        }
+    };
+    xrs.onerror = () =>{
+        processError("Unable upload file.");
+    };
+
+    let formData = new FormData();
+    formData.append("file", data);
+    xrs.open("POST", uploadUrl);
+    xrs.send(formData);
+}
+
+
+function convert(params){
+    const xrs = new XMLHttpRequest();
+    xrs.open("POST", convertUrl);
+    xrs.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xrs.send(params);
+
+    xrs.onload = () => {
+        if(xrs.status == 200){
+            let res = JSON.parse(xrs.response);
+            let id = res.id;
+            switch (res.status) {
+                case "running":
+                case "pending":
+                    setTimeout(function () {
+                        checkStatus(id);
+                    }, 3000);
+                    break;
+                case 'completed':
+                    downloadResult(res.file.hRef);
+                    break;
+                default:
+                    ProcessError("Conversion faulted");
+            }
+        } else {
+            ProcessError("Conversion faulted");
+        }
+    };
+    xrs.onerror = () =>{
+        processError("Conversion faulted");
+    };
+}
+
+function checkStatus(id) {
+    const xrs = new XMLHttpRequest();
+    xrs.open("GET", convertUrl + "?id=" + id);
+    xrs.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xrs.send();
+
+    xrs.onload = () => {
+        if (xrs.status == 200) {
+            let res = JSON.parse(xrs.response);
+            switch (res.status) {
+                case "running":
+                case "pending":
+                    setTimeout(function () {
+                        checkStatus(id);
+                    }, 3000);
+                    break;
+                case 'completed':
+                    downloadResult(res.file.hRef);
+                    break;
+                default:
+                    processError("Conversion faulted");
+            }
+        } else {
+            processError("Error");
+        }
+    };
+
+    xrs.onerror = () =>{
+        processError("Conversion faulted");
+    };
+}
+
+function downloadResult(f){
+    let link = document.createElement("a");
+    let name = 'output.pdf';
+    link.setAttribute('download', name);
+    link.href = uploadUrl + '?uri=' + f;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    hideLoader();
+}
+
+function processError(err){
+    console.log(err);
+    hideLoader();
+
+    document.getElementById("alertMessage").style.display = 'block';
+    setTimeout(function () {
+        document.getElementById("alertMessage").style.display = 'none';
+    }, 3000);
+}
+
+
+function showLoader(){
+    document.body.style.cursor = 'wait'; 
+    document.getElementById("roller").style.display = 'inline-block';
+    let runBtn = document.getElementById('runCodeButton');
+    let select = document.getElementById('selectOutputFormat');
+    document.getElementById('fileInput').disabled = true;;
+    runBtn.classList.add('disabled');
+    select.classList.add('disabled');
+}
+
+function hideLoader(){
+    document.body.style.cursor = 'auto';
+    document.getElementById("roller").style.display = 'none';
+    let runBtn = document.getElementById('runCodeButton');
+    let select = document.getElementById('selectOutputFormat');
+    document.getElementById('fileInput').disabled = false;
+    runBtn.classList.remove('disabled');
+    select.classList.remove('disabled');
+}
+
+</script>
+
+{{ $inputFormat := first 1 .Params }}
+{{ $formats :=  after 1 .Params }}
+<p id="alertMessage" class="alert alert-danger" role="alert">Error conversion.</p>
+<div class="panelContainer">
+    <div class="parametersblock">
+        <div class="h3">
+            Code example in C# to convert document formats
+        </div>
+        <div class="parametersBox">
+            <div class="row pt-3">
+                <div class="col-2 description">
+                    Input file
+                </div>
+                <div class="col action">
+                    <form id="fileInputContainer">
+                        {{ $accept := index $inputFormat 0 }}
+                        <input type="file" class="fileInput" id="fileInput" name="fileupload" accept=".{{ lower $accept }}">
+                        <label class="actionButton backgroundBlue" for="fileInput">Upload a file</label>
+                    </form>
+                </div>
+
+                <div class="col description">
+                    <span id="fileName">Upload a file you want to convert</span>
+                </div>
+                
+                <div class="col action" style="text-align: right;">
+                    <a class="actionButton disabled" type="button" id="runCodeButton" onclick="run()">Run code</a>
+                </div>
+
+            </div>
+
+<script>
+    const fileInput = document.getElementById('fileInput');
+    fileInput.onchange = () => {
+    const selectedFile = fileInput.files[0];
+    if(selectedFile && selectedFile.name != ""){
+        let input = document.getElementById('fileName');
+        let runBtn = document.getElementById('runCodeButton');
+        input.innerText = selectedFile.name;
+        runBtn.classList.remove('disabled');
+    }
+
+    function copyCode(){
+        hljs.copyCode();
+    }
+}
+</script>
+            <div class="row pb-3">
+                <div class="col-2 description">
+                    Output format
+                </div>
+                <div class="col action">
+                    <input type="hidden" id="inputFormat" value="{{index $inputFormat 0}}" />
+                    <select class="actionButton backgroundBlue" id="selectOutputFormat">
+                        {{range $formats}}
+                            <option value={{.}}>{{.}}</option>
+                        {{end}}
+                    </select>
+
+                </div>
+                <div class="col description">
+                    Select the target format
+                </div>
+                <div class="col action">
+                    <div class="lds-roller" id="roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+            <div class="rowLine"></div>
+        </div>
+    </div>
+    <div class="codeblock">
+        <div class="highlight" style="margin: 0;">
+        <pre class="codeBox"><code id="snippet" class="cs hljs">
+            {{ .Inner }}
+        </code></pre>
+        
+        </div>
+        <div class="h3">
+            &ensp;&ensp;
+            <div class="clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                </svg>
+                <a class="copyCodeButton" href="javascript:void(0)" onclick="copyCode()">Copy C# code to the clipboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var code = document.getElementById('snippet').textContent;
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('div div div pre code').forEach((el) => {
+        hljs.highlightElement(el);
+        });
+    });
+
+  function copyCode(){
+      navigator.clipboard.writeText(code);
+  }
+</script>
+
