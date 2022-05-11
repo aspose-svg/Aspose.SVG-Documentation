@@ -20,20 +20,6 @@ You can try our free online <a href="https://products.aspose.app/svg/conversion/
 
 <a href="https://products.aspose.app/svg/conversion/svg-to-jpg" target="_blank">![Text "Banner SVG to JPG Converter"](svg-to-jpg.png#center)</a>
 
-### **Free App**
-You can convert SVG to images with Aspose.SVG API in real time. First, load an SVG file from your local drive and then run the example. In this example, the save options are set by default. You will immediately receive the result as a separate image file.
-
-{{< svg-converter SVG JPG PNG BMP GIF TIFF  >}}
-using Aspose.Html.Dom.Svg;
-using Aspose.Html.Converters;
-using Aspose.Html.Saving;
-using Aspose.Svg.Rendering.Image;
-
-   using var document = new SVGDocument("input.svg");
-   var options = new ImageSaveOptions(ImageFormat.Jpeg);
-   Converter.ConvertSVG(document, options, "output.jpg");    
-{{< /svg-converter >}}
-
 ## **Convert SVG to JPG** 
  JPG is one of the most commonly used image formats. Its uniqueness is the controlled quality loss during compression. So it is widely used for storing and sending over the web graphic digital content (photos, scanned copies, digitized pictures). With Aspose.SVG, you can convert SVG to JPG, SVG to PNG, SVG to BMP, SVG to GIF or SVG to TIFF format programmatically with full control over a wide range of conversion parameters.
 
