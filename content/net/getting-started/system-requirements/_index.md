@@ -50,21 +50,29 @@ You can use Aspose.SVG for .NET to develop applications in any development envir
 - Microsoft Visual Studio 2017
 - Microsoft Visual Studio 2019
 
-## **Supported .NET Framework Versions**
+## **Supported Frameworks**
+Aspose.SVG for .NET provides assemblies compiled for the following frameworks:
+**.NET Framework**|**.NET Standard**
+--|--
+.NET Framework 2.0|.NET Standard 2.0
+.NET Framework 3.5
+.NET Framework 3.5_ClientProfile
+.NET Framework 4.0
+.NET Framework 4.0_ClientProfile
 
-The following .NET Framework versions are supported:
+Therefore it is compatible with:
 
-- .NET Framework 4.0
-- .NET Framework 4.0_ClientProfile
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.5.2
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.7
-- .NET Framework 4.7.2
-- .NET Standard 2.0 (.NET Core 2.0/2.1)
+**.NET Framework**|**.NET Standard**|**.NET Core**|**.NET**
+--|--|--|--
+.NET Framework 2.0|.NET Standard 2.0|.NET Core 2.0|.NET 5.0
+.NET Framework 3.5|.NET Standard 2.1|.NET Core 2.1
+.NET Framework 3.5_ClientProfile
+.NET Framework 4.0
+.NET Framework 4.0_ClientProfile
+.NET Framework 4.5.0
+.NET Framework 4.5.1
+.NET Framework 4.5.2
+.NET Framework 4.6.0
+.NET Framework 4.6.2
+.NET Framework 4.7
+.NET Framework 4.7.2
