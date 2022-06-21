@@ -12,7 +12,7 @@ This page contains release notes information for Aspose.SVG for .NET 22.5
 
 ## **Major Features**
 
-As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the April release of Aspose.SVG for .NET:
+As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the May release of Aspose.SVG for .NET:
 
 * it was fixed the issue that caused pagination to hang on SVG documents with elements that had an infinite or very large height;
 
