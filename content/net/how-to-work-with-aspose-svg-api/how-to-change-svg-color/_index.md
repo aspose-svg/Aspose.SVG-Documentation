@@ -25,11 +25,11 @@ Filling and stroking are both operations for SVG elements colorizing. All graphi
 
 Aspose.SVG API allows you to change color of various SVG elements in an SVG document.  First, you would load an existing SVG document and then, you can change color of required SVG element:
 
-1. Use one of the [SVGDocument()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors of the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument)  class to load an existing SVG document.  
+1. Use one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors of the [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument)  class to load an existing SVG document.  
 
-2. Use the [QuerySelector(`selector`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector)  to find the desired element in the SVG document. The QuerySelector(`selector`) method of the Element class allows you to get the first element within the document that matches the specified selector. With the resulting elements, you can make various manipulations: change its attributes, CSS styles, and so on.
+2. Use the [QuerySelector(`selector`)](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/queryselector)  to find the desired element in the SVG document. The QuerySelector(`selector`) method of the Element class allows you to get the first element within the document that matches the specified selector. With the resulting elements, you can make various manipulations: change its attributes, CSS styles, and so on.
 
-3. Use the  [SetAttribute `(name, value)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class to specify element attributes "fill" or "stroke".
+3. Use the  [SetAttribute `(name, value)`](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method of the [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element) class to specify element attributes "fill" or "stroke".
 
 ### **Circle Color**
 

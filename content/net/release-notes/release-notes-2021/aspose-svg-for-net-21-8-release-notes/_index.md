@@ -22,12 +22,12 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 
 ### **Added APIs:**
 
-A new option was added to [PdfRenderingOptions](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class:
+A new option was added to [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class:
 
-- [DocumentInfo](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/properties/documentinfo);
+- [DocumentInfo](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/properties/documentinfo);
 
 
-A new class [PdfDocumentInfo](https://apireference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdocumentinfo) was added.
+A new class [PdfDocumentInfo](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdocumentinfo) was added.
 
 ### **Changed APIs:**
 

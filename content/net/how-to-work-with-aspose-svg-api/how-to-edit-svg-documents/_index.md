@@ -23,11 +23,11 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 Aspose.SVG API allows you to add various elements to a document.  First, you would create a new element or node; then, you can add the element to the document.
 
-1. You can use the [CreateElementNS`(namespaceURI, qualifiedName)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/methods/createelementns) method of the [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument)  class to create an instance of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class - the required element of the given qualified name and namespace URI. The `namespaceURI` sets the reference to [W3C SVG](http://www.w3.org/2000/svg) specification. The `qualifiedName` must contain the string tag name of the element. Remember, you must use casting the type (explicit conversion) to get the corresponding element.
+1. You can use the [CreateElementNS`(namespaceURI, qualifiedName)`](https://reference.aspose.com/svg/net/aspose.svg.dom/document/methods/createelementns) method of the [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument)  class to create an instance of the [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element) class - the required element of the given qualified name and namespace URI. The `namespaceURI` sets the reference to [W3C SVG](http://www.w3.org/2000/svg) specification. The `qualifiedName` must contain the string tag name of the element. Remember, you must use casting the type (explicit conversion) to get the corresponding element.
 
-2. To add an element to the SVG document, API provides the [InsertBefore`(node, child)` ](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/insertbefore)method of the [Node](https://apireference.aspose.com/svg/net/aspose.svg.dom/node) class, which inserts the `node` before the existing child node or at the end of the list of children if the `child` is null.  
+2. To add an element to the SVG document, API provides the [InsertBefore`(node, child)` ](https://reference.aspose.com/svg/net/aspose.svg.dom/node/methods/insertbefore)method of the [Node](https://reference.aspose.com/svg/net/aspose.svg.dom/node) class, which inserts the `node` before the existing child node or at the end of the list of children if the `child` is null.  
 
-The  [`RootElement`](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/properties/rootelement)  property of the  [SVGDocument](https://apireference.aspose.com/net/svg/aspose.svg/svgdocument)  class points to the root `<svg>` element of the document.  The following code snippet illustrates how you can create and add  `<g>` element as the first child in the SVG document.
+The  [`RootElement`](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/properties/rootelement)  property of the  [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument)  class points to the root `<svg>` element of the document.  The following code snippet illustrates how you can create and add  `<g>` element as the first child in the SVG document.
 
 ```c#
     var svgElement = document.RootElement;
@@ -35,7 +35,7 @@ The  [`RootElement`](https://apireference.aspose.com/svg/net/aspose.svg/svgdocum
     svgElement.InsertBefore(gElement, svgElement.FirstChild);
 ```
 
-We can specify element attributes and their values using the [SetAttribute `(name, value)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute), [GetAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/getattribute), [HasAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/hasattribute), [RemoveAttribute `(name)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/removeattribute) methods of the [Element](https://apireference.aspose.com/svg/net/aspose.svg.dom/element) class.
+We can specify element attributes and their values using the [SetAttribute `(name, value)`](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute), [GetAttribute `(name)`](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/getattribute), [HasAttribute `(name)`](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/hasattribute), [RemoveAttribute `(name)`](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/removeattribute) methods of the [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element) class.
 
 For example, if you create a group of graphic elements and put them into the `<g>` element, you can set common parameters:
 ```c#
@@ -50,14 +50,14 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 ## **How to add Basic Shapes to an SVG Document**
 
-The basic SVG shapes can be created using the [CreateElementNS`(namespaceURI, qualifiedName)`](https://apireference.aspose.com/svg/net/aspose.svg.dom/document/methods/createelementns)  method. The `qualifiedName` must contain the string tag name of the SVG graphic element.
+The basic SVG shapes can be created using the [CreateElementNS`(namespaceURI, qualifiedName)`](https://reference.aspose.com/svg/net/aspose.svg.dom/document/methods/createelementns)  method. The `qualifiedName` must contain the string tag name of the SVG graphic element.
 
 This way you can create SVG circles (SVGCircleElement class, qualifiedName = "circle"), ellipses (SVGEllipseElement class, qualifiedName = "ellipse"), rectangles (SVGRectElement class, qualifiedName = "rect"), lines (SVGLineElement class, qualifiedName = "line"),  polylines (SVGPolylineElement class, qualifiedName = "polyline"),  polygons (SVGPolygonElement class, qualifiedName = "polygon") and Bezier curves (SVGPathElement class, qualifiedName = "path").
 
 ### **SVG Circle**
 
 Each graphic element has its own specific attributes (properties), through which you can control its parameters and characteristics.
-**Cx, Cy, R**  are circle properties of the [SVGAnimatedLength](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`.
+**Cx, Cy, R**  are circle properties of the [SVGAnimatedLength](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`.
 
 The following code snippet shows how to create an SVG circle and add it into the `<svg>` element of the existing SVG file:
 ```c#
@@ -97,7 +97,7 @@ using Aspose.Svg.Paths;
 The ellipse (**Cx, Cy, Rx, Ry**), the rectangle (**X, Y, Width, Height, Rx, Ry**) and the line (**X1, Y1, X2, Y2**) have their own attributes that may be set similarly. 
 
 ### **SVG Polyline**
-The [SVGPolygonElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpolygonelement) and [SVGPolylineElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpolylineelement) have the `Points` property of the  [SVGPointList](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svgpointlist) type, which provides access to the basic content of the **points** attribute,  which uniquely matches the SVG syntax.
+The [SVGPolygonElement](https://reference.aspose.com/svg/net/aspose.svg/svgpolygonelement) and [SVGPolylineElement](https://reference.aspose.com/svg/net/aspose.svg/svgpolylineelement) have the `Points` property of the  [SVGPointList](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svgpointlist) type, which provides access to the basic content of the **points** attribute,  which uniquely matches the SVG syntax.
 
 A simple example of SVG polyline creating is illustrated in the following code snippet:
 ```c# 
@@ -126,11 +126,11 @@ A simple example of SVG polyline creating is illustrated in the following code s
 	svgElement.AppendChild(polylineElement);
 ```
 
-The [CreateSVGPoint() ](https://apireference.aspose.com/svg/net/aspose.svg/svgsvgelement/methods/createsvgpoint) method produces an instance of the [SVGPoint](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svgpoint) class, in which you can set the `X` and` Y` values through the same name properties. The default object is initialized to point (0,0) in the custom coordinate system.
+The [CreateSVGPoint() ](https://reference.aspose.com/svg/net/aspose.svg/svgsvgelement/methods/createsvgpoint) method produces an instance of the [SVGPoint](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svgpoint) class, in which you can set the `X` and` Y` values through the same name properties. The default object is initialized to point (0,0) in the custom coordinate system.
 
-The [AppendItem(`T newItem`)  ](https://apireference.aspose.com/svg/net/aspose.svg.collections.svglistbase/1/methods/appenditem)method inserts a new point at the end of the list.  Straight lines connect these points in the list and make a polyline or polygon - a plane geometric shape formed by a closed polyline.
+The [AppendItem(`T newItem`)  ](https://reference.aspose.com/svg/net/aspose.svg.collections.svglistbase/1/methods/appenditem)method inserts a new point at the end of the list.  Straight lines connect these points in the list and make a polyline or polygon - a plane geometric shape formed by a closed polyline.
 
-The [AppendChild(`node`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) method adds the  new child to the end of the list of children of this node.  The code snippet shows that the `stroke`, `stroke-width`, and `fill` attributes are specified, and the `polylineElement` is inserted in the `<svg>` element as the last child.
+The [AppendChild(`node`)](https://reference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) method adds the  new child to the end of the list of children of this node.  The code snippet shows that the `stroke`, `stroke-width`, and `fill` attributes are specified, and the `polylineElement` is inserted in the `<svg>` element as the last child.
 
 Consider an example of editing an existing SVG file [basic-shapes.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/basic-shapes.svg): we will add the circle and polyline described above and change the stroke properties for all circles and ellipses. The following code snippet shows how to find all circles and ellipses in an `<svg>` element and replace their stroke properties:
 
@@ -151,9 +151,9 @@ The figure shows the visualization of the original SVG file  [basic-shapes.svg](
 
 ### **SVG Path**
 
-To create an SVG path using the Aspose.SVG API, you need to create an instance of the [SVGPathElement](https://apireference.aspose.com/svg/net/aspose.svg/svgpathelement) class using the CreateElementNS(`namespaceURI, qualifiedName`) method.
+To create an SVG path using the Aspose.SVG API, you need to create an instance of the [SVGPathElement](https://reference.aspose.com/svg/net/aspose.svg/svgpathelement) class using the CreateElementNS(`namespaceURI, qualifiedName`) method.
 
-The methods [CreateSVGPathSegMovetoAbs ( `x, y`)](https://apireference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegmovetoabs), [CreateSVGPathSegCurvetoQuadraticAbs (`x, y, x1, y1`)](https://apireference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegcurvetoquadraticabs) and [CreateSVGPathSegCurvetoQuadraticSmoothAbs (`x, y`)](https://apireference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegcurvetoquadraticsmoothabs) take parameters of path data commands **M, C**, and **T** as their own parameters. The [`PathSegList`](https://apireference.aspose.com/svg/net/aspose.svg.paths/isvganimatedpathdata/properties/pathseglist) property of the SVGPathSegList type provides access to the content of **d** attribute, in the form of path segments list, that matches the SVG syntax (details are in the article [**SVG Path Data**](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/)).
+The methods [CreateSVGPathSegMovetoAbs ( `x, y`)](https://reference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegmovetoabs), [CreateSVGPathSegCurvetoQuadraticAbs (`x, y, x1, y1`)](https://reference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegcurvetoquadraticabs) and [CreateSVGPathSegCurvetoQuadraticSmoothAbs (`x, y`)](https://reference.aspose.com/svg/net/aspose.svg/svgpathelement/methods/createsvgpathsegcurvetoquadraticsmoothabs) take parameters of path data commands **M, C**, and **T** as their own parameters. The [`PathSegList`](https://reference.aspose.com/svg/net/aspose.svg.paths/isvganimatedpathdata/properties/pathseglist) property of the SVGPathSegList type provides access to the content of **d** attribute, in the form of path segments list, that matches the SVG syntax (details are in the article [**SVG Path Data**](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/)).
 
 The following code snippet shows how to create the SVG path and add it into `<svg>` element:
 
@@ -182,7 +182,7 @@ The following code snippet shows how to create the SVG path and add it into `<sv
 	svgElement.InsertBefore(pathElement, svgElement.FirstChild);
 ```
 
-You can use such itemised and thorough code in terms of the DOM, programming, working with the document, and navigating the file. Using the [SetAttribute()](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method, you can write the code on a single line for the SVG path data **d** setting.
+You can use such itemised and thorough code in terms of the DOM, programming, working with the document, and navigating the file. Using the [SetAttribute()](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method, you can write the code on a single line for the SVG path data **d** setting.
 
 In the following example,  we use  the one-line code to create the same path (original SVG path). Moreover, we will edit the parameters of the moveto(x,y) **M** and **T**(x,y)  commands in the original path to receiving a new one.
 
@@ -239,7 +239,7 @@ The figure illustrates the original (black) and modified (red) paths. You can vi
 ![Original and edited paths](svg-path-data.png#center)
 
 ##  **Applying SVG Filters to Bitmaps**
-Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [SvgImageElement](https://apireference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the [AppendChild (`node`) ](https://apireference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) method.  Using a `filter` attribute of `imageElement` referring to the url name of `filterElement` allows applying SVG filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[SVG Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** article.
+Consider examples of SVG filters applying to bitmaps. Aspose.SVG API gives you to create an instance of the [SvgImageElement](https://reference.aspose.com/svg/net/aspose.svg/svgimageelement) class and set attributes specifying its position. To add an `imageElement` to  `svgElement`, you can use the [AppendChild (`node`) ](https://reference.aspose.com/svg/net/aspose.svg.dom/node/methods/appendchild) method.  Using a `filter` attribute of `imageElement` referring to the url name of `filterElement` allows applying SVG filter effect to the image. For more information about filter primitives, see the [W3 SVG](https://drafts.fxtf.org/filter-effects/) page and the **[SVG Filters and Gradients](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/)** article.
 
 {{% alert color="primary" %}}
 Aspose.SVG offers a Free Online tool for applying <a href="https://products.aspose.app/svg/photo-effects" target="_blank">**Photo Effects based on SVG Filters**</a>. The application lets you use a wide range of Photo Effects such as Gaussian Blur, Drop Shadow Effect, SVG Light Effects, Color Filters, etc. Customize your photo online to make it original!
@@ -252,7 +252,7 @@ Gaussian blur effect reduces image noise and minor details. The `<feGaussianBlur
 
 According to SVG syntax, the `<filter>` element should be located into a `<defs>` element and the `<feGaussianBlur>` filter primitive is only inside the `<filter>` element. Therefore, for SVG filter programming, you should first to create the `<defs>` and `<filter>` elements.
 
-One option for setting the values of the attribute is to use the [SetAttribute (`name, value`)](https://apireference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method.  Another way is to take SVG DOM dot-accessor methods using properties of the [SVGAnimatedLength](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength/properties/index) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`. To specify the units, you need to use the [ConvertToSpecifiedUnits (`unitType`)](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svglength/methods/converttospecifiedunits) method of the [SVGLength](https://apireference.aspose.com/svg/net/aspose.svg.datatypes/svglength) class.
+One option for setting the values of the attribute is to use the [SetAttribute (`name, value`)](https://reference.aspose.com/svg/net/aspose.svg.dom/element/methods/setattribute) method.  Another way is to take SVG DOM dot-accessor methods using properties of the [SVGAnimatedLength](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svganimatedlength/properties/index) type, the static data for which can be set or read through the construction: `element.X.BaseVal.Value`. To specify the units, you need to use the [ConvertToSpecifiedUnits (`unitType`)](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svglength/methods/converttospecifiedunits) method of the [SVGLength](https://reference.aspose.com/svg/net/aspose.svg.datatypes/svglength) class.
 
  After you make an SVG filter and set a `filterElement.Id`, you can apply it to the image. Here is an example that illustrates Gaussian Blur effect implementation:
 
@@ -375,7 +375,7 @@ The resulting image looks like this ([drop-shadow-effect.svg](/svg/net/how-to-wo
 
 ![A drop shadow effect is applied to the text "Aspose.SVG API"](drop-shadow-effect.png#center)
 
- Aspose.SVG API lets you create various SVG filter effects using the classes and interfaces related to the [Aspose.Svg.Dom.Svg.Filters](https://apireference.aspose.com/svg/net/aspose.svg.filters) namespace.
+ Aspose.SVG API lets you create various SVG filter effects using the classes and interfaces related to the [Aspose.Svg.Dom.Svg.Filters](https://reference.aspose.com/svg/net/aspose.svg.filters) namespace.
 
 ## **SVG Drawing on Existing Bitmap**
 

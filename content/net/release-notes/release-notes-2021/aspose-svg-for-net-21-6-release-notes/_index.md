@@ -23,18 +23,18 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 
 ### **Added APIs:**
 
-Two new options were added to [ResourceHandlingOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions) class:
+Two new options were added to [ResourceHandlingOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions) class:
 
-- [PageUrlRestriction](https://apireference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions/properties/pageurlrestriction);
-- [ResourceUrlRestriction](https://apireference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions/properties/resourceurlrestriction).
+- [PageUrlRestriction](https://reference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions/properties/pageurlrestriction);
+- [ResourceUrlRestriction](https://reference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions/properties/resourceurlrestriction).
 
-A new method [Dispose](https://apireference.aspose.com/svg/net/aspose.svg.dom/eventtarget/methods/dispose) was added to class [SVGGeometryElement](https://apireference.aspose.com/svg/net/aspose.svg/svggeometryelement).
+A new method [Dispose](https://reference.aspose.com/svg/net/aspose.svg.dom/eventtarget/methods/dispose) was added to class [SVGGeometryElement](https://reference.aspose.com/svg/net/aspose.svg/svggeometryelement).
 
 ### **Changed APIs:**
 
 No Changes
 
 ### **Removed APIs:**
-- the obsolete property AdjustToWidestPage was removed from [PageSetup](https://apireference.aspose.com/svg/net/aspose.svg.rendering/pagesetup) class;
-- the property UrlRestriction was removed from [ResourceHandlingOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions) class.
+- the obsolete property AdjustToWidestPage was removed from [PageSetup](https://reference.aspose.com/svg/net/aspose.svg.rendering/pagesetup) class;
+- the property UrlRestriction was removed from [ResourceHandlingOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/resourcehandlingoptions) class.
     
