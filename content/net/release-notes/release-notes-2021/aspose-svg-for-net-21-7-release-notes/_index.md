@@ -23,7 +23,7 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 
 ### **Added APIs:**
 
-A new field 'Ignore' was added to [ResourceHandling](https://apireference.aspose.com/svg/net/aspose.svg.saving/resourcehandling) enumeration.
+A new field 'Ignore' was added to [ResourceHandling](https://reference.aspose.com/svg/net/aspose.svg.saving/resourcehandling) enumeration.
 
 ### **Changed APIs:**
 

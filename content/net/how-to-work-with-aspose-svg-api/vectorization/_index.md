@@ -18,9 +18,9 @@ In this section, under vectorization, we mean the process of replacing bitmaps o
 
 [Image Vectorization Workflow](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-workflow/) - You will find image vectorization info, a description of the image vectorization process and vectorization options, learn how to vectorize raster images such as PNG, JPG, BMP, TIFF, GIF, ICO into an SVG document.
 
-[Image Vectorization Examples](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-examples/) - You will consider a few C# examples that demonstrate the [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on the vectorization result.
+[Image Vectorization Examples](/svg/net/how-to-work-with-aspose-svg-api/image-vectorization-examples/) - You will consider a few C# examples that demonstrate the [ImageVectorization](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization) functionalities and the effect of configuration properties on the vectorization result.
 
-[Text Vectorization](/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/) - This article explains how to convert SVG text to vector using the [VectorizeText](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the SVGSaveOptions class.
+[Text Vectorization](/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/) - This article explains how to convert SVG text to vector using the [VectorizeText](https://reference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the SVGSaveOptions class.
 
  {{% /alert %}} 
 
@@ -28,7 +28,7 @@ In this section, under vectorization, we mean the process of replacing bitmaps o
 
 There are two ways to represent a two-dimensional image, raster and vector graphics. In raster formats image represents a two-dimensional grid of pixels. This is great for storing pictures and photos, but scaling such images usually leads to quality loss - it becomes blurry and pixelated. In vector graphics, an image is constructed from elements described by mathematical curves, splines, paths and lines. Vector images are constructed and stored as a set of commands, numbers, formulas, not in a pixel grid as in bitmaps. As a result, it is possible to transform such images without quality loss.  The process of image conversion from raster to vector is called image vectorization.
 
-Converting an image to vector is very easy using Aspose.SVG API. The [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes classes and  interfaces for implementing the image vectorization process. The following code snippet demonstrates the use of the [ImageVectorizer](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizer) class for image vectorization:
+Converting an image to vector is very easy using Aspose.SVG API. The [ImageVectorization](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes classes and  interfaces for implementing the image vectorization process. The following code snippet demonstrates the use of the [ImageVectorizer](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizer) class for image vectorization:
 
 ```c#
 using System.IO;

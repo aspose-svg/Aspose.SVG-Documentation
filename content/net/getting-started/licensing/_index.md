@@ -79,6 +79,6 @@ The following code snippet is used to set the license.
 
 Aspose.SVG for .NET API allows developers to apply the metered license. It is a new licensing mechanism. The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](http://www.aspose.com/corporate/purchase/policies/Licensing-Faqs/metered-faq.aspx) section.
 
-A new class [Metered](https://apireference.aspose.com/svg/net/aspose.svg/metered) has been added to apply the metered key. This code example demonstrates how to set metered public and private keys:
+A new class [Metered](https://reference.aspose.com/svg/net/aspose.svg/metered) has been added to apply the metered key. This code example demonstrates how to set metered public and private keys:
 
 {{< gist "aspose-com-gists" "0420a5530f73658aebea7f98ea4d705f" "Examples-CSharp-GettingStarted-LoadLicense-ApplyMeteredLicense.cs" >}}
