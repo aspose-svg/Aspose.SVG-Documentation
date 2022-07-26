@@ -21,6 +21,18 @@ How to add new SVG elements and set their color properties, we covered in detail
 
 ## **Change Color of SVG Element**
 
+{{< app/svg/color input="CMYK" output="HEX">}}
+// Parse CMYK color from a string
+var color = ColorConverter.ConvertFrom("cmyk(82%, 59%, 0%, 15%)");
+
+// Convert CMYK to HEX 
+string hexColor = color.ToHexString();
+
+// Print the result into console
+Console.WriteLine(hexColor);
+//result should be: #2759D9
+{{< /app/svg/color>}}
+
 Filling and stroking are both operations for SVG elements colorizing. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and the stroke is painting along its outline. The SVG **stroke** and SVG **fill** are some of the main CSS properties that can be set for any lines, text and shapes. For more information on style attributes' properties, please see the article [**Fills and Strokes in SVG**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/).
 
 Aspose.SVG API allows you to change color of various SVG elements in an SVG document.  First, you would load an existing SVG document and then, you can change color of required SVG element:
