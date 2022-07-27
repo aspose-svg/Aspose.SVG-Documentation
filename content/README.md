@@ -56,5 +56,5 @@ Any operating system that can install Mono (.NET 4.0 Framework support) or use .
 
 
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/svg/net) | [Docs](https://docs.aspose.com/svg/net/) | [API Reference](https://apireference.aspose.com/svg/net) | [Tests](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/master/tests-net) | [Blog](https://blog.aspose.com/category/svg/) | [Free Support](https://forum.aspose.com/c/svg) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/svg/net) | [Docs](https://docs.aspose.com/svg/net/) | [API Reference](https://reference.aspose.com/svg/net) | [Tests](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/master/tests-net) | [Blog](https://blog.aspose.com/category/svg/) | [Free Support](https://forum.aspose.com/c/svg) |  [Temporary License](https://purchase.aspose.com/temporary-license)
 

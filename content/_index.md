@@ -25,7 +25,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.SVG for .NET Release Notes](/svg/net/release-notes/)
 - [Aspose.SVG for .NET Product Page](https://products.aspose.com/svg/net)
 - [Install Aspose.SVG for .NET NuGet Package](https://www.nuget.org/packages/Aspose.SVG/)
-- [Aspose.SVG for .NET API Reference Guide](https://apireference.aspose.com/net/svg)
+- [Aspose.SVG for .NET API Reference Guide](https://reference.aspose.com/net/svg)
 - [Download Examples at GitHub Repository](https://github.com/aspose-svg/Aspose.SVG-for-.NET)
 - [Aspose.SVG for .NET Free Support Forum](https://github.com/aspose-svg/Aspose.SVG-for-.NET)
 - [Aspose.SVG for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)

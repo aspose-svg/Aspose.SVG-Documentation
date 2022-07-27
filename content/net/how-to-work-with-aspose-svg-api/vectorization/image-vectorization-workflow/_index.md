@@ -43,9 +43,9 @@ When the image is huge or contains a lot of small same colored spots or pixels, 
 
 **Contour tracing**. Contour tracing or boundary tracing is a technique that is applied to digital images to extract their boundary or boundaries for non-monochrome images. There are several such techniques like Suzuki-Abe, Moore-neighbor, Square Tracing Algorithm, Theo Pavlidis' Algorithm, etc... Unfortunately, those algorithms work with monochrome images and do in a non-optimal way with multi-color images. So we have developed a new contour tracking algorithm that works quickly and accurately with multi-color images and significantly reduces the number of contours.
 
-**Trace smoothing** (this step is optional). Sometimes fragments of contours look like sawtooth waves because the resolution of the vectorized images is not high enough, or there is noise in the image. For smoothing, these curves can be used many approaches like Local linear regression, Local polynomial regression, Gaussian kernel, etc... We found that perfect results can be achieved with the help of the Nearest Neighbor approach, which was implemented in the [ImageTraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother) class. 
+**Trace smoothing** (this step is optional). Sometimes fragments of contours look like sawtooth waves because the resolution of the vectorized images is not high enough, or there is noise in the image. For smoothing, these curves can be used many approaches like Local linear regression, Local polynomial regression, Gaussian kernel, etc... We found that perfect results can be achieved with the help of the Nearest Neighbor approach, which was implemented in the [ImageTraceSmoother](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagetracesmoother) class. 
 
-**Trace simplification** (optional). At this step is needed to decimate the trace curve composed of line segments to a similar curve with fewer points. There are different algorithms like Ramer–Douglas–Peucker, Visvalingam–Whyatt, Reumann–Witkam, etc.. that can be used to solve this task. We implemented the Ramer–Douglas–Peucker approach in the class ImageTraceSimplifier because it showed a better result than others in our experiments, but we declared the [IImageTraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesimplifier) interface for implementing any other approaches.
+**Trace simplification** (optional). At this step is needed to decimate the trace curve composed of line segments to a similar curve with fewer points. There are different algorithms like Ramer–Douglas–Peucker, Visvalingam–Whyatt, Reumann–Witkam, etc.. that can be used to solve this task. We implemented the Ramer–Douglas–Peucker approach in the class ImageTraceSimplifier because it showed a better result than others in our experiments, but we declared the [IImageTraceSimplifier](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesimplifier) interface for implementing any other approaches.
 
 **Building SVG path elements from the traces**. The final step is to convert the tracing points to SVG path lines and Bezier curves and add them to the SVG document. To fit the curves going through each tracing point, we use a Catmull-Roma spline, which is converted to Bezier curves.
 
@@ -55,22 +55,22 @@ You can convert a raster image to vector graphic using default or custom configu
 
 | Property                                                     | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [ColorsLimit](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/colorslimit) | This property gets or sets the maximum number of colors used to quantize an image. The default value is 25. |
-| [ ImageSizeLimit](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/imagesizelimit) | Gets or sets maximal dimension of an image determined by multiplication image width and height. The size of the image will be scaled based on this property. The default value is 1800000. |
-| [ PathBuilder](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/pathbuilder) | This property sets the SVG path segments builder and affects how sharply the curve bends at the control points. |
-| [TraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) | The property sets the trace simplified. As a result, the trace curve will be built composed of line segments with fewer (or bigger) points. |
-| [TraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesmoother) | This property sets the trace smoother. It is used to smooth out fragments of contours. |
+| [ColorsLimit](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/colorslimit) | This property gets or sets the maximum number of colors used to quantize an image. The default value is 25. |
+| [ ImageSizeLimit](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/imagesizelimit) | Gets or sets maximal dimension of an image determined by multiplication image width and height. The size of the image will be scaled based on this property. The default value is 1800000. |
+| [ PathBuilder](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/pathbuilder) | This property sets the SVG path segments builder and affects how sharply the curve bends at the control points. |
+| [TraceSimplifier](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesimplifier) | The property sets the trace simplified. As a result, the trace curve will be built composed of line segments with fewer (or bigger) points. |
+| [TraceSmoother](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizerconfiguration/properties/tracesmoother) | This property sets the trace smoother. It is used to smooth out fragments of contours. |
 
 ## **C# Example**
 
- Aspose.HTML API provides [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace that realizes various classes that allow implementing a set of algorithms for the image vectorization process. The provided classes and methods enable you to work with multiple vectorization options for preprocessing images before saving them to vector format. 
+ Aspose.HTML API provides [ImageVectorization](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace that realizes various classes that allow implementing a set of algorithms for the image vectorization process. The provided classes and methods enable you to work with multiple vectorization options for preprocessing images before saving them to vector format. 
 
 **Note:** Aspose.SVG API aims to implement image vectorization tasks, so the source image to the raster-to-vector conversion may accept bitmap formats such as {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}},  {{%GIF%}}, etc. The output image is a vector {{%SVG%}} file format. 
 
 To vectorized an image with Aspose.SVG, you should follow a few steps:
 
-1. Initialize an instance of the [ImageVectorizer](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizer) class. Use one of ImageVectorizer() constructors and specify configuration properties.
-2. Vectorize raster image from the specified file. Use the [Vectorize()](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization.imagevectorizer/vectorize/methods/2) method that returnes an [SVGDocument](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument).
+1. Initialize an instance of the [ImageVectorizer](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/imagevectorizer) class. Use one of ImageVectorizer() constructors and specify configuration properties.
+2. Vectorize raster image from the specified file. Use the [Vectorize()](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization.imagevectorizer/vectorize/methods/2) method that returnes an [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument).
 3. Save the SVGDocument (vectorized image) as SVG file.
 
 Here is a C# example of how to vectorize PNG image using the Aspose.SVG API.
@@ -99,7 +99,7 @@ You find the description and C# examples of vectorization options applying in th
 
 ## **Example of IImageTraceSimplifier Implementation**
 
-The [ImageVectorization](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes the [IImageTraceSimplifier](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesimplifier), [IImageTraceSmoother](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesmoother) and [IPathBuilder](https://apireference.aspose.com/svg/net/aspose.svg.imagevectorization/pathbuilder) interfaces for realizing any of your approaches and algorithms. Let's consider the implementation IImageTraceSimplifier based on the Viswalingam algorithm:
+The [ImageVectorization](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization) Namespace includes the [IImageTraceSimplifier](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesimplifier), [IImageTraceSmoother](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/iimagetracesmoother) and [IPathBuilder](https://reference.aspose.com/svg/net/aspose.svg.imagevectorization/pathbuilder) interfaces for realizing any of your approaches and algorithms. Let's consider the implementation IImageTraceSimplifier based on the Viswalingam algorithm:
 
 ```c#
 	struct Point3

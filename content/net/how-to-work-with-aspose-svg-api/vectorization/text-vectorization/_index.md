@@ -30,7 +30,7 @@ Text vectorization can be useful in cases where unique fonts are applied to the 
 
 The vectorized text, being a digital graphic, can be scaled with saving quality. The “filter”, “mask”, “opacity”, and other effects can be applied to the vectorized SVG text. Vectorization also results in the reduction of the generated SVG Document.
 
-Aspose.SVG for .NET API provides the feature of vectorizing text elements in SVG documents. To vectorize text, set the [`VectorizeText`](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the [SVGSaveOptions](https://apireference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions) class to `true`.
+Aspose.SVG for .NET API provides the feature of vectorizing text elements in SVG documents. To vectorize text, set the [`VectorizeText`](https://reference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/properties/vectorizetext) property of the [SVGSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions) class to `true`.
 
 The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization in [text.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/text.svg) file:
 ```c#

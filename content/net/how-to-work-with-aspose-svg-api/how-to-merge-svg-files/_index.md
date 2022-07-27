@@ -11,7 +11,7 @@ keywords: svg merger, merge svg, svg document, svg file example, C# example, svg
 
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Aspose.SVG for .NET API provides the [Renderer](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
+Aspose.SVG for .NET API provides the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class for rendering and merging SVG documents.
 
 {{% alert color="primary" %}} 
 Aspose.SVG offers Free Online **[SVG Sprite Generator](https://products.aspose.app/svg/svg-sprite-generator)**. Merge multiple SVG files to sprite and make your website faster and better!
@@ -21,9 +21,9 @@ Aspose.SVG offers Free Online **[SVG Sprite Generator](https://products.aspose.a
 
 ## **Rendering SVG documents**
 
-Rendering of SVG files is the process of generating images from a 2D model by means of the API. Converting from SVG to other formats can perform by using  **Render (`IDevice, TDocument`)** method of the [Renderer](https://apireference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
+Rendering of SVG files is the process of generating images from a 2D model by means of the API. Converting from SVG to other formats can perform by using  **Render (`IDevice, TDocument`)** method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
 
-In the [**How to Convert SVG Files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using [ConvertSVG()](https://apireference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods and  [RenderTo()](https://apireference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method. This article considers the **Render()** method applying for SVG conversion to other formats - PDF, XPS, JPG, JPG, BMP, PNG, TIFF and GIF.
+In the [**How to Convert SVG Files**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/) section, we consider two conversion scenarios: using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods and  [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method. This article considers the **Render()** method applying for SVG conversion to other formats - PDF, XPS, JPG, JPG, BMP, PNG, TIFF and GIF.
 
 To convert SVG to another format, for example, PNG, use the following code snippet:
 
