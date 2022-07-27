@@ -4,21 +4,40 @@ linktitle: Convert SVG to Image
 type: docs
 weight: 30
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-image/   
-lastmod: 2022-01-10
-description: The article provides information on a list of supported SVG to Image conversion scenarios and how to execute them using the API. You will learn how to convert SVG to Image formats and find C# examples of SVG to Image conversions.
-keywords: svg converter, convert svg, convert svg to jpg, convert svg to png, svg to jpg, svg to png, svg to bmp, svg to tiff, svg to gif
+lastmod: 2022-07-27
+description: The article provides information on a list of supported SVG to Image conversion scenarios and how to execute them in C#. You will find C# examples and online SVG Converter.
+keywords: svg converter, convert svg, convert svg to jpg, convert svg to png, svg to jpg, svg to png, svg to bmp, svg to tiff, svg to gif, c# code
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 In the article, you will find information on how to convert SVG to Image file formats such as {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}}. Image file conversion is required for website developing, graphic designers acting, photography, and other purposes. The choice of the image format depends on whether you print it in polygraphy, send it by e-mail or put an image on a webpage.
 
-The article provides a general description of the conversion features of Aspose.SVG .NET and describes supported scenarios of SVG to Image conversions by using  [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) and [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) classes.
+The article provides a general description of the conversion features of Aspose.SVG .NET and describes supported scenarios of SVG to Image conversions by using  [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) and [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) classes. 
 
-{{% alert color="primary" %}}
-You can try our free online <a href="https://products.aspose.app/svg/conversion/svg-to-jpg" target="_blank">**SVG to JPG Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
-{{% /alert %}}
+## **Online SVG Converter**
 
-<a href="https://products.aspose.app/svg/conversion/svg-to-jpg" target="_blank">![Text "Banner SVG to JPG Converter"](svg-to-jpg.png#center)</a>
+You can convert SVG to images and other popular formats in any way - online or programmatically. Check the Aspose.SVG API functionality and convert SVG in real-time!  Please load SVG from the local file system, select the output format and run the example.  In the example, the save options are set by default. You will immediately receive the result as a separate  file.
+
+{{< app/svg/converter SVG "JPG|JPEG" PNG XPS  PDF  GIF TIFF BMP >}}
+using Aspose.Svg;
+using Aspose.Svg.Saving;
+using Aspose.Svg.Converters;
+using Aspose.Svg.Rendering.Image;
+
+    using var document = new SVGDocument("image.svg");
+{{#if_output 'PDF'}}
+    var options = new PdfSaveOptions();
+{{/if_output}}
+{{#if_output 'XPS'}}
+    var options = new XpsSaveOptions();
+{{/if_output}}
+{{#if_output 'BMP' 'JPG' 'GIF' 'PNG' 'TIFF'}}
+    var options = new ImageSaveOptions(ImageFormat.{{output param2 camel}});
+{{/if_output}}
+    Converter.ConvertSVG(document, options, "output.{{output lower}}");   
+{{< /app/svg/converter>}} 
+
+If you want to convert SVG to image formats programmatically, please see the following conversion scenarios and C# examples.
 
 ## **Convert SVG to JPG** 
  JPG is one of the most commonly used image formats. Its uniqueness is the controlled quality loss during compression. So it is widely used for storing and sending over the web graphic digital content (photos, scanned copies, digitized pictures). With Aspose.SVG, you can convert SVG to JPG, SVG to PNG, SVG to BMP, SVG to GIF or SVG to TIFF format programmatically with full control over a wide range of conversion parameters.
@@ -28,7 +47,7 @@ You can try our free online <a href="https://products.aspose.app/svg/conversion/
 Using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods is the most common way to convert SVG to various popular formats. The following code snippet shows how to convert SVG to JPG: 
 
  - Open a source SVG document ([owl-edited.svg](/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/owl-edited1.svg)).
- - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class.
+ - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class.
  - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method to save SVG as a JPG file.
 
 ```c#
@@ -106,7 +125,11 @@ The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rend
 
 ![the resulting images fragments](smoothing-mode.png#center)                                                                            
 
-In the example above, we convert the SVG file [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) to JPG with different `SmoothingMode` values. The figure illustrates zoomed (250%) JPG images fragments: a) The value of `SmoothingMode`  is `AntiAlias` ; b) The value of  `SmoothingMode` is  `Default`.     
+In the example above, we convert the SVG file [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) to JPG with different `SmoothingMode` values. The figure illustrates zoomed (250%) JPG images fragments: a) The value of `SmoothingMode`  is `AntiAlias` ; b) The value of  `SmoothingMode` is  `Default`.   
+
+{{% alert color="primary" %}} 
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+{{% /alert %}} 
 
 ## **Save Options**
 Aspose.SVG allows converting SVG to Image file formats using default or custom save options. [ImageSaveOptions](https://reference.aspose.com/net/svg/aspose.svg.saving/imagesaveoptions) usage enables you to customize the rendering process. For example, you can specify the image format, page size, margins, background color, etc.
@@ -307,7 +330,9 @@ using Aspose.Svg.Rendering.Image;
     }
 ```
 
-{{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
-{{% /alert %}} 
+{{% alert color="primary" %}}
+You can try our free online <a href="https://products.aspose.app/svg/conversion/svg-to-jpg" target="_blank">**SVG to JPG Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
+{{% /alert %}}
+
+<a href="https://products.aspose.app/svg/conversion/svg-to-jpg" target="_blank">![Text "Banner SVG to JPG Converter"](svg-to-jpg.png#center)</a>
 

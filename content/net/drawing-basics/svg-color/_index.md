@@ -3,9 +3,9 @@ title: SVG Color | How to work with Fill Color and Stroke Color?
 linktitle: SVG Color
 type: docs
 weight: 65
-lastmod: 2022-03-24
+lastmod: 2022-07-27
 description:  In this article, we will look at ways to apply colors in SVG files and how to work with fill color, stroke color and opacity.
-keywords: svg color, color code, color names, line color, circle color, text color, path color, svg circle color, fill color, stroke color, opacity
+keywords: svg color, color code, color names, line color, circle color, text color, path color, svg circle color, fill color, stroke color, opacity, color converter, color mixer, convert color, mix colors
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -14,10 +14,10 @@ Scalable Vector Graphics (SVG) is an XML language for creating 2D vector and mix
 Using color is an important part of creating SVG. You can colorize SVG shapes, lines, paths, text. SVG graphics can be colorized, textured, shaded, or built from partially-transparent overlapping layers. This article takes an in-depth look at the different ways SVG text and shapes can be colorized. You’ll find out an overview of how color is defined, including the various ways you can control the transparency of SVG content.
 
 {{% alert color="primary" %}} 
-If you have an image that is not an SVG like a JPG or PNG file, you can convert the file into a vector and save it as an SVG using a free online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization). The App is browser-based and works on any platform. Check our Image Vectorizer to get all the benefits of vector graphics!
-{{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](image-vectorizer.png#center)</a>
+How to work with SVG color using the Aspose.SVG library for .NET and how to change the color of SVG elements or the background color in SVG files, we covered in detail with C# examples in the article [**How to change SVG color**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/).
+
+{{% /alert %}} 
 
 ## **SVG Color Specifying**
 
@@ -39,7 +39,7 @@ SVG fills and SVG strokes can be given in the presentation **fill** and **stroke
 
 ### **SVG Color Codes**
 
-To specify an SVG color, you can take color names, RGB or RGBA values, HEX values, HSL or HSLA values. The following examples will use different ways to set fill and stroke characteristics, let's consider them: 
+To specify an SVG color, you can take Color Names, RGB or RGBA values, HEX values, HSL or HSLA values. The following examples will use different ways to set fill and stroke characteristics, let's consider them: 
 
 1. **SVG Color Names**. There are the [147 color names](https://www.w3.org/TR/SVG11/types.html#ColorKeywords) defined by the Scalable Vector Graphics (SVG) Specification. You may set  named colors like this: `stroke="Green"` or `fill="Red"`.
 
@@ -54,6 +54,14 @@ To specify an SVG color, you can take color names, RGB or RGBA values, HEX value
 5. **HSL Color Codes**. HSL stands for Hue, Saturation and Lightness. Each color has an angle on the RGB color wheel and a percentage value for the saturation and lightness values. HSL codes for green and red colors you can set like this: `stroke="hsl(120, 100%, 50%)"` and `fill="hsl(0, 100%, 50%)"` 
 
 6. **HSLA(Hue, Saturation, Lightness, Alpha) Color Codes**. HSLA color values are an extension of HSL color values with an alpha channel that determines the opacity of the color. HSL codes for green and red colors you can set like this: `stroke="hsla(120, 100%, 50%, 1.0)"` and `fill="hsla(0, 100%, 50%, 1.0)"` 
+
+## **Online Color Converter**
+
+For different tasks, different color codes are preferred. So, sometimes you may need to convert color codes. Click inside the color area to select a color, or enter a color code in the Input text box. You will immediately see other color codes for chosen color in the Output section. Use our free Online Color Converter and get the result at once! 
+
+{{< app/svg/color input="RGB" output="HEX">}}
+
+{{< /app/svg/color>}}
 
 ### **Color Specifying Rules**
 
@@ -180,6 +188,10 @@ The figure shows the different cases of fill and stroke applying to add text col
 
 You may read more about how to style the text in articles  [**Fills and Strokes in SVG**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/) and [**SVG Filters and Gradients**](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/).
 
+{{% alert color="primary" %}}
+Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, image vectorizing, SVG sprite generating, SVG and bitmaps encoding, text vectorizing, and color codes manipulating. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+{{% /alert %}} 
+
 ## **Opacity**
 
 You can specify the opacity of either the fill or stroke separately in SVG. These are controlled by the **fill-opacity** and **stroke-opacity** attributes. Also, you can use RGBA or HSLA values that are allowed in SVG and will give the same effect:
@@ -213,7 +225,13 @@ Let's look at an example of how to set the opacity of the fill color of the shap
 
 ![Three sets of colored rectangles with different values of opacity](opacity.png#center)
 
-{{% alert color="primary" %}}
-Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, image vectorizing, SVG sprite generating, SVG and bitmaps encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!
+
+
+{{% alert color="primary" %}} 
+If you want to find a required color, you can mix two colors using a free online [**Color Mixer**](https://products.aspose.app/svg/color-mixer). The application allows to mix two colors in different quantities and see the result after mixing. Check our Color Mixer to get fun and investigate a color nature! 
 {{% /alert %}} 
+
+<a href="https://products.aspose.app/svg/color-mixer" target="_blank">![Text "Banner Color Mixer"](color-mixer.png#center)</a>
+
+
 

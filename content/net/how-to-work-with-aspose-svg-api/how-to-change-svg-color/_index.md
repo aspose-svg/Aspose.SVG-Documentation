@@ -1,37 +1,33 @@
 ---
-title: How to Change SVG Color | C# Examples
+title: How to Change SVG Color | C# Examples and Online Converter
 linktitle: How to Change SVG Color
 type: docs
 weight: 35
-lastmod: 2022-03-22
-description: This article shows how to work with SVG color using Aspose.SVG for .NET library. You will consider detailed C# examples of how to change SVG elements' color or background color in SVG files.
+lastmod: 2022-07-27
+description: You learn how to work with SVG color in C# and consider C# examples of how to change color for SVG elements or background color in SVG files.
 keywords: svg color, how to change svg color, background color, circle color, change background color, c# example, stroke color, fill color, change svg color, line color, color property, svg background color, svg file
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Aspose.SVG for .NET lets you edit an SVG document and make changes to its content.  Using color is an essential part of creating SVG. You can colorize SVG shapes, lines, paths, text. Using C# examples, we will look at ways to apply colors in SVG files.
-
-In this article, we show how to work with SVG color using Aspose.SVG for .NET library and consider of **how to change color** of SVG elements or background color in SVG files.
+Aspose.SVG for .NET lets you edit an SVG document and make changes to its content.  Using color is an essential part of creating SVG. You can colorize SVG shapes, lines, paths, text. Using C# examples, we will look at ways to apply colors in SVG files. In this article, we show how to work with SVG color using Aspose.SVG for .NET library and consider of **how to change color** of SVG elements or background color in SVG files.
 
 {{% alert color="primary" %}} 
 
 How to add new SVG elements and set their color properties, we covered in detail C# examples in the article [**How to Edit SVG Files**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/).
 
+The article [**SVG Color**](https://docs.aspose.com/svg/net/drawing-basics/svg-color/) looks at how SVG text and shapes can be colorized. You’ll find out an overview of how color is defined, including the various ways you can control the transparency of SVG content.
+
 {{% /alert %}} 
 
-## **Change Color of SVG Element**
+## **Online Color Converter**
 
-{{< app/svg/color input="CMYK" output="HEX">}}
-// Parse CMYK color from a string
-var color = ColorConverter.ConvertFrom("cmyk(82%, 59%, 0%, 15%)");
+Colors can be specified as common Color Names or defined in popular HEX codes or RGB, HSL, HSV, LAB, HWB, CMYK, LCH, XYZ,  and NCOL values. And for different tasks, different color formats are preferred. So, sometimes you may need to convert color formats. You can convert colors to various most popular formats in any way - online or programmatically! Use our free Online Color Converter and get the result at once!
 
-// Convert CMYK to HEX 
-string hexColor = color.ToHexString();
+{{< app/svg/color input="RGB" output="HEX">}}
 
-// Print the result into console
-Console.WriteLine(hexColor);
-//result should be: #2759D9
 {{< /app/svg/color>}}
+
+## **Change Color of SVG Element**
 
 Filling and stroking are both operations for SVG elements colorizing. All graphical elements such as shapes, paths and text – are rendered by being filled. The fill is painting the interior of the object, and the stroke is painting along its outline. The SVG **stroke** and SVG **fill** are some of the main CSS properties that can be set for any lines, text and shapes. For more information on style attributes' properties, please see the article [**Fills and Strokes in SVG**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/).
 
@@ -207,8 +203,10 @@ The figure shows the visualization of the original SVG file  [snowflake-blue.svg
 ![Original svg image and recolored svg image](change-background-color.png#center)
 
 {{% alert color="primary" %}} 
-If you have an image that is not an SVG like a JPG or PNG file, you can convert the file into a vector and save it as an SVG using a free online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization). The App is browser-based and works on any platform. Check our Image Vectorizer to get all the benefits of vector graphics!
+
+[**Color Converter**](https://products.aspose.app/svg/color-converter) is a free online application for transforming colors between color formats. Just enter color code and get the result at once! You don't need any additional software. Try our forceful Color Converter just now!
+
 {{% /alert %}} 
 
-<a href="https://products.aspose.app/svg/image-vectorization" target="_blank">![Text "Banner Image Vectorizer"](../vectorization/image-vectorizer.png#center)</a>
+<a href="https://products.aspose.app/svg/color-converter" target="_blank">![Text "Banner Color Converter"](../../color-converter.png#center)</a> 
 

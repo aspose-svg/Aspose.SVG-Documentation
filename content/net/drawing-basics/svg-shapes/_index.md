@@ -1,5 +1,5 @@
 ---
-title: SVG Shapes | Basics & Examples 
+title: SVG Shapes | Basics & SVG Code, Examples 
 linktitle: SVG Shapes
 type: docs
 weight: 20
@@ -7,9 +7,9 @@ url: /net/drawing-basics/svg-shapes/
 aliases: 
   - /net/drawing-basics/basic-shapes/
   - /net/drawing-basics/basic-shapes
-lastmod: 2022-01-10
-description: In this article, you can learn how to create different simple SVG shapes, such as SVG Rectangle, SVG Circle, SVG Line, SVG Ellipse, SVG Polyline, SVG Polygon, and how to apply some style properties to them.
-description: SVG shapes, SVG Basic Shapes, SVG Rectangle, SVG Circle, SVG Line, SVG Ellipse, SVG Polyline, SVG Polygon
+lastmod: 2022-07-27
+description: You learn how to create SVG shapes - SVG Rectangle, SVG Circle, SVG Line, SVG Ellipse, SVG Polyline, SVG Polygon, and how to apply style properties to them.
+description: svg shapes, svg basic shapes, svg rectangle, svg circle, svg line, svg ellipse, svg polyline, svg polygon, svg code
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -192,3 +192,7 @@ A simple SVG document consists of nothing more than the `<svg>`  root element an
 
 This simple picture "SVG Basic Shapes" contains all the figures described above. Nearby is the famous painting "Pink Accent" by Wassily Kandinsky.
 The basic knowledge of SVG markup allows you to draw a simple image in a text editor, although more complex ideas are not done that way.
+
+{{% alert color="primary" %}} 
+If you have an image that is not an SVG like a JPG or PNG file, you can convert the file into a vector and save it as an SVG using a free online [**Image Vectorizer**](https://products.aspose.app/svg/image-vectorization). The App is browser-based and works on any platform. Check our Image Vectorizer to get all the benefits of vector graphics! 
+{{% /alert %}} 
