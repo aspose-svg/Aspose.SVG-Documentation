@@ -6,27 +6,42 @@ aliases:
    - /net/how-to-work-with-aspose-svg-api/converting/
    - /net/how-to-convert-svg-files/
    - /net/converting/
-lastmod: 2021-10-12
-description: The articles in this section provide information on a list of supported SVG conversion scenarios and how to execute them using the Aspose.SVG API. You will learn how to convert SVG to PDF, XPS or Image formats and find C# examples of SVG conversions.
-keywords: svg converter, convert svg, convert svg to pdf, convert svg to png, svg to pdf, svg to png, svg to bmp, svg to jpg, svg to tiff, svg to gif, svg to xps
+lastmod: 2022-07-27
+description: You will learn how to convert SVG to other formats in C#, find C# code examples and try an online converter SVG. 
+keywords: svg converter, online svg converter, convert svg online, convert svg, convert svg to pdf, convert svg to png, svg to pdf, svg to png, svg to bmp, svg to jpg, svg to tiff, svg to gif, svg to xps
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
-Converting SVG documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks.
+Converting SVG documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. The articles in this section provide information on a list of supported SVG conversion scenarios and how to execute them in C#. 
 
-Aspose.SVG for .NET API can convert {{%SVG%}} files to {{%PDF%}}, {{%XPS%}}, {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}} file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details of underlying file formats. 
+Aspose.SVG for .NET API can convert {{%SVG%}} files to {{%PDF%}}, {{%XPS%}}, {{%JPG%}}, {{%PNG%}}, {{%BMP%}}, {{%TIFF%}}, and {{%GIF%}} file formats. You can use API in your C# or any other .NET application (such as VB.NET) to develop converter applications without getting into the details of underlying file formats.  
 
-{{% alert color="primary" %}} 
+## **Online SVG Converter**
 
-Aspose.SVG offers a free online [**SVG Converter**](https://products.aspose.app/svg/conversion) for converting SVG files to a variety of popular formats. You can easily convert SVG to PDF, SVG to XPS, SVG to JPG, SVG to PNG, SVG to BMP, SVG to TIFF, SVG to GIF. Just select the file, choose the format to convert, and you’re done. It’s fast and completely free!
+You can convert SVG to other formats  with Aspose.SVG API in real time. Please load SVG from the local file system, select the output format and run the example.  In this example, the save options are set by default. You will immediately receive the result as a separate  file.
 
-{{% /alert %}} 
+{{< app/svg/converter SVG PNG XPS  PDF "JPG|JPEG" GIF TIFF BMP >}}
+using Aspose.Svg;
+using Aspose.Svg.Saving;
+using Aspose.Svg.Converters;
+using Aspose.Svg.Rendering.Image;
 
-<a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](./../svg-converter.png#center)</a>
+    using var document = new SVGDocument("image.svg");
+{{#if_output 'PDF'}}
+    var options = new PdfSaveOptions();
+{{/if_output}}
+{{#if_output 'XPS'}}
+    var options = new XpsSaveOptions();
+{{/if_output}}
+{{#if_output 'BMP' 'JPG' 'GIF' 'PNG' 'TIFF'}}
+    var options = new ImageSaveOptions(ImageFormat.{{output param2 camel}});
+{{/if_output}}
+    Converter.ConvertSVG(document, options, "output.{{output lower}}");   
+{{< /app/svg/converter>}} 
 
-## **A Few Ways to Convert SVG**
+## **A Few Ways to Convert SVG in C#**
 
-Converting from SVG  to other formats can perform by using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) class,  the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) class, or the Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
+You can convert SVG to various popular formats in any way - online or programmatically. Converting from SVG  to other formats can perform by using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) class,  the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) class, or the Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
 
 The current section describes supported scenarios of SVG files conversions to other popular formats by using  [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) and [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) classes:
 
@@ -107,18 +122,8 @@ The [ImageDevice(`options, file`)](https://reference.aspose.com/svg/net/aspose.s
 The figure illustrates the result of SVG to PNG conversion - light.png file.
 
 ![light.svg file rendered to PNG using RenderTo() method ](light.png#center)
-### **Free App**
-You can convert SVG to PNG with Aspose.SVG API in real time. First, load an SVG file from your local drive and then run the example. In this example, the save options are set by default. You will immediately receive the result as a separate PNG file.
 
-{{< svg-converter SVG PNG  >}}
-using Aspose.Html.Dom.Svg;
-using Aspose.Html.Converters;
-using Aspose.Html.Saving;
 
-   using var document = new SVGDocument("input.svg");
-   var options = new ImageSaveOptions();
-   Converter.ConvertSVG(document, options, "output.png");    
-{{< /svg-converter >}}
 
 ## **General Options**
 
@@ -129,7 +134,9 @@ Every output device PdfDevice, XpsDevice and ImageDevice has its own unique set 
 The options that are implementing with the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions), [XpsSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/xpssaveoptions) and [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) classes are inheriting from the PdfRenderingOptions, XpsRenderingOptions and ImageRenderingOptions classes respectively.
 
 {{% alert color="primary" %}} 
+
 Aspose.SVG offers a free online [**SVG Converter**](https://products.aspose.app/svg/conversion) for converting SVG files to a variety of popular formats. You can easily convert SVG to PDF, SVG to XPS, SVG to JPG, SVG to PNG, SVG to BMP, SVG to TIFF, SVG to GIF. Just select the file, choose the format to convert, and you’re done. It’s fast and completely free!
 
 {{% /alert %}} 
 
+<a href="https://products.aspose.app/svg/conversion" target="_blank">![Text "Banner SVG Converter"](./../svg-converter.png#center)</a>

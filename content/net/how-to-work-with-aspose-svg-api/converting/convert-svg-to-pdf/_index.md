@@ -1,10 +1,10 @@
 ---
-title: Convert or Save SVG to PDF in C#
+title: Convert SVG to PDF - C# Examples
 linktitle: Convert SVG to PDF
 type: docs
 weight: 10
 url:  /net/how-to-work-with-aspose-svg-api/convert-svg-to-pdf/   
-lastmod: 2022-01-10
+lastmod: 2022-07-27
 description: The article provides information on a list of supported SVG to PDF conversion scenarios and how to execute them using the C# API. You will learn how to convert SVG to PDF and find C# examples of SVG to PDF conversions. 
 keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save options
 ---
@@ -12,11 +12,31 @@ keywords: svg converter, convert svg, convert svg to pdf, svg to pdf, save optio
 
 Converting  {{%SVG%}} documents to other formats is one of the main features of Aspose.SVG for .NET API. Converting is required for various reasons: to work in a familiar, convenient format or to take advantage of different formats for specific tasks. {{%PDF%}} is a file format supported by all operating systems, used for presenting images, documents and books. Files in PDF can be easily viewed, printed, and shared online. 
 
-{{% alert color="primary" %}}
-You can convert SVG to PDF with our free online <a href="https://products.aspose.app/svg/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
-{{% /alert %}}
+You can convert SVG to PDF and other popular formats in any way - online or programmatically. 
 
-<a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">![Text "Banner SVG to PDF Converter"](svg-to-pdf.png#center)</a>
+## **Online SVG Converter**
+
+You can check the Aspose.SVG API functionality and convert SVG in real-time.  Please load SVG from the local file system, select the output format and run the example.  In the example, the save options are set by default. You will immediately receive the result as a separate  file.
+
+{{< app/svg/converter SVG   PDF  XPS "JPG|JPEG" PNG GIF TIFF BMP >}}
+using Aspose.Svg;
+using Aspose.Svg.Saving;
+using Aspose.Svg.Converters;
+
+    using var document = new SVGDocument("image.svg");
+{{#if_output 'PDF'}}
+    var options = new PdfSaveOptions();
+{{/if_output}}
+{{#if_output 'XPS'}}
+    var options = new XpsSaveOptions();
+{{/if_output}}
+{{#if_output 'BMP' 'JPG' 'GIF' 'PNG' 'TIFF'}}
+    var options = new ImageSaveOptions(ImageFormat.{{output param2 camel}});
+{{/if_output}}
+    Converter.ConvertSVG(document, options, "output.{{output lower}}");   
+{{< /app/svg/converter>}} 
+
+If you want to convert SVG to PDF programmatically, please see the following C# code examples.
 
 ## **Convert SVG to PDF Using ConvertSVG() Method**
 
@@ -49,6 +69,10 @@ using Aspose.Svg.Saving;
 ```
 
 The [PdfSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/constructors/main) constructor initializes an instance of the PdfSaveOptions class that is passed to ConvertSVG() method. The [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/3) method  takes the  `document`, `saveOptions`, output file path and performs the conversion operation. In the example above, we add the `BackgroundColor` property that sets `Color`, which will fill the background of every page. 
+
+{{% alert color="primary" %}} 
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the  [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+{{% /alert %}} 
 
 ## **Save Options**
 
@@ -109,9 +133,11 @@ The `JpegQuality` specifies the quality of JPEG compression for images. The defa
 
 ![Images rendered to PDF with various JpegQuality values](jpeg-quality.png#center)
 
-{{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the  [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
-{{% /alert %}} 
+{{% alert color="primary" %}}
+You can convert SVG to PDF with our free online <a href="https://products.aspose.app/svg/conversion/svg-to-pdf" target="_blank">**SVG to PDF Converter**</a> that works with high quality, easy and fast. Just upload, convert your files and get results in a few seconds!
+{{% /alert %}}
+
+<a href="https://products.aspose.app/svg/en/conversion/svg-to-pdf" target="_blank">![Text "Banner SVG to PDF Converter"](svg-to-pdf.png#center)</a>
 
 
 

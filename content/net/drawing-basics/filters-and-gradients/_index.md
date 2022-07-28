@@ -1,17 +1,20 @@
 ---
-title: SVG Filters and Gradients
+title: SVG Filters and Gradients | SVG code, Examples
+linktitle: SVG Filters and Gradients
 type: docs
 weight: 80
 aliases: /net/drawing-basics/filters-and-gradients
-lastmod: 2022-01-10
-description: This article discusses SVG filters that create blur, color and light effects. It is shown how linear or radial gradients can beautify any line, shape, or text in SVG graphics.
-description: svg filters, gaussian blur, drop shadow effect, svg drop shadow, svg light effects, color filters, svg gradients, svg linear gradient, svg radial gradient
+lastmod: 2022-07-27
+description: You'll learn how to write SVG code to create svg filters, gaussian blur, drop shadow effect, light effects or a linear gradient and radial gradient. 
+description: svg filters, gaussian blur, drop shadow effect, svg drop shadow, svg light effects, color filters, svg gradients, svg linear gradient, svg radial gradient, svg code
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 {{% alert color="primary" %}}
 Aspose.SVG offers <a href="https://products.aspose.app/svg/applications" target="_blank">**Free Online Applications**</a> to convert SVG and bitmap files, merge SVGs to sprite, image vectorizing, and more. Use our collection of applications to perform your SVG-related tasks and make your workflow seamlessly!
 {{% /alert %}} 
+
+This article discusses SVG filters that create blur, color and light effects. We consider how to write SVG code to create a linear or radial gradient. You will see how gradients can beautify any line, shape, or text in an SVG graphic.
 
 ## **What is an SVG Filter?**
 
