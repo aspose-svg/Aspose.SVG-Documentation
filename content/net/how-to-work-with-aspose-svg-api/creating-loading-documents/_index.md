@@ -12,7 +12,7 @@ description: In this article, you will learn how to create SVG from a memory str
 ---
 
 
-To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument) class that has several constructors allowing you to produce new class instances. The SVGDocument is the root of the SVG DOM hierarchy, holds the entire content and is entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/)  and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
+To perform any task, you must create or load a document. Aspose.SVG for .NET API lets you construct an SVG document from scratch as well as load an existing SVG from different sources. The API provides [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class that has several constructors allowing you to produce new class instances. The SVGDocument is the root of the SVG DOM hierarchy, holds the entire content and is entirely based on  [W3C SVG 2.0 ](https://www.w3.org/TR/SVG2/)  and [WHATWG DOM](https://dom.spec.whatwg.org/) specifications.
 
 SVG files can be created & loaded:
 
@@ -29,7 +29,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 ## **Create an Empty SVG Document**
 
-Aspose.SVG for .NET API provides the [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument "Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following C# code snippet shows the usage of the default [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/main) constructor to create an SVG document.
+Aspose.SVG for .NET API provides the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/"Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following C# code snippet shows the usage of the default [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor to create an SVG document.
 
 ```c#
 using Aspose.Svg;
@@ -70,7 +70,7 @@ More details about SVG file saving are in the [**Saving SVG Documents**](https:/
 
 ## **Create SVG from a Memory String**
 
-You can create SVG from a string content using [SVGDocument (`string, string`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/14) constructor. If your case is to produce a document from a user string directly in your code and you don’t need to save it to a file, the following example could help you: we produce an SVG document that contains a circle with a radius of 40 pixels.
+You can create SVG from a string content using [SVGDocument (`string, string`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor. If your case is to produce a document from a user string directly in your code and you don’t need to save it to a file, the following example could help you: we produce an SVG document that contains a circle with a radius of 40 pixels.
 
 ```c#
 using Aspose.Svg;
@@ -111,7 +111,7 @@ using System.IO;
 
 ## **Load SVG from a File**
 
-To load SVG from a file [bezier-curves.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg), use the default constructor of the [SVGDocument](https://reference.aspose.com/net/svg/aspose.svg/svgdocument) class and pass the file path as the input parameter to it.
+To load SVG from a file [bezier-curves.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg), use the default constructor of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class and pass the file path as the input parameter to it.
 
 ```c#
 using Aspose.Svg;
@@ -163,7 +163,7 @@ If you set a wrong URL that can’t be reached right at this moment, the library
 
 ## **Read SVG with Resources Async**
 
-If SVG contains external resources, it may take time to load all resources completely and, hence, resulting in blocking of the main application thread. In an Async model, the Load and ReadyStateChange events can be subscribed to notify the loading application for complete loading of the SVG file as shown in the following code sample. The [Navigate(`Url`)](https://reference.aspose.com/svg/net/aspose.svg.dom.document/navigate/methods/1) method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) class is used for the document loading at the specified URL into the current instance.
+If SVG contains external resources, it may take time to load all resources completely and, hence, resulting in blocking of the main application thread. In an Async model, the Load and ReadyStateChange events can be subscribed to notify the loading application for complete loading of the SVG file as shown in the following code sample. The [Navigate(`Url`)](https://reference.aspose.com/svg/net/aspose.svg.dom/document/navigate/) method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class is used for the document loading at the specified URL into the current instance.
 
 ```c#
 using Aspose.Svg;

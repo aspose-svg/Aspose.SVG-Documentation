@@ -12,7 +12,7 @@ keywords: environment configuration, user agent service, runtime service, networ
 
 The setting of environment configuration is used for various purposes. For example, when you develop an application, you will definitely demand some configuration that can range from runtime service or handle any web requests from the application to injecting custom themes.
 
-The [Aspose.Svg.Services](https://reference.aspose.com/svg/net/aspose.svg.services) namespace contains a set of interfaces for separated services implementations.This article considers different types of environment configuration services such as **User Agent Service**, **Runtime Service**, and **Network Service**.  Aspose.SVG for .NET provides the [Configuration](https://reference.aspose.com/svg/net/aspose.svg/configuration) class that  can be used to set the environment where the application is running.
+The [Aspose.Svg.Services](https://reference.aspose.com/svg/net/aspose.svg.services/) namespace contains a set of interfaces for separated services implementations.This article considers different types of environment configuration services such as **User Agent Service**, **Runtime Service**, and **Network Service**.  Aspose.SVG for .NET provides the [Configuration](https://reference.aspose.com/svg/net/aspose.svg/configuration/) class that  can be used to set the environment where the application is running.
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
@@ -22,7 +22,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 The **User Agent Service** allows you to specify a custom user stylesheet, a primary character set for the document, language and fonts settings. You can select your custom style information for a particular document and provide as little or as many environment configuration changes as needed.
 
-The [IUserAgentService](https://reference.aspose.com/svg/net/aspose.svg.services/iuseragentservice) interface describes a user agent environment. 
+The [IUserAgentService](https://reference.aspose.com/svg/net/aspose.svg.services/iuseragentservice/) interface describes a user agent environment. 
 
  - The `UserStyleSheet` property of the IUserAgentService interface allows specifying style information for a particular document;
 
@@ -88,7 +88,7 @@ The figure illustrates the result of  **User Agent Service** applying (b) to the
 
 ## **Runtime Service**
 
-When planning to run your application, you might require a runtime service configuration. This service gives you control over the lifetime of the internal processes. For instance, using [IRuntimeService](https://reference.aspose.com/net/html/aspose.html.services/iruntimeservice)  you can specify timeouts for JavaScripts. It is important to have such a timeout in case if a script contains an endless loop. The next code snippet demonstrates how to use timeouts.
+When planning to run your application, you might require a runtime service configuration. This service gives you control over the lifetime of the internal processes. For instance, using [IRuntimeService](https://reference.aspose.com/html/net/aspose.html.services/iruntimeservice/)  you can specify timeouts for JavaScripts. It is important to have such a timeout in case if a script contains an endless loop. The next code snippet demonstrates how to use timeouts.
 ```c#
 using System.IO;
 using Aspose.Svg;
@@ -127,15 +127,15 @@ The `JavaScriptTimeout` property sets ` TimeSpan`, which limits JavaScript execu
 
 Modern network environments generate a significant amount of security events and log data via network routers and switches, servers, anti-malware systems, and so on.
 
-Aspose.SVG for .Net offers the [INetworkService](https://reference.aspose.com/html/net/aspose.html.services/inetworkservice) that is envisioned as a solution to help manage and analyze all this information. Service allows you to control all incoming/outcoming traffic and implement your custom message handlers.  It can be used for different purposes, such as creating a custom caching mechanism, tracing/logging request messages, etc.
+Aspose.SVG for .Net offers the [INetworkService](https://reference.aspose.com/html/net/aspose.html.services/inetworkservice/) that is envisioned as a solution to help manage and analyze all this information. Service allows you to control all incoming/outcoming traffic and implement your custom message handlers.  It can be used for different purposes, such as creating a custom caching mechanism, tracing/logging request messages, etc.
 
 ### **Create a Custom Message Handler**
 
 Aspose.SVG for .NET offers functionality for custom message handlers creating. Let’s develop a simple custom handler that logs information about unreachable resources. Take the following steps:
 
-1. Use the necessary Namespace, which is the [Aspose.Svg.Net](https://reference.aspose.com/svg/net/aspose.svg.net). This Namespace is presented by classes and interfaces, which are responsible for helping easy network processing.
-2. To create a custom message handler, you need to define your own class that will be derived from the [MessageHandler](https://reference.aspose.com/svg/net/aspose.svg.net/messagehandler) class. We construct a **LogMessageHandler** class.
-3. Override the [Invoke()](https://reference.aspose.com/svg/net/aspose.svg.net/messagehandler/methods/invoke) method of the MessageHandler class to implement the custom message handler behaviour.
+1. Use the necessary Namespace, which is the [Aspose.Svg.Net](https://reference.aspose.com/svg/net/aspose.svg.net/). This Namespace is presented by classes and interfaces, which are responsible for helping easy network processing.
+2. To create a custom message handler, you need to define your own class that will be derived from the [MessageHandler](https://reference.aspose.com/svg/net/aspose.svg.net/messagehandler/) class. We construct a **LogMessageHandler** class.
+3. Override the [Invoke()](https://reference.aspose.com/svg/net/aspose.svg.net/messagehandler/invoke/) method of the MessageHandler class to implement the custom message handler behaviour.
 
 The following example demonstrates how to create **LogMessageHandler** to log information about unreachable resources. 
 

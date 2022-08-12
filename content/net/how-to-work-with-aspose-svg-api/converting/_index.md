@@ -41,13 +41,13 @@ using Aspose.Svg.Rendering.Image;
 
 ## **A Few Ways to Convert SVG in C#**
 
-You can convert SVG to various popular formats in any way - online or programmatically. Converting from SVG  to other formats can perform by using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) class,  the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) class, or the Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class.
+You can convert SVG to various popular formats in any way - online or programmatically. Converting from SVG  to other formats can perform by using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) class,  the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/)  method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class, or the Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer/) class.
 
-The current section describes supported scenarios of SVG files conversions to other popular formats by using  [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) and [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument) classes:
+The current section describes supported scenarios of SVG files conversions to other popular formats by using  [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) and [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) classes:
 
 1. The static Converter class is a shared facade that provides SVG files conversions to the popular formats and allows to make these operations convenient and easy. A wide range of ConvertSVG() methods take as arguments the source document, save options, output file path, and convert SVG to PDF, XPS or Image files.
-2. The RenderTo() method of the SVGDocument class is used to render SVG to another format and send a document to the output device. Aspose.SVG API provides the following output devices implementation:  the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice), [XpsDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsdevice) and  [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) classes, which perform rendering to PDF, XPS and Image file formats respectively. 
-3. The Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer) class gives you the ability to send multiple documents at once to the output rendering device and merge them. For more information, please see the article [**How to Merge SVG Documents**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/).
+2. The RenderTo() method of the SVGDocument class is used to render SVG to another format and send a document to the output device. Aspose.SVG API provides the following output devices implementation:  the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/), [XpsDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsdevice/) and  [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) classes, which perform rendering to PDF, XPS and Image file formats respectively. 
+3. The Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer/) class gives you the ability to send multiple documents at once to the output rendering device and merge them. For more information, please see the article [**How to Merge SVG Documents**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/).
 
 Let's consider both scenarios of conversion SVG document to another file format, for example, SVG to PNG:
 
@@ -58,9 +58,9 @@ You can download the complete examples and data files from **[GitHub](https://gi
 ### **Convert SVG to PNG Using the ConvertSVG() Method**
 Converting a file to another format using the ConvertSVG() method is a sequence of operations among which document loading and saving:
 
- - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ([svg-to-png.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/svg-to-png.svg)).
- - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class.
- - Use one of the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods to save SVG as a PNG file.
+ - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([svg-to-png.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/svg-to-png.svg)).
+ - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class.
+ - Use one of the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods to save SVG as a PNG file.
 
 ```c#
 using Aspose.Svg;
@@ -80,7 +80,7 @@ using Aspose.Svg.Converters;
     }
 ```
 
-In the example, the [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/constructors/main) constructor initializes an instance of the ImageSaveOptions  class that is passed to ConvertSVG() method. The [ConvertSVG(`source, options, outputPath`)](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method takes the required attributes and performs the conversion operation.
+In the example, the [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/imagesaveoptions/) constructor initializes an instance of the ImageSaveOptions  class that is passed to ConvertSVG() method. The [ConvertSVG(`source, options, outputPath`)](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method takes the required attributes and performs the conversion operation.
 
 The figure illustrates the svg-to-png.png file.
 
@@ -90,10 +90,10 @@ The figure illustrates the svg-to-png.png file.
 
 To convert SVG to PNG using the RenderTo() method, take the following stages:
 
- - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
- - Produce an instance of the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class.
- - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class. 
- - Convert the document by [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
+ - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
+ - Produce an instance of the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class.
+ - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class. 
+ - Convert the document by [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 
 
 ```c#
 using Aspose.Svg;
@@ -117,7 +117,7 @@ using Aspose.Svg.Rendering.Image;
 	}
 ```
 
-The [ImageDevice(`options, file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor takes as arguments an instance of ImageRenderingOptions class, output file name and initializes a new instance of the  [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method converts and sends the current document to the output rendering device. 
+The [ImageDevice(`options, file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor takes as arguments an instance of ImageRenderingOptions class, output file name and initializes a new instance of the  [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/)  method converts and sends the current document to the output rendering device. 
 
 The figure illustrates the result of SVG to PNG conversion - light.png file.
 
@@ -127,11 +127,11 @@ The figure illustrates the result of SVG to PNG conversion - light.png file.
 
 ## **General Options**
 
-You can customize the rendering process by specifying the page size, margins, background color, etc.  For converting SVG to all mentioned above formats, from the [RenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions) class the following properties are inherited: `BackgroundColor`, `Css`, `HorizontalResolution`, `PageSetup`, and `VerticalResolution`.
+You can customize the rendering process by specifying the page size, margins, background color, etc.  For converting SVG to all mentioned above formats, from the [RenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/) class the following properties are inherited: `BackgroundColor`, `Css`, `HorizontalResolution`, `PageSetup`, and `VerticalResolution`.
 
-Every output device PdfDevice, XpsDevice and ImageDevice has its own unique set of options implemented with classes [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions), [XpsRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsrenderingoptions) and [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) respectively.
+Every output device PdfDevice, XpsDevice and ImageDevice has its own unique set of options implemented with classes [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/), [XpsRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsrenderingoptions/) and [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) respectively.
 
-The options that are implementing with the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions), [XpsSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/xpssaveoptions) and [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) classes are inheriting from the PdfRenderingOptions, XpsRenderingOptions and ImageRenderingOptions classes respectively.
+The options that are implementing with the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/), [XpsSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/xpssaveoptions/) and [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) classes are inheriting from the PdfRenderingOptions, XpsRenderingOptions and ImageRenderingOptions classes respectively.
 
 {{% alert color="primary" %}} 
 

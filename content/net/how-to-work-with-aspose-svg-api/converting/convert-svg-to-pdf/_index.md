@@ -40,11 +40,11 @@ If you want to convert SVG to PDF programmatically, please see the following C# 
 
 ## **Convert SVG to PDF Using ConvertSVG() Method**
 
-The static methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter) class can convert SVG to PDF  with a single line of code. It is the easiest way for conversion. Converting a file to another format using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods is a sequence of operations among which document loading and saving: 
+The static methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) class can convert SVG to PDF  with a single line of code. It is the easiest way for conversion. Converting a file to another format using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods is a sequence of operations among which document loading and saving: 
 
- - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ( [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg)).
- - Create an instance of the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions) class.
- - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/3) method to save SVG as a PDF file. 
+ - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ( [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg)).
+ - Create an instance of the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/) class.
+ - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method to save SVG as a PDF file. 
 
  The following code snippet can be used to convert an SVG file to PDF format:
 
@@ -68,7 +68,7 @@ using Aspose.Svg.Saving;
     }
 ```
 
-The [PdfSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/constructors/main) constructor initializes an instance of the PdfSaveOptions class that is passed to ConvertSVG() method. The [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/3) method  takes the  `document`, `saveOptions`, output file path and performs the conversion operation. In the example above, we add the `BackgroundColor` property that sets `Color`, which will fill the background of every page. 
+The [PdfSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/pdfsaveoptions/) constructor initializes an instance of the PdfSaveOptions class that is passed to ConvertSVG() method. The [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method  takes the  `document`, `saveOptions`, output file path and performs the conversion operation. In the example above, we add the `BackgroundColor` property that sets `Color`, which will fill the background of every page. 
 
 {{% alert color="primary" %}} 
 You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the  [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
@@ -76,29 +76,29 @@ You can download the complete examples and data files from [**GitHub**](https://
 
 ## **Save Options**
 
-You can convert SVG to PDF using default or custom save options. [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions) or  [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) usage enables you to customize the rendering process; you may specify the page size, margins, background color, file permissions, Css, etc. 
+You can convert SVG to PDF using default or custom save options. [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/) or  [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/) usage enables you to customize the rendering process; you may specify the page size, margins, background color, file permissions, Css, etc. 
 
 | Property                                                     | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [JpegQuality](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/properties/jpegquality) | Specifies the quality of JPEG compression for images. The default value is 95. |
-| [Css](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/css) | Gets a [CssOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/cssoptions) object which is used for configuration of CSS properties processing. |
-| [DocumentInfo](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/properties/documentinfo) | This property contains information about the output PDF document. |
-| [BackgroundColor](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/backgroundcolor) | This property sets the color that will fill the background of every page. By default, this property is Transparent. |
-| [PageSetup](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/pagesetup) | This property gets a page setup object and uses it for configuration output page-set. |
-| [HorizontalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/horizontalresolution) | Sets the horizontal resolution for output images in pixels per inch. The default value is 300 dpi. |
-| [VerticalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/verticalresolution) | Sets the vertical resolution for output images in pixels per inch. The default value is 300 dpi. |
-| [Encryption](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/properties/encryption) | This property gets or sets encryption details. If it is not set, then no encryption will be performed. |
+| [JpegQuality](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/jpegquality/) | Specifies the quality of JPEG compression for images. The default value is 95. |
+| [Css](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/css/) | Gets a [CssOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/cssoptions/) object which is used for configuration of CSS properties processing. |
+| [DocumentInfo](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/documentinfo/) | This property contains information about the output PDF document. |
+| [BackgroundColor](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/backgroundcolor/) | This property sets the color that will fill the background of every page. By default, this property is Transparent. |
+| [PageSetup](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/pagesetup/) | This property gets a page setup object and uses it for configuration output page-set. |
+| [HorizontalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/horizontalresolution/) | Sets the horizontal resolution for output images in pixels per inch. The default value is 300 dpi. |
+| [VerticalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/verticalresolution/) | Sets the vertical resolution for output images in pixels per inch. The default value is 300 dpi. |
+| [Encryption](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/encryption/) | This property gets or sets encryption details. If it is not set, then no encryption will be performed. |
 
-**Note**: The options that are implementing with the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions) class are inheriting from the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class.
+**Note**: The options that are implementing with the [PdfSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/pdfsaveoptions/) class are inheriting from the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/) class.
 
 ## **Convert SVG to PDF Using RenderTo() Method**
 
 Consider SVG to PDF conversion scenario using RenderTo() method:
 
- - Initialize a document using  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructor ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
- - Initialize an instance of the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class and specify the document's properties.
- - Create a new instance of the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice) class.
- - Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
+ - Initialize a document using  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
+ - Initialize an instance of the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/) class and specify the document's properties.
+ - Create a new instance of the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/) class.
+ - Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 
 
 The following code snippet can be used to convert an SVG file to PDF format:
 
@@ -127,7 +127,7 @@ using Aspose.Svg.Rendering.Pdf;
 	 }
 ```
 
-The [PdfRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/constructors/main) constructor initializes a new object of the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions) class that is passed as an argument to the [PdfDevice(`options, file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/constructors/3) constructor. The last initializes a new instance of the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice) class by rendering options and output file name.  The [RenderTo(` device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto)  method converts SVG to PDF and sends the current document to the output rendering device.
+The [PdfRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/pdfrenderingoptions/) constructor initializes a new object of the [PdfRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfrenderingoptions/) class that is passed as an argument to the [PdfDevice(`options, file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/pdfdevice/) constructor. The last initializes a new instance of the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/) class by rendering options and output file name.  The [RenderTo(` device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/)  method converts SVG to PDF and sends the current document to the output rendering device.
 
 The `JpegQuality` specifies the quality of JPEG compression for images. The default is 95. In the example above, the used `JpegQuality` value is 10. The figure illustrates conversion SVG to PDF for two files [light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg) and [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg): a) The `JpegQuality` value is default; b) The  `JpegQuality` value is 10.
 
