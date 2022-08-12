@@ -21,21 +21,21 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 
 ### **Added APIs:**
 
-A new method was added to [DOMObject](https://reference.aspose.com/svg/net/aspose.svg.dom/domobject) class:
+A new method was added to [DOMObject](https://reference.aspose.com/svg/net/aspose.svg.dom/domobject/) class:
 
-* [GetPlatformType](https://reference.aspose.com/svg/net/aspose.svg.dom/domobject/methods/getplatformtype).
+* [GetPlatformType](https://reference.aspose.com/svg/net/aspose.svg.dom/domobject/getplatformtype/).
 
-A new constructor was added to [Document](https://reference.aspose.com/svg/net/aspose.svg.dom/document) class:
+A new constructor was added to [Document](https://reference.aspose.com/svg/net/aspose.svg.dom/document/) class:
 
-* [protected Document(IDocumentInit documentInit)](https://reference.aspose.com/svg/net/aspose.svg.dom/document/constructors/main).
+* [protected Document(IDocumentInit documentInit)](https://reference.aspose.com/svg/net/aspose.svg.dom/document/).
 
-A new constructor was added to [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element) class:
+A new constructor was added to [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element/) class:
 
-* [public Element(IElementInit elementInit))](https://reference.aspose.com/svg/net/aspose.svg.dom/element/constructors/main).
+* [public Element(IElementInit elementInit))](https://reference.aspose.com/svg/net/aspose.svg.dom/element/element/).
 
-A new interface was added to [IDocumentInit](https://reference.aspose.com/svg/net/aspose.svg.dom/idocumentinit).
+A new interface was added to [IDocumentInit](https://reference.aspose.com/svg/net/aspose.svg.dom/idocumentinit/).
 
-A new interface was added to [IElementInit](https://reference.aspose.com/svg/net/aspose.svg.dom/ielementinit).
+A new interface was added to [IElementInit](https://reference.aspose.com/svg/net/aspose.svg.dom/ielementinit/).
 
 ### **Changed APIs:**
 

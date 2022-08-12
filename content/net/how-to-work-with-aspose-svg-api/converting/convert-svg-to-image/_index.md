@@ -44,11 +44,11 @@ If you want to convert SVG to image formats programmatically, please see the fol
 
 ### **Using the ConvertSVG() Method**
 
-Using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/methods/index) methods is the most common way to convert SVG to various popular formats. The following code snippet shows how to convert SVG to JPG: 
+Using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods is the most common way to convert SVG to various popular formats. The following code snippet shows how to convert SVG to JPG: 
 
  - Open a source SVG document ([owl-edited.svg](/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/owl-edited1.svg)).
  - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class.
- - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method to save SVG as a JPG file.
+ - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method to save SVG as a JPG file.
 
 ```c#
 using Aspose.Svg;
@@ -81,9 +81,9 @@ In the article **[Navigation & Inspection SVG](https://docs.aspose.com/svg/net/h
 Consider how to convert a document from SVG to JPG using RenderTo() method:
 
 - Open a source SVG document ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
-- Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify rendering options of the document.
-- Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class - the output device.
-- Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method.
+- Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor and specify rendering options of the document.
+- Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class - the output device.
+- Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method.
 
  The following example shows how to apply the `Format` and `SmoothingMode` properties for SVG to JPG converting: 
 
@@ -119,9 +119,9 @@ document.RenderTo(device);
     }
 ```
 
-The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method takes the instance of the ImageDevice class and renders SVG to JPG.
+The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method takes the instance of the ImageDevice class and renders SVG to JPG.
 
-The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class provides numerous properties that give you full control over a wide range of parameters and improve the process of converting SVG to JPG format. The `Format` property sets the image format. By default, this property is `Png`. To convert SVG to JPG, you have to use `ImageFormat.Jpeg`.
+The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class provides numerous properties that give you full control over a wide range of parameters and improve the process of converting SVG to JPG format. The `Format` property sets the image format. By default, this property is `Png`. To convert SVG to JPG, you have to use `ImageFormat.Jpeg`.
 
 ![the resulting images fragments](smoothing-mode.png#center)                                                                            
 
@@ -132,21 +132,21 @@ You can download the complete examples and data files from [**GitHub**](https://
 {{% /alert %}} 
 
 ## **Save Options**
-Aspose.SVG allows converting SVG to Image file formats using default or custom save options. [ImageSaveOptions](https://reference.aspose.com/net/svg/aspose.svg.saving/imagesaveoptions) usage enables you to customize the rendering process. For example, you can specify the image format, page size, margins, background color, etc.
+Aspose.SVG allows converting SVG to Image file formats using default or custom save options. [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) usage enables you to customize the rendering process. For example, you can specify the image format, page size, margins, background color, etc.
 
 | Property                                                     | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| [Compression](https://reference.aspose.com/net/svg/aspose.svg.rendering.image/compression) | Sets Tagged Image File Format (TIFF) Compression. By default, this property is LZW. |
-| [CSS](https://reference.aspose.com/svg/net/aspose.svg.rendering/mediatype) | Gets a [CssOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/cssoptions) object which is used for configuration of CSS properties processing. |
-| [Format](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imageformat) | Sets the ImageFormat (JPG, PNG, BMP, TIFF, or GIF). By default, this property is PNG. |
-| [BackgroundColor](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/backgroundcolor) | This property sets the color that will fill the background. By default, this property is Transparent. |
-| [PageSetup](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/properties/pagesetup) | This property gets a page setup object and uses it for configuration output page-set. |
-| [HorizontalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/properties/horizontalresolution) | Sets horizontal resolution for output images in pixels per inch. The default value is 300 dpi. |
-| [VerticalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/properties/verticalresolution) | Sets vertical resolution for output images in pixels per inch. The default value is 300 dpi. |
-| [SmoothingMode](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/properties/smoothingmode) | This property sets the rendering quality for this image.  Available values are Invalid, Default, HighSpeed, HighQuality, None, and AntiAlias. |
-| [Text](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/properties/text) | Gets a [TextOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/textoptions) object which is used for configuration of text rendering. |
+| [Compression](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/compression/) | Sets Tagged Image File Format (TIFF) Compression. By default, this property is LZW. |
+| [CSS](https://reference.aspose.com/svg/net/aspose.svg.rendering/mediatype/) | Gets a [CssOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering/cssoptions/) object which is used for configuration of CSS properties processing. |
+| [Format](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imageformat/) | Sets the ImageFormat (JPG, PNG, BMP, TIFF, or GIF). By default, this property is PNG. |
+| [BackgroundColor](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/backgroundcolor/) | This property sets the color that will fill the background. By default, this property is Transparent. |
+| [PageSetup](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderingoptions/pagesetup/) | This property gets a page setup object and uses it for configuration output page-set. |
+| [HorizontalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/horizontalresolution/) | Sets horizontal resolution for output images in pixels per inch. The default value is 300 dpi. |
+| [VerticalResolution](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/verticalresolution/) | Sets vertical resolution for output images in pixels per inch. The default value is 300 dpi. |
+| [SmoothingMode](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/smoothingmode/) | This property sets the rendering quality for this image.  Available values are Invalid, Default, HighSpeed, HighQuality, None, and AntiAlias. |
+| [Text](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/text/) | Gets a [TextOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/textoptions/) object which is used for configuration of text rendering. |
 
-**Note**: The options that are implementing with the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class are inheriting from the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class.
+**Note**: The options that are implementing with the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class are inheriting from the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class.
 
 ## **Convert SVG to PNG**
 
@@ -157,10 +157,10 @@ PNG  format uses a lossless compression algorithm to store raster images. It sup
 The following code snippet shows how to prepare an SVG file from scratch and convert it to PNG: 
 
  - Prepare  SVG code and save it to a file.
- - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class.
- - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method to save SVG as a PNG file.
+ - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class.
+ - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method to save SVG as a PNG file.
 
-The following example shows how to use [ImageSaveOptions](https://reference.aspose.com/net/svg/aspose.svgsaving/imagesaveoptions) and convert SVG to PNG with custom save options:
+The following example shows how to use [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) and convert SVG to PNG with custom save options:
 
 ```c#
 using Aspose.Svg;
@@ -189,18 +189,18 @@ using Aspose.Svg.Converters;
     }
 ```
 
-In the example,  the [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/main) constructor initializes an instance of ImageSaveOptions class that is passed to ConvertSVG() method. The [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method takes the `document`, `saveOptions`, and output file path and performs the SVG to PNG conversion.
+In the example,  the [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor initializes an instance of ImageSaveOptions class that is passed to ConvertSVG() method. The [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method takes the `document`, `saveOptions`, and output file path and performs the SVG to PNG conversion.
 
-**Note**: We do not specify the `Format` property for the conversion to PNG. The [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/main) constructor takes `Png` as the default image format.
+**Note**: We do not specify the `Format` property for the conversion to PNG. The [ImageSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor takes `Png` as the default image format.
 
 ### **Using the RenderTo() Method**
 
 Let's consider how to convert SVG to PNG using RenderTo() method:
 
- - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/constructors/10) constructors ([snowflake.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/snowflake.svg)).
- - Produce an instance of the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class.
- - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class. 
- - Convert SVG to PNG using the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
+ - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([snowflake.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/snowflake.svg)).
+ - Produce an instance of the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class.
+ - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class. 
+ - Convert SVG to PNG using the [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 
 
 ```c#
 using Aspose.Svg;
@@ -224,7 +224,7 @@ using Aspose.Svg.Rendering.Image;
     }
 ```
 
-The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method takes the instance of the ImageDevice class and renders SVG to PNG.
+The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method takes the instance of the ImageDevice class and renders SVG to PNG.
 
 The figure illustrates the snowflake.png file.
 
@@ -237,9 +237,9 @@ BMP image files save their image quality and store color data for each pixel wit
 Aspose.SVG API can convert a document from SVG to BMP save format using several stages:
 
  - Open the source SVG document ([conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg)).
- - Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify the `Format` property of the document.
- - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class.
- - Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method. 
+ - Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor and specify the `Format` property of the document.
+ - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class.
+ - Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 
 
 ```c#
 using Aspose.Svg;
@@ -260,7 +260,7 @@ using Aspose.Svg.Rendering.Image;
     }
 ```
 
-The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method takes the instance of the ImageDevice class and renders SVG to BMP.
+The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method takes the instance of the ImageDevice class and renders SVG to BMP.
 
 ## **Convert SVG to TIFF**
 
@@ -269,9 +269,9 @@ TIFF is a format for storing raster graphics images with a broad palette of colo
 Aspose.SVG API can convert a document from SVG to TIFF save format using several stages:
 
 - Open a source SVG document ([conclusion.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/conclusion.svg)).
-- Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor and specify `Format`  and other properties of the document.
-- Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice) class.
-- Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method.
+- Use the [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor and specify `Format`  and other properties of the document.
+- Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class.
+- Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method.
 
 ```c#
 using Aspose.Svg;
@@ -296,17 +296,17 @@ using Aspose.Svg.Rendering.Image;
     }
 ```
 
-The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/constructors/1) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/constructors/3) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/methods/renderto) method takes the instance of the ImageDevice class and renders SVG to TIFF.
+The [ImageRenderingOptions()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/imagerenderingoptions/) constructor initializes an instance of the ImageRenderingOptions class that is passed to the [ImageDevice()](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor. The [ImageDevice(`options` ,  `file`)](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/imagedevice/) constructor takes the `options` ,  `file`  and creates the instance of the ImageDevice class. The [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method takes the instance of the ImageDevice class and renders SVG to TIFF.
 
-The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions) class provides numerous properties that give you full control over a wide range of parameters and improve the process of converting SVG to TIFF format. For example,the  `Compression` property allows setting the compression for the TIFF file format. In the example above, we put `Compression.None`.
+The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class provides numerous properties that give you full control over a wide range of parameters and improve the process of converting SVG to TIFF format. For example,the  `Compression` property allows setting the compression for the TIFF file format. In the example above, we put `Compression.None`.
 
 
 ## **Convert SVG to GIF**
 
 GIF is a popular image format that supports animated images and is frequently used in web publishing. The following code snippet shows how to convert SVG to GIF using Aspose.SVG for .NET API:
  - Open a source SVG document ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
- - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions) class  and specify `Format` and other save options.
- - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters.converter/convertsvg/methods/1) method to save SVG as a GIF file.
+ - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class  and specify `Format` and other save options.
+ - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method to save SVG as a GIF file.
 
 The following example shows how to use the ImageSaveOptions and create the output image with custom `PageSetup` characteristics:
 ```c#
