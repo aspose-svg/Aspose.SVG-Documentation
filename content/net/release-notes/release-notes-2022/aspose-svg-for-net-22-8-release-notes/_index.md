@@ -23,8 +23,6 @@ https://www.w3.org/TR/css-color-4 and https://www.w3.org/TR/css-color-5
 
 ## **Public API changes:**
 
-No Changes
-
 ### **Added APIs:**
 The next class, enum and interface were added:
 
@@ -112,22 +110,22 @@ namespace Aspose.Svg.Drawing
         /// <summary>
         /// Represents the red component of the color
         /// </summary>
-        public float Red { get; private set; }
+        public float Red { get; }
 
         /// <summary>
         /// Represents the green component of the color.
         /// </summary>
-        public float Green { get; private set; }
+        public float Green { get; }
 
         /// <summary>
         /// Represents the blue component of the color.
         /// </summary>
-        public float Blue { get; private set; }
+        public float Blue { get; }
 
         /// <summary>
         /// Represents the alpha component of the color.
         /// </summary>
-        public float Alpha { get; private set; }
+        public float Alpha { get; }
 
         /// <summary>
         /// Returns a new Color with the requested gray value.
