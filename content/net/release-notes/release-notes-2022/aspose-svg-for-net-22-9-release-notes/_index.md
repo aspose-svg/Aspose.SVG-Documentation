@@ -10,7 +10,7 @@ This page contains release notes information for Aspose.SVG for .NET 22.9
 
 {{% /alert %}}
 
-## **Major Features**
+# **Major Features**
 
 As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the September release of Aspose.SVG for .NET:
 
@@ -23,11 +23,11 @@ We have
 * extended GlyphInfo structure with a new StringRepresentation  property.
 
 
-## **Public API changes:**
+# **Public API changes:**
 
-### **Added APIs:**
+## **Added APIs:**
 
-## BezierPathBuilder class
+### BezierPathBuilder class
 
 The `BezierPathBuilder` class is responsible for building path segments `SVGPathSeg` from list of the trace points. This path builder is based on using least-squares method to find Bezier control points for trace of points.
 
@@ -35,13 +35,13 @@ The `BezierPathBuilder` class is responsible for building path segments `SVGPath
 public class BezierPathBuilder : IPathBuilder
 ```
 
-## Constructors
+#### Constructors
 
 | Name | Description |
 | --- | --- |
 | BezierPathBuilder() | Initializes a new instance of the `BezierPathBuilder` class. |
 
-## Properties
+#### Properties
 
 | Name | Description |
 | --- | --- |
@@ -49,20 +49,20 @@ public class BezierPathBuilder : IPathBuilder
 | MaxIterations { get; set; } | Gets or sets the error threshold. This parameter defines number of iteration for least-squares approximation method. By default it is 30. |
 | TraceSmoother { get; set; } | Gets or sets the trace smoother. |
 
-## Methods
+#### Methods
 
 | Name | Description |
 | --- | --- |
 | Build(IEnumerable&lt;PointF&gt;, SVGPathElement) | Builds path segments from the list of the trace points. |
 
-## SplinePathBuilder class
+### SplinePathBuilder class
 
 The `SplinePathBuilder` class is responsible for building path segments `SVGPathSeg` from list of the trace points. This path builder is based on applying a Catmull-Roma spline to a set of smoothed and reduced path points..
 
 ```csharp
 public class SplinePathBuilder : IPathBuilder
 ```
-## Constructors
+#### Constructors
 
 | Name | Description |
 | --- | --- |
@@ -70,7 +70,7 @@ public class SplinePathBuilder : IPathBuilder
 | SplinePathBuilder(float) | Initializes a new instance of the `SplinePathBuilder` class. |
 | SplinePathBuilder(IImageTraceSmoother, IImageTraceSimplifier, float) | Initializes a new instance of the `SplinePathBuilder` class. |
 
-## Properties
+#### Properties
 
 | Name | Description |
 | --- | --- |
@@ -78,13 +78,13 @@ public class SplinePathBuilder : IPathBuilder
 | TraceSimplifier { get; set; } | Gets or sets the trace simplifier. |
 | TraceSmoother { get; set; } | Gets or sets the trace smoother. |
 
-## Methods
+#### Methods
 
 | Name | Description |
 | --- | --- |
 | Build(IEnumerable&lt;PointF&gt;, SVGPathElement) | Builds path segments from the list of the trace points. |
 
-## StencilConfiguration class
+### StencilConfiguration class
 
 The `StencilConfiguration` class defines a configuration of stencil effect options.
 
@@ -92,20 +92,20 @@ The `StencilConfiguration` class defines a configuration of stencil effect optio
 public class StencilConfiguration
 ```
 
-## Constructors
+#### Constructors
 
 | Name | Description |
 | --- | --- |
 | StencilConfiguration() | Initializes a new instance of the `StencilConfiguration` class. |
 
-## Properties
+#### Properties
 
 | Name | Description |
 | --- | --- |
 | Color { get; set; } | Gets or sets the color for rendering stencil lines for the MonoColor type. |
 | Type { get; set; } | Gets or sets the `StencilType`. |
 
-## StencilType enumeration
+### StencilType enumeration
 
 The [`StencilType`](../stenciltype) enum defines stencil types.
 
@@ -113,7 +113,7 @@ The [`StencilType`](../stenciltype) enum defines stencil types.
 public enum StencilType
 ```
 
-### Values
+#### Values
 
 | Name | Value | Description |
 | --- | --- | --- |
@@ -121,9 +121,9 @@ public enum StencilType
 | MonoColor | `1` | Only one color is used for rendering stencil lines. |
 | Auto | `2` | The colors for rendering stencil lines detects automatically. |
 
-## ImageVectorizerConfiguration class
+### ImageVectorizerConfiguration class
 
-## Properties
+#### Properties
 
 | Name | Description |
 | --- | --- |
@@ -131,27 +131,27 @@ public enum StencilType
 | LineWidth { get; set; } | Gets or sets the line width. The value of this parameter is affected by the graphics scale. Default value is 1. |
 | Stencil { get; set; } | Gets or sets stencil effect configuration. By default, no stencil effect is applied. |
 
-## SVGGeometryElement class
+### SVGGeometryElement class
 
-## Methods
+#### Methods
 
 | Name | Description |
 | --- | --- |
 | GetEquivalentPath() | Retruns a new instance instance of the `SVGPathSegList` represents `SVGGeometryElement` as path segments. |
 
-## GlyphInfo structure
+### GlyphInfo structure
 
-## Properties
+### Properties
 
 | Name | Description |
 | --- | --- |
 | StringRepresentation { get; } | Gets the string representation of this glyph. |
 
-### **Removed APIs:**
+## **Removed APIs:**
 
-## ImageVectorizerConfiguration class
+### ImageVectorizerConfiguration class
 
-## Properties
+#### Properties
 
 | Name | Description |
 | --- | --- |
