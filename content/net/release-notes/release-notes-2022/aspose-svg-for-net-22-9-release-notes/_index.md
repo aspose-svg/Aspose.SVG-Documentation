@@ -12,8 +12,10 @@ This page contains release notes information for Aspose.SVG for .NET 22.9
 
 # **Major Features**
 
+
 As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the September release of Aspose.SVG for .NET:
 
+## summary
 We have 
 
 * improved the algorithms of the Image Vectorization by adding a new approach to fitting Bezier curves, and also added a new feature for "stenciling" vectorized images;
