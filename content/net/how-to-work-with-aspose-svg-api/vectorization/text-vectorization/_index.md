@@ -32,7 +32,7 @@ The vectorized text, being a digital graphic, can be scaled with saving quality.
 
 Aspose.SVG for .NET API provides the feature of vectorizing text elements in SVG documents. To vectorize text, set the [`VectorizeText`](https://reference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/vectorizetext/) property of the [SVGSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/svgsaveoptions/) class to `true`.
 
-The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization in [text.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/text.svg) file:
+The following code snippet demonstrates the use of the `VectorizeText` property for text vectorization in [text.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/text-vectorization/text.svg) file:
 ```c#
 using System.IO;
 using Aspose.Svg;
@@ -62,7 +62,7 @@ The vectorized text, being a digital graphic, has some advantages:
  - serves the text security from unwanted using, borrowing,  and editing.
 
 {{% alert color="primary" %}} 
-You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/main/content/tests-net). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete C# examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation/tree/main/content/tests-net). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 
 

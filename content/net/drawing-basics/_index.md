@@ -4,20 +4,23 @@ linktitle: SVG Drawing Basics
 type: docs
 weight: 30
 aliases: /net/drawing-basics/
-lastmod: 2022-03-24
-description: In this chapter, you will learn the basic concepts and drawing elements used in SVG images. The chapter includes the articles about SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, SVG Color, Fills and Strokes in SVG, SVG Embedded Content, and SVG Filters and Gradients.
-keywords: svg drawing, svg coordinate system, svg path, svg text, svg transformation, svg fill, svg stroke, svg filter, svg gradient
+lastmod: 2022-10-17
+description: Learn the basic concepts and drawing elements used in svg images - svg shapes, svg color, svg paths, svg fills, svg strokes, svg filters. 
+keywords: svg drawing, svg coordinate system, svg path, svg text, svg transformation, svg fill, svg stroke, svg filter, svg gradient, svg color
 ---
 <link href="./../style.css" rel="stylesheet" type="text/css" />
-SVG is an XML language that is used for vector graphics drawing. If you are familiar with basic HTML and XML, you can easily create  SVGs in any text editor!
-This chapter aims to explain how to draw SVG images.
+SVG is an XML language that is used for vector graphics drawing. If you are familiar with basic HTML and XML, you can easily create  SVGs in any text editor! We hope our SVG Drawing Tutorial helps you in your work or study. We try to explain common rules and standard steps for creating SVG from scratch based on simple examples. 
+
+This chapter aims to explain how to draw SVG images and includes articles about SVG Coordinate Systems and Units, SVG Basic Shapes, SVG Path Data, SVG Text, Basic SVG Transformations, SVG Color, Fills and Strokes in SVG, SVG Embedded Content, and SVG Filters and Gradients.
+
+ <br>
 
 
 - **[SVG Coordinate Systems and Units](/svg/net/drawing-basics/coordinate-systems-and-units/)** In this article, you find the description of the workspace of SVG that is defined by the values of the viewport and viewBox attributes.
-- **[SVG Shapes](/svg/net/drawing-basics/basic-shapes/)** In this article, you can learn how to create different simple shapes and apply some style properties to them.
+- **[SVG Shapes](/svg/net/drawing-basics/svg-shapes/)** In this article, you can learn how to create different simple shapes and apply some style properties to them.
 - **[SVG Path Data](/svg/net/drawing-basics/svg-path-data/)** This article shows how the paths can be used to drawing various outlines or shapes by combining lines, arcs and Bezier curves. The group of commands for SVG path making is described here.
-- **[SVG Text](/svg/net/drawing-basics/text/)** This article introduces the text content elements and reviews some common attributes that help to display, format and style the text into an SVG image.
-- **[Basic SVG Transformations](/svg/net/drawing-basics/basic-transformations/)** You find out how to apply the transform functions for graphic objects rotation, scaling, moving, and skewing through the SVG transform attribute and consider code examples for SVG transformations. 
+- **[SVG Text](/svg/net/drawing-basics/svg-text/)** This article introduces the text content elements and reviews some common attributes that help to display, format and style the text into an SVG image.
+- **[Basic SVG Transformations](/svg/net/drawing-basics/svg-transformations/)** You find out how to apply the transform functions for graphic objects rotation, scaling, moving, and skewing through the SVG transform attribute and consider code examples for SVG transformations. 
 - **[Fills and Strokes in SVG](/svg/net/drawing-basics/fills-and-strokes/)** In this article, we describe several properties that allow you to set different aspects of fill and stroke, including color, opacity, thickness, use of dashing, etc.
 - **[SVG Color](/svg/net/drawing-basics/svg-color/)** This article takes an in-depth look at the different ways SVG text and shapes can be colorized. You’ll find out an overview of how color is defined, including the various ways you can control the transparency of SVG content.
 - **[SVG Embedded Content](/svg/net/drawing-basics/embedded-content/)**  is content that imports into the document from another resource. You will see how to include and render bitmap and HTML elements within an SVG object.

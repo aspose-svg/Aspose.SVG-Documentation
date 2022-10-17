@@ -16,14 +16,14 @@ Aspose.SVG for .NET lets you edit an SVG document and make changes to its conten
 In this article, we show how to edit SVG using Aspose.SVG for .NET library and consider detailed C# examples of how to add elements to SVG document and apply SVG filters to bitmaps.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the section [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests).
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the section [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/).
 {{% /alert %}} 
 
 ## **Adding a new Element to an SVG Document**
 
 Aspose.SVG API allows you to add various elements to a document.  First, you would create a new element or node; then, you can add the element to the document.
 
-1. You can use the [CreateElementNS`(namespaceURI, qualifiedName)`](https://reference.aspose.com/svg/net/aspose.svg.dom/document/createelementns/) method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/)  class to create an instance of the [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element/) class - the required element of the given qualified name and namespace URI. The `namespaceURI` sets the reference to [W3C SVG](http://www.w3.org/2000/svg) specification. The `qualifiedName` must contain the string tag name of the element. Remember, you must use casting the type (explicit conversion) to get the corresponding element.
+1. You can use the [CreateElementNS`(namespaceURI, qualifiedName)`](https://reference.aspose.com/svg/net/aspose.svg.dom/document/createelementns/) method of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/)  class to create an instance of the [Element](https://reference.aspose.com/svg/net/aspose.svg.dom/element/) class - the required element of the given qualified name and namespace URI. The `namespaceURI` sets the reference to [W3C SVG](https://www.w3.org/2000/svg) specification. The `qualifiedName` must contain the string tag name of the element. Remember, you must use casting the type (explicit conversion) to get the corresponding element.
 
 2. To add an element to the SVG document, API provides the [InsertBefore`(node, child)` ](https://reference.aspose.com/svg/net/aspose.svg.dom/node/insertbefore/)method of the [Node](https://reference.aspose.com/svg/net/aspose.svg.dom/node/) class, which inserts the `node` before the existing child node or at the end of the list of children if the `child` is null.  
 
@@ -31,7 +31,7 @@ The  [`RootElement`](https://reference.aspose.com/svg/net/aspose.svg/svgdocument
 
 ```c#
     var svgElement = document.RootElement;
-    var gElement = (SVGGElement)document.CreateElementNS("http://www.w3.org/2000/svg", "g");
+    var gElement = (SVGGElement)document.CreateElementNS("https://www.w3.org/2000/svg", "g");
     svgElement.InsertBefore(gElement, svgElement.FirstChild);
 ```
 
@@ -68,7 +68,7 @@ using Aspose.Svg.Paths;
 ...
     
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";
+    string SvgNamespace = "https://www.w3.org/2000/svg";
 
     string documentPath = Path.Combine(DataDir, "basic-shapes.svg");
     
@@ -102,7 +102,7 @@ The [SVGPolygonElement](https://reference.aspose.com/svg/net/aspose.svg/svgpolyg
 A simple example of SVG polyline creating is illustrated in the following code snippet:
 ```c# 
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";
+    string SvgNamespace = "https://www.w3.org/2000/svg";
 
     // Create a polyline element and set attributes values:
 	var polylineElement = (SVGPolylineElement)document.CreateElementNS(SvgNamespace, "polyline");
@@ -193,7 +193,7 @@ using Aspose.Svg.Paths;
 ...
     
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";    
+    string SvgNamespace = "https://www.w3.org/2000/svg";    
 
     using (var document = new SVGDocument())
     {
@@ -265,7 +265,7 @@ using Aspose.Svg.Filters;
     
     // Create an image element and add it to the svgElement
     var imageElement = (SVGImageElement)document.CreateElementNS(SvgNamespace, "image");
-    imageElement.Href.BaseVal = "http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/lighthouse.jpg";
+    imageElement.Href.BaseVal = "https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/lighthouse.jpg";
 	imageElement.Height.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
     imageElement.Width.BaseVal.ConvertToSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX);
 	imageElement.Height.BaseVal.Value = 640;
@@ -387,6 +387,6 @@ We painted the SVG circle with a big value of `stroke-width`. The `stroke-dashar
 ![Image with added SVG text and SVG circle](seaside.png#center)
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 

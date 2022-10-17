@@ -40,7 +40,7 @@ using Aspose.Svg.Rendering.Image;
 
 The static methods of the [Converter](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) class can convert SVG to XPS  with a single line of code. It is the easiest way for conversion. Converting a file to another format using [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods is a sequence of operations among which document loading and saving: 
 
- - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([owl.svg](http://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
+ - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg)).
  - Create an instance of the [XpsSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/xpssaveoptions/) class.
  - Use the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/convertsvg/) method to save SVG as an XPS file. 
 
@@ -71,7 +71,7 @@ The [XpsSaveOptions()](https://reference.aspose.com/svg/net/aspose.svg.saving/xp
 In the example above, we add the `BackgroundColor` property that sets `Color`, which will fill the background of every page. 
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 
 ## **Save Options**
@@ -92,7 +92,7 @@ Aspose.SVG allows converting SVG to XPS with default or custom save options. [Xp
 
 Consider SVG to XPS conversion scenario using RenderTo() method:
 
- - Initialize a document using  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
+ - Initialize a document using  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor ([light.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
  - Initialize an instance of the [XpsRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsrenderingoptions/) class and specify the document's properties.
  - Create a new instance of the [XpsDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsdevice/) class.
  - Convert the document by [RenderTo()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 

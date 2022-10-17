@@ -3,9 +3,9 @@ title: SVG Coordinate Systems and Units
 type: docs
 weight: 10
 aliases: /net/drawing-basics/coordinate-systems-and-units
-lastmod: 2021-10-05
-description: SVG Coordinate System, SVG Viewport, User Coordinate System, SVG Units
-keywords: SVG Coordinate System, SVG Viewport, User Coordinate System, SVG Units
+lastmod: 2022-10-17
+description: Find out how to work coordinate system, canvas and viewport together; what is viewbox and how it can be used for SVG image zooming. 
+keywords: svg coordinate system, svg viewport, viewbox, user coordinate system, svg units
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
@@ -17,7 +17,7 @@ The canvas is the space or area where all SVG elements are drawn. This area can 
 
 All SVG content must be displayed inside the viewport that defines an area on the canvas, characterized by size and a point of origin. The default origin is (0,0). Scope of the viewport sets using the **width** and **height** attributes on the outermost  `<svg>` element. 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-    <svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+    <svg width="900" height="500" xmlns="https://www.w3.org/2000/svg">
     </svg>
 ```
 The above code shows how to set the **width** and **height** of the SVG viewport. The picture can be seen through the 900×500 pixels "window". Such a viewport is named the **initial viewport**. 
@@ -43,7 +43,7 @@ Attribute values must be placed inside quotes: **viewBox= "min-x min-y width hei
 
 The viewport is like a window you look through to see an SVG’s content. The viewBox is also similar to the viewport, and it can be used for zooming. Consider an example: 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-    <svg width="900" height="500" viewBox="220 125 450 250" xmlns="http://www.w3.org/2000/svg">
+    <svg width="900" height="500" viewBox="220 125 450 250" xmlns="https://www.w3.org/2000/svg">
     </svg>
 ```
 According to a code snippet, viewBox defines a specific canvas area, covering a rectangular with the origin point (220,125), the width=450 and the height=250. Then the SVG image is cropped to that area and scaled up to fill the entire viewport. 
@@ -55,4 +55,4 @@ The  figure on the left shows the infinite SVG document canvas, initial SVG view
 
 
 As a result of the **viewBox** attribute using, the user coordinate system unit became equal to two units of the initial viewport. The scaling took place. 
-Changing the parameters of the **viewBox** attribute allows you to scale, fragment, and move the original image along the coordinate axes. In addition, the SVG coordinate system can be rotated, skewed, and flipped. More details are in the [**Basic SVG Transformations**](/svg/net/drawing-basics/basic-transformations/) section and on [**SVG 2.0 W3C**](https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html) page.
+Changing the parameters of the **viewBox** attribute allows you to scale, fragment, and move the original image along the coordinate axes. In addition, the SVG coordinate system can be rotated, skewed, and flipped. More details are in the [**Basic SVG Transformations**](/svg/net/drawing-basics/svg-transformations/) section and on [**SVG 2.0 W3C**](https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html) page.

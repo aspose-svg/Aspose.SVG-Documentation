@@ -37,7 +37,7 @@ Due to the reasons specified above, Aspose .NET components cannot be used on ser
 ## **Technical Support**
 Aspose provides unlimited free technical support for all its products. The support is available to all users, including evaluation. If you need help with Aspose.SVG, consider the following:
 
-- The main avenue for support is the [Aspose.Forums](https://forum.aspose.com/) . Post your question in the [Aspose.SVG Forum](https://forum.aspose.com/c/svg) and it will be answered within a few hours. The questions are answered directly by the Aspose.SVG development team.
+- The main avenue for support is the [Aspose.Forums](https://forum.aspose.com/) . Post your question in the [Aspose.SVG Forum](https://forum.aspose.com/c/svg/42) and it will be answered within a few hours. The questions are answered directly by the Aspose.SVG development team.
 - Please note, Aspose does not provide technical support over the phone. Phone support is only available for sales and purchase questions.
 - When expecting a reply in the forums, please allow for time zone differences.
 

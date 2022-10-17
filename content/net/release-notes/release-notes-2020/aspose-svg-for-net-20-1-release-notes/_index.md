@@ -19,7 +19,7 @@ We are pleased to announce the first public release of Aspose.SVG for .NET. Aspo
 * Conversion to various output formats such as PDF, PNG, JPG, XPS and more
 * Data extraction, which includes support of XPath queries, CSS Selectors and Element Traversal
 
-Please visit the [Product Features page](/svg/net/features-list/) for further details and get the chance to download the first release of [Aspose.SVG for .NET](https://downloads.aspose.com/svg/net). You can also get familiar with the solution by using Aspose.SVG for .NET examples and demo projects at [GitHub](https://github.com/aspose-svg/Aspose.SVG-for-.NET).
+Please visit the [Product Features page](/svg/net/features-list/) for further details and get the chance to download the first release of [Aspose.SVG for .NET](https://releases.aspose.com/svg/net/). You can also get familiar with the solution by using Aspose.SVG for .NET examples and demo projects at [GitHub](https://github.com/aspose-svg/Aspose.SVG-for-.NET).
 
 # **Public API changes:**
 

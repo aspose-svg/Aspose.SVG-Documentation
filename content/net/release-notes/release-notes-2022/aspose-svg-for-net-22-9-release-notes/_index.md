@@ -108,7 +108,7 @@ public class StencilConfiguration
 
 #### StencilType enumeration
 
-The [`StencilType`](../stenciltype) enum defines stencil types.
+The `StencilType` enum defines stencil types.
 
 ```csharp
 public enum StencilType

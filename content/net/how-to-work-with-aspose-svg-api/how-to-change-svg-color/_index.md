@@ -88,7 +88,7 @@ using Aspose.Svg.Dom;
 ...
 
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";
+    string SvgNamespace = "https://www.w3.org/2000/svg";
 	
 	// Prepare a path to a file loading
     string documentPath = Path.Combine(DataDir, "basic-shapes.svg");
@@ -127,7 +127,7 @@ using Aspose.Svg.Dom;
 ...
     
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";
+    string SvgNamespace = "https://www.w3.org/2000/svg";
 
     string documentPath = Path.Combine(DataDir, "basic-shapes.svg");
 
@@ -156,7 +156,7 @@ The figure shows the visualization of the original SVG file  [basic-shapes.svg](
 ![Original svg image and svg image with new background color](background-color.png#center)
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the section [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests).
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the section [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/).
 {{% /alert %}} 
 
 ## **Recolor SVG**
@@ -169,7 +169,7 @@ using Aspose.Svg.Dom;
 ...
 
     // Set SVG Namespace Url
-    string SvgNamespace = "http://www.w3.org/2000/svg";
+    string SvgNamespace = "https://www.w3.org/2000/svg";
 
     string documentPath = Path.Combine(DataDir, "snowflake-blue.svg");
 

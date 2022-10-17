@@ -7,7 +7,7 @@ aliases:
     - /net/how-to-run-the-tests/
     - /net/getting-started/how-to-run-the-examples/    
     - /display/svgnet/How+to+Run+the+Examples
-lastmod: "2022-03-20"
+lastmod: "2022-10-17"
 ---
 
 Examples of using the API features are given as **XUnit tests** that serve to accompany the documentation. The XUnit tests help to attend the documentation and cover the possible uses of the API features. 
@@ -23,7 +23,7 @@ Please make sure you meet the following requirements before downloading and runn
 1. Visual Studio 2010 or higher
 1. NuGet Package Manager installed in Visual Studio. Make sure that the latest NuGet API version is installed in Visual Studio. For details on how to install NuGet package manager please check <https://docs.microsoft.com/en-gb/nuget/install-nuget-client-tools>
 1. Go to Tools->Options->NuGet Package Manager->Package Sources and make sure that the option **nuget.org** is checked
-1. Example project uses NuGet Automatic Package Restore feature, therefore, you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/svg/net/installation/) and manually add a reference to Aspose.SVG.dll in the example project.
+1. Example project uses NuGet Automatic Package Restore feature, therefore, you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/svg/net/getting-started/installation/) and manually add a reference to Aspose.SVG.dll in the example project.
 
 ## **Download from GitHub**
 

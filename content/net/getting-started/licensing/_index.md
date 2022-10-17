@@ -4,13 +4,13 @@ second_title: Aspose.SVG for .NET
 type: docs
 weight: 70
 aliases: /net/licensing/
-lastmod: "2020-12-15"
+lastmod: "2022-10-17"
 description: Licensing and Evaluation Version Requirements for SVG C# library and setting the license with file or stream and applying metered license.
 ---
 
 ## **Evaluation Version Limitations**
 
-A free evaluation version of Aspose.SVG for .NET can be downloaded from the downloads section of Aspose's website at: [Download Aspose.SVG API](https://downloads.aspose.com/svg/net).
+A free evaluation version of Aspose.SVG for .NET can be downloaded from the downloads section of Aspose's website at: [Download Aspose.SVG API](https://releases.aspose.com/svg/net/).
 
 ### **Limitation**
 
@@ -28,7 +28,7 @@ If you want to try Aspose.SVG without evaluation limitations, request a 30 day t
 
 ## **Apply License using File or Stream Object**
 
-The license can be loaded from a [file](/svg/net/licensing/#loading-a-license-from-file) or [stream object](https://docs.aspose.com/svg/net/licensing/#loading-a-license-from-a-stream-object). Aspose.SVG for .NET will try to find the license in the following locations:
+The license can be loaded from a [file](/svg/net/getting-started/licensing/#loading-a-license-from-file) or [stream object](https://docs.aspose.com/svg/net/licensing/#loading-a-license-from-a-stream-object). Aspose.SVG for .NET will try to find the license in the following locations:
 
 1. Explicit path.
 1. The folder that contains Aspose.SVG.dll.

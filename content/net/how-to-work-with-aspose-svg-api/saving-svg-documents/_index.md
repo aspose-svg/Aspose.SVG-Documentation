@@ -18,7 +18,7 @@ Most of the tasks, you need to perform,  require saving a document. Once you loa
 
 In this article, we review the SVG documents saving to the same format. You find out how to save your SVG file using Save() methods of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class. Moreover, Aspose.SVG for .NET provides the [IOutputStorage](https://reference.aspose.com/svg/net/aspose.svg.io/ioutputstorage/) interface that allows save SVG documents with resources to streams and manage them.
 
-The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
+The scenarios of converting and rendering SVG to other formats are viewed in the **[How to Convert SVG Files](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/)** section. 
 
 {{% alert color="primary" %}} 
 You can try to convert SVG documents to various other formats with our [**Free Online SVG Converter**](https://products.aspose.app/svg/conversion).
@@ -51,7 +51,7 @@ using Aspose.Svg;
 
 ### **Save SVG to a Url**
 
-It is necessary to specify a full Url path for the document [lineto.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg) saving and pass the `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
+It is necessary to specify a full Url path for the document [lineto.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg) saving and pass the `url` object to the **Save()** method. The following code example shows how to save a document to a Url:
 
 ```c#
 using System.IO;
@@ -75,7 +75,7 @@ using Aspose.Svg;
 
 The SVG document can contain different resources like CSS, external images and files. Aspose.SVG provides a way to save SVG with all linked files - the [IOutputStorage](https://reference.aspose.com/svg/net/aspose.svg.io/ioutputstorage/) interface is developed for saving SVG content and resources to streams. 
 
-Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [with-external-html.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/with-external-html.svg) document with the joined [simple-html.htm](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/simple-html.htm) file are in the same directory. The [LocalFileSystemStorage(`customOutDir`)](https://reference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/localfilesystemstorage/) constructor creates an object that is a file system storage. The [Save(`IOutputStorage`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/save/) method takes this object and saves SVG to the output storage.
+Let's consider an example of saving SVG with linked file to user-specified local file storage. The source [with-external-html.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/with-external-html.svg) document with the joined [simple-html.htm](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/simple-html.htm) file are in the same directory. The [LocalFileSystemStorage(`customOutDir`)](https://reference.aspose.com/svg/net/aspose.svg.io/localfilesystemstorage/localfilesystemstorage/) constructor creates an object that is a file system storage. The [Save(`IOutputStorage`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/save/) method takes this object and saves SVG to the output storage.
 
 ```c#
 using System.IO;
@@ -249,5 +249,5 @@ internal class MemoryOutputStorage : IOutputStorage
 ```
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the **[How to Run the Examples](http://docs.aspose.com/svg/net/how-to-run-the-tests)** section.
+You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the **[How to Run the Examples](https://docs.aspose.com/svg/net/how-to-run-the-tests/)** section.
 {{% /alert %}}

@@ -6,7 +6,7 @@ weight: 10
 aliases: 
     - /net/how-to-work-with-aspose-svg-api/creating-loading-documents/
     - /net/create-and-read-svg-documents/
-lastmod: 2022-01-10
+lastmod: 2022-10-17
 keywords: create SVG, SVG file, load SVG, SVG document, read SVG, svg example, c# code snippet
 description: In this article, you will learn how to create SVG from a memory string, stream, or file; how to load SVG from the Web and read SVG using Resources Async. The article provides some examples of creating & loading SVG files using Aspose.SVG for .NET API. 
 ---
@@ -24,12 +24,12 @@ SVG files can be created & loaded:
 This article provides some examples of creating & loading SVG files using Aspose.SVG for .NET API. The SVGDocument has a wide set of overloaded constructors allowing you to create a blank document or load it from a file, URL, stream, etc.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 
 ## **Create an Empty SVG Document**
 
-Aspose.SVG for .NET API provides the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/"Aspose.Svg.SVGDocument API Reference") class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following C# code snippet shows the usage of the default [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor to create an SVG document.
+Aspose.SVG for .NET API provides the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class that can be used to create an empty document using its default constructor. Once the document object is created, it can be filled later with SVG elements. The following C# code snippet shows the usage of the default [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructor to create an SVG document.
 
 ```c#
 using Aspose.Svg;
@@ -77,7 +77,7 @@ using Aspose.Svg;
 ...
     
     // Prepare SVG code
-    var documentContent = "<svg xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"40\" /></svg>";	
+    var documentContent = "<svg xmlns=\"https://www.w3.org/2000/svg\"><circle cx=\"50\" cy=\"50\" r=\"40\" /></svg>";	
 
 	// Initialize an SVG document from a string content
 	using (var document = new SVGDocument(documentContent, "."))
@@ -111,7 +111,7 @@ using System.IO;
 
 ## **Load SVG from a File**
 
-To load SVG from a file [bezier-curves.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg), use the default constructor of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class and pass the file path as the input parameter to it.
+To load SVG from a file [bezier-curves.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/creating-loading-documents/bezier-curves.svg), use the default constructor of the [SVGDocument](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/) class and pass the file path as the input parameter to it.
 
 ```c#
 using Aspose.Svg;
@@ -195,5 +195,5 @@ using System.Threading;
 ```
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 

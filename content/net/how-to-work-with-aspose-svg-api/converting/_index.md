@@ -47,18 +47,18 @@ The current section describes supported scenarios of SVG files conversions to ot
 
 1. The static Converter class is a shared facade that provides SVG files conversions to the popular formats and allows to make these operations convenient and easy. A wide range of ConvertSVG() methods take as arguments the source document, save options, output file path, and convert SVG to PDF, XPS or Image files.
 2. The RenderTo() method of the SVGDocument class is used to render SVG to another format and send a document to the output device. Aspose.SVG API provides the following output devices implementation:  the [PdfDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.pdf/pdfdevice/), [XpsDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.xps/xpsdevice/) and  [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) classes, which perform rendering to PDF, XPS and Image file formats respectively. 
-3. The Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer/) class gives you the ability to send multiple documents at once to the output rendering device and merge them. For more information, please see the article [**How to Merge SVG Documents**](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/).
+3. The Render (`IDevice, TDocument`) method of the [Renderer](https://reference.aspose.com/svg/net/aspose.svg.rendering/renderer/) class gives you the ability to send multiple documents at once to the output rendering device and merge them. For more information, please see the article [**How to Merge SVG Documents**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-merge-svg-documents/).
 
 Let's consider both scenarios of conversion SVG document to another file format, for example, SVG to PNG:
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the[ **How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from **[GitHub](https://github.com/aspose-svg/Aspose.SVG-Documentation)**. About downloading from GitHub and running examples, you find out from the[ **How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests) section.
 {{% /alert %}}  
 
 ### **Convert SVG to PNG Using the ConvertSVG() Method**
 Converting a file to another format using the ConvertSVG() method is a sequence of operations among which document loading and saving:
 
- - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([svg-to-png.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/svg-to-png.svg)).
+ - Load an SVG document using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([svg-to-png.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/svg-to-png.svg)).
  - Create an instance of the [ImageSaveOptions](https://reference.aspose.com/svg/net/aspose.svg.saving/imagesaveoptions/) class.
  - Use one of the [ConvertSVG()](https://reference.aspose.com/svg/net/aspose.svg.converters/converter/) methods to save SVG as a PNG file.
 
@@ -90,7 +90,7 @@ The figure illustrates the svg-to-png.png file.
 
 To convert SVG to PNG using the RenderTo() method, take the following stages:
 
- - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([light.svg](http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
+ - Initialize a document using one of the  [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors ([light.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/converting/light.svg)).
  - Produce an instance of the [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagerenderingoptions/) class.
  - Create a new instance of the [ImageDevice](https://reference.aspose.com/svg/net/aspose.svg.rendering.image/imagedevice/) class. 
  - Convert the document by [RenderTo(`device`)](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/renderto/) method. 

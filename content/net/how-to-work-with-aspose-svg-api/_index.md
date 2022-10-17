@@ -3,14 +3,16 @@ title: Нow to work with Aspose.SVG API
 type: docs
 weight: 40
 aliases: /net/how-to-work-with-aspose-svg-api/
-lastmod: 2022-03-22
+lastmod: 2022-10-17
 keywords: SVG file, SVG document, create SVG, load SVG, save SVG, convert svg, merge svg, svg filter, svg text, svg color
-description:  The articles in this chapter provide the required information to start working with Aspose.SVG class library. We look at how the DOM represents an SVG document in memory and how to use API for SVG files creating, editing, colorizing, saving, converting, and merging. The articles provide various C# examples (code snippets) of creating, loading, saving, editing, converting and merging SVG files using Aspose.SVG for .NET API. 
+description:  The articles in this chapter provide the information you need to get started with the C# library and C# examples for processing SVG files. 
 ---
 
 SVG files use an XML-based text format to describe how the image should appear. SVG is a resolution-independent format, and SVG files can be scaled to different sizes without losing quality. The SVG format has all the advantages of vector graphics and many other advantages over bitmap formats. SVG is available in all modern web browsers,  and as we look forward, it is easy to see that SVG files are the future of web design graphics.
 
-The articles in this chapter provide the required information to start working with Aspose.SVG class library. We look at how to use API for SVG files creating, editing and saving. Along with the powerful DOM API, one of the key features of Aspose.SVG is quality rendering and converting to many popular formats, such as PDF, XPS, JPEG, PNG, BMP, TIFF, and GIF. Moreover, this library offers additional saving and rendering options, SVG documents merging, Image vectorization, SVG text vectorization, applying scripts, SVG filter effects, and more.
+The articles in this chapter provide the required information to start working with Aspose.SVG class library.  We look at how the DOM represents an SVG document in memory and how to use API for SVG files creating, editing, colorizing, saving, converting, and merging. The articles provide various C# examples (code snippets) of creating, loading, saving, editing, converting and merging SVG files using Aspose.SVG for .NET API. 
+
+Along with the powerful DOM API, one of the key features of Aspose.SVG is quality rendering and converting to many popular formats, such as PDF, XPS, JPEG, PNG, BMP, TIFF, and GIF. Moreover, this library offers additional saving and rendering options, SVG documents merging, Image vectorization, SVG text vectorization, applying scripts, SVG filter effects, and more.
 
 The following articles are available:
 

@@ -15,7 +15,7 @@ This page contains release notes information for Aspose.SVG for .NET 22.8
 As per the regular monthly update process of all APIs being offered by Aspose, we are honored to announce the August release of Aspose.SVG for .NET:
 
 * we improved and expanded the interface for working with CSS color models described in the W3C specifications:
-https://www.w3.org/TR/css-color-4 and https://www.w3.org/TR/css-color-5
+https://www.w3.org/TR/css-color-4/ and https://www.w3.org/TR/css-color-5/
 
 
 * we optimized the CSS processing code to run faster.

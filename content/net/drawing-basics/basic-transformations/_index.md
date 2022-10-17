@@ -5,8 +5,8 @@ type: docs
 weight: 50
 url: /net/drawing-basics/svg-transformations/
 aliases: /net/drawing-basics/basic-transformations/
-lastmod: 2022-01-10
-description: You will learn how to apply transform functions to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
+lastmod: 2022-10-17
+description: Learn how to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
 keywords: SVG Transformations, SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
@@ -30,7 +30,7 @@ y(new) = y(old) + ***ty***
 Here is a simple example:
 
 ```html {linenos=inline,linenostart=1}
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg"> 
     <g fill="none">
         <!-- no translation -->
         <circle cx="15" cy="15" r="10" stroke="blue" />
@@ -53,7 +53,7 @@ Scaling is an SVG transformation that enlarges or reduces an object using a scal
 The ***scale (sx [sy])*** transform function allows scaling image along the x- and y-axis. This function takes one or two values which specify horizontal and vertical scaling:  `transform="scale(<sx> [<sy>])"`. The ***sy*** scaling factor value is optional and if omitted it is assumed to be equal to ***sx***.
 
 ```html {linenos=inline,linenostart=1 hl_lines=["12","14"]}
-<svg viewBox="-50 -50 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-50 -50 200 200" xmlns="https://www.w3.org/2000/svg">
     <!-- uniform scale -->
     <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
     <circle cx="0" cy="0" r="10" fill="#DDA0DD" transform="scale(3)" />
@@ -89,7 +89,7 @@ All rotate or skew angle values should be specified in degrees, you cannot use t
 Like ***translation***, ***SVG rotation*** does not distort the element and saves parallelism, angles, and distances.
 
 ```html {linenos=inline,linenostart=1 hl_lines=["4","6"]}
-<svg width="450" height="450" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="450" xmlns="https://www.w3.org/2000/svg">
     <rect x="100" y="250" width="200" height="30" fill="CadetBlue" />
     <rect x="100" y="250" width="200" height="30" fill="#DDA0DD" transform ="rotate(-45 200 265)" />
     <rect x="100" y="250" width="200" height="30" fill="Pink" transform ="rotate(-90 200 265)" />
@@ -111,7 +111,7 @@ The using ***skewX(angle)***, only the x coordinate of the points of the shape c
 Here is shown an example of the circle with skewX(55) value ([sqew-x.svg](/svg/net/drawing-basics/svg-transformations/sqew-x.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
     <circle cx="20" cy="20" r="15" stroke="blue" fill="none" />
     <circle cx="20" cy="20" r="15" stroke="grey" stroke-opacity="0.7" fill="none" transform="skewX(55)" />
 </svg>
@@ -119,7 +119,7 @@ Here is shown an example of the circle with skewX(55) value ([sqew-x.svg](/svg/n
 A simple example of the rectangle skewed by skewY(35) function ([sqew-y.svg](/svg/net/drawing-basics/svg-transformations/sqew-y.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg  width="800" height="800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg  width="800" height="800" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
    <rect x="20" y="20" width="30" height="30" stroke="blue" stroke-opacity="1" fill="none" />
    <rect x="20" y="20" width="30" height="30" stroke="grey" stroke-opacity="0.5" fill="none" transform="skewY(35)" />
  </svg>
