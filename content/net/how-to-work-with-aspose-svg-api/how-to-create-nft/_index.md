@@ -1,9 +1,9 @@
 ---
-title: How to create NFT?
+title: How to create an NFT?
 type: docs
 weight: 90
-lastmod: "2022-02-24"
-description: NFT is a digital certificate of ownership representing the purchase of a digital asset, traceable on the blockchain. You learn about NFT pros and cons and how to create NFT smart contract.
+lastmod: "2022-10-17"
+description: You learn about a digital certificate of ownership NFT, its pros and cons; what is an NFT smart contract, why it is needed and how to create NFT.
 keywords: nft, what is an nft, what does nft mean, nft image, how to create nft, smart contract, nft smart contract, nft app, nft metadata, create nft smart contract, blockchain, Ethereum
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />

@@ -86,7 +86,7 @@ The fill is the color inside a shape, and the stroke is the visible outline of a
  In the following example, we consider the fill color and stroke color applying for SVG circle. **Note**: The code snippet can be used similarly for SVG ellipse, rectangle, polyline, and polygon.
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="600" xmlns="http://www.w3.org/2000/svg">
+<svg height="200" width="600" xmlns="https://www.w3.org/2000/svg">
     <circle cx="70" cy="70" r="50" />
     <circle cx="200" cy="70" r="50" fill="#79C99E" />
     <circle cx="330" cy="70" r="50" fill="#79C99E" stroke-width="10" stroke="#508484" />
@@ -104,7 +104,7 @@ The figure illustrates the code snippet above:
 In the following example, we consider the fill and stroke applying for SVG line and SVG polyline. **Note**: The code snippet uses setting color fill and color stroke with `fill` and `stroke` properties of the **style** attribute:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="700" xmlns="http://www.w3.org/2000/svg">
+<svg height="400" width="700" xmlns="https://www.w3.org/2000/svg">
     <line x1="30" y1="30" x2="30" y2="300" style="stroke:#4387be; stroke-width:10" />
     <line x1="55" y1="27" x2="130" y2="300" style="stroke:#c4456d; stroke-width:10" />
     <line x1="80" y1="20" x2="250" y2="300" style="stroke:#77bec1; stroke-width:10" />
@@ -121,7 +121,7 @@ In the following example, we consider the fill and stroke applying for SVG line 
 The following example illustrates the similarities and differences in applying fill color and stroke color to an SVG polyline and an SVG polygon:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="500" xmlns="http://www.w3.org/2000/svg">
+<svg height="400" width="500" xmlns="https://www.w3.org/2000/svg">
     <polyline points="60,290 130,20 200,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
     <polygon points="260,290 330,20 400,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
 </svg>
@@ -138,7 +138,7 @@ For an SVG `<path>` element, you can use both a color stroke and a color fill. T
 So that there is no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`. In the following code example, we will show how fill and stroke can be used with a `<path>` element:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="600" xmlns="http://www.w3.org/2000/svg">
+<svg height="400" width="600" xmlns="https://www.w3.org/2000/svg">
     <path stroke="#a06e84" stroke-width="3" fill="none" d="  
 	M 150,50 L 150, 300
 	M 120,100 L 150,50 L 180, 100
@@ -167,7 +167,7 @@ The figure below illustrates how the values `fill = "none"` and `fill = "#74aeaf
 Like other SVG shapes, text can have both a stroke and fill set on it. In this code example, we will look at how you can set the fill color and stroke color of text and use a gradient as a fill. As with all SVG shapes, if the **fill** attribute is not specified, the text will be displayed in black by default:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
+<svg height="300" width="600" xmlns="https://www.w3.org/2000/svg">
     <defs>
 		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
 			<stop offset="10%" style="stop-color:lightsalmon" />
@@ -202,7 +202,7 @@ You can specify the opacity of either the fill or stroke separately in SVG. Thes
 Let's look at an example of how to set the opacity of the fill color of the shapes. In the following code snippet, we specify different opacity values to fill the rectangle with rgb(0,50,255) blue using **RGBA** color codes (Figure a); for red hsl(0,100%,50%) - using the **HSLA** color codes (Figure b) and for the color HEX #C1B900 - using the **fill-opacity** attribute (Figure c).
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="1250" xmlns="http://www.w3.org/2000/svg">
+<svg height="200" width="1250" xmlns="https://www.w3.org/2000/svg">
     <rect x="310" y="30"  width="100" height="100" fill="rgba(0,50,255,0.8)" />
    	<rect x="250" y="50"  width="110" height="100" fill="rgba(0,50,255,0.7)" />
    	<rect x="170" y="90"  width="110" height="100" fill="rgba(0,50,255,0.6)" />   

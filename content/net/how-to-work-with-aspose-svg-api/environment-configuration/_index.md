@@ -4,18 +4,20 @@ linktitle: Environment Configuration
 type: docs
 weight: 40
 aliases: /net/how-to-work-with-aspose-svg-api/environment-configuration/
-lastmod: 2022-01-10
-description: In this guide, you will learn how to create various configurations and adapt them to the different environments where the application runs. This can be a custom theme, a runtime service or a web request network service.
+lastmod: 2022-10-17
+description: Learn how to create a custom theme, runtime service or web request network service and adapt them to environments where the application runs.
 keywords: environment configuration, user agent service, runtime service, network service, message handler, custom message handler
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 The setting of environment configuration is used for various purposes. For example, when you develop an application, you will definitely demand some configuration that can range from runtime service or handle any web requests from the application to injecting custom themes.
 
-The [Aspose.Svg.Services](https://reference.aspose.com/svg/net/aspose.svg.services/) namespace contains a set of interfaces for separated services implementations.This article considers different types of environment configuration services such as **User Agent Service**, **Runtime Service**, and **Network Service**.  Aspose.SVG for .NET provides the [Configuration](https://reference.aspose.com/svg/net/aspose.svg/configuration/) class that  can be used to set the environment where the application is running.
+In this guide, you will learn how to create various configurations and adapt them to the different environments where the application runs. This can be a custom theme, a runtime service or a web request network service.
+
+The [Aspose.Svg.Services](https://reference.aspose.com/svg/net/aspose.svg.services/) namespace contains a set of interfaces for separated services implementations. This article considers different types of environment configuration services such as **User Agent Service**, **Runtime Service**, and **Network Service**.  Aspose.SVG for .NET provides the [Configuration](https://reference.aspose.com/svg/net/aspose.svg/configuration/) class that  can be used to set the environment where the application is running.
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). You find out about downloading from GitHub and running examples from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 
 ## **User Agent Service**
@@ -47,7 +49,7 @@ using Aspose.Svg.Saving;
 ...
     
     // Prepare SVG code and save it to a file
-    var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
+    var code = "<svg xmlns=\"https://www.w3.org/2000/svg\">\r\n" +
                "    <circle cx=\"40\" cy=\"80\" r=\"30\" />\r\n" +
                "    <text x=\"80\" y=\"100\">Aspose.SVG</text>\r\n" +
                "</svg>\r\n";
@@ -98,7 +100,7 @@ using Aspose.Svg.Saving;
 ...
     
     // Prepare SVG code and save it to a file
-    var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
+    var code = "<svg xmlns=\"https://www.w3.org/2000/svg\">\r\n" +
                "    <script> while(true) {} </script>\r\n" +
                "    <circle cx=\"40\" cy=\"80\" r=\"30\" />\r\n" +
                "</svg>\r\n";
@@ -188,7 +190,7 @@ using Aspose.Svg.Net;
 ...
     
     // Prepare SVG code and save it to a file
-    var code = "<svg xmlns=\"http://www.w3.org/2000/svg\">\r\n" +
+    var code = "<svg xmlns=\"https://www.w3.org/2000/svg\">\r\n" +
                "    <image href=\"https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/park.jpg\" width=\"640px\" height=\"480px\" />\r\n" +
                "    <image href=\"https://docs.aspose.com/svg/net/missing1.svg\" width=\"400px\" height=\"300px\" />\r\n" +
                "    <image href=\"https://docs.aspose.com/svg/net/missing2.svg\" width=\"400px\" height=\"300px\" />\r\n" +
@@ -232,6 +234,6 @@ After the example run:
 
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 

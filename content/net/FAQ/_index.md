@@ -3,7 +3,7 @@ title: FAQ
 type: docs
 weight: 60
 aliases: /net/faq/
-lastmod: "2022-01-10"
+lastmod: "2022-10-17"
 description: SVG is a vector graphics format that is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more.
 keywords: svg, svg logo, svg document, svg file, vector graphics, svg icon, svg sprite, create svg, convert SVG to PNG, svg text, text vectorization
 ---

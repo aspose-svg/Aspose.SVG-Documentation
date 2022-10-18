@@ -28,9 +28,9 @@ The  main attributes are:
 
 How to use the SVG `<image>` element?  The following code snippet shows as a .png and .svg images can embed inside the SVG document:
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="400" xlink="http://www.w3.org/2000/svg">
+<svg width="500" height="400" xlink="https://www.w3.org/2000/svg">
     <image href="https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/svg/272x272/aspose_svg-for-net.png" x="20" y="20" height="180" width="180" />
-    <image href="http://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg" x="250" y="10" height="350" width="350" />
+    <image href="https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/navigation-inspection/shapes.svg" x="250" y="10" height="350" width="350" />
     <text x="40" y="250">Embedded PNG image</text>
     <text x="300" y="250">Embedded SVG image</text>
 </svg>
@@ -46,7 +46,7 @@ As attributes, you must specify the **x**, **y** coordinates, **width** and **he
 
 Let's see an example:
 ```html {linenos=inline,linenostart=1 hl_lines=["12"]}
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 300 300" xmlns="https://www.w3.org/2000/svg">
     <style>
         div {
             color: grey;
@@ -57,7 +57,7 @@ Let's see an example:
     <!-- example of  HTML text embedding in SVG -->
     <foreignObject x="20" y="20" width="200" height="180">
     <!--In the context of HTML embedded in the SVG document, the XHTML namespace is mandatory-->
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <div xmlns="https://www.w3.org/1999/xhtml">
         Convert SVG to PNG. Aspose.SVG for .NET can read and convert SVG files to PNG, PDF, XPS, and major image formats. 
         </div>
     </foreignObject>
@@ -68,7 +68,7 @@ Let's see an example:
 
 Using the `<foreignObject>` inside SVG, you need to specify the namespace from which the foreign object originates. In this example, it sets in line 12:
 
- `<div xmlns="http://www.w3.org/1999/xhtml">`
+ `<div xmlns="https://www.w3.org/1999/xhtml">`
 
 {{% alert color="primary" %}}
 Aspose.SVG offers [**SVG Free Web Applications**](https://products.aspose.app/svg/applications) for converting SVG or image files, merging SVG files, image vectorizing, SVG sprite generating, SVG to Base64 data encoding, and text vectorizing. These online Apps work on any operating system with a web browser and don't require additional software installation. It's a fast and easy way to efficiently and effectively solve your SVG-related tasks!

@@ -7,13 +7,15 @@ aliases:
     - /net/drawing-basics/text/
     - /net/drawing-basics/text
 
-lastmod: 2022-01-10
-description: This article introduces the SVG text elements and reviews some common attributes that help to display, format and style the text into an SVG image. Also, here you will find basic information about glyphs, characters and fonts.
+lastmod: 2022-10-17
+description: You will find basic information about glyphs, characters and fonts, learn how to display, format and style svg text into an SVG image.
 keywords: svg text, fonts and glyphs, svg text element, paths and text
 ---
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
 SVG allows making for three types of graphic objects: vector graphic shapes, images and text. In the same way, as for the shapes, the SVG text elements can be applied coordinate system transformations, clipping and styling. In this article, we consider how to bring text into an SVG image.  
+
+This article introduces the SVG text elements and reviews some common attributes that help to display, format and style the text into an SVG image. Also, here you will find basic information about glyphs, characters and fonts.
 
 {{% alert color="primary" %}}
 Aspose.SVG proposes you convert text to vector in a short time and with professional quality and resolution! Free Online <a href="https://products.aspose.app/svg/text-to-vector" target="_blank">**Text to Vector**</a> web application is intended to replace text elements in SVG files with vector graphics. In the vectorized SVG text, all font glyphs are replaced with a combination of graphic elements. Such a text become a vector drawing and cannot be edited. Convert your SVG text to vector and get all the advantages of vectorized text!
@@ -54,7 +56,7 @@ The `<text>` element is used to define a text. **x** and **y**  are the main att
 The following example illustrates how to specify a start of baseline correctly. The  **x** and **y** set the coordinates of the baseline beginning ([svg-text-position.svg](/svg/net/drawing-basics/svg-text/svg-text-position.svg)).
 
 ```html {linenos=inline,linenostart=1}
-<svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
+<svg height="100" width="200" xmlns="https://www.w3.org/2000/svg">
     <text x="10" y="6" fill="red">The text is not fully visible </text>
     <text x="10" y="30" fill="green">The text is fully visible </text>
 </svg>
@@ -82,7 +84,7 @@ Using the **textLength** attribute, you can set the length of the text. Herewith
 
 Let's see how you can arrange the text ([svg-text-arranging.svg](/svg/net/drawing-basics/svg-text/svg-text-arranging.svg)): 
 ```html {linenos=inline,linenostart=1}
- <svg  height="300" width="400" xmlns="http://www.w3.org/2000/svg">
+ <svg  height="300" width="400" xmlns="https://www.w3.org/2000/svg">
     <text x="180" y="30" fill="red">Aspose.SVG</text>
     <text x="180" y="60" fill="blue" textLength="140" >Aspose.SVG</text>
     <text x="180" y="90" fill="grey" textLength="160" lengthAdjust="spacingAndGlyphs" style="direction: rtl; unicode-bidi: bidi-override">Aspose.SVG</text>
@@ -108,7 +110,7 @@ The `<tspan>` element is within the `<text>` element or other `<tspan>` element.
 Consider a simple `<tspan>`> example ([svg-text.svg](/svg/net/drawing-basics/svg-text/svg-text.svg)): 
 
 ```html {linenos=inline,linenostart=1}
- <svg height="300" width="600" xmlns="http://www.w3.org/2000/svg">
+ <svg height="300" width="600" xmlns="https://www.w3.org/2000/svg">
     <text x="20" y="60" style="font-family:arial">
         <tspan style="font-weight:bold; font-size:55px">ASPOSE</tspan>
         <tspan x="50" y="90" style="font-size:20px; fill:grey">Your File Format APIs </tspan>
@@ -131,7 +133,7 @@ SVG can place text along a path defined by a `<path>` element. This is making by
 Both the **path** attribute and the **href** attribute specify a path along which the characters will be rendered. The text displaying along the curve mostly takes attribute **href** with reference to the `<path>`element. Here is an example ([svg-text-path.svg](/svg/net/drawing-basics/svg-text/svg-text-path.svg)): 
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="800" xmlns="http://www.w3.org/2000/svg">
+<svg height="300" width="800" xmlns="https://www.w3.org/2000/svg">
     <path id="my_path1" d="M 50 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100"  fill="transparent" />
     <path id="my_path2" d="M 50 100 Q 25 10 180 100 T 350 100" transform="translate(0,75)" fill="transparent" />
     <text>

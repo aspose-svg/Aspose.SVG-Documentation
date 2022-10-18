@@ -3,14 +3,14 @@ title: What is an SVG Document?
 type: docs
 weight: 10
 aliases: /net/what-is-an-svg-document/
-lastmod: "2022-01-10"
-description: SVG is a vector graphics format that is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more. SVG format has all the vector graphics advantages, as well as many other pros over bitmap image formats.
-keywords: svg, svg document, svg file, vector graphics, svg format, svg pros and cons
+lastmod: "2022-10-17"
+description: Learn more about svg files. SVG format has all the vector graphics advantages, as well as many other pros over bitmap image formats.
+keywords: svg, svg document, svg file, vector graphics, svg format, svg pros and cons, svg file format
 ---
 
 ## **SVG is a vector-based graphics in a text format**
 
-Scalable Vector Graphics (SVG) is an XML language for creating two-dimensional vector and mixed vector/raster graphics.  SVG document is a text file that describes images as geometric primitives: lines, curves, shapes, text, etc. Vector objects are constructed and stored as a set of commands, numbers, formulas, not in a pixel grid as in bitmaps. 
+Scalable Vector Graphics (SVG) is an XML language for creating two-dimensional vector and mixed vector/raster graphics.  SVG document is a text file that describes images as geometric primitives: lines, curves, shapes, text, etc. Vector objects are constructed and stored as a set of commands, numbers, formulas, not in a pixel grid as in bitmaps. SVG is used to create SVG icons, SVG logos, SVG sprites, text vectorization and more. SVG format has all the vector graphics advantages, as well as many other pros over bitmap image formats.
 
 Vector file format is widely used in the web, and understanding the basics of SVG will be helpful for developers. 
 
@@ -46,7 +46,7 @@ SVG format has all the vector graphics advantages, as well as many other pros ov
 
 8. **Styling.** For any element of the SVG image, CSS properties can be set. 
 
-9. **Flexibility.** SVG images can interact with DOM, CSS, HTML and Javascript. 
+9. **Flexibility.** SVG images can interact with DOM, CSS, HTML and JavaScript. 
 
 10. **SVG is a free open standard.** [**SVG 2.0**](https://www.w3.org/TR/2018/CR-SVG2-20181004/)  is a W3C Recommendation and is the most recent version of the full specification. 
 

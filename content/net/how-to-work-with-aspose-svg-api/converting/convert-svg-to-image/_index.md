@@ -128,7 +128,7 @@ The [ImageRenderingOptions](https://reference.aspose.com/svg/net/aspose.svg.rend
 In the example above, we convert the SVG file [owl.svg](https://docs.aspose.com/svg/net/drawing-basics/svg-path-data/owl.svg) to JPG with different `SmoothingMode` values. The figure illustrates zoomed (250%) JPG images fragments: a) The value of `SmoothingMode`  is `AntiAlias` ; b) The value of  `SmoothingMode` is  `Default`.   
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](http://docs.aspose.com/svg/net/how-to-run-the-tests) section.
+You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
 
 ## **Save Options**
@@ -171,7 +171,7 @@ using Aspose.Svg.Converters;
 ...
 
     // Prepare SVG code and save it to a file
-    var code = "<svg xmlns='http://www.w3.org/2000/svg'>" +
+    var code = "<svg xmlns='https://www.w3.org/2000/svg'>" +
                "<circle cx='100' cy='150' r='50' stroke='#2F4F4F' stroke-width='4' fill='#FF7F50' />" +
                "<circle cx='180' cy='200' r='60' stroke='#2F4F4F' stroke-width='4' fill='#008B8B' />" +
                "</svg>";
