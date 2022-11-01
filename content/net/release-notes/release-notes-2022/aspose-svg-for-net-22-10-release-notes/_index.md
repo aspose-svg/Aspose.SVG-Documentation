@@ -48,7 +48,7 @@ public class SVGOptimizationOptions
 
 | Name | Description |
 | --- | --- |
-| [SVGOptimizationOptions]((https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/)() | Initializes a new instance of the [`SVGOptimizationOptions`](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/) class. |
+| [SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/)() | Initializes a new instance of the [`SVGOptimizationOptions`](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/) class. |
 
 ##### Properties
 
