@@ -17,7 +17,8 @@ As per the regular monthly update process of all APIs being offered by Aspose, w
 We have halved the load time of large svg documents and reduced memory consumption by 40%. Several new optimization options have been added to the SVG Document Optimization API.
 
 The next bugs were fixed:
-
+| **Key**    | **Summary**                                                                                              | **Category**  |
+| ---------- | -------------------------------------------------------------------------------------------------------- | ------------- |
 | SVGNET-144 | SVG to PNG: Setting SizingType.Contain throws System.ArgumentException: Parameter is not valid.          | Bug           |
 | SVGNET-145 | SVG to PNG: Setting resolution throws System.IndexOutOfRangeException: Index was outside the ...         | Bug           |
 | SVGNET-146 | SVG to PNG: High memory consumption                                                                      | Bug           |
