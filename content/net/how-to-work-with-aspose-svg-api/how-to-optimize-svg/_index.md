@@ -1,27 +1,29 @@
 ---
-title: How to Optimize SVG Documents - C# Examples
+title: How to Optimize SVG - C# Examples
 linktitle: How to Optimize SVG Documents
 type: docs
 weight: 70
-aliases: /net/how-to-work-with-aspose-svg-api/how-to-optimize-svg-documents/
+aliases: /net/how-to-work-with-aspose-svg-api/how-to-optimize-svg/
 lastmod: 2022-12-06
-description: You will learn how to optimize SVG documents.
-keywords: svg optimizer, svg optimization options, clean svg.
+description: You will learn how to optimize SVG and reduce the size of SVG files.
+keywords: optimize svg, svg optimizer, svg optimization options, clean svg
 ---
 
 <link href="./../../style.css" rel="stylesheet" type="text/css" />
 
+## **Why Optimize SVG?**
+
 The SVG format is very flexible, but it also has some drawbacks. One of them is that the format is not very efficient. This means that SVG images can be slow to load, and they can also be slow to render.
-This is a problem for web developers, because it can affect the user experience. It can also affect the SEO of a website, because search engines can penalize slow websites.
+This is a problem for web developers because it can affect the user experience. It can also affect the SEO of a website because search engines can penalize slow websites.
 Optimizing SVGs for performance reasons is a very common task. Aspose.SVG for .NET API provides the [SVGOptimizer](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizer/) class to help with that task. This tool compresses the SVG document by applying various heuristics to optimize paths and remove unused or useless elements and attributes.
 
 {{% alert color="primary" %}} 
-Aspose.SVG offers Free Online **[SVG optimizer](https://products.aspose.app/svg/svg-optimizer)**. Optimize SVG files to make your website faster and better! You can use a set of options that allow you to flexibly control the compression and simplification level and achieve the desired result. With the SVG optimizer app, you will optimize easily within minutes. Try our forceful application for free now!
+Aspose.SVG offers Free Online [**SVG Optimizer.**](https://products.aspose.app/svg/svg-optimizer) Optimize SVG files to make your website faster and better! You can use a set of options that allow you to flexibly control the compression and simplification level and achieve the desired result. With the SVG Optimizer, you will optimize SVG easily within minutes. Try our forceful application for free now!
 {{% /alert %}} 
 
 <!-- <a href="(https://products.aspose.app/svg/svg-optimizer" target="_blank">![Text "Banner SVG optimizer"](svg-sprite-creator.png#center)</a> -->
 
-## **Optimizing SVG documents**
+## **Optimize SVG in C#**
 
 To optimize SVG documents, use the following code snippet:
 
@@ -37,14 +39,14 @@ using Aspose.Svg.Toolkit.Optimizers;
         var options = new SVGOptimizationOptions();
         // Set float precision
         options.PathOptimizationOptions.FloatPrecision = 2;
-        // Optimimize document
+        // Optimize document
         SVGOptimizer.Optimize(document, options);
         // Save document to file
         document.Save(Path.Combine(DataDir, "optimized.svg"));
     }
 
 ```
-## **SVG documents optimization options**
+## **SVG Optimization Options**
 
 Aspose.SVG for .NET API  supports the following svg elements optimization options [SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/):
 <div class="row">
@@ -53,9 +55,9 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 	</div>
 	<div class="col-md-2">
 		<h3>Description</h3>	
-	</div>
+	</div>	
 	<div class="col-md-4">
-		<h3>Original SVG</h3>	
+		<h3>Original SVG</h3>
 	</div>
 	<div class="col-md-3">
 		<h3>Optimized SVG</h3>
@@ -64,8 +66,8 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 <div class="row">
     <div class="col-md-3">
 	   <a href="https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/collapsegroups/">CollapseGroups</a>
-    </div>	
-    <div class="col-md-2">Collapses excess groups</div>	
+    </div>
+    <div class="col-md-2">Collapses excess groups</div>
     <div class="col-md-4"><pre><span>{{< highlight svg "hl_inline=true" >}}
 <svg xmlns="http://www.w3.org/2000/svg">
     <g>
@@ -86,8 +88,8 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 <div class="row">
     <div class="col-md-3">
 	   <a href="https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/removedescriptions/">RemoveDescriptions</a>
-    </div>	
-    <div class="col-md-2">Removes only editors content or empty elements</div>	
+    </div>
+    <div class="col-md-2">Removes only editors content or empty elements</div>
     <div class="col-md-4"><pre><span>{{< highlight svg "hl_inline=true" >}}
 <svg xmlns="http://www.w3.org/2000/svg">
     <desc>Created with ...</desc>
@@ -365,6 +367,8 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
     </div>	
 </div>
 
+## **Path Optimization Options**
+
 [SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/) contains [PathOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgpathoptimizationoptions/) option which supports next optimization options:
 <div class="row">
 	<div class="col-md-3">
@@ -372,7 +376,7 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 	</div>
 	<div class="col-md-2">
 		<h3>Description</h3>	
-	</div>
+	</div>		
 	<div class="col-md-4">
 		<h3>Original path</h3>	
 	</div>
@@ -383,8 +387,8 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 <div class="row">
     <div class="col-md-3">
 	   <a href="https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgpathoptimizationoptions/applytransforms/">ApplyTransforms</a>
-    </div>	
-    <div class="col-md-2">Apples transformations to the Path segments</div>	
+    </div>
+    <div class="col-md-2">Apples transformations to the Path segments</div>   	
     <div class="col-md-4">{{< highlight svg "hl_inline=true" >}}
 <path d="M32 4a4 4 0 0 0-4-4H8a4 4 0 0 1-4 4v28a4 4 0 0 1 4 4h20a4 4 0 0 0 4-4V4z" fill="#888" transform="matrix(1 0 0 -1 0 36)"/>
 {{< /highlight >}}
@@ -461,6 +465,5 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 </div>	
 
 {{% alert color="primary" %}} 
-You can download the complete examples and data files from [**GitHub**](https://github.com/aspose-svg/Aspose.SVG-Documentation). About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
+You can download the complete examples and data files from [**GitHub.**](https://github.com/aspose-svg/Aspose.SVG-Documentation) About downloading from GitHub and running examples, you find out from the [**How to Run the Examples**](https://docs.aspose.com/svg/net/how-to-run-the-tests/) section.
 {{% /alert %}} 
-
