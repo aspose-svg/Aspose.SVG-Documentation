@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /net/drawing-basics/svg-transformations/
 aliases: /net/drawing-basics/basic-transformations/
-lastmod: 2022-10-17
+lastmod: 2022-12-09
 description: Learn how to rotate, scale, move, and skew SVG graphics using the SVG transform attribute and consider code examples for SVG transformations.
 keywords: SVG Transformations, SVG Translation, SVG Scaling, SVG Rotation, SVG Skewing
 ---
@@ -52,7 +52,7 @@ In the code example,  `<g>` element is used to group circles together. The **fil
 Scaling is an SVG transformation that enlarges or reduces an object using a scaling factor. You have to distinguish the uniform and directional scaling.
 The ***scale (sx [sy])*** transform function allows scaling image along the x- and y-axis. This function takes one or two values which specify horizontal and vertical scaling:  `transform="scale(<sx> [<sy>])"`. The ***sy*** scaling factor value is optional and if omitted it is assumed to be equal to ***sx***.
 
-```html {linenos=inline,linenostart=1 hl_lines=["12","14"]}
+```html {linenos=inline,linenostart=1}
 <svg viewBox="-50 -50 200 200" xmlns="https://www.w3.org/2000/svg">
     <!-- uniform scale -->
     <circle cx="0" cy="0" r="10" fill="#B0C4DE" transform="scale(4)" />
@@ -88,7 +88,7 @@ All rotate or skew angle values should be specified in degrees, you cannot use t
 
 Like ***translation***, ***SVG rotation*** does not distort the element and saves parallelism, angles, and distances.
 
-```html {linenos=inline,linenostart=1 hl_lines=["4","6"]}
+```html {linenos=inline,linenostart=1}
 <svg width="450" height="450" xmlns="https://www.w3.org/2000/svg">
     <rect x="100" y="250" width="200" height="30" fill="CadetBlue" />
     <rect x="100" y="250" width="200" height="30" fill="#DDA0DD" transform ="rotate(-45 200 265)" />
@@ -97,7 +97,7 @@ Like ***translation***, ***SVG rotation*** does not distort the element and save
     <rect x="100" y="250" width="200" height="30" fill="CadetBlue" transform ="rotate(-35)" />
 </svg>
 ```
-The function  `transform="rotate (-90 200 265)"` used in line 4 means that the pink rectangle should be rotated 90 degrees counterclockwise with the center of rotation at (200,265).  For rectangle in line 6, coordinates (***cx, cy***) are not specified, and the rotation on -35 degrees is performed around the point (0, 0) of the initial coordinate system. The result of SVG rotation can be seen on the figure:
+The function `transform="rotate (-90 200 265)"` used in line 4 means that the pink rectangle should be rotated 90 degrees counterclockwise with the center of rotation at (200,265). For rectangle in line 6, coordinates (***cx, cy***) are not specified, and the rotation on -35 degrees is performed around the point (0, 0) of the initial coordinate system. The result of SVG rotation can be seen on the figure:
 
 ![Five filled rectangles that illustrat SVG rotation](svg-rotation.png#center)
 

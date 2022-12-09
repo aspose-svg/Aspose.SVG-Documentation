@@ -3,7 +3,7 @@ title: How to Change SVG Color | C# Examples and Online Converter
 linktitle: How to Change SVG Color
 type: docs
 weight: 35
-lastmod: 2022-07-27
+lastmod: 2022-12-09
 description: You learn how to work with SVG color in C# and consider C# examples of how to change color for SVG elements or background color in SVG files.
 keywords: svg color, how to change svg color, background color, circle color, change background color, c# example, stroke color, fill color, change svg color, line color, color property, svg background color, svg file
 ---
@@ -12,11 +12,9 @@ keywords: svg color, how to change svg color, background color, circle color, ch
 Aspose.SVG for .NET lets you edit an SVG document and make changes to its content.  Using color is an essential part of creating SVG. You can colorize SVG shapes, lines, paths, text. Using C# examples, we will look at ways to apply colors in SVG files. In this article, we show how to work with SVG color using Aspose.SVG for .NET library and consider of **how to change color** of SVG elements or background color in SVG files.
 
 {{% alert color="primary" %}} 
-
 How to add new SVG elements and set their color properties, we covered in detail C# examples in the article [**How to Edit SVG Files**](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-edit-svg-documents/).
 
 The article [**SVG Color**](https://docs.aspose.com/svg/net/drawing-basics/svg-color/) looks at how SVG text and shapes can be colorized. You’ll find out an overview of how color is defined, including the various ways you can control the transparency of SVG content.
-
 {{% /alert %}} 
 
 ## **Online Color Converter**
@@ -72,7 +70,7 @@ using Aspose.Svg.Dom;
     // Set a new "fill" attribute value for the circle element
     circleElement.SetAttribute("fill", "blue"); 
 
-	// Save the SVG document
+	// Save the SVG document to a file
     document.Save(Path.Combine(OutputDir, "circle-color.svg"));
 ```
 The **fill** attribute set the color of the SVG circle. In the resulting circle-color.svg file, the circle color changes from red (in the original) to blue. 
@@ -160,7 +158,7 @@ You can download the complete examples and data files from [**GitHub**](https://
 {{% /alert %}} 
 
 ## **Recolor SVG**
-In the following C# example, we show how to recolor SVG image: change color of SVG path element and change background color:
+Let's draw a snowflake! The following C# example shows how to draw SVG snowflake and recolor it. You can use this approach for any SVG image: change the color of the required SVG element and change the background color:
 
 ```c# 
 using Aspose.Svg;
@@ -199,8 +197,8 @@ using Aspose.Svg.Dom;
     document.Save(Path.Combine(OutputDir, "recolor-svg.svg"));
 ```
 
-The figure shows the visualization of the original SVG file  [snowflake-blue.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake-blue.svg) and the recolored file.
-![Original svg image and recolored svg image](change-background-color.png#center)
+The figure shows the visualization of the original SVG file [snowflake-blue.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/how-to-change-svg-color/snowflake-blue.svg) and the recolored file.
+![Original snowflake svg image and recolored snowflake svg image](change-background-color.png#center)
 
 {{% alert color="primary" %}} 
 
