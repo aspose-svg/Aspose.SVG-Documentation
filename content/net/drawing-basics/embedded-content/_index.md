@@ -45,7 +45,7 @@ SVG is designed to be consistent with other XML languages for describing and ren
 As attributes, you must specify the **x**, **y** coordinates, **width** and **height** of the `<foreignObject>` container. Otherwise, the child elements will not display at all.
 
 Let's see an example:
-```html {linenos=inline,linenostart=1 hl_lines=["12"]}
+```html {linenos=inline,linenostart=1}
 <svg viewBox="0 0 300 300" xmlns="https://www.w3.org/2000/svg">
     <style>
         div {

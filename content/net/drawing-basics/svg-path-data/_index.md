@@ -89,7 +89,7 @@ The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rot
 
 The **a** command is the same as **A** but interprets the coordinates relative to current "pen" point. 
 
-```html {linenos=inline,linenostart=1 hl_lines=["2"]}
+```html {linenos=inline,linenostart=1 hl_lines=[""]}
 <svg height="500" width="700" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
     <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none" />
     <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none" />

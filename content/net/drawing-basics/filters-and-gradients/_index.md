@@ -38,7 +38,7 @@ The Gaussian blur function is obtained by blurring & smoothing an image using th
 The `<feGaussianBlur>` filter creates a soft blur effect. It is a frequently used effect. The **stdDeviation** attribute specifies the *number* that characterizes the standard deviation for the blur operation. If two numbers are provided, the first *number* represents a standard deviation value along the x-axis of the coordinate system, the second one - on the y-axis.
 
 Here is an example illustrates the various values of **stdDeviation** attribute ([gaussian-blur.svg](/svg/net/drawing-basics/filters-and-gradients/gaussian-blur.svg)):
-```html {linenos=inline,linenostart=1 hl_lines=["3", "6", "9"]}
+```html {linenos=inline,linenostart=1}
 <svg height="400" width="600" xmlns="https://www.w3.org/2000/svg">
     <defs>
         <filter id="f1" x="-20" y="-20" height="100" width="100">

@@ -4,7 +4,7 @@ linktitle: How to Optimize SVG Documents
 type: docs
 weight: 70
 aliases: /net/how-to-work-with-aspose-svg-api/how-to-optimize-svg/
-lastmod: 2022-12-06
+lastmod: 2022-12-09
 description: You will learn how to optimize SVG and reduce the size of SVG files.
 keywords: optimize svg, svg optimizer, svg optimization options, clean svg
 ---
@@ -41,14 +41,23 @@ using Aspose.Svg.Toolkit.Optimizers;
         options.PathOptimizationOptions.FloatPrecision = 2;
         // Optimize document
         SVGOptimizer.Optimize(document, options);
-        // Save document to file
+        // Save document to a file
         document.Save(Path.Combine(DataDir, "optimized.svg"));
     }
 
 ```
+The current section describes supported scenarios of SVG file optimization. Let's look at the steps to optimize SVG.
+
+1. Initialize an SVG document from a file using one of the [SVGDocument()](https://reference.aspose.com/svg/net/aspose.svg/svgdocument/svgdocument/) constructors.
+2. Create a new SVGOptimizationOptions object. Use the [SVGOptimizationOptions()](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/svgoptimizationoptions/) constructor.
+3. Use the [PathOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/pathoptimizationoptions/) property of the SVGOptimizationOptions class to optimize SVG paths.
+4. Call the [Optimize()](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizer/optimize/#optimize) method to optimize SVG document.
+5. Save the optimized SVG document to a file.
+
 ## **SVG Optimization Options**
 
-Aspose.SVG for .NET API  supports the following svg elements optimization options [SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/):
+Aspose.SVG for .NET API offers a set of optimization options that allow to reduce SVG code by removing empty elements, attributes with empty values, unused stroke and fill attributes, elements that are not visible during rendering, empty containers, empty 'Text' elements, line indents and breaks, and more. <br>
+Aspose.SVG C# library supports the following SVG elements optimization options [SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/):
 <div class="row">
 	<div class="col-md-3">
 		<h3>Name</h3>				
@@ -369,7 +378,7 @@ Aspose.SVG for .NET API  supports the following svg elements optimization option
 
 ## **Path Optimization Options**
 
-[SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/) contains [PathOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgpathoptimizationoptions/) option which supports next optimization options:
+[SVGOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgoptimizationoptions/) contains [PathOptimizationOptions](https://reference.aspose.com/svg/net/aspose.svg.toolkit.optimizers/svgpathoptimizationoptions/) which supports next optimization options:
 <div class="row">
 	<div class="col-md-3">
 		<h3>Name</h3>				
