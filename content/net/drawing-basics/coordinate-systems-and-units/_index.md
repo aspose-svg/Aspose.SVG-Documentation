@@ -17,7 +17,7 @@ The canvas is the space or area where all SVG elements are drawn. This area can 
 
 All SVG content must be displayed inside the viewport that defines an area on the canvas, characterized by size and a point of origin. The default origin is (0,0). Scope of the viewport sets using the **width** and **height** attributes on the outermost  `<svg>` element. 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-    <svg width="900" height="500" xmlns="https://www.w3.org/2000/svg">
+    <svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
     </svg>
 ```
 The above code shows how to set the **width** and **height** of the SVG viewport. The picture can be seen through the 900×500 pixels "window". Such a viewport is named the **initial viewport**. 
@@ -43,7 +43,7 @@ Attribute values must be placed inside quotes: **viewBox= "min-x min-y width hei
 
 The viewport is like a window you look through to see an SVG’s content. The viewBox is also similar to the viewport, and it can be used for zooming. Consider an example: 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-    <svg width="900" height="500" viewBox="220 125 450 250" xmlns="https://www.w3.org/2000/svg">
+    <svg width="900" height="500" viewBox="220 125 450 250" xmlns="http://www.w3.org/2000/svg">
     </svg>
 ```
 According to a code snippet, viewBox defines a specific canvas area, covering a rectangular with the origin point (220,125), the width=450 and the height=250. Then the SVG image is cropped to that area and scaled up to fill the entire viewport. 

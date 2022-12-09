@@ -86,7 +86,7 @@ The fill is the color inside a shape, and the stroke is the visible outline of a
  In the following example, we consider the fill color and stroke color applying for SVG circle. **Note**: The code snippet can be used similarly for SVG ellipse, rectangle, polyline, and polygon.
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="600" xmlns="https://www.w3.org/2000/svg">
+<svg height="200" width="600" xmlns="http://www.w3.org/2000/svg">
     <circle cx="70" cy="70" r="50" />
     <circle cx="200" cy="70" r="50" fill="#79C99E" />
     <circle cx="330" cy="70" r="50" fill="#79C99E" stroke-width="10" stroke="#508484" />
@@ -104,7 +104,7 @@ The figure illustrates the code snippet above:
 In the following example, we consider the fill and stroke applying for SVG line and SVG polyline. **Note**: The code snippet uses setting color fill and color stroke with `fill` and `stroke` properties of the **style** attribute:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="700" xmlns="https://www.w3.org/2000/svg">
+<svg height="400" width="700" xmlns="http://www.w3.org/2000/svg">
     <line x1="30" y1="30" x2="30" y2="300" style="stroke:#4387be; stroke-width:10" />
     <line x1="55" y1="27" x2="130" y2="300" style="stroke:#c4456d; stroke-width:10" />
     <line x1="80" y1="20" x2="250" y2="300" style="stroke:#77bec1; stroke-width:10" />
@@ -113,15 +113,39 @@ In the following example, we consider the fill and stroke applying for SVG line 
     <polyline points="300,300 360,250 420,300 480,250 540,300 600,250 660,300" style="stroke:#fb6796; stroke-width:5" />
 </svg>
 ```
-
-![Three SVG lines and three SVG polylines (unfilled and filled)](color-line.png#center)
+<div>
+<svg viewBox="-30  0 1000 340" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" stroke="#111" fill="#eee" />
+    </marker>
+  </defs>
+<text x="25" y="30" font-size="30">SVG Lines</text>
+<text x="385" y="30"  font-size="30">SVG Polylines</text>
+<g transform="translate(0 40)">
+    <line x1="30" y1="30" x2="30" y2="300" style="stroke:#4387be; stroke-width:10" />
+    <line x1="55" y1="27" x2="130" y2="300" style="stroke:#c4456d; stroke-width:10" />
+    <line x1="80" y1="20" x2="250" y2="300" style="stroke:#77bec1; stroke-width:10" />
+    <polyline points="300,100 360,50 420,100 480,50 540,100 600,50 660,100" style="fill:none; stroke:#fb6796; stroke-width:5" />
+    <polyline points="300,200 360,150 420,200 480,150 540,200 600,150 660,200" style="fill:#c9d7e1; stroke:#fb6796; stroke-width:5" />  
+    <polyline points="300,300 360,250 420,300 480,250 540,300 600,250 660,300" style="stroke:#fb6796; stroke-width:5" />
+    <line x1="730" y1="80" x2="620" y2="80" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="735" y="85" font-size="17px">fill:none</text>
+    <line x1="730" y1="180" x2="620" y2="180" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="735" y="185" font-size="17px">fill:c9d7e1</text>
+    <line x1="730" y1="280" x2="620" y2="280" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="735" y="285" font-size="17px">The fill is not specified</text>
+    </g>
+</svg>
+</div>
 
 ### **Color Polyline and Color Polygon**
 
 The following example illustrates the similarities and differences in applying fill color and stroke color to an SVG polyline and an SVG polygon:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="500" xmlns="https://www.w3.org/2000/svg">
+<svg viewBox="-100  0 800 340" xmlns="http://www.w3.org/2000/svg">
     <polyline points="60,290 130,20 200,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
     <polygon points="260,290 330,20 400,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
 </svg>
@@ -129,7 +153,20 @@ The following example illustrates the similarities and differences in applying f
 
 As the polyline is an open line, no stroke color will appear on that part of the shape. Because the polygon is a closed line, the stroke color is around the entire perimeter of the shape.
 
-![SVG polyline and SVG polygon with fill and stroke](color-shapes.png#center)
+<div>
+<svg viewBox="-100  0 800 340" xmlns="http://www.w3.org/2000/svg">
+<text x="85" y="20" font-weight="bold">SVG Polyline</text>
+<text x="285" y="20" font-weight="bold">SVG Polygon</text>
+<g transform="translate(0 30)">
+    <polyline points="60,290 130,20 200,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
+    <text x="-30" y="150">no stroke color</text>
+    <line x1="0" y1="152" x2="120" y2="275" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <polygon  points="260,290 330,20 400,290" style="fill:#86a9b9; stroke-width:5; stroke:#fb6796" />
+    <text x="400" y="150">stroke color is around</text>
+    <text x="407" y="170">the entire perimeter</text>
+    </g>
+</svg>
+</div>
 
 ## **Path Color**
 
@@ -138,7 +175,7 @@ For an SVG `<path>` element, you can use both a color stroke and a color fill. T
 So that there is no filling, you need to specify the attribute value `fill= "none"` or `fill= "transparent"`. In the following code example, we will show how fill and stroke can be used with a `<path>` element:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="600" xmlns="https://www.w3.org/2000/svg">
+<svg height="350" width="600" xmlns="http://www.w3.org/2000/svg">
     <path stroke="#a06e84" stroke-width="3" fill="none" d="  
 	M 150,50 L 150, 300
 	M 120,100 L 150,50 L 180, 100
@@ -160,14 +197,33 @@ So that there is no filling, you need to specify the attribute value `fill= "non
 
 The figure below illustrates how the values `fill = "none"` and `fill = "#74aeaf"` are displayed:
 
-![Two SVG paths: unfilled and filled](color-paths.png#center)
+<div>
+<svg height="350" width="600" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#a06e84" stroke-width="3" fill="none" d="  
+	M 150,50 L 150, 300
+	M 120,100 L 150,50 L 180, 100
+    M 110,150 L 150,90 L 190, 150
+	M 90,220 L 150,130 L 210, 220
+	M 70,300 L 150,190 L 230, 300
+    M 110,310 L 150,240 L 190, 310
+	" />
+    <path stroke="#a06e84" stroke-width="3" fill="#74aeaf" transform="translate(200)" d="  
+	M 150,50 L 150, 300
+	M 120,100 L 150,50 L 180, 100
+    M 110,150 L 150,90 L 190, 150
+	M 90,220 L 150,130 L 210, 220
+	M 70,300 L 150,190 L 230, 300
+    M 110,310 L 150,240 L 190, 310
+	" /> 
+</svg>
+</div>
 
 ## **Text Color**
 
 Like other SVG shapes, text can have both a stroke and fill set on it. In this code example, we will look at how you can set the fill color and stroke color of text and use a gradient as a fill. As with all SVG shapes, if the **fill** attribute is not specified, the text will be displayed in black by default:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="300" width="600" xmlns="https://www.w3.org/2000/svg">
+<svg height="330" width="600" xmlns="http://www.w3.org/2000/svg">
     <defs>
 		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
 			<stop offset="10%" style="stop-color:lightsalmon" />
@@ -184,7 +240,21 @@ Like other SVG shapes, text can have both a stroke and fill set on it. In this c
 
 The figure shows the different cases of fill and stroke applying to add text color:
 
-![Two SVG paths: unfilled and filled](color-text.png#center)
+<div>
+<svg height="330" width="600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="10%" style="stop-color:lightsalmon" />
+			<stop offset="50%" style="stop-color:teal" />
+			<stop offset="90%" style="stop-color:lightpink" />
+		</linearGradient>
+    </defs>
+    <text x="50" y="50" font-family="arial" font-size="40" >How to add SVG text color?</text>
+    <text x="50" y="130" font-family="arial" font-size="40" fill="lightpink" stroke="teal" stroke-width="1" >How to add SVG text color?</text>
+    <text x="50" y="210" font-family="arial" font-size="40" fill="none" stroke="teal" stroke-width="1" >How to add SVG text color?</text>
+    <text x="50" y="290" font-family="arial" font-size="40" fill="url(#grad1)" stroke="teal" stroke-width="1" >How to add SVG text color?</text>
+</svg>
+</div>
 
 You may read more about how to style the text in articles  [**Fills and Strokes in SVG**](https://docs.aspose.com/svg/net/drawing-basics/fills-and-strokes/) and [**SVG Filters and Gradients**](https://docs.aspose.com/svg/net/drawing-basics/filters-and-gradients/).
 
@@ -202,7 +272,7 @@ You can specify the opacity of either the fill or stroke separately in SVG. Thes
 Let's look at an example of how to set the opacity of the fill color of the shapes. In the following code snippet, we specify different opacity values to fill the rectangle with rgb(0,50,255) blue using **RGBA** color codes (Figure a); for red hsl(0,100%,50%) - using the **HSLA** color codes (Figure b) and for the color HEX #C1B900 - using the **fill-opacity** attribute (Figure c).
 
 ```html {linenos=inline,linenostart=1}
-<svg height="200" width="1250" xmlns="https://www.w3.org/2000/svg">
+<svg viewBox="0 0 1250 200" xmlns="http://www.w3.org/2000/svg">
     <rect x="310" y="30"  width="100" height="100" fill="rgba(0,50,255,0.8)" />
    	<rect x="250" y="50"  width="110" height="100" fill="rgba(0,50,255,0.7)" />
    	<rect x="170" y="90"  width="110" height="100" fill="rgba(0,50,255,0.6)" />   
@@ -222,10 +292,28 @@ Let's look at an example of how to set the opacity of the fill color of the shap
     <rect x="850" y="30" width="110" height="100" fill="#C1B900" fill-opacity="0.2" />    
 </svg>
 ```
-
-![Three sets of colored rectangles with different values of opacity](opacity.png#center)
-
-
+<div>
+<svg viewBox="0 0 1250 225" xmlns="http://www.w3.org/2000/svg">
+    <rect x="310" y="30"  width="100" height="100" fill="rgba(0,50,255,0.8)" />
+   	<rect x="250" y="50"  width="110" height="100" fill="rgba(0,50,255,0.7)" />
+   	<rect x="170" y="90"  width="110" height="100" fill="rgba(0,50,255,0.6)" />   
+    <rect x="100" y="50"  width="110" height="100" fill="rgba(0,50,255,0.4)" />
+    <rect x="50" y="30"  width="110" height="100" fill="rgba(0,50,255,0.2)" />
+    <text  x="220" y="220" style="font-size:25">a)</text>
+    <rect x="710" y="30"  width="100" height="100" fill="hsla(0,100%,50%,0.8)" />
+   	<rect x="650" y="50"  width="110" height="100" fill="hsla(0,100%,50%,0.7)" />
+   	<rect x="570" y="90"  width="110" height="100" fill="hsla(0,100%,50%,0.6)" />   
+    <rect x="500" y="50"  width="110" height="100" fill="hsla(0,100%,50%,0.4)" />
+    <rect x="450" y="30"  width="110" height="100" fill="hsla(0,100%,50%,0.2)" />
+    <text  x="620" y="220" style="font-size:25">b)</text>
+    <rect x="1110" y="30" width="100" height="100" fill="#C1B900" fill-opacity="0.8" />
+   	<rect x="1050" y="50" width="110" height="100" fill="#C1B900" fill-opacity="0.7" />
+   	<rect x="970" y="90" width="110" height="100" fill="#C1B900" fill-opacity="0.6" />   
+    <rect x="900" y="50" width="110" height="100" fill="#C1B900" fill-opacity="0.4" />
+    <rect x="850" y="30" width="110" height="100" fill="#C1B900" fill-opacity="0.2" /> 
+    <text  x="1020" y="220" style="font-size:25">c)</text>   
+</svg>
+</div>
 
 {{% alert color="primary" %}} 
 If you want to find a required color, you can mix two colors using a free online [**Color Mixer**](https://products.aspose.app/svg/color-mixer). The application allows to mix two colors in different quantities and see the result after mixing. Check our Color Mixer to get fun and investigate a color nature! 

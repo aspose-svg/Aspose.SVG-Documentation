@@ -55,7 +55,7 @@ After doing any command, the "virtual pen" point will be located at the endpoint
 Let's draw a square using the ***lineto*** commands ([lineto.svg](https://docs.aspose.com/svg/net/how-to-work-with-aspose-svg-api/saving-svg-documents/lineto.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg height="400" width="400" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+<svg height="400" width="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path d="M 30 30 L 110 30 L 110 110 L 30 110 L 30 30" fill="transparent" stroke-width="2" stroke="black" />  
     <path d="M 50 50 H 130 V 130 H 50 Z" fill="transparent" stroke-width="2" stroke="blue" />
     <path d="M 70 70 h 80 v 80 h -80 Z" fill="transparent" stroke-width="2" stroke="red" />
@@ -90,7 +90,7 @@ The **A** command allows to make a path with arcs by hand: **A (rx ry x-axis-rot
 The **a** command is the same as **A** but interprets the coordinates relative to current "pen" point. 
 
 ```html {linenos=inline,linenostart=1 hl_lines=[""]}
-<svg height="500" width="700" viewBox="0 0 100 100" xmlns="https://www.w3.org/2000/svg">
+<svg height="500" width="700" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <path d="M10,20 A 30,30 0 0,0 40,70" style="stroke:#FFA500; stroke-width:1; fill:none" />
     <path d="M10,20 A 30,30 0 1 0 40,70" style="stroke: #FF0000; stroke-width:1; fill:none" />
     <path d="M10,20 A 30,30 0 0 0 40,70 A 30,30 0 1 1 10,20" style="stroke: #FFA500; stroke-width:1; fill:#FFD700" transform="translate(70,0)" />
@@ -113,7 +113,7 @@ Any Bezier curve as the current (starting) point takes the pen's location after 
 Let's consider an example: 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100" stroke="black" stroke-width="1" fill="transparent" />
 </svg>
 ```
@@ -124,7 +124,7 @@ If you connect the control point to the start and endpoints of the curve with se
 How does the position of the control point affect the curve view? Let us show this with examples. Let's change the value of ***y1*** at the control point for the previous curve ([bezier-curve2.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve2.svg)): 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="1" fill="none">
         <path d="M 10 100 Q 25 10 180 100" stroke="black" />
         <path d="M 10 100 Q 25 -60 180 100" stroke="blue" />
@@ -139,7 +139,7 @@ How does the position of the control point affect the curve view? Let us show th
 Let's take the black curve as a basis and change the control point **x1** value ([bezier-curve3.svg](/svg/net/drawing-basics/svg-path-data/bezier-curve3.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg width="600" height="600" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <g stroke-width="1" fill="none">
         <path d="M 10 100 Q 25 10 180 100" stroke="black" />
         <path d="M 10 100 Q -40 10 180 100" stroke="red" />
@@ -152,7 +152,7 @@ Let's take the black curve as a basis and change the control point **x1** value 
 ![Four Quadratic Bézier Curves with different x1 values for the control point](qbq3.png#center)
 
 ```html {linenos=inline,linenostart=1}
-<svg width="700" height="600" xmlns="https://www.w3.org/2000/svg">
+<svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
    <path d="M 10 100 Q 25 10 180 100 T 250 100 T 320 100 T 390 100" stroke="orange" stroke-width="3" fill="none" />
    <path d="M 10 200 Q 25 110 180 200 T 300 250 T 420 250 T 490 150" stroke="grey" stroke-width="3" fill="none" />
 </svg>
@@ -163,7 +163,7 @@ The ***T*** command draws the quadratic Bézier curve from the current point to 
 Below is an example of a curve created using the ***T*** command. Here, the ***x*** coordinates of the curve segments are equidistant,  ***y*** coordinate does not change.
 
 ```html {linenos=inline,linenostart=1}
-<svg width="700" height="600" xmlns="https://www.w3.org/2000/svg">
+<svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100 T 350 100 T 520 100 T 690 100" stroke="black" stroke-width="3" fill="none" />
 </svg>
 ```
@@ -172,7 +172,7 @@ If you try to vary the endpoint (***x,y***) coordinates of ***T*** command, you 
 
 
 ```html {linenos=inline,linenostart=1}
-<svg height="700" width="750" xmlns="https://www.w3.org/2000/svg">
+<svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
     <path d="M 10 100 Q 25 10 180 100 T 250 100 T 320 100 T 390 100" stroke="#FFA500" stroke-width="3" fill="none" />
     <path d="M 10 200 Q 25 110 180 200 T 300 250 T 420 250 T 490 150" stroke="grey" stroke-width="3" fill="none" />
 </svg>
@@ -189,7 +189,7 @@ The control points position determines the slope of the tangent line at the star
 The following code example makes a shape using two paths ([cubic-bezier-curves.svg](/svg/net/drawing-basics/svg-path-data/cubic-bezier-curves.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg height="700" width="750" xmlns="https://www.w3.org/2000/svg">
+<svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
     <!--shape two paths-->
     <path d="M 100 250 C 150 60  355 140  328 260 " stroke="black" stroke-width="3" fill="none" />
     <path d="M 100 250 C 40 500 240 510 328 260" stroke="red" stroke-width="3" fill="none" />
@@ -202,7 +202,7 @@ On the figure, different paths are shown in black and red.
 The following code example makes the same shape using one path:
 
 ```html {linenos=inline,linenostart=1}
-<svg height="700" width="750" xmlns="https://www.w3.org/2000/svg">
+<svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
    <!--shape 1 path-->
    <path d="M 100 250 C 150 60  355 140  328 260 C 240 510 40 500 100 250" stroke="black" stroke-width="3" fill="none" />
 </svg>
@@ -215,7 +215,7 @@ For the **S** command, the first control point is considered a reflection of the
 Using Bezier curves, you can make a simple drawing in the primitivism style. We have drawn the picture similar “Owl” Picasso ([owl.svg](/svg/net/drawing-basics/svg-path-data/owl.svg)):
 
 ```html {linenos=inline,linenostart=1}
-<svg height="700" width="750" xmlns="https://www.w3.org/2000/svg">
+<svg height="700" width="750" xmlns="http://www.w3.org/2000/svg">
     <g stroke="black" stroke-width="3" fill="none">
         <!--body 1 path-->
         <path d="M 100 250 C 150 60  355 140  328 260 C 240 510 40 500 100 250" />

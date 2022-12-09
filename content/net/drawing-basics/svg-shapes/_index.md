@@ -30,7 +30,7 @@ If **x** and **y** attributes are not set, the top-left corner of the rectangle 
 The SVG code to generate the SVG rectangle looks like ([rectangle1.svg](/svg/net/drawing-basics/svg-shapes/rectangle1.svg)): 
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <rect x="60" y="100" width="70" height="40" rx="10" ry="10" style="fill:#778899; stroke:#FF4500; stroke-width:5; fill-opacity:0.7; stroke-opacity:0.6" />
 </svg>
 ```
@@ -38,7 +38,7 @@ The code example shows that you create an SVG rectangle with the top-left point 
 Below is one more sample code for creating a rectangle without rounded borders ([rectangle2.svg](/svg/net/drawing-basics/svg-shapes/rectangle2.svg)): 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <rect x="120" y="140" width="90" height="90" style="fill:grey; stroke-width:3; stroke:rgb(0,0,0)" />
 </svg>
 ```
@@ -79,7 +79,7 @@ The SVG `<circle>` element is used to draw a circle on the screen. You need to s
 You can set the stroke and fill properties for an SVG circle. In the following example, the stroke color is black, and the fill color is red.  You can also set the stroke width using the ***stroke-width*** style property and fill transparency using the ***fill-opacity*** property. Here is an example ([circle.svg](/svg/net/drawing-basics/svg-shapes/circle.svg)):
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-<svg width="300" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="300" height="550" xmlns="http://www.w3.org/2000/svg">
     <circle cx="250" cy="100" r="60" style="fill:red; stroke-width:3; stroke:rgb(0,0,0); fill-opacity:0.7"  />
 </svg>
 ```
@@ -99,7 +99,7 @@ An ellipse is a more general figure than a circle. In the context of an `<ellips
  ![Two SVG ellipces](ellipce.png#center)
 
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="140" cy="310" rx="90" ry="20" style="fill:OrangeRed" />
     <ellipse cx="120" cy="280" rx="110" ry="20" style="fill:grey; fill-opacity:0.5" />
 </svg>
@@ -119,7 +119,7 @@ The second SVG ellipse in the code has transparency 50% and will be displayed ov
 **stroke** – the line color 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <line x1="30" y1="30" x2="350" y2="290" style="stroke:rgb(255,0,0); stroke-width:3" />
     <line x1="30" y1="50" x2="300" y2="350" style="stroke:grey; stroke-width:5" />
     <line x1="20" y1="80" x2="100" y2="200" style="stroke:orangered; stroke-width:8" />
@@ -141,7 +141,7 @@ The SVG `<polyline>` element is used to draw multiple connected straight lines. 
 The first group of two numbers in the **points** defines the coordinates of the beginning of the first line, the second group defines the end of the first line and at the same time the beginning of the second line, etc ([polyline.svg](/svg/net/drawing-basics/svg-shapes/polyline.svg)). 
 
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <polyline points="280,290 300,220 320,290" style="fill:grey; stroke:grey; stroke-width:2; fill-opacity:0.5" />
     <polyline points="220,200 240,180 260,200 280,180 300,200 320,180 340,200" style="fill:none; stroke:red; stroke-width:6" />
 </svg>
@@ -163,7 +163,7 @@ The `<polygon>` element is used to create a shape that contains at least three s
 An example of a simple SVG polygon building ([polygon.svg](/svg/net/drawing-basics/svg-shapes/polygon.svg)): 
 
 ```html {linenos=inline,linenostart=1}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <polygon points="160,10 350,140 210,350 50,199" style="fill:orange;stroke:purple;stroke-width:1" />
 </svg>
 ```
@@ -174,7 +174,7 @@ An example of a simple SVG polygon building ([polygon.svg](/svg/net/drawing-basi
 
 A simple SVG document consists of nothing more than the `<svg>`  root element and several basic shapes that build a graphic together ([conclusion.svg](/svg/net/drawing-basics/svg-shapes/conclusion.svg)).  
 ```html {linenos=inline,linenostart=1, hl_lines=[""]}
-<svg width="500" height="550" xmlns="https://www.w3.org/2000/svg">
+<svg width="500" height="550" xmlns="http://www.w3.org/2000/svg">
     <line x1="30" y1="30" x2="350" y2="290" style="stroke:rgb(255,0,0); stroke-width:3" />
     <line x1="30" y1="50" x2="300" y2="350" style="stroke:grey; stroke-width:5" />
     <rect x="60" y="100" width="70" height="40" rx="10" ry="10" style="fill:#778899; stroke:#FF4500; stroke- width:5; fill-opacity:0.7; stroke-opacity:0.6" />

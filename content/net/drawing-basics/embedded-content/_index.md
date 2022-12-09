@@ -46,7 +46,7 @@ As attributes, you must specify the **x**, **y** coordinates, **width** and **he
 
 Let's see an example:
 ```html {linenos=inline,linenostart=1}
-<svg viewBox="0 0 300 300" xmlns="https://www.w3.org/2000/svg">
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
     <style>
         div {
             color: grey;
