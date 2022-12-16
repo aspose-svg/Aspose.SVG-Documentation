@@ -96,8 +96,27 @@ The fill is the color inside a shape, and the stroke is the visible outline of a
 ```
 
 The figure illustrates the code snippet above:
-
-![Four colored circles](color-circle.png#center)
+<div>
+<svg height="250" width="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" stroke="#111" fill="#eee" />
+    </marker>
+  </defs>
+  <circle cx="70" cy="70" r="50" />
+  <circle cx="200" cy="70" r="50" fill="#79C99E" />
+  <circle cx="330" cy="70" r="50" fill="#79C99E" stroke-width="10" stroke="#508484" />
+  <circle cx="460" cy="70" r="50" fill="#79C99E" stroke-width="10" /> 
+  <circle cx="590" cy="70" r="50" fill="none" stroke-width="10" stroke="#508484" />
+  <text x="20" y="205" font-size="20">The <tspan font-weight="bold">fill</tspan> attribute is not specified</text>
+  <line x1="70" y1="180" x2="70" y2="140" marker-end="url(#arrowhead)" stroke="#111" stroke-width="2" />
+  <text x="380" y="205" font-size="20" >The <tspan font-weight="bold">stroke</tspan> attribute is not specified</text>
+  <line x1="590" y1="180" x2="220" y2="125" marker-end="url(#arrowhead)" stroke="#111" stroke-width="2" />
+  <line x1="590" y1="180" x2="480" y2="130" marker-end="url(#arrowhead)" stroke="#111" stroke-width="2" />
+  <line x1="590" y1="180" x2="90" y2="125" marker-end="url(#arrowhead)" stroke="#111" stroke-width="2" />
+</svg>
+</div>
 
 ### **Color Line and Color Polyline**
 
