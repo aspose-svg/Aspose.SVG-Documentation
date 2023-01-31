@@ -1,8 +1,8 @@
 ---
-title: Release Notes - 2022
+title: Release Notes - 2023
 type: docs
-weight: 8
-aliases: /net/release-notes-2022/
+weight: 7
+aliases: /net/release-notes-2023/
 ---
 
 
